@@ -1,0 +1,1051 @@
+{
+  "generatedAt": "2026-07-08T14:49:43.761Z",
+  "source": "Accessories Price List_new.xlsx#Installation Cost",
+  "regionCount": 3,
+  "lineItemCount": 9,
+  "regions": [
+    {
+      "id": "EMEA",
+      "name": "EMEA",
+      "sections": [
+        {
+          "id": "smart-build-custom-parts-labour",
+          "title": "Smart Build (Custom Parts and Labour)",
+          "billingType": "NRC",
+          "type": "custom-parts-labour",
+          "fixedColumns": [
+            "Part Number",
+            "Product Element",
+            "UOM"
+          ],
+          "countries": [
+            {
+              "name": "Bulgaria",
+              "id": "bulgaria"
+            },
+            {
+              "name": "Finland",
+              "id": "finland"
+            },
+            {
+              "name": "France",
+              "id": "france"
+            },
+            {
+              "name": "Germany",
+              "id": "germany"
+            },
+            {
+              "name": "Ireland",
+              "id": "ireland"
+            },
+            {
+              "name": "Italy",
+              "id": "italy"
+            },
+            {
+              "name": "Netherlands",
+              "id": "netherlands"
+            },
+            {
+              "name": "Oman",
+              "id": "oman"
+            },
+            {
+              "name": "Poland",
+              "id": "poland"
+            },
+            {
+              "name": "Portugal",
+              "id": "portugal"
+            },
+            {
+              "name": "South Africa",
+              "id": "south-africa"
+            },
+            {
+              "name": "Spain",
+              "id": "spain"
+            },
+            {
+              "name": "Sweden",
+              "id": "sweden"
+            },
+            {
+              "name": "Switzerland",
+              "id": "switzerland"
+            },
+            {
+              "name": "Turkey",
+              "id": "turkey"
+            },
+            {
+              "name": "United Arab Emirates",
+              "id": "united-arab-emirates"
+            },
+            {
+              "name": "United Kingdom",
+              "id": "united-kingdom"
+            }
+          ],
+          "lineItems": [
+            {
+              "id": "ps00003-elem-markup",
+              "partNumber": "PS00003.ELEM",
+              "productElement": "Custom Parts",
+              "uom": "% Markup",
+              "pricing": {
+                "bulgaria": {
+                  "countryId": "bulgaria",
+                  "countryName": "Bulgaria",
+                  "value": "0.45"
+                },
+                "finland": {
+                  "countryId": "finland",
+                  "countryName": "Finland",
+                  "value": "0.45"
+                },
+                "france": {
+                  "countryId": "france",
+                  "countryName": "France",
+                  "value": "0.45"
+                },
+                "germany": {
+                  "countryId": "germany",
+                  "countryName": "Germany",
+                  "value": "0.45"
+                },
+                "ireland": {
+                  "countryId": "ireland",
+                  "countryName": "Ireland",
+                  "value": "0.45"
+                },
+                "italy": {
+                  "countryId": "italy",
+                  "countryName": "Italy",
+                  "value": "0.45"
+                },
+                "netherlands": {
+                  "countryId": "netherlands",
+                  "countryName": "Netherlands",
+                  "value": "0.45"
+                },
+                "oman": {
+                  "countryId": "oman",
+                  "countryName": "Oman",
+                  "value": "0.45"
+                },
+                "poland": {
+                  "countryId": "poland",
+                  "countryName": "Poland",
+                  "value": "0.45"
+                },
+                "portugal": {
+                  "countryId": "portugal",
+                  "countryName": "Portugal",
+                  "value": "0.45"
+                },
+                "south-africa": {
+                  "countryId": "south-africa",
+                  "countryName": "South Africa",
+                  "value": "0.45"
+                },
+                "spain": {
+                  "countryId": "spain",
+                  "countryName": "Spain",
+                  "value": "0.45"
+                },
+                "sweden": {
+                  "countryId": "sweden",
+                  "countryName": "Sweden",
+                  "value": "0.45"
+                },
+                "switzerland": {
+                  "countryId": "switzerland",
+                  "countryName": "Switzerland",
+                  "value": "0.45"
+                },
+                "turkey": {
+                  "countryId": "turkey",
+                  "countryName": "Turkey",
+                  "value": "0.45"
+                },
+                "united-arab-emirates": {
+                  "countryId": "united-arab-emirates",
+                  "countryName": "United Arab Emirates",
+                  "value": "0.45"
+                },
+                "united-kingdom": {
+                  "countryId": "united-kingdom",
+                  "countryName": "United Kingdom",
+                  "value": "0.45"
+                }
+              }
+            },
+            {
+              "id": "ps00001-nr-per-hour",
+              "partNumber": "PS00001.NR",
+              "productElement": "Custom Labor",
+              "uom": "Per Hour",
+              "pricing": {
+                "bulgaria": {
+                  "countryId": "bulgaria",
+                  "countryName": "Bulgaria",
+                  "value": "165"
+                },
+                "finland": {
+                  "countryId": "finland",
+                  "countryName": "Finland",
+                  "value": "165"
+                },
+                "france": {
+                  "countryId": "france",
+                  "countryName": "France",
+                  "value": "165"
+                },
+                "germany": {
+                  "countryId": "germany",
+                  "countryName": "Germany",
+                  "value": "165"
+                },
+                "ireland": {
+                  "countryId": "ireland",
+                  "countryName": "Ireland",
+                  "value": "165"
+                },
+                "italy": {
+                  "countryId": "italy",
+                  "countryName": "Italy",
+                  "value": "165"
+                },
+                "netherlands": {
+                  "countryId": "netherlands",
+                  "countryName": "Netherlands",
+                  "value": "165"
+                },
+                "oman": {
+                  "countryId": "oman",
+                  "countryName": "Oman",
+                  "value": "1430"
+                },
+                "poland": {
+                  "countryId": "poland",
+                  "countryName": "Poland",
+                  "value": "520"
+                },
+                "portugal": {
+                  "countryId": "portugal",
+                  "countryName": "Portugal",
+                  "value": "165"
+                },
+                "south-africa": {
+                  "countryId": "south-africa",
+                  "countryName": "South Africa",
+                  "value": "3300"
+                },
+                "spain": {
+                  "countryId": "spain",
+                  "countryName": "Spain",
+                  "value": "165"
+                },
+                "sweden": {
+                  "countryId": "sweden",
+                  "countryName": "Sweden",
+                  "value": "1380"
+                },
+                "switzerland": {
+                  "countryId": "switzerland",
+                  "countryName": "Switzerland",
+                  "value": "325"
+                },
+                "turkey": {
+                  "countryId": "turkey",
+                  "countryName": "Turkey",
+                  "value": "160"
+                },
+                "united-arab-emirates": {
+                  "countryId": "united-arab-emirates",
+                  "countryName": "United Arab Emirates",
+                  "value": "1430"
+                },
+                "united-kingdom": {
+                  "countryId": "united-kingdom",
+                  "countryName": "United Kingdom",
+                  "value": "220"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "smart-build-accessories",
+          "title": "Smart Build (Accessories)",
+          "type": "accessories",
+          "notes": [
+            {
+              "title": "Cabinet Installation Fee",
+              "text": "The installation costs for Equinix Cabinets are included in the standard Non-Recurring Charge (NRC) for the Cage/Cabinet. However, for custom or customer provided cabinets, additional installation costs apply and are not included in the standard NRC."
+            }
+          ],
+          "fixedColumns": [
+            "Product Element",
+            "UOM"
+          ],
+          "countries": [
+            {
+              "name": "Bulgaria",
+              "id": "bulgaria"
+            },
+            {
+              "name": "Finland",
+              "id": "finland"
+            },
+            {
+              "name": "France",
+              "id": "france"
+            },
+            {
+              "name": "Germany",
+              "id": "germany"
+            },
+            {
+              "name": "Ireland",
+              "id": "ireland"
+            },
+            {
+              "name": "Italy",
+              "id": "italy"
+            },
+            {
+              "name": "Netherlands",
+              "id": "netherlands"
+            },
+            {
+              "name": "Oman",
+              "id": "oman"
+            },
+            {
+              "name": "Poland",
+              "id": "poland"
+            },
+            {
+              "name": "Portugal",
+              "id": "portugal"
+            },
+            {
+              "name": "South Africa",
+              "id": "south-africa"
+            },
+            {
+              "name": "Spain",
+              "id": "spain"
+            },
+            {
+              "name": "Sweden",
+              "id": "sweden"
+            },
+            {
+              "name": "Switzerland",
+              "id": "switzerland"
+            },
+            {
+              "name": "Turkey",
+              "id": "turkey"
+            },
+            {
+              "name": "United Arab Emirates",
+              "id": "united-arab-emirates"
+            },
+            {
+              "name": "United Kingdom",
+              "id": "united-kingdom"
+            }
+          ],
+          "lineItems": [
+            {
+              "id": "pdu-installation-fee-per-pdu",
+              "partNumber": null,
+              "productElement": "PDU Installation Fee",
+              "uom": "per PDU",
+              "pricing": {
+                "bulgaria": {
+                  "countryId": "bulgaria",
+                  "countryName": "Bulgaria",
+                  "value": "41.25"
+                },
+                "finland": {
+                  "countryId": "finland",
+                  "countryName": "Finland",
+                  "value": "41.25"
+                },
+                "france": {
+                  "countryId": "france",
+                  "countryName": "France",
+                  "value": "41.25"
+                },
+                "germany": {
+                  "countryId": "germany",
+                  "countryName": "Germany",
+                  "value": "41.25"
+                },
+                "ireland": {
+                  "countryId": "ireland",
+                  "countryName": "Ireland",
+                  "value": "41.25"
+                },
+                "italy": {
+                  "countryId": "italy",
+                  "countryName": "Italy",
+                  "value": "41.25"
+                },
+                "netherlands": {
+                  "countryId": "netherlands",
+                  "countryName": "Netherlands",
+                  "value": "41.25"
+                },
+                "oman": {
+                  "countryId": "oman",
+                  "countryName": "Oman",
+                  "value": "357.5"
+                },
+                "poland": {
+                  "countryId": "poland",
+                  "countryName": "Poland",
+                  "value": "130"
+                },
+                "portugal": {
+                  "countryId": "portugal",
+                  "countryName": "Portugal",
+                  "value": "41.25"
+                },
+                "south-africa": {
+                  "countryId": "south-africa",
+                  "countryName": "South Africa",
+                  "value": "825"
+                },
+                "spain": {
+                  "countryId": "spain",
+                  "countryName": "Spain",
+                  "value": "41.25"
+                },
+                "sweden": {
+                  "countryId": "sweden",
+                  "countryName": "Sweden",
+                  "value": "345"
+                },
+                "switzerland": {
+                  "countryId": "switzerland",
+                  "countryName": "Switzerland",
+                  "value": "81.25"
+                },
+                "turkey": {
+                  "countryId": "turkey",
+                  "countryName": "Turkey",
+                  "value": "40"
+                },
+                "united-arab-emirates": {
+                  "countryId": "united-arab-emirates",
+                  "countryName": "United Arab Emirates",
+                  "value": "357.5"
+                },
+                "united-kingdom": {
+                  "countryId": "united-kingdom",
+                  "countryName": "United Kingdom",
+                  "value": "55"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "AMER",
+      "name": "AMER",
+      "sections": [
+        {
+          "id": "smart-build-custom-parts-labour",
+          "title": "Smart Build (Custom Parts and Labour)",
+          "billingType": "NRC",
+          "type": "custom-parts-labour",
+          "fixedColumns": [
+            "Part Number",
+            "Product Element",
+            "UOM"
+          ],
+          "countries": [
+            {
+              "name": "Brazil",
+              "id": "brazil"
+            },
+            {
+              "name": "Canada",
+              "id": "canada"
+            },
+            {
+              "name": "Chile",
+              "id": "chile"
+            },
+            {
+              "name": "Colombia",
+              "id": "colombia"
+            },
+            {
+              "name": "Mexico",
+              "id": "mexico"
+            },
+            {
+              "name": "Peru",
+              "id": "peru"
+            },
+            {
+              "name": "United States",
+              "id": "united-states"
+            }
+          ],
+          "lineItems": [
+            {
+              "id": "ps00003-elem-markup",
+              "partNumber": "PS00003.ELEM",
+              "productElement": "Custom Parts",
+              "uom": "% Markup",
+              "pricing": {
+                "brazil": {
+                  "countryId": "brazil",
+                  "countryName": "Brazil",
+                  "value": "0.45"
+                },
+                "canada": {
+                  "countryId": "canada",
+                  "countryName": "Canada",
+                  "value": "0.45"
+                },
+                "chile": {
+                  "countryId": "chile",
+                  "countryName": "Chile",
+                  "value": "0.45"
+                },
+                "colombia": {
+                  "countryId": "colombia",
+                  "countryName": "Colombia",
+                  "value": "0.45"
+                },
+                "mexico": {
+                  "countryId": "mexico",
+                  "countryName": "Mexico",
+                  "value": "0.45"
+                },
+                "peru": {
+                  "countryId": "peru",
+                  "countryName": "Peru",
+                  "value": "0.45"
+                },
+                "united-states": {
+                  "countryId": "united-states",
+                  "countryName": "United States",
+                  "value": "0.45"
+                }
+              }
+            },
+            {
+              "id": "ps00001-nr-per-hour",
+              "partNumber": "PS00001.NR",
+              "productElement": "Custom Labor",
+              "uom": "Per Hour",
+              "pricing": {
+                "brazil": {
+                  "countryId": "brazil",
+                  "countryName": "Brazil",
+                  "value": "BRL345"
+                },
+                "canada": {
+                  "countryId": "canada",
+                  "countryName": "Canada",
+                  "value": "CAD300"
+                },
+                "chile": {
+                  "countryId": "chile",
+                  "countryName": "Chile",
+                  "value": "CLF1.7"
+                },
+                "colombia": {
+                  "countryId": "colombia",
+                  "countryName": "Colombia",
+                  "value": "COP255935"
+                },
+                "mexico": {
+                  "countryId": "mexico",
+                  "countryName": "Mexico",
+                  "value": "USD$230"
+                },
+                "peru": {
+                  "countryId": "peru",
+                  "countryName": "Peru",
+                  "value": "USD$45"
+                },
+                "united-states": {
+                  "countryId": "united-states",
+                  "countryName": "United States",
+                  "value": "USD$260"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "smart-build-accessories",
+          "title": "Smart Build (Accessories)",
+          "type": "accessories",
+          "notes": [
+            {
+              "title": "Cabinet Installation Fee",
+              "text": "The installation costs for Equinix Cabinets are included in the standard Non-Recurring Charge (NRC) for the Cage/Cabinet. However, for custom or customer provided cabinets, additional installation costs apply and are not included in the standard NRC."
+            }
+          ],
+          "fixedColumns": [
+            "Product Element",
+            "UOM"
+          ],
+          "countries": [
+            {
+              "name": "Brazil",
+              "id": "brazil"
+            },
+            {
+              "name": "Canada",
+              "id": "canada"
+            },
+            {
+              "name": "Chile",
+              "id": "chile"
+            },
+            {
+              "name": "Colombia",
+              "id": "colombia"
+            },
+            {
+              "name": "Mexico",
+              "id": "mexico"
+            },
+            {
+              "name": "Peru",
+              "id": "peru"
+            },
+            {
+              "name": "United States",
+              "id": "united-states"
+            }
+          ],
+          "lineItems": [
+            {
+              "id": "pdu-installation-fee-per-pdu",
+              "partNumber": null,
+              "productElement": "PDU Installation Fee",
+              "uom": "per PDU",
+              "pricing": {
+                "brazil": {
+                  "countryId": "brazil",
+                  "countryName": "Brazil",
+                  "value": "BRL86"
+                },
+                "canada": {
+                  "countryId": "canada",
+                  "countryName": "Canada",
+                  "value": "CAD75"
+                },
+                "chile": {
+                  "countryId": "chile",
+                  "countryName": "Chile",
+                  "value": "CLF0.43"
+                },
+                "colombia": {
+                  "countryId": "colombia",
+                  "countryName": "Colombia",
+                  "value": "COP63984"
+                },
+                "mexico": {
+                  "countryId": "mexico",
+                  "countryName": "Mexico",
+                  "value": "USD$58"
+                },
+                "peru": {
+                  "countryId": "peru",
+                  "countryName": "Peru",
+                  "value": "USD$11"
+                },
+                "united-states": {
+                  "countryId": "united-states",
+                  "countryName": "United States",
+                  "value": "USD$65"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "APAC",
+      "name": "APAC",
+      "sections": [
+        {
+          "id": "smart-build-custom-parts-labour",
+          "title": "Smart Build (Custom Parts and Labour)",
+          "billingType": "NRC",
+          "type": "custom-parts-labour",
+          "fixedColumns": [
+            "Part Number",
+            "Product Element",
+            "UOM"
+          ],
+          "countries": [
+            {
+              "name": "Australia",
+              "id": "australia"
+            },
+            {
+              "name": "China",
+              "id": "china"
+            },
+            {
+              "name": "Côte d'Ivoire",
+              "id": "cote-divoire"
+            },
+            {
+              "name": "Ghana",
+              "id": "ghana"
+            },
+            {
+              "name": "Hong Kong",
+              "id": "hong-kong"
+            },
+            {
+              "name": "India",
+              "id": "india"
+            },
+            {
+              "name": "Indonesia",
+              "id": "indonesia"
+            },
+            {
+              "name": "Japan",
+              "id": "japan"
+            },
+            {
+              "name": "Korea",
+              "id": "korea"
+            },
+            {
+              "name": "Malaysia",
+              "id": "malaysia"
+            },
+            {
+              "name": "Nigeria",
+              "id": "nigeria"
+            },
+            {
+              "name": "Singapore",
+              "id": "singapore"
+            },
+            {
+              "name": "South Africa",
+              "id": "south-africa"
+            }
+          ],
+          "lineItems": [
+            {
+              "id": "ps00003-elem-markup",
+              "partNumber": "PS00003.ELEM",
+              "productElement": "Custom Parts",
+              "uom": "% Markup",
+              "pricing": {
+                "australia": {
+                  "countryId": "australia",
+                  "countryName": "Australia",
+                  "value": "0.45"
+                },
+                "china": {
+                  "countryId": "china",
+                  "countryName": "China",
+                  "value": "0.45"
+                },
+                "cote-divoire": {
+                  "countryId": "cote-divoire",
+                  "countryName": "Côte d'Ivoire",
+                  "value": "0.45"
+                },
+                "ghana": {
+                  "countryId": "ghana",
+                  "countryName": "Ghana",
+                  "value": "0.45"
+                },
+                "hong-kong": {
+                  "countryId": "hong-kong",
+                  "countryName": "Hong Kong",
+                  "value": "0.45"
+                },
+                "india": {
+                  "countryId": "india",
+                  "countryName": "India",
+                  "value": "0.45"
+                },
+                "indonesia": {
+                  "countryId": "indonesia",
+                  "countryName": "Indonesia",
+                  "value": "0.45"
+                },
+                "japan": {
+                  "countryId": "japan",
+                  "countryName": "Japan",
+                  "value": "0.45"
+                },
+                "korea": {
+                  "countryId": "korea",
+                  "countryName": "Korea",
+                  "value": "0.45"
+                },
+                "malaysia": {
+                  "countryId": "malaysia",
+                  "countryName": "Malaysia",
+                  "value": "0.45"
+                },
+                "nigeria": {
+                  "countryId": "nigeria",
+                  "countryName": "Nigeria",
+                  "value": "0.45"
+                },
+                "singapore": {
+                  "countryId": "singapore",
+                  "countryName": "Singapore",
+                  "value": "0.45"
+                },
+                "south-africa": {
+                  "countryId": "south-africa",
+                  "countryName": "South Africa",
+                  "value": "0.45"
+                }
+              }
+            },
+            {
+              "id": "ps00001-nr-per-hour",
+              "partNumber": "PS00001.NR",
+              "productElement": "Custom Labor",
+              "uom": "Per Hour",
+              "pricing": {
+                "australia": {
+                  "countryId": "australia",
+                  "countryName": "Australia",
+                  "value": "AUD 315"
+                },
+                "china": {
+                  "countryId": "china",
+                  "countryName": "China",
+                  "value": "CNY 2125"
+                },
+                "cote-divoire": {
+                  "countryId": "cote-divoire",
+                  "countryName": "Côte d'Ivoire",
+                  "value": "XOF 72720"
+                },
+                "ghana": {
+                  "countryId": "ghana",
+                  "countryName": "Ghana",
+                  "value": "USD $120"
+                },
+                "hong-kong": {
+                  "countryId": "hong-kong",
+                  "countryName": "Hong Kong",
+                  "value": "HKD 2410"
+                },
+                "india": {
+                  "countryId": "india",
+                  "countryName": "India",
+                  "value": "INR 8579"
+                },
+                "indonesia": {
+                  "countryId": "indonesia",
+                  "countryName": "Indonesia",
+                  "value": "2072960"
+                },
+                "japan": {
+                  "countryId": "japan",
+                  "countryName": "Japan",
+                  "value": "JPY 43990"
+                },
+                "korea": {
+                  "countryId": "korea",
+                  "countryName": "Korea",
+                  "value": "KRW 386955"
+                },
+                "malaysia": {
+                  "countryId": "malaysia",
+                  "countryName": "Malaysia",
+                  "value": "MYR 500"
+                },
+                "nigeria": {
+                  "countryId": "nigeria",
+                  "countryName": "Nigeria",
+                  "value": "NGN 194400"
+                },
+                "singapore": {
+                  "countryId": "singapore",
+                  "countryName": "Singapore",
+                  "value": "SGD 420"
+                },
+                "south-africa": {
+                  "countryId": "south-africa",
+                  "countryName": "South Africa",
+                  "value": "ZAR 3367"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "smart-build-accessories",
+          "title": "Smart Build (Accessories)",
+          "type": "accessories",
+          "notes": [
+            {
+              "title": "Cabinet Installation Fee",
+              "text": "The installation costs for Equinix Cabinets are included in the standard Non-Recurring Charge (NRC) for the Cage/Cabinet. However, for custom or customer provided cabinets, additional installation costs apply and are not included in the standard NRC."
+            }
+          ],
+          "fixedColumns": [
+            "Product Element",
+            "UOM"
+          ],
+          "countries": [
+            {
+              "name": "Australia",
+              "id": "australia"
+            },
+            {
+              "name": "China",
+              "id": "china"
+            },
+            {
+              "name": "Côte d'Ivoire",
+              "id": "cote-divoire"
+            },
+            {
+              "name": "Ghana",
+              "id": "ghana"
+            },
+            {
+              "name": "Hong Kong",
+              "id": "hong-kong"
+            },
+            {
+              "name": "India",
+              "id": "india"
+            },
+            {
+              "name": "Indonesia",
+              "id": "indonesia"
+            },
+            {
+              "name": "Japan",
+              "id": "japan"
+            },
+            {
+              "name": "Korea",
+              "id": "korea"
+            },
+            {
+              "name": "Malaysia",
+              "id": "malaysia"
+            },
+            {
+              "name": "Nigeria",
+              "id": "nigeria"
+            },
+            {
+              "name": "Singapore",
+              "id": "singapore"
+            },
+            {
+              "name": "South Africa",
+              "id": "south-africa"
+            }
+          ],
+          "lineItems": [
+            {
+              "id": "pdu-installation-fee-per-pdu",
+              "partNumber": null,
+              "productElement": "PDU Installation Fee",
+              "uom": "per PDU",
+              "pricing": {
+                "australia": {
+                  "countryId": "australia",
+                  "countryName": "Australia",
+                  "value": "AUD 79"
+                },
+                "china": {
+                  "countryId": "china",
+                  "countryName": "China",
+                  "value": "CNY 531"
+                },
+                "cote-divoire": {
+                  "countryId": "cote-divoire",
+                  "countryName": "Côte d'Ivoire",
+                  "value": "XOF 18180"
+                },
+                "ghana": {
+                  "countryId": "ghana",
+                  "countryName": "Ghana",
+                  "value": "USD $30"
+                },
+                "hong-kong": {
+                  "countryId": "hong-kong",
+                  "countryName": "Hong Kong",
+                  "value": "HKD 603"
+                },
+                "india": {
+                  "countryId": "india",
+                  "countryName": "India",
+                  "value": "INR 2145"
+                },
+                "indonesia": {
+                  "countryId": "indonesia",
+                  "countryName": "Indonesia",
+                  "value": "IDR 518240"
+                },
+                "japan": {
+                  "countryId": "japan",
+                  "countryName": "Japan",
+                  "value": "JPY 10998"
+                },
+                "korea": {
+                  "countryId": "korea",
+                  "countryName": "Korea",
+                  "value": "KRW 96739"
+                },
+                "malaysia": {
+                  "countryId": "malaysia",
+                  "countryName": "Malaysia",
+                  "value": "MYR 125"
+                },
+                "nigeria": {
+                  "countryId": "nigeria",
+                  "countryName": "Nigeria",
+                  "value": "NGN 48600"
+                },
+                "singapore": {
+                  "countryId": "singapore",
+                  "countryName": "Singapore",
+                  "value": "SGD 105"
+                },
+                "south-africa": {
+                  "countryId": "south-africa",
+                  "countryName": "South Africa",
+                  "value": "ZAR 842"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
