@@ -184,7 +184,7 @@ export function HomeLandingPage() {
         <div
           aria-hidden
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/banners/02@2x.png')" }}
+          style={{ backgroundImage: `url('${import.meta.env.BASE_URL}banners/02@2x.png')` }}
         />
         <div
           aria-hidden

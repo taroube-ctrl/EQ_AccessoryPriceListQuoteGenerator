@@ -62,7 +62,8 @@ export function parseWorkbookBuffer(buffer: ArrayBuffer): ParsedSheet[] {
 }
 
 export const DEFAULT_PRICE_LIST_PATH =
-  import.meta.env.VITE_PRICE_LIST_PATH ?? '/data/accessories-price-list.xlsx';
+  import.meta.env.VITE_PRICE_LIST_PATH ??
+  `${import.meta.env.BASE_URL}data/accessories-price-list.xlsx`;
 
 export const DEFAULT_PRICE_LIST_NAME = 'Accessories Price List';
 

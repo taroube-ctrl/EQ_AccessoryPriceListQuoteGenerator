@@ -125,7 +125,9 @@ const router = createBrowserRouter([
       { path: '/products/:productId', element: <ProductDetailPage /> },
     ],
   },
-]);
+], {
+  basename: import.meta.env.BASE_URL.replace(/\/$/, '') || '/',
+});
 
 function App() {
   return <RouterProvider router={router} />;
