@@ -1,8 +1,9 @@
-import { useMemo, useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import clsx from 'clsx';
 import { useCart } from '../context/CartContext';
 import { useCatalog } from '../context/CatalogContext';
+import { formatPrice } from '../data/localeConfig';
 import { Button } from '../components/ui/Button';
 import {
   useQuoteDirtyState,
@@ -13,6 +14,7 @@ import { DEFAULT_QUOTE_FORM, type QuoteFormState, type QuoteProductLine } from '
 import {
   buildQuoteProductsFromCart,
   copyQuoteAndOpenOutlook,
+  createEmptyCplLine,
   createEmptyQuoteProductLine,
   formatQuotePreview,
   inferQuoteSubtype,
@@ -60,7 +62,7 @@ export function RequestQuotePage() {
   const navigate = useNavigate();
   const location = useLocation();
   const { items } = useCart();
-  const { displayUnit } = useCatalog();
+  const { displayUnit, currencyCountryId } = useCatalog();
   const locationState = (location.state as RequestQuoteLocationState | null) ?? {};
   const extraProductId = locationState.productId;
   const reusedForm = locationState.form;
@@ -88,7 +90,15 @@ export function RequestQuotePage() {
     'idle',
   );
 
-  const previewText = useMemo(() => formatQuotePreview(form, products), [form, products]);
+  const formatLinePrice = useCallback(
+    (value: number) => formatPrice(value, currencyCountryId),
+    [currencyCountryId],
+  );
+
+  const previewText = useMemo(
+    () => formatQuotePreview(form, products, { formatPrice: formatLinePrice }),
+    [form, products, formatLinePrice],
+  );
   const { isDirty, markPristine } = useQuoteDirtyState(form, products);
   useUnsavedChangesWarning(isDirty, UNSAVED_QUOTE_MESSAGE);
 
@@ -120,6 +130,10 @@ export function RequestQuotePage() {
     setProducts((current) => [...current, createEmptyQuoteProductLine()]);
   };
 
+  const addCpl = () => {
+    setProducts((current) => [...current, createEmptyCplLine()]);
+  };
+
   const removeProduct = (id: string) => {
     setProducts((current) =>
       current.length <= 1 ? current : current.filter((product) => product.id !== id),
@@ -138,7 +152,9 @@ export function RequestQuotePage() {
   };
 
   const handleOpenOutlook = async () => {
-    const result = await copyQuoteAndOpenOutlook(form, products);
+    const result = await copyQuoteAndOpenOutlook(form, products, {
+      formatPrice: formatLinePrice,
+    });
     setOutlookStatus(result);
     if (result === 'opened') {
       setCopied(true);
@@ -216,74 +232,118 @@ export function RequestQuotePage() {
           </section>
 
           <section className="border border-border rounded-sm bg-surface p-5 space-y-4">
-            <div className="flex items-center justify-between gap-4">
+            <div className="flex flex-wrap items-center justify-between gap-3">
               <h2 className="text-sm font-bold uppercase tracking-wide text-text-secondary m-0">
                 Products
               </h2>
-              <Button type="button" variant="secondary" size="sm" onClick={addProduct}>
-                Add product
-              </Button>
+              <div className="flex flex-wrap gap-2">
+                <Button type="button" variant="secondary" size="sm" onClick={addProduct}>
+                  Add product
+                </Button>
+                <Button type="button" variant="secondary" size="sm" onClick={addCpl}>
+                  Add CPL
+                </Button>
+              </div>
             </div>
 
-            {products.map((product, index) => (
-              <div
-                key={product.id}
-                className="border border-border rounded-sm p-4 space-y-3 bg-surface-muted/40"
-              >
-                <div className="flex items-center justify-between gap-3">
-                  <p className="text-sm font-semibold text-text-secondary m-0">
-                    Product {index + 1}
-                  </p>
-                  {products.length > 1 ? (
-                    <button
-                      type="button"
-                      onClick={() => removeProduct(product.id)}
-                      className="text-xs text-text-muted border-none bg-transparent cursor-pointer p-0 hover:text-brand-red hover:underline"
+            {products.map((product, index) => {
+              const isCpl = product.kind === 'cpl';
+              const number = products
+                .slice(0, index + 1)
+                .filter((line) => (line.kind === 'cpl') === isCpl).length;
+              return (
+                <div
+                  key={product.id}
+                  className="border border-border rounded-sm p-4 space-y-3 bg-surface-muted/40"
+                >
+                  <div className="flex items-center justify-between gap-3">
+                    <p className="text-sm font-semibold text-text-secondary m-0">
+                      {isCpl ? `Custom Parts & Labor (CPL) ${number}` : `Product ${number}`}
+                    </p>
+                    {products.length > 1 ? (
+                      <button
+                        type="button"
+                        onClick={() => removeProduct(product.id)}
+                        className="text-xs text-text-muted border-none bg-transparent cursor-pointer p-0 hover:text-brand-red hover:underline"
+                      >
+                        Remove
+                      </button>
+                    ) : null}
+                  </div>
+
+                  <div>
+                    <label
+                      htmlFor={`product-name-${product.id}`}
+                      className="text-sm font-semibold text-text-secondary block mb-1.5"
                     >
-                      Remove
-                    </button>
-                  ) : null}
-                </div>
+                      {isCpl
+                        ? 'Description of custom parts & labor'
+                        : 'Name of product on the on-hand supply list'}
+                    </label>
+                    <textarea
+                      id={`product-name-${product.id}`}
+                      rows={3}
+                      value={product.name}
+                      placeholder={
+                        isCpl
+                          ? 'Describe the custom parts and labor scope, materials, and work required'
+                          : 'ENXTL48812 – Eaton | Cabinet | 48Ux800x1200 | Closed | ENXTL48812'
+                      }
+                      onChange={(e) => updateProduct(product.id, { name: e.target.value })}
+                      className="w-full border border-border rounded-sm px-3 py-2 text-sm bg-surface text-text font-mono focus:outline-none focus:border-brand-red resize-y"
+                    />
+                  </div>
 
-                <div>
-                  <label
-                    htmlFor={`product-name-${product.id}`}
-                    className="text-sm font-semibold text-text-secondary block mb-1.5"
-                  >
-                    Name of product on the on-hand supply list
-                  </label>
-                  <textarea
-                    id={`product-name-${product.id}`}
-                    rows={3}
-                    value={product.name}
-                    placeholder="ENXTL48812 – Eaton | Cabinet | 48Ux800x1200 | Closed | ENXTL48812"
-                    onChange={(e) => updateProduct(product.id, { name: e.target.value })}
-                    className="w-full border border-border rounded-sm px-3 py-2 text-sm bg-surface text-text font-mono focus:outline-none focus:border-brand-red resize-y"
-                  />
-                </div>
+                  <div className="flex flex-wrap gap-4">
+                    <div className="w-32">
+                      <label
+                        htmlFor={`product-qty-${product.id}`}
+                        className="text-sm font-semibold text-text-secondary block mb-1.5"
+                      >
+                        QTY
+                      </label>
+                      <input
+                        id={`product-qty-${product.id}`}
+                        type="number"
+                        min={1}
+                        value={product.quantity}
+                        onChange={(e) =>
+                          updateProduct(product.id, {
+                            quantity: Math.max(1, Number(e.target.value) || 1),
+                          })
+                        }
+                        className="w-full border border-border rounded-sm px-3 py-2 text-sm bg-surface text-text font-mono focus:outline-none focus:border-brand-red"
+                      />
+                    </div>
 
-                <div className="max-w-[10rem]">
-                  <label
-                    htmlFor={`product-qty-${product.id}`}
-                    className="text-sm font-semibold text-text-secondary block mb-1.5"
-                  >
-                    QTY
-                  </label>
-                  <input
-                    id={`product-qty-${product.id}`}
-                    type="number"
-                    min={1}
-                    value={product.quantity}
-                    onChange={(e) =>
-                      updateProduct(product.id, {
-                        quantity: Math.max(1, Number(e.target.value) || 1),
-                      })
-                    }
-                    className="w-full border border-border rounded-sm px-3 py-2 text-sm bg-surface text-text font-mono focus:outline-none focus:border-brand-red"
-                  />
+                    <div className="w-40">
+                      <label
+                        htmlFor={`product-price-${product.id}`}
+                        className="text-sm font-semibold text-text-secondary block mb-1.5"
+                      >
+                        Price <span className="font-normal text-text-muted">(optional)</span>
+                      </label>
+                      <input
+                        id={`product-price-${product.id}`}
+                        type="number"
+                        min={0}
+                        step="0.01"
+                        inputMode="decimal"
+                        value={product.price ?? ''}
+                        placeholder="0.00"
+                        onChange={(e) => {
+                          const raw = e.target.value;
+                          updateProduct(product.id, {
+                            price: raw === '' ? undefined : Math.max(0, Number(raw) || 0),
+                          });
+                        }}
+                        className="w-full border border-border rounded-sm px-3 py-2 text-sm bg-surface text-text font-mono focus:outline-none focus:border-brand-red"
+                      />
+                    </div>
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </section>
 
           <section className="border border-border rounded-sm bg-surface p-5 space-y-3">
