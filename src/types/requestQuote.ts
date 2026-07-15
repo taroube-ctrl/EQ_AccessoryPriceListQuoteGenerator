@@ -1,7 +1,13 @@
+export type QuoteLineKind = 'product' | 'cpl';
+
 export interface QuoteProductLine {
   id: string;
   name: string;
   quantity: number;
+  /** Defaults to 'product' when omitted (kept optional for backward compatibility). */
+  kind?: QuoteLineKind;
+  /** Optional unit price for the line; omitted when the user leaves it blank. */
+  price?: number;
 }
 
 export interface QuoteFormState {

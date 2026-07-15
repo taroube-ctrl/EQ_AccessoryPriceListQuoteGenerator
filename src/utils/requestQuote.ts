@@ -57,11 +57,25 @@ export function buildQuoteProductsFromCart(
   return lines.length > 0 ? lines : [createEmptyQuoteProductLine()];
 }
 
+function createLineId(): string {
+  return `quote-line-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+}
+
 export function createEmptyQuoteProductLine(): QuoteProductLine {
   return {
-    id: `quote-line-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+    id: createLineId(),
     name: '',
     quantity: 1,
+    kind: 'product',
+  };
+}
+
+export function createEmptyCplLine(): QuoteProductLine {
+  return {
+    id: createLineId(),
+    name: '',
+    quantity: 1,
+    kind: 'cpl',
   };
 }
 
@@ -86,7 +100,18 @@ export function inferQuoteSubtype(items: CartItem[], fallbackProductId?: string)
   return 'Accessories';
 }
 
-export function formatQuotePreview(form: QuoteFormState, products: QuoteProductLine[]): string {
+export interface QuotePreviewOptions {
+  /** Formats a line unit price (e.g. with a currency symbol). Defaults to the raw number. */
+  formatPrice?: (value: number) => string;
+}
+
+export function formatQuotePreview(
+  form: QuoteFormState,
+  products: QuoteProductLine[],
+  options: QuotePreviewOptions = {},
+): string {
+  const formatPrice = options.formatPrice ?? ((value: number) => String(value));
+
   const lines = [
     `Account name: ${form.accountName || ' '}`,
     `Custom Billing Account: ${form.customBillingAccount || ' '}`,
@@ -98,14 +123,22 @@ export function formatQuotePreview(form: QuoteFormState, products: QuoteProductL
     '',
   ];
 
-  products.forEach((product, index) => {
-    lines.push(
-      `Product ${index + 1} - Name of product on the on-hand supply list:`,
-      '',
-      product.name || ' ',
-      `QTY  (${product.quantity || 0})`,
-      '',
-    );
+  let productIndex = 0;
+  let cplIndex = 0;
+
+  products.forEach((line) => {
+    const heading =
+      line.kind === 'cpl'
+        ? `CPL ${(cplIndex += 1)} - Custom Parts & Labor:`
+        : `Product ${(productIndex += 1)} - Name of product on the on-hand supply list:`;
+
+    lines.push(heading, '', line.name || ' ', `QTY  (${line.quantity || 0})`);
+
+    if (line.price != null) {
+      lines.push(`Price  (${formatPrice(line.price)})`);
+    }
+
+    lines.push('');
   });
 
   return lines.join('\n').trimEnd();
@@ -120,9 +153,13 @@ export function buildQuoteEmailSubject(form: QuoteFormState): string {
   return 'Accessories Quote Request';
 }
 
-export function buildMailtoQuoteUrl(form: QuoteFormState, products: QuoteProductLine[]): string {
+export function buildMailtoQuoteUrl(
+  form: QuoteFormState,
+  products: QuoteProductLine[],
+  options: QuotePreviewOptions = {},
+): string {
   const subject = encodeURIComponent(buildQuoteEmailSubject(form));
-  const body = encodeURIComponent(formatQuotePreview(form, products));
+  const body = encodeURIComponent(formatQuotePreview(form, products, options));
   return `mailto:?subject=${subject}&body=${body}`;
 }
 
@@ -130,8 +167,9 @@ export function buildMailtoQuoteUrl(form: QuoteFormState, products: QuoteProduct
 export function buildOutlookComposeUrl(
   form: QuoteFormState,
   products: QuoteProductLine[],
+  options: QuotePreviewOptions = {},
 ): string | null {
-  const body = formatQuotePreview(form, products);
+  const body = formatQuotePreview(form, products, options);
   if (body.length > OUTLOOK_BODY_CHAR_LIMIT) return null;
 
   // Encode manually so spaces become %20 (not +), keeping the Outlook body
@@ -145,12 +183,13 @@ export function buildOutlookComposeUrl(
 export async function copyQuoteAndOpenOutlook(
   form: QuoteFormState,
   products: QuoteProductLine[],
+  options: QuotePreviewOptions = {},
 ): Promise<'opened' | 'too-long' | 'clipboard-failed'> {
-  const outlookUrl = buildOutlookComposeUrl(form, products);
+  const outlookUrl = buildOutlookComposeUrl(form, products, options);
   if (!outlookUrl) return 'too-long';
 
   try {
-    await navigator.clipboard.writeText(formatQuotePreview(form, products));
+    await navigator.clipboard.writeText(formatQuotePreview(form, products, options));
   } catch {
     return 'clipboard-failed';
   }
