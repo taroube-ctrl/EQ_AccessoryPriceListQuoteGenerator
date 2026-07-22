@@ -155,10 +155,11 @@ export function HomeLandingPage() {
       to: '/excel',
     },
     {
-      title: 'Customer sign-in',
-      description: 'Sign in with your Microsoft account to access saved preferences and integrations.',
-      action: 'Sign in from header',
-      to: '/products',
+      title: 'Create an account',
+      description:
+        'Create a name-only account on this device to personalize quotes. No password needed.',
+      action: 'Create account',
+      to: '/account?mode=create',
     },
     {
       title: 'Equinix documentation',

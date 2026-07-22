@@ -147,6 +147,9 @@ export function formatQuotePreview(
 const OUTLOOK_COMPOSE_URL = 'https://outlook.office.com/mail/deeplink/compose';
 const OUTLOOK_BODY_CHAR_LIMIT = 1800;
 
+export const QUOTE_EMAIL_TO = 'TCOMsupport@equinix.com';
+export const QUOTE_EMAIL_CC = 'bblaski@equinix.com';
+
 export function buildQuoteEmailSubject(form: QuoteFormState): string {
   const account = form.accountName.trim();
   if (account) return `Accessories Quote Request - ${account}`;
@@ -160,10 +163,11 @@ export function buildMailtoQuoteUrl(
 ): string {
   const subject = encodeURIComponent(buildQuoteEmailSubject(form));
   const body = encodeURIComponent(formatQuotePreview(form, products, options));
-  return `mailto:?subject=${subject}&body=${body}`;
+  const cc = encodeURIComponent(QUOTE_EMAIL_CC);
+  return `mailto:${QUOTE_EMAIL_TO}?cc=${cc}&subject=${subject}&body=${body}`;
 }
 
-/** Opens Outlook on the web with a pre-filled compose window (works best when signed into Microsoft 365). */
+/** Opens Outlook on the web with the quote pre-filled (To only — Cc is not supported by this URL). */
 export function buildOutlookComposeUrl(
   form: QuoteFormState,
   products: QuoteProductLine[],
@@ -174,17 +178,25 @@ export function buildOutlookComposeUrl(
 
   // Encode manually so spaces become %20 (not +), keeping the Outlook body
   // identical to the copied/preview text. Outlook does not decode + as a space.
+  const to = encodeURIComponent(QUOTE_EMAIL_TO);
   const subject = encodeURIComponent(buildQuoteEmailSubject(form));
   const encodedBody = encodeURIComponent(body);
 
-  return `${OUTLOOK_COMPOSE_URL}?subject=${subject}&body=${encodedBody}`;
+  return `${OUTLOOK_COMPOSE_URL}?to=${to}&subject=${subject}&body=${encodedBody}`;
 }
+
+export type OpenOutlookResult =
+  | 'opened'
+  | 'too-long'
+  | 'clipboard-failed'
+  | 'needs-sign-in'
+  | 'graph-failed';
 
 export async function copyQuoteAndOpenOutlook(
   form: QuoteFormState,
   products: QuoteProductLine[],
   options: QuotePreviewOptions = {},
-): Promise<'opened' | 'too-long' | 'clipboard-failed'> {
+): Promise<OpenOutlookResult> {
   const outlookUrl = buildOutlookComposeUrl(form, products, options);
   if (!outlookUrl) return 'too-long';
 

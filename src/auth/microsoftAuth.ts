@@ -2,6 +2,7 @@ import {
   BrowserAuthError,
   type AuthenticationResult,
   type IPublicClientApplication,
+  type PopupRequest,
 } from '@azure/msal-browser';
 import { loginRequest } from '../authConfig';
 
@@ -22,13 +23,14 @@ export function getAzureSetupMessage(): string {
 
 export async function loginMicrosoft(
   instance: IPublicClientApplication,
+  request: PopupRequest = loginRequest,
 ): Promise<AuthenticationResult | void> {
   if (!isAzureClientConfigured()) {
     throw new Error(getAzureSetupMessage());
   }
 
   try {
-    return await instance.loginPopup(loginRequest);
+    return await instance.loginPopup(request);
   } catch (error) {
     if (
       error instanceof BrowserAuthError &&
@@ -36,7 +38,7 @@ export async function loginMicrosoft(
         error.errorCode === 'empty_window_error' ||
         error.errorCode === 'monitor_window_timeout')
     ) {
-      await instance.loginRedirect(loginRequest);
+      await instance.loginRedirect(request);
       return;
     }
     throw error;

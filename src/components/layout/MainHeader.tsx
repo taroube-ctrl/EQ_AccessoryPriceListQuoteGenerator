@@ -9,7 +9,7 @@ import { ThemeToggle } from './ThemeToggle';
 import { sortCountriesByCatalogFrequency } from '../../utils/countryCatalogFrequency';
 import { SignInButton, useMicrosoftAccount } from '../auth/SignInButton';
 import { CartLink } from '../cart/CartLink';
-import { SiteAssistant } from '../assistant/SiteAssistant';
+import { useLocalAccount } from '../../context/LocalAccountContext';
 
 function AppLauncherMenu() {
   const [open, setOpen] = useState(false);
@@ -26,7 +26,10 @@ function AppLauncherMenu() {
     return () => document.removeEventListener('mousedown', handleClick);
   }, []);
 
-  const items = [{ label: 'Excel Data', to: '/excel' as const }];
+  const items = [
+    { label: 'Excel Data', to: '/excel' as const },
+    { label: 'Account', to: '/account' as const },
+  ];
 
   return (
     <div className="relative shrink-0" ref={menuRef}>
@@ -48,32 +51,21 @@ function AppLauncherMenu() {
 
       {open && (
         <div className="absolute left-0 top-full mt-1 w-52 bg-surface text-text border border-border rounded-sm shadow-xl z-50 py-1">
-          {items.map((item) =>
-            item.to ? (
-              <Link
-                key={item.label}
-                to={item.to}
-                onClick={() => setOpen(false)}
-                className="block px-4 py-2.5 text-sm text-text no-underline hover:bg-accent-subtle hover:text-brand-red"
-              >
-                {item.label}
-              </Link>
-            ) : (
-              <button
-                key={item.label}
-                type="button"
-                onClick={() => setOpen(false)}
-                className="w-full text-left px-4 py-2.5 text-sm border-none bg-transparent cursor-pointer hover:bg-accent-subtle hover:text-brand-red"
-              >
-                {item.label}
-              </button>
-            ),
-          )}
+          {items.map((item) => (
+            <Link
+              key={item.label}
+              to={item.to}
+              onClick={() => setOpen(false)}
+              className="block px-4 py-2.5 text-sm text-text no-underline hover:bg-accent-subtle hover:text-brand-red"
+            >
+              {item.label}
+            </Link>
+          ))}
           <SignInButton
             onClick={() => setOpen(false)}
             className="w-full text-left px-4 py-2.5 text-sm border-none bg-transparent cursor-pointer hover:bg-accent-subtle hover:text-brand-red"
           >
-            {account ? 'Sign Out' : 'Sign In'}
+            {account ? 'Sign out of Microsoft' : 'Microsoft sign-in (Outlook)'}
           </SignInButton>
         </div>
       )}
@@ -163,7 +155,9 @@ interface MainHeaderProps {
 }
 
 export function MainHeader({ search, onSearchChange }: MainHeaderProps) {
-  const account = useMicrosoftAccount();
+  const microsoftAccount = useMicrosoftAccount();
+  const { displayName: localDisplayName } = useLocalAccount();
+  const displayName = localDisplayName ?? microsoftAccount?.name ?? microsoftAccount?.username ?? null;
 
   return (
     <header className="bg-black text-white border-b border-black">
@@ -202,25 +196,25 @@ export function MainHeader({ search, onSearchChange }: MainHeaderProps) {
         <EnvironmentSelector />
 
         <div className="flex items-center gap-2 shrink-0">
-          {account && (
+          {displayName ? (
             <span className="hidden xl:inline text-xs text-white/80 max-w-[140px] truncate">
-              {account.name ?? account.username}
+              {displayName}
             </span>
-          )}
-
-          <SiteAssistant />
+          ) : null}
 
           <ThemeToggle />
 
-          <SignInButton
-            className="w-9 h-9 flex items-center justify-center rounded-sm border-none bg-transparent text-white cursor-pointer hover:bg-white/10 transition-colors"
-            aria-label={account ? 'Sign Out' : 'Sign In'}
+          <Link
+            to="/account"
+            aria-label={localDisplayName ? 'Account' : 'Create account or sign in'}
+            title={localDisplayName ? 'Account' : 'Create account or sign in'}
+            className="w-9 h-9 flex items-center justify-center rounded-sm border-none bg-transparent text-white no-underline hover:bg-white/10 transition-colors"
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden>
               <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
               <circle cx="12" cy="7" r="4" />
             </svg>
-          </SignInButton>
+          </Link>
 
           <CartLink />
         </div>

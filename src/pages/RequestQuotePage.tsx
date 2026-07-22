@@ -1,10 +1,20 @@
 import { useCallback, useMemo, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import clsx from 'clsx';
+import { useMsal } from '@azure/msal-react';
 import { useCart } from '../context/CartContext';
 import { useCatalog } from '../context/CatalogContext';
 import { formatPrice } from '../data/localeConfig';
 import { Button } from '../components/ui/Button';
+import { useMicrosoftAccount } from '../components/auth/SignInButton';
+import { useLocalAccount } from '../context/LocalAccountContext';
+import { getLocalAccountDisplayName } from '../types/localAccount';
+import {
+  getAuthErrorMessage,
+  isAzureClientConfigured,
+  loginMicrosoft,
+} from '../auth/microsoftAuth';
+import { mailRequest } from '../authConfig';
 import {
   useQuoteDirtyState,
   useUnsavedChangesWarning,
@@ -18,7 +28,9 @@ import {
   createEmptyQuoteProductLine,
   formatQuotePreview,
   inferQuoteSubtype,
+  type OpenOutlookResult,
 } from '../utils/requestQuote';
+import { createOutlookQuoteDraft } from '../utils/outlookGraph';
 import { saveQuote } from '../utils/savedQuotes';
 
 interface RequestQuoteLocationState {
@@ -61,12 +73,19 @@ function QuoteField({
 export function RequestQuotePage() {
   const navigate = useNavigate();
   const location = useLocation();
+  const { instance } = useMsal();
+  const microsoftAccount = useMicrosoftAccount();
+  const { account: localAccount } = useLocalAccount();
   const { items } = useCart();
   const { displayUnit, currencyCountryId } = useCatalog();
   const locationState = (location.state as RequestQuoteLocationState | null) ?? {};
   const extraProductId = locationState.productId;
   const reusedForm = locationState.form;
   const reusedProducts = locationState.products;
+
+  const defaultContactName = localAccount
+    ? getLocalAccountDisplayName(localAccount)
+    : '';
 
   const [savedQuoteId, setSavedQuoteId] = useState<string | undefined>(
     locationState.savedQuoteId,
@@ -76,6 +95,7 @@ export function RequestQuotePage() {
       ? { ...reusedForm }
       : {
           ...DEFAULT_QUOTE_FORM,
+          customerContactName: defaultContactName,
           subtype: inferQuoteSubtype(items, extraProductId),
         },
   );
@@ -86,9 +106,8 @@ export function RequestQuotePage() {
   );
   const [copied, setCopied] = useState(false);
   const [saved, setSaved] = useState(false);
-  const [outlookStatus, setOutlookStatus] = useState<'idle' | 'opened' | 'too-long' | 'clipboard-failed'>(
-    'idle',
-  );
+  const [outlookStatus, setOutlookStatus] = useState<'idle' | OpenOutlookResult>('idle');
+  const [outlookError, setOutlookError] = useState<string | null>(null);
 
   const formatLinePrice = useCallback(
     (value: number) => formatPrice(value, currencyCountryId),
@@ -152,16 +171,65 @@ export function RequestQuotePage() {
   };
 
   const handleOpenOutlook = async () => {
-    const result = await copyQuoteAndOpenOutlook(form, products, {
-      formatPrice: formatLinePrice,
-    });
-    setOutlookStatus(result);
+    setOutlookError(null);
+    const previewOptions = { formatPrice: formatLinePrice };
+    let graphFailedMessage: string | null = null;
+
+    // Prefer Microsoft Graph so Outlook gets a real draft with To + Cc filled.
+    // Outlook web compose URLs only support To (not Cc).
+    if (isAzureClientConfigured()) {
+      try {
+        let signedInAccount = microsoftAccount;
+        if (!signedInAccount) {
+          // Request Mail.ReadWrite during sign-in so the draft API is allowed.
+          const loginResult = await loginMicrosoft(instance, mailRequest);
+          signedInAccount =
+            loginResult && 'account' in loginResult && loginResult.account
+              ? loginResult.account
+              : instance.getActiveAccount() ?? instance.getAllAccounts()[0] ?? null;
+        }
+
+        if (!signedInAccount) {
+          setOutlookStatus('needs-sign-in');
+          return;
+        }
+
+        try {
+          await navigator.clipboard.writeText(formatQuotePreview(form, products, previewOptions));
+          setCopied(true);
+        } catch {
+          /* clipboard is optional when Graph draft succeeds */
+        }
+
+        const draftUrl = await createOutlookQuoteDraft(
+          instance,
+          signedInAccount,
+          form,
+          products,
+          previewOptions,
+        );
+        window.open(draftUrl, '_blank', 'noopener,noreferrer');
+        setOutlookStatus('opened');
+        window.setTimeout(() => {
+          setCopied(false);
+          setOutlookStatus('idle');
+        }, 3000);
+        return;
+      } catch (error) {
+        graphFailedMessage = getAuthErrorMessage(error);
+        setOutlookError(graphFailedMessage);
+      }
+    }
+
+    // Fallback: Outlook web compose with To + quote body (Cc not supported by this URL).
+    const result = await copyQuoteAndOpenOutlook(form, products, previewOptions);
+    setOutlookStatus(graphFailedMessage && result === 'opened' ? 'graph-failed' : result);
     if (result === 'opened') {
       setCopied(true);
       window.setTimeout(() => {
         setCopied(false);
         setOutlookStatus('idle');
-      }, 3000);
+      }, 4000);
     }
   };
 
@@ -363,7 +431,9 @@ export function RequestQuotePage() {
           <div className="space-y-3">
             <div className="flex flex-wrap gap-3">
               <Button type="button" variant="cart" onClick={() => void handleOpenOutlook()}>
-                {outlookStatus === 'opened' ? 'Opening Outlook…' : 'Open in Outlook'}
+                {outlookStatus === 'opened'
+                  ? 'Opening Outlook…'
+                  : 'Open in Microsoft Outlook'}
               </Button>
               <Button type="button" onClick={handleSave}>
                 {saved ? 'Quote saved' : savedQuoteId ? 'Update saved quote' : 'Save quote'}
@@ -408,6 +478,20 @@ export function RequestQuotePage() {
               <p className="text-sm text-amber-950 bg-amber-50 border border-amber-200 rounded-sm px-3 py-2 m-0">
                 Could not copy the quote to your clipboard. Allow clipboard access or use Copy quote
                 text, then open Outlook manually.
+              </p>
+            ) : null}
+            {outlookStatus === 'needs-sign-in' ? (
+              <p className="text-sm text-amber-950 bg-amber-50 border border-amber-200 rounded-sm px-3 py-2 m-0">
+                Sign in with Microsoft from the header, then try again so Outlook can create a draft
+                with To and Cc filled.
+              </p>
+            ) : null}
+            {outlookStatus === 'graph-failed' ? (
+              <p className="text-sm text-amber-950 bg-amber-50 border border-amber-200 rounded-sm px-3 py-2 m-0">
+                Opened Outlook with <strong>To:</strong> TCOMsupport@equinix.com and the quote body.
+                Cc could not be set automatically
+                {outlookError ? ` (${outlookError})` : ''}. For Cc support, grant Azure delegated{' '}
+                <code>Mail.ReadWrite</code>, then try again while signed in.
               </p>
             ) : null}
           </div>

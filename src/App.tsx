@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom';
 import { CatalogProvider, useCatalog } from './context/CatalogContext';
 import { CartProvider } from './context/CartContext';
+import { LocalAccountProvider } from './context/LocalAccountContext';
 import { Layout } from './components/layout/Layout';
 import { HomeLandingPage } from './pages/HomeLandingPage';
 import { CatalogPage } from './pages/CatalogPage';
@@ -15,6 +16,7 @@ import { ProductDetailPage } from './pages/ProductDetailPage';
 import { CartPage } from './pages/CartPage';
 import { RequestQuotePage } from './pages/RequestQuotePage';
 import { MyQuotesPage } from './pages/MyQuotesPage';
+import { AccountPage } from './pages/AccountPage';
 import { getProductById } from './data/products';
 import type { CategoryId } from './types';
 import type { ProductSubCategoryId } from './types/productSubcategories';
@@ -37,6 +39,7 @@ function CatalogLayout() {
   const isCartPage = location.pathname === '/cart';
   const isRequestQuotePage = location.pathname === '/request-quote';
   const isMyQuotesPage = location.pathname === '/my-quotes';
+  const isAccountPage = location.pathname === '/account';
   const isLandingPage = location.pathname === '/';
 
   const handleCategoryNavigate = (
@@ -80,7 +83,9 @@ function CatalogLayout() {
             ? 'Request Quote'
             : isMyQuotesPage
               ? 'My Quotes'
-              : undefined
+              : isAccountPage
+                ? 'Account'
+                : undefined
       }
       pathname={location.pathname}
       productName={product ? getProductDisplayName(product, displayUnit) : undefined}
@@ -114,7 +119,9 @@ const router = createHashRouter([
     element: (
       <CatalogProvider>
         <CartProvider>
-          <CatalogLayout />
+          <LocalAccountProvider>
+            <CatalogLayout />
+          </LocalAccountProvider>
         </CartProvider>
       </CatalogProvider>
     ),
@@ -124,6 +131,7 @@ const router = createHashRouter([
       { path: '/cart', element: <CartPage /> },
       { path: '/request-quote', element: <RequestQuotePage /> },
       { path: '/my-quotes', element: <MyQuotesPage /> },
+      { path: '/account', element: <AccountPage /> },
       { path: '/products/:productId', element: <ProductDetailPage /> },
     ],
   },

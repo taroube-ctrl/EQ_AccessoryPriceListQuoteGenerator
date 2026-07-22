@@ -7,7 +7,8 @@ interface FooterLink {
 
 const footerColumns: Record<string, FooterLink[]> = {
   Account: [
-    { label: 'Sign In', href: '#' },
+    { label: 'Sign In', href: '/account?mode=signin' },
+    { label: 'Create Account', href: '/account?mode=create' },
     { label: 'My Quotes', href: '/my-quotes' },
   ],
   Offerings: [
