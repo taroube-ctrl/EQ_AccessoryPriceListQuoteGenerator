@@ -468,10 +468,14 @@ export function RequestQuotePage() {
                 </Link>
               )}
             </div>
+            <p className="text-xs text-text-muted m-0">
+              Outlook emails are addressed to <strong>TCOMsupport@equinix.com</strong>
+              {isAzureClientConfigured() ? ' (Cc: bblaski@equinix.com when Microsoft Graph is available)' : ''}.
+            </p>
             {outlookStatus === 'too-long' ? (
               <p className="text-sm text-amber-950 bg-amber-50 border border-amber-200 rounded-sm px-3 py-2 m-0">
                 This quote is too long to pre-fill in Outlook automatically. Use Copy quote text and
-                paste it into a new email manually.
+                paste it into a new email to TCOMsupport@equinix.com.
               </p>
             ) : null}
             {outlookStatus === 'clipboard-failed' ? (
@@ -482,8 +486,8 @@ export function RequestQuotePage() {
             ) : null}
             {outlookStatus === 'needs-sign-in' ? (
               <p className="text-sm text-amber-950 bg-amber-50 border border-amber-200 rounded-sm px-3 py-2 m-0">
-                Sign in with Microsoft from the header, then try again so Outlook can create a draft
-                with To and Cc filled.
+                Sign in with Microsoft from the app menu (9-dot icon), then try again so Outlook can
+                create a draft addressed to TCOMsupport@equinix.com with Cc filled.
               </p>
             ) : null}
             {outlookStatus === 'graph-failed' ? (

@@ -54,34 +54,47 @@ export async function createOutlookQuoteDraft(
   const subject = buildQuoteEmailSubject(form);
   const body = formatQuotePreview(form, products, options);
 
-  const draft = (await client.api('/me/messages').post({
+  const toRecipients = [
+    {
+      emailAddress: {
+        address: QUOTE_EMAIL_TO,
+        name: 'TCOM Support',
+      },
+    },
+  ];
+  const ccRecipients = [
+    {
+      emailAddress: {
+        address: QUOTE_EMAIL_CC,
+      },
+    },
+  ];
+
+  const draft = (await client.api('/me/mailFolders/drafts/messages').post({
     subject,
     body: {
       contentType: 'Text',
       content: body,
     },
-    toRecipients: [
-      {
-        emailAddress: {
-          address: QUOTE_EMAIL_TO,
-        },
-      },
-    ],
-    ccRecipients: [
-      {
-        emailAddress: {
-          address: QUOTE_EMAIL_CC,
-        },
-      },
-    ],
-    isDraft: true,
+    toRecipients,
+    ccRecipients,
   })) as GraphDraftMessage;
 
-  if (draft.webLink) return draft.webLink;
-  if (draft.id) {
-    // Fallback deep link into the draft item in Outlook on the web.
-    return `https://outlook.office.com/mail/deeplink/read/${encodeURIComponent(draft.id)}`;
+  if (!draft.id) {
+    throw new Error('Outlook draft was created but no message id was returned.');
   }
 
-  throw new Error('Outlook draft was created but no open link was returned.');
+  // Re-apply recipients so To is never left blank if the create response omitted them.
+  await client.api(`/me/messages/${draft.id}`).patch({
+    toRecipients,
+    ccRecipients,
+  });
+
+  const updated = (await client
+    .api(`/me/messages/${draft.id}`)
+    .select('id,webLink')
+    .get()) as GraphDraftMessage;
+
+  if (updated.webLink) return updated.webLink;
+  return `https://outlook.office.com/mail/deeplink/read/${encodeURIComponent(draft.id)}`;
 }

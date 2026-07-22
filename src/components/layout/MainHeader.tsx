@@ -196,24 +196,25 @@ export function MainHeader({ search, onSearchChange }: MainHeaderProps) {
         <EnvironmentSelector />
 
         <div className="flex items-center gap-2 shrink-0">
-          {displayName ? (
-            <span className="hidden xl:inline text-xs text-white/80 max-w-[140px] truncate">
-              {displayName}
-            </span>
-          ) : null}
-
           <ThemeToggle />
 
           <Link
-            to="/account"
+            to={localDisplayName ? '/account' : '/account?mode=create'}
             aria-label={localDisplayName ? 'Account' : 'Create account or sign in'}
-            title={localDisplayName ? 'Account' : 'Create account or sign in'}
-            className="w-9 h-9 flex items-center justify-center rounded-sm border-none bg-transparent text-white no-underline hover:bg-white/10 transition-colors"
+            title={localDisplayName ? 'Your account' : 'Create account or sign in with your name'}
+            className="flex items-center gap-2 no-underline text-white rounded-sm hover:bg-white/10 transition-colors pl-1 pr-0.5 h-9"
           >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden>
-              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-              <circle cx="12" cy="7" r="4" />
-            </svg>
+            {displayName ? (
+              <span className="hidden xl:inline text-xs text-white/80 max-w-[140px] truncate">
+                {displayName}
+              </span>
+            ) : null}
+            <span className="w-9 h-9 flex items-center justify-center">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden>
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+            </span>
           </Link>
 
           <CartLink />

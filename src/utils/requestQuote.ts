@@ -176,13 +176,12 @@ export function buildOutlookComposeUrl(
   const body = formatQuotePreview(form, products, options);
   if (body.length > OUTLOOK_BODY_CHAR_LIMIT) return null;
 
-  // Encode manually so spaces become %20 (not +), keeping the Outlook body
-  // identical to the copied/preview text. Outlook does not decode + as a space.
-  const to = encodeURIComponent(QUOTE_EMAIL_TO);
+  // Keep To as a plain address (Outlook examples use raw emails). Encode subject/body
+  // with encodeURIComponent so spaces stay %20 — Outlook does not treat + as a space.
   const subject = encodeURIComponent(buildQuoteEmailSubject(form));
   const encodedBody = encodeURIComponent(body);
 
-  return `${OUTLOOK_COMPOSE_URL}?to=${to}&subject=${subject}&body=${encodedBody}`;
+  return `${OUTLOOK_COMPOSE_URL}?to=${QUOTE_EMAIL_TO}&subject=${subject}&body=${encodedBody}`;
 }
 
 export type OpenOutlookResult =
