@@ -13,9 +13,13 @@ export const msalConfig: Configuration = {
     authority:
       import.meta.env.VITE_AZURE_AUTHORITY ??
       'https://login.microsoftonline.com/common',
-    redirectUri: import.meta.env.VITE_AZURE_REDIRECT_URI ?? window.location.origin,
+    // Include the Vite base path so GitHub Pages project URLs work for MSAL.
+    redirectUri:
+      import.meta.env.VITE_AZURE_REDIRECT_URI ??
+      `${window.location.origin}${import.meta.env.BASE_URL}`,
     postLogoutRedirectUri:
-      import.meta.env.VITE_AZURE_REDIRECT_URI ?? window.location.origin,
+      import.meta.env.VITE_AZURE_REDIRECT_URI ??
+      `${window.location.origin}${import.meta.env.BASE_URL}`,
     navigateToLoginRequestUrl: false,
   },
   cache: {
@@ -26,4 +30,9 @@ export const msalConfig: Configuration = {
 
 export const loginRequest: PopupRequest = {
   scopes: [...graphDelegatedPermissions],
+};
+
+/** Used when creating Outlook quote drafts (To + Cc) via Microsoft Graph. */
+export const mailRequest: PopupRequest = {
+  scopes: ['User.Read', 'Mail.ReadWrite'],
 };

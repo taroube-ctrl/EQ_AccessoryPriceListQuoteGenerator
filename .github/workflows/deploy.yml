@@ -22,6 +22,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
@@ -32,15 +36,14 @@ jobs:
         run: npm ci
 
       - name: Build
+        env:
+          # Ensures Vite asset URLs match the GitHub Pages project subpath.
+          VITE_BASE_PATH: ${{ steps.pages.outputs.base_path }}
         run: npm run build
 
-      # GitHub Pages serves 404.html for unknown paths; reusing index.html lets
-      # the client-side router handle deep links (e.g. /products, /cart).
+      # Still useful for non-hash entry URLs; hash routes do not need it.
       - name: Add SPA fallback
         run: cp dist/index.html dist/404.html
-
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

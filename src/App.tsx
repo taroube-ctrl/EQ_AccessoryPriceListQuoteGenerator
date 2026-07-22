@@ -1,6 +1,6 @@
 import { lazy, Suspense } from 'react';
 import {
-  createBrowserRouter,
+  createHashRouter,
   Outlet,
   RouterProvider,
   useLocation,
@@ -99,7 +99,9 @@ function PageLoader() {
   );
 }
 
-const router = createBrowserRouter([
+// HashRouter keeps client routes working on GitHub Pages project sites, where
+// deep paths like /repo/products would otherwise 404 before the SPA loads.
+const router = createHashRouter([
   {
     path: '/excel',
     element: (
@@ -125,9 +127,7 @@ const router = createBrowserRouter([
       { path: '/products/:productId', element: <ProductDetailPage /> },
     ],
   },
-], {
-  basename: import.meta.env.BASE_URL.replace(/\/$/, '') || '/',
-});
+]);
 
 function App() {
   return <RouterProvider router={router} />;
