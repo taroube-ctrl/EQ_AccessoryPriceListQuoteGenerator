@@ -13,6 +13,11 @@ import {
   getDimensionOptions,
   isDimensionFilterActive,
 } from '../utils/dimensionFilters';
+import {
+  createDefaultPowerConfigFilters,
+  isPowerConfigFilterActive,
+  productMatchesPowerConfig,
+} from '../utils/powerConfigFilters';
 import { getProductRelevanceScore } from '../utils/productRelevance';
 import { getProductDisplayPrice, getProductPrice } from '../utils/productPricing';
 import { matchesProductSubCategory } from '../utils/productSubcategories';
@@ -46,6 +51,7 @@ function createDefaultFilters(
     priceMax: priceRange.max,
     sort: 'featured',
     dimensions: createDefaultDimensionFilters(),
+    powerConfig: createDefaultPowerConfigFilters(),
   };
 }
 
@@ -161,9 +167,12 @@ export function useCatalogFilters({
   }, []);
 
   const dimensionFilterActive = isDimensionFilterActive(filters.dimensions);
+  const powerConfigFilterActive = isPowerConfigFilterActive(filters.powerConfig);
 
   const showDimensionFilters =
     !filters.categoryId || filters.categoryId === 'cabinet-accessories';
+
+  const showPowerConfigFilters = filters.categoryId === 'power-accessories';
 
   const applyUserLocation = useCallback(
     (countryId: CountryId, region: Region) => {
@@ -220,12 +229,18 @@ export function useCatalogFilters({
             comparablePrice >= filters.priceMin &&
             comparablePrice <= filters.priceMax;
 
+      const matchesPowerConfig =
+        !showPowerConfigFilters ||
+        !powerConfigFilterActive ||
+        productMatchesPowerConfig(product, filters.powerConfig);
+
       return (
         matchesSearch &&
         matchesCountry &&
         matchesCategory &&
         matchesSubCategory &&
-        matchesPrice
+        matchesPrice &&
+        matchesPowerConfig
       );
     });
 
@@ -238,7 +253,14 @@ export function useCatalogFilters({
     }
 
     return sortProducts(result, filters.sort, userCountry, selectedCountries, filters.search);
-  }, [filters, userCountry, dimensionFilterActive, showDimensionFilters]);
+  }, [
+    filters,
+    userCountry,
+    dimensionFilterActive,
+    showDimensionFilters,
+    showPowerConfigFilters,
+    powerConfigFilterActive,
+  ]);
 
   const setSearch = (search: string) => setFilters((f) => ({ ...f, search }));
 
@@ -289,6 +311,10 @@ export function useCatalogFilters({
         categoryId === 'cabinet-accessories'
           ? subCategoryId
           : null,
+      powerConfig:
+        categoryId === 'power-accessories'
+          ? f.powerConfig
+          : createDefaultPowerConfigFilters(),
     }));
   };
 
@@ -327,6 +353,34 @@ export function useCatalogFilters({
     setFilters((f) => ({
       ...f,
       dimensions: createDefaultDimensionFilters(),
+    }));
+  };
+
+  const setPowerConfigVolts = (value: number | null) => {
+    setFilters((f) => ({
+      ...f,
+      powerConfig: { ...f.powerConfig, volts: value },
+    }));
+  };
+
+  const setPowerConfigAmps = (value: number | null) => {
+    setFilters((f) => ({
+      ...f,
+      powerConfig: { ...f.powerConfig, amps: value },
+    }));
+  };
+
+  const setPowerConfigPhases = (value: string | null) => {
+    setFilters((f) => ({
+      ...f,
+      powerConfig: { ...f.powerConfig, phases: value },
+    }));
+  };
+
+  const clearPowerConfigFilters = () => {
+    setFilters((f) => ({
+      ...f,
+      powerConfig: createDefaultPowerConfigFilters(),
     }));
   };
 
@@ -397,6 +451,12 @@ export function useCatalogFilters({
     setDimensionWidth,
     setDimensionDepth,
     clearDimensionFilters,
+    powerConfigFilterActive,
+    showPowerConfigFilters,
+    setPowerConfigVolts,
+    setPowerConfigAmps,
+    setPowerConfigPhases,
+    clearPowerConfigFilters,
     allRegions: ALL_REGIONS,
     countriesByRegion,
     allCountries: getCountriesForRegions(ALL_REGIONS),

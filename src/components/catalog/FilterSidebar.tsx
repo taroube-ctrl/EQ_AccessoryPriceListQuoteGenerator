@@ -10,6 +10,7 @@ import { priceRange } from '../../data/products';
 import { formatPrice } from '../../data/localeConfig';
 import { useCatalog } from '../../context/CatalogContext';
 import { DimensionFilterSection } from './DimensionFilterSection';
+import { PowerConfigFilterSection } from './PowerConfigFilterSection';
 import { DisplayUnitSelector } from './DisplayUnitSelector';
 import type { CategoryId, CountryId, Region } from '../../types';
 import type { ProductSubCategoryId } from '../../types/productSubcategories';
@@ -19,6 +20,7 @@ import { isCrossConnectSubCategoryId } from '../../utils/crossConnectSubcategori
 import { sortCountriesByCatalogFrequency } from '../../utils/countryCatalogFrequency';
 import { isPowerSubCategoryId } from '../../utils/powerSubcategories';
 import type { DimensionFilters, DisplayUnit } from '../../types/dimensions';
+import type { PowerConfigFilters } from '../../types/powerConfig';
 
 interface FilterSidebarProps {
   visible: boolean;
@@ -32,6 +34,8 @@ interface FilterSidebarProps {
   priceMax: number;
   showDimensionFilters: boolean;
   dimensionFilters: DimensionFilters;
+  showPowerConfigFilters: boolean;
+  powerConfigFilters: PowerConfigFilters;
   displayUnit: DisplayUnit;
   onToggleRegion: (region: Region) => void;
   onToggleCountry: (countryId: CountryId) => void;
@@ -43,6 +47,9 @@ interface FilterSidebarProps {
   onSetRackUnits: (value: number | null) => void;
   onSetWidth: (valueMm: number | null) => void;
   onSetDepth: (valueMm: number | null) => void;
+  onSetPowerVolts: (value: number | null) => void;
+  onSetPowerAmps: (value: number | null) => void;
+  onSetPowerPhases: (value: string | null) => void;
   onDisplayUnitChange: (unit: DisplayUnit) => void;
   onClearAll: () => void;
 }
@@ -63,10 +70,15 @@ export function FilterSidebar({
   onSetPriceRange,
   showDimensionFilters,
   dimensionFilters,
+  showPowerConfigFilters,
+  powerConfigFilters,
   displayUnit,
   onSetRackUnits,
   onSetWidth,
   onSetDepth,
+  onSetPowerVolts,
+  onSetPowerAmps,
+  onSetPowerPhases,
   onDisplayUnitChange,
   onClearAll,
 }: FilterSidebarProps) {
@@ -197,6 +209,15 @@ export function FilterSidebar({
             onSetRackUnits={onSetRackUnits}
             onSetWidth={onSetWidth}
             onSetDepth={onSetDepth}
+          />
+        )}
+
+        {showPowerConfigFilters && (
+          <PowerConfigFilterSection
+            powerConfigFilters={powerConfigFilters}
+            onSetVolts={onSetPowerVolts}
+            onSetAmps={onSetPowerAmps}
+            onSetPhases={onSetPowerPhases}
           />
         )}
 

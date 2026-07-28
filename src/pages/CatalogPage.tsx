@@ -25,18 +25,24 @@ export function CatalogPage() {
     narrowedCountries,
     allRegions,
     showDimensionFilters,
+    showPowerConfigFilters,
     displayUnit,
     setDisplayUnit,
     setDimensionRackUnits,
     setDimensionWidth,
     setDimensionDepth,
     dimensionFilterActive,
+    powerConfigFilterActive,
+    setPowerConfigVolts,
+    setPowerConfigAmps,
+    setPowerConfigPhases,
   } = useCatalog();
 
   const showFilterChips =
     filters.regions.length < allRegions.length ||
     narrowedCountries.length > 0 ||
-    dimensionFilterActive;
+    dimensionFilterActive ||
+    powerConfigFilterActive;
 
   const isInstallationCosts = filters.categoryId === 'installation-costs';
 
@@ -62,10 +68,15 @@ export function CatalogPage() {
             onSetPriceRange={setPriceRange}
             showDimensionFilters={showDimensionFilters}
             dimensionFilters={filters.dimensions}
+            showPowerConfigFilters={showPowerConfigFilters}
+            powerConfigFilters={filters.powerConfig}
             displayUnit={displayUnit}
             onSetRackUnits={setDimensionRackUnits}
             onSetWidth={setDimensionWidth}
             onSetDepth={setDimensionDepth}
+            onSetPowerVolts={setPowerConfigVolts}
+            onSetPowerAmps={setPowerConfigAmps}
+            onSetPowerPhases={setPowerConfigPhases}
             onDisplayUnitChange={setDisplayUnit}
             onClearAll={clearFilters}
           />
@@ -88,12 +99,17 @@ export function CatalogPage() {
                 narrowedCountries={narrowedCountries}
                 dimensionFilters={filters.dimensions}
                 dimensionFilterActive={dimensionFilterActive}
+                powerConfigFilters={filters.powerConfig}
+                powerConfigFilterActive={powerConfigFilterActive}
                 displayUnit={displayUnit}
                 onRemoveRegion={removeRegion}
                 onRemoveCountry={removeCountry}
                 onSetRackUnits={setDimensionRackUnits}
                 onSetWidth={setDimensionWidth}
                 onSetDepth={setDimensionDepth}
+                onSetPowerVolts={setPowerConfigVolts}
+                onSetPowerAmps={setPowerConfigAmps}
+                onSetPowerPhases={setPowerConfigPhases}
               />
             )}
 

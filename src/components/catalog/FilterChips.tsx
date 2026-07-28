@@ -1,6 +1,7 @@
 import { getCountryName } from '../../data/countries';
 import { formatMm, formatRackUnits } from '../../utils/dimensions';
 import type { DimensionFilters, DisplayUnit } from '../../types/dimensions';
+import type { PowerConfigFilters } from '../../types/powerConfig';
 import type { CountryId, Region } from '../../types';
 
 interface FilterChipsProps {
@@ -9,12 +10,17 @@ interface FilterChipsProps {
   narrowedCountries: CountryId[];
   dimensionFilters: DimensionFilters;
   dimensionFilterActive: boolean;
+  powerConfigFilters: PowerConfigFilters;
+  powerConfigFilterActive: boolean;
   displayUnit: DisplayUnit;
   onRemoveRegion: (region: Region) => void;
   onRemoveCountry: (countryId: CountryId) => void;
   onSetRackUnits: (value: number | null) => void;
   onSetWidth: (value: number | null) => void;
   onSetDepth: (value: number | null) => void;
+  onSetPowerVolts: (value: number | null) => void;
+  onSetPowerAmps: (value: number | null) => void;
+  onSetPowerPhases: (value: string | null) => void;
 }
 
 export function FilterChips({
@@ -23,17 +29,24 @@ export function FilterChips({
   narrowedCountries,
   dimensionFilters,
   dimensionFilterActive,
+  powerConfigFilters,
+  powerConfigFilterActive,
   displayUnit,
   onRemoveRegion,
   onRemoveCountry,
   onSetRackUnits,
   onSetWidth,
   onSetDepth,
+  onSetPowerVolts,
+  onSetPowerAmps,
+  onSetPowerPhases,
 }: FilterChipsProps) {
   const showRegionChips = selectedRegions.length < allRegions.length;
   const showCountryChips = narrowedCountries.length > 0;
 
-  if (!showRegionChips && !showCountryChips && !dimensionFilterActive) return null;
+  if (!showRegionChips && !showCountryChips && !dimensionFilterActive && !powerConfigFilterActive) {
+    return null;
+  }
 
   return (
     <div className="flex flex-wrap items-center gap-2 mb-4">
@@ -75,6 +88,21 @@ export function FilterChips({
         <Chip
           label={`D ${formatMm(dimensionFilters.depthMm, displayUnit)}`}
           onRemove={() => onSetDepth(null)}
+        />
+      )}
+
+      {powerConfigFilters.volts != null && (
+        <Chip label={`${powerConfigFilters.volts}V`} onRemove={() => onSetPowerVolts(null)} />
+      )}
+
+      {powerConfigFilters.amps != null && (
+        <Chip label={`${powerConfigFilters.amps}A`} onRemove={() => onSetPowerAmps(null)} />
+      )}
+
+      {powerConfigFilters.phases != null && (
+        <Chip
+          label={`${powerConfigFilters.phases}PH`}
+          onRemove={() => onSetPowerPhases(null)}
         />
       )}
     </div>
