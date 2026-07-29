@@ -59,6 +59,8 @@ export interface Category {
 
 export type { ProductDimensions, DimensionFilters, DisplayUnit } from './dimensions';
 export { EMPTY_DIMENSION_FILTERS } from './dimensions';
+export type { PowerConfigFilters, ProductPowerConfig } from './powerConfig';
+export { EMPTY_POWER_CONFIG_FILTERS } from './powerConfig';
 
 export interface Product {
   id: string;
@@ -93,4 +95,5 @@ export interface CatalogFilters {
   priceMax: number;
   sort: SortOption;
   dimensions: import('./dimensions').DimensionFilters;
+  powerConfig: import('./powerConfig').PowerConfigFilters;
 }
