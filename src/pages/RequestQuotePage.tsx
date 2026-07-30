@@ -292,11 +292,15 @@ export function RequestQuotePage() {
             />
             <QuoteField
               id="subtype"
-              label="Subtype"
+              label="Default subtype (manual lines)"
               value={form.subtype}
               placeholder="EIS Cabinet Accessories"
               onChange={(value) => updateForm('subtype', value)}
             />
+            <p className="text-xs text-text-muted m-0 -mt-2">
+              Preview groups cart products by category subtype automatically. This value is used for
+              manually added lines.
+            </p>
           </section>
 
           <section className="border border-border rounded-sm bg-surface p-5 space-y-4">
@@ -355,7 +359,7 @@ export function RequestQuotePage() {
                       placeholder={
                         isCpl
                           ? 'Describe the custom parts and labor scope, materials, and work required'
-                          : 'ENXTL48812 – Eaton | Cabinet | 48Ux800x1200 | Closed | ENXTL48812'
+                          : 'ENXTL45812G2 | Eaton | Cabinet | 45Ux800x1200'
                       }
                       onChange={(e) => updateProduct(product.id, { name: e.target.value })}
                       className="w-full border border-border rounded-sm px-3 py-2 text-sm bg-surface text-text font-mono focus:outline-none focus:border-brand-red resize-y"
