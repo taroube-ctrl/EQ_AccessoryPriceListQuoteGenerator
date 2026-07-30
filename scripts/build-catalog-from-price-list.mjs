@@ -7,10 +7,18 @@ import { parseInstallationCostsSheet } from './parseInstallationCosts.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
+const july24PriceListPath = path.join(root, 'Accessories Price List (July24).xlsx');
 const newPriceListPath = path.join(root, 'Accessories Price List_new.xlsx');
 const bundledPriceListPath = path.join(root, 'public/data/accessories-price-list.xlsx');
 const outputPath = path.join(root, 'src/data/catalog-products.json');
 const installationOutputPath = path.join(root, 'src/data/installation-costs.json');
+
+/** Prefer newest root workbooks, then the bundled public copy. */
+const SOURCE_CANDIDATES = [
+  { path: july24PriceListPath, label: 'Accessories Price List (July24).xlsx' },
+  { path: newPriceListPath, label: 'Accessories Price List_new.xlsx' },
+  { path: bundledPriceListPath, label: 'public/data/accessories-price-list.xlsx' },
+];
 
 const SHEET_CATEGORY = {
   'Cabinet Accessories': 'cabinet-accessories',
@@ -312,24 +320,27 @@ function finalizeProducts(productMap) {
 }
 
 function resolveSourceWorkbook() {
-  if (fs.existsSync(newPriceListPath)) {
-    fs.copyFileSync(newPriceListPath, bundledPriceListPath);
-    console.log(`Using ${newPriceListPath}`);
-    return XLSX.readFile(newPriceListPath);
-  }
+  for (const candidate of SOURCE_CANDIDATES) {
+    if (!fs.existsSync(candidate.path)) continue;
 
-  if (fs.existsSync(bundledPriceListPath)) {
-    console.log(`Using ${bundledPriceListPath}`);
-    return XLSX.readFile(bundledPriceListPath);
+    if (candidate.path !== bundledPriceListPath) {
+      fs.copyFileSync(candidate.path, bundledPriceListPath);
+    }
+
+    console.log(`Using ${candidate.path}`);
+    return {
+      workbook: XLSX.readFile(candidate.path),
+      sourceLabel: candidate.label,
+    };
   }
 
   throw new Error(
-    'No accessories price list workbook found. Add Accessories Price List_new.xlsx to the project root.',
+    'No accessories price list workbook found. Add "Accessories Price List (July24).xlsx" to the project root.',
   );
 }
 
 function main() {
-  const workbook = resolveSourceWorkbook();
+  const { workbook, sourceLabel } = resolveSourceWorkbook();
 
   const productMap = new Map();
   const sourceRowCounts = {};
@@ -356,7 +367,7 @@ function main() {
 
   const payload = {
     generatedAt: new Date().toISOString(),
-    source: 'Accessories Price List_new.xlsx',
+    source: sourceLabel,
     sourceRowCounts,
     productCount: products.length,
     categoryCounts,
@@ -379,7 +390,7 @@ function main() {
     `${JSON.stringify(
       {
         generatedAt: new Date().toISOString(),
-        source: 'Accessories Price List_new.xlsx#Installation Cost',
+        source: `${sourceLabel}#Installation Cost`,
         regionCount: installationRegions.length,
         lineItemCount,
         regions: installationRegions,

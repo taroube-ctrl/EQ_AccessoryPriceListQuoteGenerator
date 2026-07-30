@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-07-08T14:49:43.755Z",
-  "source": "Accessories Price List_new.xlsx",
+  "generatedAt": "2026-07-30T19:37:36.875Z",
+  "source": "Accessories Price List (July24).xlsx",
   "sourceRowCounts": {
-    "cabinet-accessories": 529,
-    "power-accessories": 477,
+    "cabinet-accessories": 512,
+    "power-accessories": 476,
     "cross-connect-accessories": 85,
     "cage-accessories": 244
   },
-  "productCount": 333,
+  "productCount": 337,
   "categoryCounts": {
     "cage-accessories": 26,
-    "cabinet-accessories": 133,
+    "cabinet-accessories": 137,
     "power-accessories": 89,
     "cross-connect-accessories": 85
   },
@@ -1547,6 +1547,7 @@
       "countries": [
         "bulgaria",
         "finland",
+        "france",
         "ireland",
         "italy",
         "oman",
@@ -1556,13 +1557,17 @@
         "sweden",
         "switzerland",
         "turkey",
-        "united-arab-emirates"
+        "united-arab-emirates",
+        "united-kingdom"
       ],
       "pricing": {
         "bulgaria": {
           "customerPrice": 676
         },
         "finland": {
+          "customerPrice": 676
+        },
+        "france": {
           "customerPrice": 676
         },
         "ireland": {
@@ -1594,9 +1599,12 @@
         },
         "united-arab-emirates": {
           "customerPrice": 2219
+        },
+        "united-kingdom": {
+          "customerPrice": 456
         }
       },
-      "price": 508,
+      "price": 456,
       "dimensions": {
         "rackUnits": 47,
         "widthMm": 600
@@ -1618,6 +1626,7 @@
       "countries": [
         "bulgaria",
         "finland",
+        "france",
         "ireland",
         "italy",
         "oman",
@@ -1627,13 +1636,17 @@
         "sweden",
         "switzerland",
         "turkey",
-        "united-arab-emirates"
+        "united-arab-emirates",
+        "united-kingdom"
       ],
       "pricing": {
         "bulgaria": {
           "customerPrice": 682
         },
         "finland": {
+          "customerPrice": 682
+        },
+        "france": {
           "customerPrice": 682
         },
         "ireland": {
@@ -1665,20 +1678,23 @@
         },
         "united-arab-emirates": {
           "customerPrice": 2248
+        },
+        "united-kingdom": {
+          "customerPrice": 462
         }
       },
-      "price": 515,
+      "price": 462,
       "dimensions": {
         "rackUnits": 47,
         "widthMm": 800
       }
     },
     {
-      "id": "cabinet-accessories-minkels-b1109-081045-173295",
-      "sku": "Minkels|B1109-081045-173295",
+      "id": "cabinet-accessories-minkels-b1109-081045-173297",
+      "sku": "Minkels|B1109-081045-173297",
       "brand": "Minkels",
       "brandCode": "Minkels",
-      "partNumber": "B1109-081045-173295",
+      "partNumber": "B1109-081045-173297",
       "name": "Cabinet",
       "description": "Cabinet | 45Ux800x1000",
       "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
@@ -1689,6 +1705,7 @@
       "countries": [
         "bulgaria",
         "finland",
+        "france",
         "ireland",
         "italy",
         "oman",
@@ -1698,7 +1715,8 @@
         "sweden",
         "switzerland",
         "turkey",
-        "united-arab-emirates"
+        "united-arab-emirates",
+        "united-kingdom"
       ],
       "pricing": {
         "bulgaria": {
@@ -1706,6 +1724,10 @@
           "equinixPrice": 1978
         },
         "finland": {
+          "customerPrice": 2431,
+          "equinixPrice": 1978
+        },
+        "france": {
           "customerPrice": 2431,
           "equinixPrice": 1978
         },
@@ -1746,9 +1768,13 @@
         },
         "united-arab-emirates": {
           "customerPrice": 4184
+        },
+        "united-kingdom": {
+          "customerPrice": 2119,
+          "equinixPrice": 1514
         }
       },
-      "price": 2431,
+      "price": 2119,
       "dimensions": {
         "rackUnits": 45,
         "widthMm": 800,
@@ -1756,11 +1782,11 @@
       }
     },
     {
-      "id": "cabinet-accessories-minkels-b1109-081245-173295",
-      "sku": "Minkels|B1109-081245-173295",
+      "id": "cabinet-accessories-minkels-b1109-081245-173297",
+      "sku": "Minkels|B1109-081245-173297",
       "brand": "Minkels",
       "brandCode": "Minkels",
-      "partNumber": "B1109-081245-173295",
+      "partNumber": "B1109-081245-173297",
       "name": "Cabinet",
       "description": "Cabinet | 45Ux800x1200",
       "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
@@ -1771,6 +1797,7 @@
       "countries": [
         "bulgaria",
         "finland",
+        "france",
         "ireland",
         "italy",
         "oman",
@@ -1780,7 +1807,8 @@
         "sweden",
         "switzerland",
         "turkey",
-        "united-arab-emirates"
+        "united-arab-emirates",
+        "united-kingdom"
       ],
       "pricing": {
         "bulgaria": {
@@ -1788,6 +1816,10 @@
           "equinixPrice": 1995
         },
         "finland": {
+          "customerPrice": 2526,
+          "equinixPrice": 1995
+        },
+        "france": {
           "customerPrice": 2526,
           "equinixPrice": 1995
         },
@@ -1828,9 +1860,13 @@
         },
         "united-arab-emirates": {
           "customerPrice": 4279
+        },
+        "united-kingdom": {
+          "customerPrice": 2203,
+          "equinixPrice": 1620
         }
       },
-      "price": 2526,
+      "price": 2203,
       "dimensions": {
         "rackUnits": 45,
         "widthMm": 800,
@@ -1838,11 +1874,11 @@
       }
     },
     {
-      "id": "cabinet-accessories-minkels-b1109-061045-173295",
-      "sku": "Minkels|B1109-061045-173295",
+      "id": "cabinet-accessories-minkels-b1109-061045-173297",
+      "sku": "Minkels|B1109-061045-173297",
       "brand": "Minkels",
       "brandCode": "Minkels",
-      "partNumber": "B1109-061045-173295",
+      "partNumber": "B1109-061045-173297",
       "name": "Cabinet",
       "description": "Cabinet | 45Ux600x1000",
       "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
@@ -1853,6 +1889,7 @@
       "countries": [
         "bulgaria",
         "finland",
+        "france",
         "ireland",
         "italy",
         "oman",
@@ -1862,7 +1899,8 @@
         "sweden",
         "switzerland",
         "turkey",
-        "united-arab-emirates"
+        "united-arab-emirates",
+        "united-kingdom"
       ],
       "pricing": {
         "bulgaria": {
@@ -1870,6 +1908,10 @@
           "equinixPrice": 1796
         },
         "finland": {
+          "customerPrice": 2189,
+          "equinixPrice": 1796
+        },
+        "france": {
           "customerPrice": 2189,
           "equinixPrice": 1796
         },
@@ -1910,9 +1952,13 @@
         },
         "united-arab-emirates": {
           "customerPrice": 3942
+        },
+        "united-kingdom": {
+          "customerPrice": 1907,
+          "equinixPrice": 1459
         }
       },
-      "price": 2189,
+      "price": 1907,
       "dimensions": {
         "rackUnits": 45,
         "widthMm": 600,
@@ -1920,11 +1966,11 @@
       }
     },
     {
-      "id": "cabinet-accessories-minkels-b1109-061245-173295",
-      "sku": "Minkels|B1109-061245-173295",
+      "id": "cabinet-accessories-minkels-b1109-061245-173297",
+      "sku": "Minkels|B1109-061245-173297",
       "brand": "Minkels",
       "brandCode": "Minkels",
-      "partNumber": "B1109-061245-173295",
+      "partNumber": "B1109-061245-173297",
       "name": "Cabinet",
       "description": "Cabinet | 45Ux600x1200",
       "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
@@ -1935,6 +1981,7 @@
       "countries": [
         "bulgaria",
         "finland",
+        "france",
         "ireland",
         "italy",
         "oman",
@@ -1944,7 +1991,8 @@
         "sweden",
         "switzerland",
         "turkey",
-        "united-arab-emirates"
+        "united-arab-emirates",
+        "united-kingdom"
       ],
       "pricing": {
         "bulgaria": {
@@ -1952,6 +2000,10 @@
           "equinixPrice": 1803
         },
         "finland": {
+          "customerPrice": 2274,
+          "equinixPrice": 1803
+        },
+        "france": {
           "customerPrice": 2274,
           "equinixPrice": 1803
         },
@@ -1992,9 +2044,13 @@
         },
         "united-arab-emirates": {
           "customerPrice": 4027
+        },
+        "united-kingdom": {
+          "customerPrice": 1982,
+          "equinixPrice": 1542
         }
       },
-      "price": 2274,
+      "price": 1982,
       "dimensions": {
         "rackUnits": 45,
         "widthMm": 600,
@@ -2002,11 +2058,11 @@
       }
     },
     {
-      "id": "cabinet-accessories-minkels-b1109-081047-173295",
-      "sku": "Minkels|B1109-081047-173295",
+      "id": "cabinet-accessories-minkels-b1109-081047-173297",
+      "sku": "Minkels|B1109-081047-173297",
       "brand": "Minkels",
       "brandCode": "Minkels",
-      "partNumber": "B1109-081047-173295",
+      "partNumber": "B1109-081047-173297",
       "name": "Cabinet",
       "description": "Cabinet | 47Ux800x1000",
       "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
@@ -2017,6 +2073,7 @@
       "countries": [
         "bulgaria",
         "finland",
+        "france",
         "ireland",
         "italy",
         "oman",
@@ -2026,7 +2083,8 @@
         "sweden",
         "switzerland",
         "turkey",
-        "united-arab-emirates"
+        "united-arab-emirates",
+        "united-kingdom"
       ],
       "pricing": {
         "bulgaria": {
@@ -2034,6 +2092,10 @@
           "equinixPrice": 1978
         },
         "finland": {
+          "customerPrice": 2376,
+          "equinixPrice": 1978
+        },
+        "france": {
           "customerPrice": 2376,
           "equinixPrice": 1978
         },
@@ -2074,9 +2136,13 @@
         },
         "united-arab-emirates": {
           "customerPrice": 4129
+        },
+        "united-kingdom": {
+          "customerPrice": 2072,
+          "equinixPrice": 1556
         }
       },
-      "price": 2376,
+      "price": 2072,
       "dimensions": {
         "rackUnits": 47,
         "widthMm": 800,
@@ -2084,11 +2150,11 @@
       }
     },
     {
-      "id": "cabinet-accessories-minkels-b1109-081247-173295",
-      "sku": "Minkels|B1109-081247-173295",
+      "id": "cabinet-accessories-minkels-b1109-081247-173297",
+      "sku": "Minkels|B1109-081247-173297",
       "brand": "Minkels",
       "brandCode": "Minkels",
-      "partNumber": "B1109-081247-173295",
+      "partNumber": "B1109-081247-173297",
       "name": "Cabinet",
       "description": "Cabinet | 47Ux800x1200",
       "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
@@ -2099,6 +2165,7 @@
       "countries": [
         "bulgaria",
         "finland",
+        "france",
         "ireland",
         "italy",
         "oman",
@@ -2108,7 +2175,8 @@
         "sweden",
         "switzerland",
         "turkey",
-        "united-arab-emirates"
+        "united-arab-emirates",
+        "united-kingdom"
       ],
       "pricing": {
         "bulgaria": {
@@ -2116,6 +2184,10 @@
           "equinixPrice": 1995
         },
         "finland": {
+          "customerPrice": 2464,
+          "equinixPrice": 1995
+        },
+        "france": {
           "customerPrice": 2464,
           "equinixPrice": 1995
         },
@@ -2156,9 +2228,13 @@
         },
         "united-arab-emirates": {
           "customerPrice": 4208
+        },
+        "united-kingdom": {
+          "customerPrice": 2140,
+          "equinixPrice": 1647
         }
       },
-      "price": 2464,
+      "price": 2140,
       "dimensions": {
         "rackUnits": 47,
         "widthMm": 800,
@@ -2166,11 +2242,11 @@
       }
     },
     {
-      "id": "cabinet-accessories-minkels-b1109-061047-173295",
-      "sku": "Minkels|B1109-061047-173295",
+      "id": "cabinet-accessories-minkels-b1109-061047-173297",
+      "sku": "Minkels|B1109-061047-173297",
       "brand": "Minkels",
       "brandCode": "Minkels",
-      "partNumber": "B1109-061047-173295",
+      "partNumber": "B1109-061047-173297",
       "name": "Cabinet",
       "description": "Cabinet | 47Ux600x1000",
       "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
@@ -2181,6 +2257,7 @@
       "countries": [
         "bulgaria",
         "finland",
+        "france",
         "ireland",
         "italy",
         "oman",
@@ -2190,7 +2267,8 @@
         "sweden",
         "switzerland",
         "turkey",
-        "united-arab-emirates"
+        "united-arab-emirates",
+        "united-kingdom"
       ],
       "pricing": {
         "bulgaria": {
@@ -2198,6 +2276,10 @@
           "equinixPrice": 1796
         },
         "finland": {
+          "customerPrice": 2175,
+          "equinixPrice": 1796
+        },
+        "france": {
           "customerPrice": 2175,
           "equinixPrice": 1796
         },
@@ -2238,9 +2320,13 @@
         },
         "united-arab-emirates": {
           "customerPrice": 3896
+        },
+        "united-kingdom": {
+          "customerPrice": 1867,
+          "equinixPrice": 1473
         }
       },
-      "price": 2175,
+      "price": 1867,
       "dimensions": {
         "rackUnits": 47,
         "widthMm": 600,
@@ -2248,11 +2334,11 @@
       }
     },
     {
-      "id": "cabinet-accessories-minkels-b1109-061247-173295",
-      "sku": "Minkels|B1109-061247-173295",
+      "id": "cabinet-accessories-minkels-b1109-061247-173297",
+      "sku": "Minkels|B1109-061247-173297",
       "brand": "Minkels",
       "brandCode": "Minkels",
-      "partNumber": "B1109-061247-173295",
+      "partNumber": "B1109-061247-173297",
       "name": "Cabinet",
       "description": "Cabinet | 47Ux600x1200",
       "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
@@ -2263,6 +2349,7 @@
       "countries": [
         "bulgaria",
         "finland",
+        "france",
         "ireland",
         "italy",
         "oman",
@@ -2272,7 +2359,8 @@
         "sweden",
         "switzerland",
         "turkey",
-        "united-arab-emirates"
+        "united-arab-emirates",
+        "united-kingdom"
       ],
       "pricing": {
         "bulgaria": {
@@ -2280,6 +2368,10 @@
           "equinixPrice": 1803
         },
         "finland": {
+          "customerPrice": 2209,
+          "equinixPrice": 1803
+        },
+        "france": {
           "customerPrice": 2209,
           "equinixPrice": 1803
         },
@@ -2320,9 +2412,13 @@
         },
         "united-arab-emirates": {
           "customerPrice": 3952
+        },
+        "united-kingdom": {
+          "customerPrice": 1916,
+          "equinixPrice": 1555
         }
       },
-      "price": 2209,
+      "price": 1916,
       "dimensions": {
         "rackUnits": 47,
         "widthMm": 600,
@@ -2330,11 +2426,11 @@
       }
     },
     {
-      "id": "cabinet-accessories-minkels-b1109-081252-173295",
-      "sku": "Minkels|B1109-081252-173295",
+      "id": "cabinet-accessories-minkels-b1109-081252-173297",
+      "sku": "Minkels|B1109-081252-173297",
       "brand": "Minkels",
       "brandCode": "Minkels",
-      "partNumber": "B1109-081252-173295",
+      "partNumber": "B1109-081252-173297",
       "name": "Cabinet",
       "description": "Cabinet | 52Ux800x1200",
       "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
@@ -2345,6 +2441,7 @@
       "countries": [
         "bulgaria",
         "finland",
+        "france",
         "ireland",
         "italy",
         "oman",
@@ -2354,7 +2451,8 @@
         "sweden",
         "switzerland",
         "turkey",
-        "united-arab-emirates"
+        "united-arab-emirates",
+        "united-kingdom"
       ],
       "pricing": {
         "bulgaria": {
@@ -2362,6 +2460,10 @@
           "equinixPrice": 2050
         },
         "finland": {
+          "customerPrice": 2584,
+          "equinixPrice": 2050
+        },
+        "france": {
           "customerPrice": 2584,
           "equinixPrice": 2050
         },
@@ -2402,9 +2504,13 @@
         },
         "united-arab-emirates": {
           "customerPrice": 4337
+        },
+        "united-kingdom": {
+          "customerPrice": 2253,
+          "equinixPrice": 1708
         }
       },
-      "price": 2584,
+      "price": 2253,
       "dimensions": {
         "rackUnits": 52,
         "widthMm": 800,
@@ -2412,11 +2518,11 @@
       }
     },
     {
-      "id": "cabinet-accessories-minkels-b1109-061252-173295",
-      "sku": "Minkels|B1109-061252-173295",
+      "id": "cabinet-accessories-minkels-b1109-061252-173297",
+      "sku": "Minkels|B1109-061252-173297",
       "brand": "Minkels",
       "brandCode": "Minkels",
-      "partNumber": "B1109-061252-173295",
+      "partNumber": "B1109-061252-173297",
       "name": "Cabinet",
       "description": "Cabinet | 52Ux600x1200",
       "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
@@ -2427,6 +2533,7 @@
       "countries": [
         "bulgaria",
         "finland",
+        "france",
         "ireland",
         "italy",
         "oman",
@@ -2436,7 +2543,8 @@
         "sweden",
         "switzerland",
         "turkey",
-        "united-arab-emirates"
+        "united-arab-emirates",
+        "united-kingdom"
       ],
       "pricing": {
         "bulgaria": {
@@ -2444,6 +2552,10 @@
           "equinixPrice": 1854
         },
         "finland": {
+          "customerPrice": 2321,
+          "equinixPrice": 1854
+        },
+        "france": {
           "customerPrice": 2321,
           "equinixPrice": 1854
         },
@@ -2484,9 +2596,13 @@
         },
         "united-arab-emirates": {
           "customerPrice": 4074
+        },
+        "united-kingdom": {
+          "customerPrice": 2023,
+          "equinixPrice": 1608
         }
       },
-      "price": 2276,
+      "price": 2023,
       "dimensions": {
         "rackUnits": 52,
         "widthMm": 600,
@@ -2516,11 +2632,11 @@
           "equinixPrice": 2898
         },
         "united-states": {
-          "customerPrice": 3480,
+          "customerPrice": 2950,
           "equinixPrice": 2402
         }
       },
-      "price": 3480,
+      "price": 2950,
       "dimensions": {
         "rackUnits": 45,
         "widthMm": 800,
@@ -2550,11 +2666,11 @@
           "equinixPrice": 3106
         },
         "united-states": {
-          "customerPrice": 3000,
+          "customerPrice": 3170,
           "equinixPrice": 2073
         }
       },
-      "price": 3000,
+      "price": 3170,
       "dimensions": {
         "rackUnits": 45,
         "widthMm": 800,
@@ -2584,11 +2700,11 @@
           "equinixPrice": 2375
         },
         "united-states": {
-          "customerPrice": 2650,
+          "customerPrice": 2420,
           "equinixPrice": 1829
         }
       },
-      "price": 2650,
+      "price": 2420,
       "dimensions": {
         "rackUnits": 45,
         "widthMm": 600,
@@ -2618,11 +2734,11 @@
           "equinixPrice": 2600
         },
         "united-states": {
-          "customerPrice": 3170,
+          "customerPrice": 2650,
           "equinixPrice": 2186
         }
       },
-      "price": 3170,
+      "price": 2650,
       "dimensions": {
         "rackUnits": 45,
         "widthMm": 600,
@@ -2652,11 +2768,11 @@
           "equinixPrice": 3195
         },
         "united-states": {
-          "customerPrice": 2420,
+          "customerPrice": 3260,
           "equinixPrice": 1671
         }
       },
-      "price": 2420,
+      "price": 3260,
       "dimensions": {
         "rackUnits": 48,
         "widthMm": 800,
@@ -2686,11 +2802,11 @@
           "equinixPrice": 3414
         },
         "united-states": {
-          "customerPrice": 2950,
+          "customerPrice": 3480,
           "equinixPrice": 2040
         }
       },
-      "price": 2950,
+      "price": 3480,
       "dimensions": {
         "rackUnits": 48,
         "widthMm": 800,
@@ -2720,11 +2836,11 @@
           "equinixPrice": 2673
         },
         "united-states": {
-          "customerPrice": 3850,
+          "customerPrice": 2720,
           "equinixPrice": 2661
         }
       },
-      "price": 3621,
+      "price": 2720,
       "dimensions": {
         "rackUnits": 48,
         "widthMm": 600,
@@ -2754,11 +2870,11 @@
           "equinixPrice": 2946
         },
         "united-states": {
-          "customerPrice": 3340,
+          "customerPrice": 3000,
           "equinixPrice": 2305
         }
       },
-      "price": 3340,
+      "price": 3000,
       "dimensions": {
         "rackUnits": 48,
         "widthMm": 600,
@@ -2788,11 +2904,11 @@
           "equinixPrice": 3276
         },
         "united-states": {
-          "customerPrice": 2720,
+          "customerPrice": 3340,
           "equinixPrice": 1881
         }
       },
-      "price": 2720,
+      "price": 3340,
       "dimensions": {
         "rackUnits": 52,
         "widthMm": 600,
@@ -2888,11 +3004,11 @@
           "equinixPrice": 3781
         },
         "united-states": {
-          "customerPrice": 3260,
+          "customerPrice": 3850,
           "equinixPrice": 2248
         }
       },
-      "price": 3260,
+      "price": 3850,
       "dimensions": {
         "rackUnits": 52,
         "widthMm": 800,
@@ -3074,446 +3190,6 @@
       }
     },
     {
-      "id": "cabinet-accessories-stengel-str45810-v2-eqx",
-      "sku": "Stengel|STR45810 V2 EQX",
-      "brand": "Stengel",
-      "brandCode": "Stengel",
-      "partNumber": "STR45810 V2 EQX",
-      "name": "Cabinet",
-      "description": "Cabinet | 45Ux800x1000",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "EMEA"
-      ],
-      "countries": [
-        "france",
-        "germany",
-        "netherlands",
-        "united-kingdom"
-      ],
-      "pricing": {
-        "france": {
-          "customerPrice": 2431,
-          "equinixPrice": 1728
-        },
-        "germany": {
-          "customerPrice": 2431,
-          "equinixPrice": 1728
-        },
-        "netherlands": {
-          "customerPrice": 2431,
-          "equinixPrice": 1728
-        },
-        "united-kingdom": {
-          "customerPrice": 2119,
-          "equinixPrice": 1514
-        }
-      },
-      "price": 2119,
-      "dimensions": {
-        "rackUnits": 45,
-        "widthMm": 800,
-        "depthMm": 1000
-      }
-    },
-    {
-      "id": "cabinet-accessories-stengel-str45812-v2-eqx",
-      "sku": "Stengel|STR45812 V2 EQX",
-      "brand": "Stengel",
-      "brandCode": "Stengel",
-      "partNumber": "STR45812 V2 EQX",
-      "name": "Cabinet",
-      "description": "Cabinet | 45Ux800x1200",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "EMEA"
-      ],
-      "countries": [
-        "france",
-        "germany",
-        "netherlands",
-        "united-kingdom"
-      ],
-      "pricing": {
-        "france": {
-          "customerPrice": 2526,
-          "equinixPrice": 1855
-        },
-        "germany": {
-          "customerPrice": 2526,
-          "equinixPrice": 1855
-        },
-        "netherlands": {
-          "customerPrice": 2526,
-          "equinixPrice": 1855
-        },
-        "united-kingdom": {
-          "customerPrice": 2203,
-          "equinixPrice": 1620
-        }
-      },
-      "price": 2203,
-      "dimensions": {
-        "rackUnits": 45,
-        "widthMm": 800,
-        "depthMm": 1200
-      }
-    },
-    {
-      "id": "cabinet-accessories-stengel-str47810-v2-eqx",
-      "sku": "Stengel|STR47810 V2 EQX",
-      "brand": "Stengel",
-      "brandCode": "Stengel",
-      "partNumber": "STR47810 V2 EQX",
-      "name": "Cabinet",
-      "description": "Cabinet | 47Ux800x1000",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "EMEA"
-      ],
-      "countries": [
-        "france",
-        "germany",
-        "netherlands",
-        "united-kingdom"
-      ],
-      "pricing": {
-        "france": {
-          "customerPrice": 2376,
-          "equinixPrice": 1778
-        },
-        "germany": {
-          "customerPrice": 2376,
-          "equinixPrice": 1778
-        },
-        "netherlands": {
-          "customerPrice": 2376,
-          "equinixPrice": 1778
-        },
-        "united-kingdom": {
-          "customerPrice": 2072,
-          "equinixPrice": 1556
-        }
-      },
-      "price": 2072,
-      "dimensions": {
-        "rackUnits": 47,
-        "widthMm": 800,
-        "depthMm": 1000
-      }
-    },
-    {
-      "id": "cabinet-accessories-stengel-str47812-v2-eqx",
-      "sku": "Stengel|STR47812 V2 EQX",
-      "brand": "Stengel",
-      "brandCode": "Stengel",
-      "partNumber": "STR47812 V2 EQX",
-      "name": "Cabinet",
-      "description": "Cabinet | 47Ux800x1200",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "EMEA"
-      ],
-      "countries": [
-        "france",
-        "germany",
-        "netherlands",
-        "united-kingdom"
-      ],
-      "pricing": {
-        "france": {
-          "customerPrice": 2464,
-          "equinixPrice": 1887
-        },
-        "germany": {
-          "customerPrice": 2464,
-          "equinixPrice": 1887
-        },
-        "netherlands": {
-          "customerPrice": 2464,
-          "equinixPrice": 1887
-        },
-        "united-kingdom": {
-          "customerPrice": 2140,
-          "equinixPrice": 1647
-        }
-      },
-      "price": 2140,
-      "dimensions": {
-        "rackUnits": 47,
-        "widthMm": 800,
-        "depthMm": 1200
-      }
-    },
-    {
-      "id": "cabinet-accessories-stengel-str45610-v2-eqx",
-      "sku": "Stengel|STR45610 V2 EQX",
-      "brand": "Stengel",
-      "brandCode": "Stengel",
-      "partNumber": "STR45610 V2 EQX",
-      "name": "Cabinet",
-      "description": "Cabinet | 45Ux600x1000",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "EMEA"
-      ],
-      "countries": [
-        "france",
-        "germany",
-        "netherlands",
-        "united-kingdom"
-      ],
-      "pricing": {
-        "france": {
-          "customerPrice": 2189,
-          "equinixPrice": 1663
-        },
-        "germany": {
-          "customerPrice": 2189,
-          "equinixPrice": 1663
-        },
-        "netherlands": {
-          "customerPrice": 2189,
-          "equinixPrice": 1663
-        },
-        "united-kingdom": {
-          "customerPrice": 1907,
-          "equinixPrice": 1459
-        }
-      },
-      "price": 1907,
-      "dimensions": {
-        "rackUnits": 45,
-        "widthMm": 600,
-        "depthMm": 1000
-      }
-    },
-    {
-      "id": "cabinet-accessories-stengel-str45612-v2-eqx",
-      "sku": "Stengel|STR45612 V2 EQX",
-      "brand": "Stengel",
-      "brandCode": "Stengel",
-      "partNumber": "STR45612 V2 EQX",
-      "name": "Cabinet",
-      "description": "Cabinet | 45Ux600x1200",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "EMEA"
-      ],
-      "countries": [
-        "france",
-        "germany",
-        "netherlands",
-        "united-kingdom"
-      ],
-      "pricing": {
-        "france": {
-          "customerPrice": 2274,
-          "equinixPrice": 1762
-        },
-        "germany": {
-          "customerPrice": 2274,
-          "equinixPrice": 1762
-        },
-        "netherlands": {
-          "customerPrice": 2274,
-          "equinixPrice": 1762
-        },
-        "united-kingdom": {
-          "customerPrice": 1982,
-          "equinixPrice": 1542
-        }
-      },
-      "price": 1982,
-      "dimensions": {
-        "rackUnits": 45,
-        "widthMm": 600,
-        "depthMm": 1200
-      }
-    },
-    {
-      "id": "cabinet-accessories-stengel-str47610-v2-eqx",
-      "sku": "Stengel|STR47610 V2 EQX",
-      "brand": "Stengel",
-      "brandCode": "Stengel",
-      "partNumber": "STR47610 V2 EQX",
-      "name": "Cabinet",
-      "description": "Cabinet | 47Ux600x1000",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "EMEA"
-      ],
-      "countries": [
-        "france",
-        "germany",
-        "netherlands",
-        "united-kingdom"
-      ],
-      "pricing": {
-        "france": {
-          "customerPrice": 2175,
-          "equinixPrice": 1680
-        },
-        "germany": {
-          "customerPrice": 2175,
-          "equinixPrice": 1680
-        },
-        "netherlands": {
-          "customerPrice": 2175,
-          "equinixPrice": 1680
-        },
-        "united-kingdom": {
-          "customerPrice": 1867,
-          "equinixPrice": 1473
-        }
-      },
-      "price": 1867,
-      "dimensions": {
-        "rackUnits": 47,
-        "widthMm": 600,
-        "depthMm": 1000
-      }
-    },
-    {
-      "id": "cabinet-accessories-stengel-str47612-v2-eqx",
-      "sku": "Stengel|STR47612 V2 EQX",
-      "brand": "Stengel",
-      "brandCode": "Stengel",
-      "partNumber": "STR47612 V2 EQX",
-      "name": "Cabinet",
-      "description": "Cabinet | 47Ux600x1200",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "EMEA"
-      ],
-      "countries": [
-        "france",
-        "germany",
-        "netherlands",
-        "united-kingdom"
-      ],
-      "pricing": {
-        "france": {
-          "customerPrice": 2209,
-          "equinixPrice": 1777
-        },
-        "germany": {
-          "customerPrice": 2209,
-          "equinixPrice": 1777
-        },
-        "netherlands": {
-          "customerPrice": 2209,
-          "equinixPrice": 1777
-        },
-        "united-kingdom": {
-          "customerPrice": 1916,
-          "equinixPrice": 1555
-        }
-      },
-      "price": 1916,
-      "dimensions": {
-        "rackUnits": 47,
-        "widthMm": 600,
-        "depthMm": 1200
-      }
-    },
-    {
-      "id": "cabinet-accessories-stengel-str52812-v2-eqx",
-      "sku": "Stengel|STR52812 V2 EQX",
-      "brand": "Stengel",
-      "brandCode": "Stengel",
-      "partNumber": "STR52812 V2 EQX",
-      "name": "Cabinet",
-      "description": "Cabinet | 52Ux800x1200",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "EMEA"
-      ],
-      "countries": [
-        "france",
-        "germany",
-        "netherlands",
-        "united-kingdom"
-      ],
-      "pricing": {
-        "france": {
-          "customerPrice": 2584,
-          "equinixPrice": 1959
-        },
-        "germany": {
-          "customerPrice": 2584,
-          "equinixPrice": 1959
-        },
-        "netherlands": {
-          "customerPrice": 2584,
-          "equinixPrice": 1959
-        },
-        "united-kingdom": {
-          "customerPrice": 2253,
-          "equinixPrice": 1708
-        }
-      },
-      "price": 2253,
-      "dimensions": {
-        "rackUnits": 52,
-        "widthMm": 800,
-        "depthMm": 1200
-      }
-    },
-    {
-      "id": "cabinet-accessories-stengel-str52612-v2-eqx",
-      "sku": "Stengel|STR52612 V2 EQX",
-      "brand": "Stengel",
-      "brandCode": "Stengel",
-      "partNumber": "STR52612 V2 EQX",
-      "name": "Cabinet",
-      "description": "Cabinet | 52Ux600x1200",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "EMEA"
-      ],
-      "countries": [
-        "france",
-        "germany",
-        "netherlands",
-        "united-kingdom"
-      ],
-      "pricing": {
-        "france": {
-          "customerPrice": 2321,
-          "equinixPrice": 1840
-        },
-        "germany": {
-          "customerPrice": 2321,
-          "equinixPrice": 1840
-        },
-        "netherlands": {
-          "customerPrice": 2321,
-          "equinixPrice": 1840
-        },
-        "united-kingdom": {
-          "customerPrice": 2023,
-          "equinixPrice": 1608
-        }
-      },
-      "price": 2023,
-      "dimensions": {
-        "rackUnits": 52,
-        "widthMm": 600,
-        "depthMm": 1200
-      }
-    },
-    {
       "id": "cabinet-accessories-stengel-ext-42-52ux600x300mm",
       "sku": "Stengel|Ext. 42-52Ux600x300mm",
       "brand": "Stengel",
@@ -3527,23 +3203,15 @@
         "EMEA"
       ],
       "countries": [
-        "france",
         "germany",
-        "netherlands",
-        "united-kingdom"
+        "netherlands"
       ],
       "pricing": {
-        "france": {
-          "customerPrice": 676
-        },
         "germany": {
           "customerPrice": 676
         },
         "netherlands": {
           "customerPrice": 676
-        },
-        "united-kingdom": {
-          "customerPrice": 711
         }
       },
       "price": 676,
@@ -3567,23 +3235,15 @@
         "EMEA"
       ],
       "countries": [
-        "france",
         "germany",
-        "netherlands",
-        "united-kingdom"
+        "netherlands"
       ],
       "pricing": {
-        "france": {
-          "customerPrice": 682
-        },
         "germany": {
           "customerPrice": 682
         },
         "netherlands": {
           "customerPrice": 682
-        },
-        "united-kingdom": {
-          "customerPrice": 717
         }
       },
       "price": 682,
@@ -3591,6 +3251,346 @@
         "rackUnits": 52,
         "widthMm": 800,
         "depthMm": 300
+      }
+    },
+    {
+      "id": "cabinet-accessories-stengel-str45810-v2-eqx",
+      "sku": "Stengel|STR45810 V2 EQX",
+      "brand": "Stengel",
+      "brandCode": "Stengel",
+      "partNumber": "STR45810 V2 EQX",
+      "name": "Cabinet",
+      "description": "Cabinet | 45Ux800x1000",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "EMEA"
+      ],
+      "countries": [
+        "germany",
+        "netherlands"
+      ],
+      "pricing": {
+        "germany": {
+          "customerPrice": 2431,
+          "equinixPrice": 1728
+        },
+        "netherlands": {
+          "customerPrice": 2431,
+          "equinixPrice": 1728
+        }
+      },
+      "price": 2431,
+      "dimensions": {
+        "rackUnits": 45,
+        "widthMm": 800,
+        "depthMm": 1000
+      }
+    },
+    {
+      "id": "cabinet-accessories-stengel-str45812-v2-eqx",
+      "sku": "Stengel|STR45812 V2 EQX",
+      "brand": "Stengel",
+      "brandCode": "Stengel",
+      "partNumber": "STR45812 V2 EQX",
+      "name": "Cabinet",
+      "description": "Cabinet | 45Ux800x1200",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "EMEA"
+      ],
+      "countries": [
+        "germany",
+        "netherlands"
+      ],
+      "pricing": {
+        "germany": {
+          "customerPrice": 2526,
+          "equinixPrice": 1855
+        },
+        "netherlands": {
+          "customerPrice": 2526,
+          "equinixPrice": 1855
+        }
+      },
+      "price": 2526,
+      "dimensions": {
+        "rackUnits": 45,
+        "widthMm": 800,
+        "depthMm": 1200
+      }
+    },
+    {
+      "id": "cabinet-accessories-stengel-str47810-v2-eqx",
+      "sku": "Stengel|STR47810 V2 EQX",
+      "brand": "Stengel",
+      "brandCode": "Stengel",
+      "partNumber": "STR47810 V2 EQX",
+      "name": "Cabinet",
+      "description": "Cabinet | 47Ux800x1000",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "EMEA"
+      ],
+      "countries": [
+        "germany",
+        "netherlands"
+      ],
+      "pricing": {
+        "germany": {
+          "customerPrice": 2376,
+          "equinixPrice": 1778
+        },
+        "netherlands": {
+          "customerPrice": 2376,
+          "equinixPrice": 1778
+        }
+      },
+      "price": 2376,
+      "dimensions": {
+        "rackUnits": 47,
+        "widthMm": 800,
+        "depthMm": 1000
+      }
+    },
+    {
+      "id": "cabinet-accessories-stengel-str47812-v2-eqx",
+      "sku": "Stengel|STR47812 V2 EQX",
+      "brand": "Stengel",
+      "brandCode": "Stengel",
+      "partNumber": "STR47812 V2 EQX",
+      "name": "Cabinet",
+      "description": "Cabinet | 47Ux800x1200",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "EMEA"
+      ],
+      "countries": [
+        "germany",
+        "netherlands"
+      ],
+      "pricing": {
+        "germany": {
+          "customerPrice": 2464,
+          "equinixPrice": 1887
+        },
+        "netherlands": {
+          "customerPrice": 2464,
+          "equinixPrice": 1887
+        }
+      },
+      "price": 2464,
+      "dimensions": {
+        "rackUnits": 47,
+        "widthMm": 800,
+        "depthMm": 1200
+      }
+    },
+    {
+      "id": "cabinet-accessories-stengel-str45610-v2-eqx",
+      "sku": "Stengel|STR45610 V2 EQX",
+      "brand": "Stengel",
+      "brandCode": "Stengel",
+      "partNumber": "STR45610 V2 EQX",
+      "name": "Cabinet",
+      "description": "Cabinet | 45Ux600x1000",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "EMEA"
+      ],
+      "countries": [
+        "germany",
+        "netherlands"
+      ],
+      "pricing": {
+        "germany": {
+          "customerPrice": 2189,
+          "equinixPrice": 1663
+        },
+        "netherlands": {
+          "customerPrice": 2189,
+          "equinixPrice": 1663
+        }
+      },
+      "price": 2189,
+      "dimensions": {
+        "rackUnits": 45,
+        "widthMm": 600,
+        "depthMm": 1000
+      }
+    },
+    {
+      "id": "cabinet-accessories-stengel-str45612-v2-eqx",
+      "sku": "Stengel|STR45612 V2 EQX",
+      "brand": "Stengel",
+      "brandCode": "Stengel",
+      "partNumber": "STR45612 V2 EQX",
+      "name": "Cabinet",
+      "description": "Cabinet | 45Ux600x1200",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "EMEA"
+      ],
+      "countries": [
+        "germany",
+        "netherlands"
+      ],
+      "pricing": {
+        "germany": {
+          "customerPrice": 2274,
+          "equinixPrice": 1762
+        },
+        "netherlands": {
+          "customerPrice": 2274,
+          "equinixPrice": 1762
+        }
+      },
+      "price": 2274,
+      "dimensions": {
+        "rackUnits": 45,
+        "widthMm": 600,
+        "depthMm": 1200
+      }
+    },
+    {
+      "id": "cabinet-accessories-stengel-str47610-v2-eqx",
+      "sku": "Stengel|STR47610 V2 EQX",
+      "brand": "Stengel",
+      "brandCode": "Stengel",
+      "partNumber": "STR47610 V2 EQX",
+      "name": "Cabinet",
+      "description": "Cabinet | 47Ux600x1000",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "EMEA"
+      ],
+      "countries": [
+        "germany",
+        "netherlands"
+      ],
+      "pricing": {
+        "germany": {
+          "customerPrice": 2175,
+          "equinixPrice": 1680
+        },
+        "netherlands": {
+          "customerPrice": 2175,
+          "equinixPrice": 1680
+        }
+      },
+      "price": 2175,
+      "dimensions": {
+        "rackUnits": 47,
+        "widthMm": 600,
+        "depthMm": 1000
+      }
+    },
+    {
+      "id": "cabinet-accessories-stengel-str47612-v2-eqx",
+      "sku": "Stengel|STR47612 V2 EQX",
+      "brand": "Stengel",
+      "brandCode": "Stengel",
+      "partNumber": "STR47612 V2 EQX",
+      "name": "Cabinet",
+      "description": "Cabinet | 47Ux600x1200",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "EMEA"
+      ],
+      "countries": [
+        "germany",
+        "netherlands"
+      ],
+      "pricing": {
+        "germany": {
+          "customerPrice": 2209,
+          "equinixPrice": 1777
+        },
+        "netherlands": {
+          "customerPrice": 2209,
+          "equinixPrice": 1777
+        }
+      },
+      "price": 2209,
+      "dimensions": {
+        "rackUnits": 47,
+        "widthMm": 600,
+        "depthMm": 1200
+      }
+    },
+    {
+      "id": "cabinet-accessories-stengel-str52812-v2-eqx",
+      "sku": "Stengel|STR52812 V2 EQX",
+      "brand": "Stengel",
+      "brandCode": "Stengel",
+      "partNumber": "STR52812 V2 EQX",
+      "name": "Cabinet",
+      "description": "Cabinet | 52Ux800x1200",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "EMEA"
+      ],
+      "countries": [
+        "germany",
+        "netherlands"
+      ],
+      "pricing": {
+        "germany": {
+          "customerPrice": 2584,
+          "equinixPrice": 1959
+        },
+        "netherlands": {
+          "customerPrice": 2584,
+          "equinixPrice": 1959
+        }
+      },
+      "price": 2584,
+      "dimensions": {
+        "rackUnits": 52,
+        "widthMm": 800,
+        "depthMm": 1200
+      }
+    },
+    {
+      "id": "cabinet-accessories-stengel-str52612-v2-eqx",
+      "sku": "Stengel|STR52612 V2 EQX",
+      "brand": "Stengel",
+      "brandCode": "Stengel",
+      "partNumber": "STR52612 V2 EQX",
+      "name": "Cabinet",
+      "description": "Cabinet | 52Ux600x1200",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "EMEA"
+      ],
+      "countries": [
+        "germany",
+        "netherlands"
+      ],
+      "pricing": {
+        "germany": {
+          "customerPrice": 2321,
+          "equinixPrice": 1840
+        },
+        "netherlands": {
+          "customerPrice": 2321,
+          "equinixPrice": 1840
+        }
+      },
+      "price": 2321,
+      "dimensions": {
+        "rackUnits": 52,
+        "widthMm": 600,
+        "depthMm": 1200
       }
     },
     {
@@ -4814,26 +4814,18 @@
         "EMEA"
       ],
       "countries": [
-        "france",
         "germany",
-        "netherlands",
-        "united-kingdom"
+        "netherlands"
       ],
       "pricing": {
-        "france": {
-          "customerPrice": 259
-        },
         "germany": {
           "customerPrice": 259
         },
         "netherlands": {
           "customerPrice": 259
-        },
-        "united-kingdom": {
-          "customerPrice": 222
         }
       },
-      "price": 222,
+      "price": 259,
       "dimensions": {
         "rackUnits": 45,
         "widthMm": 120
@@ -4853,26 +4845,18 @@
         "EMEA"
       ],
       "countries": [
-        "france",
         "germany",
-        "netherlands",
-        "united-kingdom"
+        "netherlands"
       ],
       "pricing": {
-        "france": {
-          "customerPrice": 264
-        },
         "germany": {
           "customerPrice": 264
         },
         "netherlands": {
           "customerPrice": 264
-        },
-        "united-kingdom": {
-          "customerPrice": 227
         }
       },
-      "price": 227,
+      "price": 264,
       "dimensions": {
         "rackUnits": 47,
         "widthMm": 120
@@ -4892,26 +4876,18 @@
         "EMEA"
       ],
       "countries": [
-        "france",
         "germany",
-        "netherlands",
-        "united-kingdom"
+        "netherlands"
       ],
       "pricing": {
-        "france": {
-          "customerPrice": 272
-        },
         "germany": {
           "customerPrice": 272
         },
         "netherlands": {
           "customerPrice": 272
-        },
-        "united-kingdom": {
-          "customerPrice": 234
         }
       },
-      "price": 234,
+      "price": 272,
       "dimensions": {
         "rackUnits": 52,
         "widthMm": 120
@@ -4933,6 +4909,7 @@
       "countries": [
         "bulgaria",
         "finland",
+        "france",
         "ireland",
         "italy",
         "oman",
@@ -4942,13 +4919,17 @@
         "sweden",
         "switzerland",
         "turkey",
-        "united-arab-emirates"
+        "united-arab-emirates",
+        "united-kingdom"
       ],
       "pricing": {
         "bulgaria": {
           "customerPrice": 69
         },
         "finland": {
+          "customerPrice": 69
+        },
+        "france": {
           "customerPrice": 69
         },
         "ireland": {
@@ -4980,6 +4961,9 @@
         },
         "united-arab-emirates": {
           "customerPrice": 366
+        },
+        "united-kingdom": {
+          "customerPrice": 69
         }
       },
       "price": 65
@@ -5000,6 +4984,7 @@
       "countries": [
         "bulgaria",
         "finland",
+        "france",
         "ireland",
         "italy",
         "oman",
@@ -5009,13 +4994,17 @@
         "sweden",
         "switzerland",
         "turkey",
-        "united-arab-emirates"
+        "united-arab-emirates",
+        "united-kingdom"
       ],
       "pricing": {
         "bulgaria": {
           "customerPrice": 64
         },
         "finland": {
+          "customerPrice": 64
+        },
+        "france": {
           "customerPrice": 64
         },
         "ireland": {
@@ -5047,9 +5036,12 @@
         },
         "united-arab-emirates": {
           "customerPrice": 342
+        },
+        "united-kingdom": {
+          "customerPrice": 55
         }
       },
-      "price": 60
+      "price": 55
     },
     {
       "id": "cabinet-accessories-minkels-a001e-000042-000-1",
@@ -5067,6 +5059,7 @@
       "countries": [
         "bulgaria",
         "finland",
+        "france",
         "ireland",
         "italy",
         "oman",
@@ -5076,13 +5069,17 @@
         "sweden",
         "switzerland",
         "turkey",
-        "united-arab-emirates"
+        "united-arab-emirates",
+        "united-kingdom"
       ],
       "pricing": {
         "bulgaria": {
           "customerPrice": 60
         },
         "finland": {
+          "customerPrice": 60
+        },
+        "france": {
           "customerPrice": 60
         },
         "ireland": {
@@ -5114,9 +5111,12 @@
         },
         "united-arab-emirates": {
           "customerPrice": 318
+        },
+        "united-kingdom": {
+          "customerPrice": 51
         }
       },
-      "price": 56
+      "price": 51
     },
     {
       "id": "cabinet-accessories-stengel-436508-00",
@@ -5132,26 +5132,18 @@
         "EMEA"
       ],
       "countries": [
-        "france",
         "germany",
-        "netherlands",
-        "united-kingdom"
+        "netherlands"
       ],
       "pricing": {
-        "france": {
-          "customerPrice": 471
-        },
         "germany": {
           "customerPrice": 471
         },
         "netherlands": {
           "customerPrice": 471
-        },
-        "united-kingdom": {
-          "customerPrice": 405
         }
       },
-      "price": 405
+      "price": 471
     },
     {
       "id": "cabinet-accessories-stengel-417787-00",
@@ -5167,26 +5159,18 @@
         "EMEA"
       ],
       "countries": [
-        "france",
         "germany",
-        "netherlands",
-        "united-kingdom"
+        "netherlands"
       ],
       "pricing": {
-        "france": {
-          "customerPrice": 479
-        },
         "germany": {
           "customerPrice": 479
         },
         "netherlands": {
           "customerPrice": 479
-        },
-        "united-kingdom": {
-          "customerPrice": 412
         }
       },
-      "price": 412
+      "price": 479
     },
     {
       "id": "cabinet-accessories-stengel-436071-00",
@@ -5202,26 +5186,18 @@
         "EMEA"
       ],
       "countries": [
-        "france",
         "germany",
-        "netherlands",
-        "united-kingdom"
+        "netherlands"
       ],
       "pricing": {
-        "france": {
-          "customerPrice": 498
-        },
         "germany": {
           "customerPrice": 498
         },
         "netherlands": {
           "customerPrice": 498
-        },
-        "united-kingdom": {
-          "customerPrice": 428
         }
       },
-      "price": 428
+      "price": 498
     },
     {
       "id": "cage-accessories-copper-tray-12in-300mm-wide",
@@ -6028,14 +6004,18 @@
         "AMER"
       ],
       "countries": [
-        "canada"
+        "canada",
+        "united-states"
       ],
       "pricing": {
         "canada": {
           "customerPrice": 187
+        },
+        "united-states": {
+          "customerPrice": 140
         }
       },
-      "price": 187
+      "price": 140
     },
     {
       "id": "cabinet-accessories-eaton-srshelf2p",
@@ -6051,14 +6031,64 @@
         "AMER"
       ],
       "countries": [
-        "canada"
+        "canada",
+        "united-states"
       ],
       "pricing": {
         "canada": {
           "customerPrice": 121
+        },
+        "united-states": {
+          "customerPrice": 90
         }
       },
-      "price": 121
+      "price": 90
+    },
+    {
+      "id": "cabinet-accessories-eaton-srholdbrkthd",
+      "sku": "Eaton|SRHOLDBRKTHD",
+      "brand": "Eaton",
+      "brandCode": "Eaton",
+      "partNumber": "SRHOLDBRKTHD",
+      "name": "Heavy Duty Bracket",
+      "description": "Heavy Duty Bracket | 600mm",
+      "purpose": "This cabinet accessory supports installation, cable management, or equipment mounting within a data center rack. It helps keep deployments organized, serviceable, and aligned with standard rack practices in colocation environments.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "AMER"
+      ],
+      "countries": [
+        "united-states"
+      ],
+      "pricing": {
+        "united-states": {
+          "customerPrice": 200
+        }
+      },
+      "price": 200
+    },
+    {
+      "id": "cabinet-accessories-eaton-srholdbrkthdw",
+      "sku": "Eaton|SRHOLDBRKTHDW",
+      "brand": "Eaton",
+      "brandCode": "Eaton",
+      "partNumber": "SRHOLDBRKTHDW",
+      "name": "Heavy Duty Bracket",
+      "description": "Heavy Duty Bracket | 800mm",
+      "purpose": "This cabinet accessory supports installation, cable management, or equipment mounting within a data center rack. It helps keep deployments organized, serviceable, and aligned with standard rack practices in colocation environments.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "AMER"
+      ],
+      "countries": [
+        "united-states"
+      ],
+      "pricing": {
+        "united-states": {
+          "customerPrice": 230
+        }
+      },
+      "price": 230
     },
     {
       "id": "cabinet-accessories-mway-pdmw110087-91",
@@ -7951,18 +7981,14 @@
         "AMER"
       ],
       "countries": [
-        "colombia",
-        "mexico"
+        "colombia"
       ],
       "pricing": {
         "colombia": {
           "customerPrice": 6004229
-        },
-        "mexico": {
-          "customerPrice": 1527
         }
       },
-      "price": 1527
+      "price": 6004229
     },
     {
       "id": "power-accessories-panduit-p42d04m",
@@ -8629,29 +8655,6 @@
       "price": 131414
     },
     {
-      "id": "power-accessories-panduit-p36e33m",
-      "sku": "Panduit|P36E33M",
-      "brand": "Panduit",
-      "brandCode": "Panduit",
-      "partNumber": "P36E33M",
-      "name": "rPDU",
-      "description": "Rpdu | 208V | 30A | 1P | 30xC13 - 6xC19 | Monitored Switched",
-      "purpose": "A rack PDU (rPDU) distributes conditioned power from a facility feed to multiple outlets within a cabinet. Monitored, metered, and switched models add visibility and control over power consumption and individual outlet states for capacity planning and remote operations.",
-      "categoryId": "power-accessories",
-      "regions": [
-        "AMER"
-      ],
-      "countries": [
-        "mexico"
-      ],
-      "pricing": {
-        "mexico": {
-          "customerPrice": 1766
-        }
-      },
-      "price": 1766
-    },
-    {
       "id": "power-accessories-panduit-p48d20g",
       "sku": "Panduit|P48D20G",
       "brand": "Panduit",
@@ -8767,6 +8770,29 @@
       "price": 365020
     },
     {
+      "id": "power-accessories-eaton-ebab05",
+      "sku": "Eaton|EBAB05",
+      "brand": "Eaton",
+      "brandCode": "Eaton",
+      "partNumber": "EBAB05",
+      "name": "rPDU",
+      "description": "Rpdu | 32A | 230V | Basic PDU | 1P | 20xC13 | 4xC19 | IEC 60309 Input | 3MTR CORD",
+      "purpose": "A rack PDU (rPDU) distributes electrical power to multiple devices mounted in a single cabinet. It converts a facility power feed into rack-level outlets for servers, switches, and other equipment while supporting standardized connectors for the target region.",
+      "categoryId": "power-accessories",
+      "regions": [
+        "APAC"
+      ],
+      "countries": [
+        "south-korea"
+      ],
+      "pricing": {
+        "south-korea": {
+          "customerPrice": 464000
+        }
+      },
+      "price": 464000
+    },
+    {
       "id": "cabinet-accessories-sra-800-252054",
       "sku": "SRA|800-252054",
       "brand": "SRA Solutions",
@@ -8844,6 +8870,7 @@
       "countries": [
         "bulgaria",
         "finland",
+        "france",
         "ireland",
         "italy",
         "oman",
@@ -8853,13 +8880,17 @@
         "sweden",
         "switzerland",
         "turkey",
-        "united-arab-emirates"
+        "united-arab-emirates",
+        "united-kingdom"
       ],
       "pricing": {
         "bulgaria": {
           "customerPrice": 92
         },
         "finland": {
+          "customerPrice": 92
+        },
+        "france": {
           "customerPrice": 92
         },
         "ireland": {
@@ -8891,9 +8922,12 @@
         },
         "united-arab-emirates": {
           "customerPrice": 486
+        },
+        "united-kingdom": {
+          "customerPrice": 78
         }
       },
-      "price": 86
+      "price": 78
     },
     {
       "id": "cabinet-accessories-minkels-a000k-000002-900-1",
@@ -8911,6 +8945,7 @@
       "countries": [
         "bulgaria",
         "finland",
+        "france",
         "ireland",
         "italy",
         "oman",
@@ -8920,13 +8955,17 @@
         "sweden",
         "switzerland",
         "turkey",
-        "united-arab-emirates"
+        "united-arab-emirates",
+        "united-kingdom"
       ],
       "pricing": {
         "bulgaria": {
           "customerPrice": 62
         },
         "finland": {
+          "customerPrice": 62
+        },
+        "france": {
           "customerPrice": 62
         },
         "ireland": {
@@ -8958,9 +8997,12 @@
         },
         "united-arab-emirates": {
           "customerPrice": 329
+        },
+        "united-kingdom": {
+          "customerPrice": 53
         }
       },
-      "price": 58
+      "price": 53
     },
     {
       "id": "cabinet-accessories-stengel-319063-00",
@@ -8976,26 +9018,18 @@
         "EMEA"
       ],
       "countries": [
-        "france",
         "germany",
-        "netherlands",
-        "united-kingdom"
+        "netherlands"
       ],
       "pricing": {
-        "france": {
-          "customerPrice": 124
-        },
         "germany": {
           "customerPrice": 124
         },
         "netherlands": {
           "customerPrice": 124
-        },
-        "united-kingdom": {
-          "customerPrice": 107
         }
       },
-      "price": 107
+      "price": 124
     },
     {
       "id": "cabinet-accessories-stengel-296270-02",
@@ -9011,26 +9045,18 @@
         "EMEA"
       ],
       "countries": [
-        "france",
         "germany",
-        "netherlands",
-        "united-kingdom"
+        "netherlands"
       ],
       "pricing": {
-        "france": {
-          "customerPrice": 133
-        },
         "germany": {
           "customerPrice": 133
         },
         "netherlands": {
           "customerPrice": 133
-        },
-        "united-kingdom": {
-          "customerPrice": 114
         }
       },
-      "price": 114
+      "price": 133
     },
     {
       "id": "cross-connect-accessories-omnitron-8523n-1-e-keq-australia",
@@ -12134,6 +12160,52 @@
         }
       },
       "price": 696
+    },
+    {
+      "id": "cabinet-accessories-eaton-srcablevrts",
+      "sku": "Eaton|SRCABLEVRTS",
+      "brand": "Eaton",
+      "brandCode": "Eaton",
+      "partNumber": "SRCABLEVRTS",
+      "name": "Vertical Cable Management Fingers",
+      "description": "Vertical Cable Management Fingers | 3in",
+      "purpose": "Vertical cable management fingers are spaced guides installed along the height of a rack to organize and retain patch cables. They reduce cable congestion, protect bend radius at the rack edge, and make it easier to trace, remove, or replace individual connections.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "AMER"
+      ],
+      "countries": [
+        "united-states"
+      ],
+      "pricing": {
+        "united-states": {
+          "customerPrice": 260
+        }
+      },
+      "price": 260
+    },
+    {
+      "id": "cabinet-accessories-eaton-srcablevrtl",
+      "sku": "Eaton|SRCABLEVRTL",
+      "brand": "Eaton",
+      "brandCode": "Eaton",
+      "partNumber": "SRCABLEVRTL",
+      "name": "Vertical Cable Management Fingers",
+      "description": "Vertical Cable Management Fingers | 6in",
+      "purpose": "Vertical cable management fingers are spaced guides installed along the height of a rack to organize and retain patch cables. They reduce cable congestion, protect bend radius at the rack edge, and make it easier to trace, remove, or replace individual connections.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "AMER"
+      ],
+      "countries": [
+        "united-states"
+      ],
+      "pricing": {
+        "united-states": {
+          "customerPrice": 290
+        }
+      },
+      "price": 290
     },
     {
       "id": "cabinet-accessories-sra-140859",
