@@ -149,10 +149,12 @@ export function HomeLandingPage() {
 
   const resourceCards: ResourceCard[] = [
     {
-      title: 'Excel price list',
-      description: 'Upload or connect to the live Accessories Price List workbook for reference data.',
-      action: 'Open Excel data',
-      to: '/excel',
+      title: 'Accessories Price List (Excel)',
+      description:
+        'Catalog data in this tool is pulled from the Accessories Price List workbook in Microsoft Teams. Sign in with your Equinix Microsoft account to open it.',
+      action: 'Open Excel in Teams',
+      to: 'https://teams.microsoft.com/l/entity/1c256a65-83a6-4b5c-9ccf-78f8afb6f1e8/_djb2_msteams_prefix_3782972344?context=%7B%22chatId%22%3A%2219%3A0bc8000ec6d548239c719d3a35c23733%40thread.v2%22%2C%22contextType%22%3A%22chat%22%7D&tenantId=72adb271-2fc7-4afe-a5ee-9de6a59f6bfb',
+      external: true,
     },
     {
       title: 'Create an account',
@@ -202,6 +204,18 @@ export function HomeLandingPage() {
             Browse data center accessories, compare regional pricing, and assemble quotes from the
             Equinix Accessories Price List — organized the way you expect from Equinix product
             documentation.
+          </p>
+          <p className="text-sm text-white/75 leading-relaxed m-0 mt-4 max-w-3xl">
+            Product data is pulled from the{' '}
+            <a
+              href="https://teams.microsoft.com/l/entity/1c256a65-83a6-4b5c-9ccf-78f8afb6f1e8/_djb2_msteams_prefix_3782972344?context=%7B%22chatId%22%3A%2219%3A0bc8000ec6d548239c719d3a35c23733%40thread.v2%22%2C%22contextType%22%3A%22chat%22%7D&tenantId=72adb271-2fc7-4afe-a5ee-9de6a59f6bfb"
+              target="_blank"
+              rel="noreferrer"
+              className="text-white underline underline-offset-2 hover:text-white"
+            >
+              Accessories Price List Excel workbook
+            </a>
+            . You must be signed in with an Equinix Microsoft account to view it.
           </p>
           <div className="flex flex-wrap gap-3 mt-8">
             <button
