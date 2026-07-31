@@ -7,31 +7,45 @@ import { formatDescriptionWithDisplayUnits } from './productDisplayName';
 
 const SUBTYPE_BY_CATEGORY: Partial<Record<CategoryId, string>> = {
   'cabinet-accessories': 'EIS Cabinet Accessories',
-  'power-accessories': 'EIS Power Accessories',
+  'power-accessories': 'PDU Accessories',
   'cross-connect-accessories': 'EIS Cross Connect Accessories',
   'cage-accessories': 'EIS Cage Accessories',
   'installation-costs': 'Installation Costs',
 };
 
+/**
+ * SOW description line: Brand | Description | PartNumber
+ * Example: Eaton | Cabinet | 48Ux600x1100 | Closed | ENXTL48611
+ */
 export function formatQuoteProductLine(product: Product, displayUnit: DisplayUnit): string {
   const partNumber = (product.partNumber ?? '').trim();
   const brand = (product.brand ?? '').trim();
   const description = formatDescriptionWithDisplayUnits(product.description, displayUnit).trim();
   const segments: string[] = [];
 
-  if (partNumber) segments.push(partNumber);
   if (brand) segments.push(brand);
 
   if (description) {
     let desc = description;
-    // Cage-style rows often repeat the part number as the first description segment.
     if (partNumber) {
-      const parts = description.split('|').map((part) => part.trim());
+      const parts = description.split('|').map((part) => part.trim()).filter(Boolean);
       if (parts[0]?.toLowerCase() === partNumber.toLowerCase()) {
         desc = parts.slice(1).join(' | ');
+      } else if (parts[parts.length - 1]?.toLowerCase() === partNumber.toLowerCase()) {
+        desc = parts.slice(0, -1).join(' | ');
       }
     }
     if (desc) segments.push(desc);
+  }
+
+  if (partNumber) {
+    const lastSegmentParts = segments[segments.length - 1]
+      ?.split('|')
+      .map((part) => part.trim())
+      .filter(Boolean);
+    const lastSegment = lastSegmentParts?.[lastSegmentParts.length - 1];
+    const alreadyEndsWithPart = lastSegment?.toLowerCase() === partNumber.toLowerCase();
+    if (!alreadyEndsWithPart) segments.push(partNumber);
   }
 
   return segments.join(' | ');
@@ -44,6 +58,7 @@ export function createQuoteProductLine(
 ): QuoteProductLine {
   return {
     id: product.id,
+    partNumber: (product.partNumber ?? '').trim(),
     name: formatQuoteProductLine(product, displayUnit),
     quantity,
   };
@@ -81,6 +96,7 @@ function createLineId(): string {
 export function createEmptyQuoteProductLine(): QuoteProductLine {
   return {
     id: createLineId(),
+    partNumber: '',
     name: '',
     quantity: 1,
     kind: 'product',
@@ -90,6 +106,7 @@ export function createEmptyQuoteProductLine(): QuoteProductLine {
 export function createEmptyCplLine(): QuoteProductLine {
   return {
     id: createLineId(),
+    partNumber: '',
     name: '',
     quantity: 1,
     kind: 'cpl',
@@ -129,24 +146,42 @@ function resolveLineSubtype(line: QuoteProductLine, fallbackSubtype: string): st
   return fallbackSubtype || 'Accessories';
 }
 
-function formatLineWithQuantity(line: QuoteProductLine): string {
-  const name = (line.name || ' ').trim() || ' ';
-  return `${name} | QTY (${line.quantity || 0})`;
+function resolvePartNumber(line: QuoteProductLine): string {
+  const explicit = line.partNumber?.trim();
+  if (explicit) return explicit;
+
+  const product = getProductById(line.id);
+  if (product?.partNumber?.trim()) return product.partNumber.trim();
+
+  const fromName = line.name.split('|')[0]?.trim();
+  return fromName || ' ';
+}
+
+function formatPriceOrAutoFill(
+  line: QuoteProductLine,
+  formatPrice: (value: number) => string,
+): string {
+  return line.price != null ? formatPrice(line.price) : 'Auto-Fill';
 }
 
 /**
- * Groups quote lines by subtype (category), then appends a SOW rollup:
+ * EIS On Hand Supply quote template.
+ *
+ * Account name: …
+ *
+ * Quote Type: Accessories
  *
  * Subtype: EIS Cabinet Accessories
+ * Product 1 : 10x ENXTL48611 (Name of product on the on-hand supply list)
+ * Price: Auto-Fill
+ * Labor: Auto-Fill
  *
- * Product 1 - Name of product on the on-hand supply list:
+ * Scope of Work:
  *
- * PART | Brand | Description | QTY (n)
- * …
- * SOW:
+ * Equinix will purchase and install:
  *
- * Equinix To Purchase and Install:
- * …
+ * 10x ENXTL48611
+ * Eaton | Cabinet | …
  */
 export function formatQuotePreview(
   form: QuoteFormState,
@@ -155,58 +190,72 @@ export function formatQuotePreview(
 ): string {
   const formatPrice = options.formatPrice ?? ((value: number) => String(value));
   const fallbackSubtype = form.subtype.trim() || 'Accessories';
+  const usid = form.usid.trim() || 'N/A';
 
   const lines = [
     `Account name: ${form.accountName || ' '}`,
+    '',
     `Custom Billing Account: ${form.customBillingAccount || ' '}`,
-    `USID (If Applicable): ${form.usid || ' '}`,
-    `Customer Contact Name: ${form.customerContactName || ' '}`,
-    `Quote Type (Line Item Name): ${form.quoteType || ' '}`,
+    '',
+    `USID (If Applicable): ${usid}`,
+    '',
+    `Customer Contact Name:  ${form.customerContactName || ' '}`,
+    '',
+    `Quote Type: ${form.quoteType || 'Accessories'}`,
     '',
   ];
 
   const productLines = products.filter((line) => line.kind !== 'cpl');
   const cplLines = products.filter((line) => line.kind === 'cpl');
 
-  const grouped = new Map<string, QuoteProductLine[]>();
+  let productIndex = 0;
   for (const line of productLines) {
+    productIndex += 1;
     const subtype = resolveLineSubtype(line, fallbackSubtype);
-    const bucket = grouped.get(subtype);
-    if (bucket) bucket.push(line);
-    else grouped.set(subtype, [line]);
-  }
+    const partNumber = resolvePartNumber(line);
+    const qty = line.quantity || 0;
 
-  let productGroupIndex = 0;
-  for (const [subtype, groupLines] of grouped) {
-    productGroupIndex += 1;
-    lines.push(`Subtype: ${subtype}`, '');
-    lines.push(`Product ${productGroupIndex} - Name of product on the on-hand supply list:`, '');
-    for (const line of groupLines) {
-      lines.push(formatLineWithQuantity(line));
-      if (line.price != null) {
-        lines.push(`Price  (${formatPrice(line.price)})`);
-      }
-    }
+    lines.push(`Subtype: ${subtype}`);
+    lines.push(
+      `Product ${productIndex} : ${qty}x ${partNumber} (Name of product on the on-hand supply list)`,
+    );
+    lines.push(`Price: ${formatPriceOrAutoFill(line, formatPrice)}`);
+    lines.push('Labor: Auto-Fill');
     lines.push('');
   }
 
-  if (cplLines.length > 0) {
-    lines.push('Subtype: Custom Parts & Labor', '');
-    cplLines.forEach((line, index) => {
-      lines.push(`CPL ${index + 1} - Custom Parts & Labor:`, '');
-      lines.push(formatLineWithQuantity(line));
-      if (line.price != null) {
-        lines.push(`Price  (${formatPrice(line.price)})`);
-      }
-      lines.push('');
-    });
+  cplLines.forEach((line, index) => {
+    const partNumber = resolvePartNumber(line);
+    const qty = line.quantity || 0;
+    lines.push('Subtype: Custom Parts & Labor');
+    lines.push(`CPL ${index + 1} : ${qty}x ${partNumber || line.name || 'CPL'}`);
+    lines.push(`Price: ${formatPriceOrAutoFill(line, formatPrice)}`);
+    lines.push('Labor: Auto-Fill');
+    lines.push('');
+  });
+
+  const laborOverride = form.laborPriceOverride?.trim();
+  if (laborOverride) {
+    lines.push(`Labor price override: ${laborOverride}`, '');
   }
 
   const sowLines = [...productLines, ...cplLines];
-  if (sowLines.length > 0) {
-    lines.push('SOW:', '', 'Equinix To Purchase and Install:');
+  if (sowLines.length > 0 || form.scopeOfWorkNotes?.trim()) {
+    lines.push('Scope of Work:', '', 'Equinix will purchase and install:', '');
+
     for (const line of sowLines) {
-      lines.push(formatLineWithQuantity(line));
+      const partNumber = resolvePartNumber(line);
+      const qty = line.quantity || 0;
+      lines.push(`${qty}x ${partNumber}`);
+      if (line.name.trim()) {
+        lines.push(line.name.trim());
+      }
+      lines.push('');
+    }
+
+    const notes = form.scopeOfWorkNotes?.trim();
+    if (notes) {
+      lines.push(...notes.split(/\r?\n/));
     }
   }
 

@@ -92,7 +92,13 @@ export function RequestQuotePage() {
   );
   const [form, setForm] = useState<QuoteFormState>(() =>
     reusedForm
-      ? { ...reusedForm }
+      ? {
+          ...DEFAULT_QUOTE_FORM,
+          ...reusedForm,
+          laborPriceOverride: reusedForm.laborPriceOverride ?? '',
+          scopeOfWorkNotes: reusedForm.scopeOfWorkNotes ?? '',
+          usid: reusedForm.usid?.trim() ? reusedForm.usid : DEFAULT_QUOTE_FORM.usid,
+        }
       : {
           ...DEFAULT_QUOTE_FORM,
           customerContactName: defaultContactName,
@@ -101,7 +107,10 @@ export function RequestQuotePage() {
   );
   const [products, setProducts] = useState<QuoteProductLine[]>(() =>
     reusedProducts && reusedProducts.length > 0
-      ? reusedProducts.map((line) => ({ ...line }))
+      ? reusedProducts.map((line) => ({
+          ...line,
+          partNumber: line.partNumber ?? '',
+        }))
       : buildQuoteProductsFromCart(items, displayUnit, extraProductId),
   );
   const [copied, setCopied] = useState(false);
@@ -269,6 +278,7 @@ export function RequestQuotePage() {
               id="usid"
               label="USID (If Applicable)"
               value={form.usid}
+              placeholder="N/A"
               onChange={(value) => updateForm('usid', value)}
             />
             <QuoteField
@@ -285,7 +295,7 @@ export function RequestQuotePage() {
             </h2>
             <QuoteField
               id="quote-type"
-              label="Quote Type (Line Item Name)"
+              label="Quote Type"
               value={form.quoteType}
               placeholder="Accessories"
               onChange={(value) => updateForm('quoteType', value)}
@@ -298,9 +308,34 @@ export function RequestQuotePage() {
               onChange={(value) => updateForm('subtype', value)}
             />
             <p className="text-xs text-text-muted m-0 -mt-2">
-              Preview groups cart products by category subtype automatically. This value is used for
+              Preview assigns subtype from each product&apos;s category. This value is used for
               manually added lines.
             </p>
+            <QuoteField
+              id="labor-override"
+              label="Labor price override (optional)"
+              value={form.laborPriceOverride}
+              placeholder="$99.11/hour (Canada)"
+              onChange={(value) => updateForm('laborPriceOverride', value)}
+            />
+            <div>
+              <label
+                htmlFor="sow-notes"
+                className="text-sm font-semibold text-text-secondary block mb-1.5"
+              >
+                Additional Scope of Work notes
+              </label>
+              <textarea
+                id="sow-notes"
+                rows={4}
+                value={form.scopeOfWorkNotes}
+                placeholder={
+                  'Equinix to install 6" Fiber Tray over all cabinets\nEquinix to install a 2" Fiber Express Exit on every cabinet.'
+                }
+                onChange={(e) => updateForm('scopeOfWorkNotes', e.target.value)}
+                className="w-full border border-border rounded-sm px-3 py-2 text-sm bg-surface text-text font-mono focus:outline-none focus:border-brand-red resize-y"
+              />
+            </div>
           </section>
 
           <section className="border border-border rounded-sm bg-surface p-5 space-y-4">
@@ -343,6 +378,27 @@ export function RequestQuotePage() {
                     ) : null}
                   </div>
 
+                  {!isCpl ? (
+                    <div>
+                      <label
+                        htmlFor={`product-part-${product.id}`}
+                        className="text-sm font-semibold text-text-secondary block mb-1.5"
+                      >
+                        Part number
+                      </label>
+                      <input
+                        id={`product-part-${product.id}`}
+                        type="text"
+                        value={product.partNumber ?? ''}
+                        placeholder="ENXTL48611"
+                        onChange={(e) =>
+                          updateProduct(product.id, { partNumber: e.target.value })
+                        }
+                        className="w-full border border-border rounded-sm px-3 py-2 text-sm bg-surface text-text font-mono focus:outline-none focus:border-brand-red"
+                      />
+                    </div>
+                  ) : null}
+
                   <div>
                     <label
                       htmlFor={`product-name-${product.id}`}
@@ -350,7 +406,7 @@ export function RequestQuotePage() {
                     >
                       {isCpl
                         ? 'Description of custom parts & labor'
-                        : 'Name of product on the on-hand supply list'}
+                        : 'Scope of Work description'}
                     </label>
                     <textarea
                       id={`product-name-${product.id}`}
@@ -359,7 +415,7 @@ export function RequestQuotePage() {
                       placeholder={
                         isCpl
                           ? 'Describe the custom parts and labor scope, materials, and work required'
-                          : 'ENXTL45812G2 | Eaton | Cabinet | 45Ux800x1200'
+                          : 'Eaton | Cabinet | 48Ux600x1100 | Closed | ENXTL48611'
                       }
                       onChange={(e) => updateProduct(product.id, { name: e.target.value })}
                       className="w-full border border-border rounded-sm px-3 py-2 text-sm bg-surface text-text font-mono focus:outline-none focus:border-brand-red resize-y"
@@ -402,7 +458,7 @@ export function RequestQuotePage() {
                         step="0.01"
                         inputMode="decimal"
                         value={product.price ?? ''}
-                        placeholder="0.00"
+                        placeholder="Auto-Fill"
                         onChange={(e) => {
                           const raw = e.target.value;
                           updateProduct(product.id, {
