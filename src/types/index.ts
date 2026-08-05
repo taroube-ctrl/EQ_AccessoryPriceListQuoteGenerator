@@ -78,6 +78,8 @@ export interface Product {
   pricing?: Partial<Record<CountryId, CountryProductPrice>>;
   dimensions?: import('./dimensions').ProductDimensions;
   imagePlaceholder?: string;
+  /** Optional explicit product image URL (overrides family image mapping). */
+  imageUrl?: string;
 }
 
 export interface CountryProductPrice {

@@ -5,6 +5,7 @@ import { getCountryName, getCountryIdsForRegions } from '../../data/countries';
 import { useCatalog } from '../../context/CatalogContext';
 import { getProductDisplayPrice } from '../../utils/productPricing';
 import { ProductDimensionsDisplay } from './ProductDimensionsDisplay';
+import { ProductImage } from './ProductImage';
 import { PduInputCableBadge, ProductLabels } from '../ui/Badge';
 import { getProductDisplayName, isCabinetProduct, resolveProductDimensions } from '../../utils/productDisplayName';
 import { pduRequiresSeparateInputCable } from '../../utils/powerPduInputCable';
@@ -46,24 +47,12 @@ export function ProductCard({ product }: ProductCardProps) {
           'focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand-red',
         )}
       >
-        <div className="aspect-[4/3] bg-surface-muted flex items-center justify-center border-b border-border">
-          <div className="text-center text-text-muted">
-            <svg
-              className="mx-auto mb-2 opacity-40"
-              width="48"
-              height="48"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-            >
-              <rect x="3" y="3" width="18" height="18" rx="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <path d="M21 15l-5-5L5 21" />
-            </svg>
-            <span className="text-xs font-mono">Product Image</span>
-          </div>
-        </div>
+        <ProductImage
+          product={product}
+          className="aspect-[4/3] border-b border-border"
+          iconSize={48}
+          labelClassName="text-xs"
+        />
 
         <div className="p-4 flex flex-col flex-1">
           <div className="mb-2">
