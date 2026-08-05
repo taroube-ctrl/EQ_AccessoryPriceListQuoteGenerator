@@ -9,6 +9,7 @@ import { getProductEquinixPrice, getProductDisplayPrice } from '../utils/product
 import { useCatalog } from '../context/CatalogContext';
 import { ProductDimensionsDisplay } from '../components/catalog/ProductDimensionsDisplay';
 import { ProductCard } from '../components/catalog/ProductCard';
+import { ProductImage } from '../components/catalog/ProductImage';
 import { PduInputCableBadge, ProductLabels } from '../components/ui/Badge';
 import { Button } from '../components/ui/Button';
 import { getProductDisplayName, formatDescriptionWithDisplayUnits, resolveProductDimensions } from '../utils/productDisplayName';
@@ -53,24 +54,12 @@ export function ProductDetailPage() {
   return (
     <div className="max-w-[1440px] mx-auto px-6 py-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-12">
-        <div className="aspect-[4/3] bg-surface-muted border border-border rounded-sm flex items-center justify-center">
-          <div className="text-center text-text-muted">
-            <svg
-              className="mx-auto mb-2 opacity-40"
-              width="64"
-              height="64"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-            >
-              <rect x="3" y="3" width="18" height="18" rx="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <path d="M21 15l-5-5L5 21" />
-            </svg>
-            <span className="text-sm font-mono">Product Image</span>
-          </div>
-        </div>
+        <ProductImage
+          product={product}
+          className="aspect-[4/3] border border-border rounded-sm"
+          iconSize={64}
+          labelClassName="text-sm"
+        />
 
         <div>
           <div className="mb-3">
@@ -85,7 +74,6 @@ export function ProductDetailPage() {
               </div>
             ) : null}
           </div>
-
           {product.partNumber ? (
             <p className="font-mono text-sm text-text-muted mb-1 m-0">{product.partNumber}</p>
           ) : null}
