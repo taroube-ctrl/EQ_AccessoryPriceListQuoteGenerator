@@ -4,6 +4,7 @@ import { useCart } from '../context/CartContext';
 import { useCatalog } from '../context/CatalogContext';
 import { formatPrice } from '../data/localeConfig';
 import { getProductById } from '../data/products';
+import { ProductImage } from '../components/catalog/ProductImage';
 import { Button } from '../components/ui/Button';
 import { getProductDisplayName } from '../utils/productDisplayName';
 
@@ -56,28 +57,52 @@ export function CartPage() {
                 return (
                   <li key={item.productId} className="p-5">
                     <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
-                      <div className="min-w-0 flex-1">
+                      <div className="flex items-start gap-4 min-w-0 flex-1">
                         <Link
                           to={`/products/${product.id}`}
-                          className="text-lg font-bold text-text no-underline hover:text-brand-red"
+                          className="shrink-0 block no-underline"
+                          aria-label={`View ${getProductDisplayName(product, displayUnit)}`}
                         >
-                          {getProductDisplayName(product, displayUnit)}
+                          <ProductImage
+                            product={product}
+                            className="w-20 h-20 sm:w-24 sm:h-24 border border-border rounded-sm"
+                            iconSize={28}
+                            labelClassName="text-[10px]"
+                          />
                         </Link>
-                        {product.partNumber ? (
-                          <p className="font-mono text-xs text-text-muted mt-1 mb-0">
-                            {product.partNumber}
-                          </p>
-                        ) : null}
-                        {item.unitPrice != null ? (
-                          <p className="text-sm text-text-muted mt-2 mb-0">
-                            {formatPrice(item.unitPrice, countryId)} each
-                          </p>
-                        ) : (
-                          <p className="text-sm text-text-muted mt-2 mb-0">Pricing unavailable</p>
-                        )}
+                        <div className="min-w-0 flex-1">
+                          <Link
+                            to={`/products/${product.id}`}
+                            className="text-lg font-bold text-text no-underline hover:text-brand-red"
+                          >
+                            {getProductDisplayName(product, displayUnit)}
+                          </Link>
+                          {product.partNumber ? (
+                            <p className="font-mono text-xs text-text-muted mt-1 mb-0">
+                              {product.partNumber}
+                            </p>
+                          ) : null}
+                          {item.unitPrice != null ? (
+                            <p className="text-sm text-text-muted mt-2 mb-0">
+                              {formatPrice(item.unitPrice, countryId)} each
+                            </p>
+                          ) : (
+                            <p className="text-sm text-text-muted mt-2 mb-0">Pricing unavailable</p>
+                          )}
+                          <button
+                            type="button"
+                            onClick={() => removeProduct(item.productId)}
+                            className={clsx(
+                              'mt-3 text-sm text-text-muted border-none bg-transparent cursor-pointer p-0',
+                              'hover:text-brand-red hover:underline',
+                            )}
+                          >
+                            Remove
+                          </button>
+                        </div>
                       </div>
 
-                      <div className="flex items-center gap-4 shrink-0">
+                      <div className="flex items-center gap-4 shrink-0 sm:pl-2">
                         <div className="inline-flex items-center border border-border rounded-sm overflow-hidden">
                           <button
                             type="button"
@@ -105,17 +130,6 @@ export function CartPage() {
                         </div>
                       </div>
                     </div>
-
-                    <button
-                      type="button"
-                      onClick={() => removeProduct(item.productId)}
-                      className={clsx(
-                        'mt-4 text-sm text-text-muted border-none bg-transparent cursor-pointer p-0',
-                        'hover:text-brand-red hover:underline',
-                      )}
-                    >
-                      Remove
-                    </button>
                   </li>
                 );
               })}
