@@ -265,7 +265,7 @@ export function formatQuotePreview(
 const OUTLOOK_COMPOSE_URL = 'https://outlook.office.com/mail/deeplink/compose';
 const OUTLOOK_BODY_CHAR_LIMIT = 1800;
 
-export const QUOTE_EMAIL_TO = 'TCOMsupport@equinix.com';
+export const QUOTE_EMAIL_TO = 'COMsupport@equinix.com';
 export const QUOTE_EMAIL_CC = 'bblaski@equinix.com';
 
 export function buildQuoteEmailSubject(form: QuoteFormState): string {

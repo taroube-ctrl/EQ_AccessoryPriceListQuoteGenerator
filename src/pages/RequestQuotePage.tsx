@@ -28,6 +28,7 @@ import {
   createEmptyQuoteProductLine,
   formatQuotePreview,
   inferQuoteSubtype,
+  QUOTE_EMAIL_TO,
   type OpenOutlookResult,
 } from '../utils/requestQuote';
 import { createOutlookQuoteDraft } from '../utils/outlookGraph';
@@ -529,13 +530,13 @@ export function RequestQuotePage() {
               )}
             </div>
             <p className="text-xs text-text-muted m-0">
-              Outlook emails are addressed to <strong>TCOMsupport@equinix.com</strong>
+              Outlook emails are addressed to <strong>{QUOTE_EMAIL_TO}</strong>
               {isAzureClientConfigured() ? ' (Cc: bblaski@equinix.com when Microsoft Graph is available)' : ''}.
             </p>
             {outlookStatus === 'too-long' ? (
               <p className="text-sm text-amber-950 bg-amber-50 border border-amber-200 rounded-sm px-3 py-2 m-0">
                 This quote is too long to pre-fill in Outlook automatically. Use Copy quote text and
-                paste it into a new email to TCOMsupport@equinix.com.
+                paste it into a new email to {QUOTE_EMAIL_TO}.
               </p>
             ) : null}
             {outlookStatus === 'clipboard-failed' ? (
@@ -547,12 +548,12 @@ export function RequestQuotePage() {
             {outlookStatus === 'needs-sign-in' ? (
               <p className="text-sm text-amber-950 bg-amber-50 border border-amber-200 rounded-sm px-3 py-2 m-0">
                 Sign in with Microsoft from the app menu (9-dot icon), then try again so Outlook can
-                create a draft addressed to TCOMsupport@equinix.com with Cc filled.
+                create a draft addressed to {QUOTE_EMAIL_TO} with Cc filled.
               </p>
             ) : null}
             {outlookStatus === 'graph-failed' ? (
               <p className="text-sm text-amber-950 bg-amber-50 border border-amber-200 rounded-sm px-3 py-2 m-0">
-                Opened Outlook with <strong>To:</strong> TCOMsupport@equinix.com and the quote body.
+                Opened Outlook with <strong>To:</strong> {QUOTE_EMAIL_TO} and the quote body.
                 Cc could not be set automatically
                 {outlookError ? ` (${outlookError})` : ''}. For Cc support, grant Azure delegated{' '}
                 <code>Mail.ReadWrite</code>, then try again while signed in.

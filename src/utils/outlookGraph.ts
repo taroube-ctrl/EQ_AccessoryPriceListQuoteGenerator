@@ -40,7 +40,7 @@ interface GraphDraftMessage {
 
 /**
  * Creates a draft in the signed-in user's Microsoft Outlook mailbox with
- * To: TCOMsupport@equinix.com and Cc: bblaski@equinix.com, plus subject/body.
+ * To: COMsupport@equinix.com and Cc: bblaski@equinix.com, plus subject/body.
  * Returns an Outlook on the web link to open the draft.
  */
 export async function createOutlookQuoteDraft(
@@ -58,7 +58,7 @@ export async function createOutlookQuoteDraft(
     {
       emailAddress: {
         address: QUOTE_EMAIL_TO,
-        name: 'TCOM Support',
+        name: 'COM Support',
       },
     },
   ];
