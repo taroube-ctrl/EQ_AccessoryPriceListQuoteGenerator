@@ -272,7 +272,7 @@ export function buildQuoteEmailSubject(form: QuoteFormState): string {
   const billingAccount = form.customBillingAccount.trim();
   const usid = form.usid.trim() || 'N/A';
 
-  return `${accountName} – ${billingAccount} – ${usid}`;
+  return `${accountName} – ${usid} – ${billingAccount}`;
 }
 
 export function buildMailtoQuoteUrl(
