@@ -268,9 +268,11 @@ const OUTLOOK_BODY_CHAR_LIMIT = 1800;
 export const QUOTE_EMAIL_TO = 'COMsupport@equinix.com';
 
 export function buildQuoteEmailSubject(form: QuoteFormState): string {
-  const account = form.accountName.trim();
-  if (account) return `Accessories Quote Request - ${account}`;
-  return 'Accessories Quote Request';
+  const accountName = form.accountName.trim();
+  const billingAccount = form.customBillingAccount.trim();
+  const usid = form.usid.trim() || 'N/A';
+
+  return `${accountName} – ${billingAccount} – ${usid}`;
 }
 
 export function buildMailtoQuoteUrl(
