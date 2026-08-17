@@ -5,12 +5,13 @@ import { useCatalog } from '../context/CatalogContext';
 import { formatPrice } from '../data/localeConfig';
 import { getProductById } from '../data/products';
 import { ProductImage } from '../components/catalog/ProductImage';
+import { CartQuantityControl } from '../components/cart/CartQuantityControl';
 import { Button } from '../components/ui/Button';
 import { getProductDisplayName } from '../utils/productDisplayName';
 
 export function CartPage() {
   const navigate = useNavigate();
-  const { items, itemCount, removeProduct, updateQuantity, clearCart } = useCart();
+  const { items, itemCount, removeProduct, clearCart } = useCart();
   const { countryId, displayUnit } = useCatalog();
 
   const pricedTotal = items.reduce((total, item) => {
@@ -103,25 +104,7 @@ export function CartPage() {
                       </div>
 
                       <div className="flex items-center gap-4 shrink-0 sm:pl-2">
-                        <div className="inline-flex items-center border border-border rounded-sm overflow-hidden">
-                          <button
-                            type="button"
-                            aria-label="Decrease quantity"
-                            onClick={() => updateQuantity(item.productId, item.quantity - 1)}
-                            className="w-8 h-8 border-none bg-surface-muted cursor-pointer hover:bg-accent-subtle"
-                          >
-                            −
-                          </button>
-                          <span className="w-10 text-center text-sm font-mono">{item.quantity}</span>
-                          <button
-                            type="button"
-                            aria-label="Increase quantity"
-                            onClick={() => updateQuantity(item.productId, item.quantity + 1)}
-                            className="w-8 h-8 border-none bg-surface-muted cursor-pointer hover:bg-accent-subtle"
-                          >
-                            +
-                          </button>
-                        </div>
+                        <CartQuantityControl productId={item.productId} quantity={item.quantity} />
 
                         <div className="text-right min-w-[6rem]">
                           <p className="text-lg font-extrabold m-0">

@@ -100,13 +100,17 @@ export function CartProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const updateQuantity = useCallback((productId: string, quantity: number) => {
-    if (quantity <= 0) {
+    const nextQuantity = Math.floor(quantity);
+
+    if (nextQuantity <= 0) {
       setItems((current) => current.filter((item) => item.productId !== productId));
       return;
     }
 
     setItems((current) =>
-      current.map((item) => (item.productId === productId ? { ...item, quantity } : item)),
+      current.map((item) =>
+        item.productId === productId ? { ...item, quantity: nextQuantity } : item,
+      ),
     );
   }, []);
 
