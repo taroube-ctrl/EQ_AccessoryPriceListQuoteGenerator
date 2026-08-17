@@ -7,6 +7,7 @@ import { parseInstallationCostsSheet } from './parseInstallationCosts.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
+const august10PriceListPath = path.join(root, 'Accessories Price List (August10).xlsx');
 const july24PriceListPath = path.join(root, 'Accessories Price List (July24).xlsx');
 const newPriceListPath = path.join(root, 'Accessories Price List_new.xlsx');
 const bundledPriceListPath = path.join(root, 'public/data/accessories-price-list.xlsx');
@@ -15,6 +16,7 @@ const installationOutputPath = path.join(root, 'src/data/installation-costs.json
 
 /** Prefer newest root workbooks, then the bundled public copy. */
 const SOURCE_CANDIDATES = [
+  { path: august10PriceListPath, label: 'August10_Accessories Price List.xlsx' },
   { path: july24PriceListPath, label: 'Accessories Price List (July24).xlsx' },
   { path: newPriceListPath, label: 'Accessories Price List_new.xlsx' },
   { path: bundledPriceListPath, label: 'public/data/accessories-price-list.xlsx' },
@@ -253,6 +255,17 @@ function parseDimensions(description) {
   return undefined;
 }
 
+function parseRowPrices(row) {
+  const customerPrice = parseNumber(row['Customer Price']);
+  const equinixPrice = parseNumber(row['Equinix Price']);
+  const unitPricePerCabe = parseNumber(row['Unit Price per CabE']);
+
+  return {
+    customerPrice: customerPrice ?? unitPricePerCabe,
+    equinixPrice,
+  };
+}
+
 function upsertProduct(productMap, row, categoryId) {
   const countryId = COUNTRY_MAP[row.Country];
   if (!countryId) return;
@@ -263,8 +276,7 @@ function upsertProduct(productMap, row, categoryId) {
   const brandCode = parseBrandCode(mpn);
   if (isExcludedBrand(brandCode)) return;
 
-  const customerPrice = parseNumber(row['Customer Price']);
-  const equinixPrice = parseNumber(row['Equinix Price']);
+  const { customerPrice, equinixPrice } = parseRowPrices(row);
   if (customerPrice == null && equinixPrice == null) return;
 
   const key = getProductKey(categoryId, mpn, row['Product Description'], brandCode, countryId);
@@ -335,7 +347,7 @@ function resolveSourceWorkbook() {
   }
 
   throw new Error(
-    'No accessories price list workbook found. Add "Accessories Price List (July24).xlsx" to the project root.',
+    'No accessories price list workbook found. Add "Accessories Price List (August10).xlsx" to the project root.',
   );
 }
 

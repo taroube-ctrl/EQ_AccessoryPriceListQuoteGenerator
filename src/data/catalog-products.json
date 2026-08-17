@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-07-30T19:37:36.875Z",
-  "source": "Accessories Price List (July24).xlsx",
+  "generatedAt": "2026-08-17T22:18:04.244Z",
+  "source": "August10_Accessories Price List.xlsx",
   "sourceRowCounts": {
     "cabinet-accessories": 512,
-    "power-accessories": 476,
-    "cross-connect-accessories": 85,
+    "power-accessories": 472,
+    "cross-connect-accessories": 79,
     "cage-accessories": 244
   },
-  "productCount": 337,
+  "productCount": 324,
   "categoryCounts": {
     "cage-accessories": 26,
     "cabinet-accessories": 137,
-    "power-accessories": 89,
-    "cross-connect-accessories": 85
+    "power-accessories": 82,
+    "cross-connect-accessories": 79
   },
   "products": [
     {
@@ -515,6 +515,291 @@
       "price": 1
     },
     {
+      "id": "cabinet-accessories-sra-138914",
+      "sku": "SRA|138914",
+      "brand": "SRA Solutions",
+      "brandCode": "SRA",
+      "partNumber": "138914",
+      "name": "Cabinet",
+      "description": "Cabinet | 45Ux600x1100",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "APAC"
+      ],
+      "countries": [
+        "australia"
+      ],
+      "pricing": {
+        "australia": {
+          "customerPrice": 4205,
+          "equinixPrice": 2900
+        }
+      },
+      "price": 4205,
+      "dimensions": {
+        "rackUnits": 45,
+        "widthMm": 600,
+        "depthMm": 1100
+      }
+    },
+    {
+      "id": "cabinet-accessories-sra-138915",
+      "sku": "SRA|138915",
+      "brand": "SRA Solutions",
+      "brandCode": "SRA",
+      "partNumber": "138915",
+      "name": "Cabinet",
+      "description": "Cabinet | 45Ux600x1200",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "APAC"
+      ],
+      "countries": [
+        "australia"
+      ],
+      "pricing": {
+        "australia": {
+          "customerPrice": 4234,
+          "equinixPrice": 2920
+        }
+      },
+      "price": 4234,
+      "dimensions": {
+        "rackUnits": 45,
+        "widthMm": 600,
+        "depthMm": 1200
+      }
+    },
+    {
+      "id": "cabinet-accessories-sra-138916",
+      "sku": "SRA|138916",
+      "brand": "SRA Solutions",
+      "brandCode": "SRA",
+      "partNumber": "138916",
+      "name": "Cabinet",
+      "description": "Cabinet | 45Ux800x1100",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "APAC"
+      ],
+      "countries": [
+        "australia"
+      ],
+      "pricing": {
+        "australia": {
+          "customerPrice": 5609,
+          "equinixPrice": 3868
+        }
+      },
+      "price": 5609,
+      "dimensions": {
+        "rackUnits": 45,
+        "widthMm": 800,
+        "depthMm": 1100
+      }
+    },
+    {
+      "id": "cabinet-accessories-sra-138917",
+      "sku": "SRA|138917",
+      "brand": "SRA Solutions",
+      "brandCode": "SRA",
+      "partNumber": "138917",
+      "name": "Cabinet",
+      "description": "Cabinet | 45Ux800x1200",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "APAC"
+      ],
+      "countries": [
+        "australia"
+      ],
+      "pricing": {
+        "australia": {
+          "customerPrice": 5653,
+          "equinixPrice": 3899
+        }
+      },
+      "price": 5653,
+      "dimensions": {
+        "rackUnits": 45,
+        "widthMm": 800,
+        "depthMm": 1200
+      }
+    },
+    {
+      "id": "cabinet-accessories-sra-138918",
+      "sku": "SRA|138918",
+      "brand": "SRA Solutions",
+      "brandCode": "SRA",
+      "partNumber": "138918",
+      "name": "Cabinet",
+      "description": "Cabinet | 48Ux600x1100",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "APAC"
+      ],
+      "countries": [
+        "australia"
+      ],
+      "pricing": {
+        "australia": {
+          "customerPrice": 4298,
+          "equinixPrice": 2964
+        }
+      },
+      "price": 4298,
+      "dimensions": {
+        "rackUnits": 48,
+        "widthMm": 600,
+        "depthMm": 1100
+      }
+    },
+    {
+      "id": "cabinet-accessories-sra-138919",
+      "sku": "SRA|138919",
+      "brand": "SRA Solutions",
+      "brandCode": "SRA",
+      "partNumber": "138919",
+      "name": "Cabinet",
+      "description": "Cabinet | 48Ux600x1200",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "APAC"
+      ],
+      "countries": [
+        "australia"
+      ],
+      "pricing": {
+        "australia": {
+          "customerPrice": 4371,
+          "equinixPrice": 3014
+        }
+      },
+      "price": 4371,
+      "dimensions": {
+        "rackUnits": 48,
+        "widthMm": 600,
+        "depthMm": 1200
+      }
+    },
+    {
+      "id": "cabinet-accessories-sra-138920",
+      "sku": "SRA|138920",
+      "brand": "SRA Solutions",
+      "brandCode": "SRA",
+      "partNumber": "138920",
+      "name": "Cabinet",
+      "description": "Cabinet | 48Ux800x1100",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "APAC"
+      ],
+      "countries": [
+        "australia"
+      ],
+      "pricing": {
+        "australia": {
+          "customerPrice": 5619,
+          "equinixPrice": 3875
+        }
+      },
+      "price": 5619,
+      "dimensions": {
+        "rackUnits": 48,
+        "widthMm": 800,
+        "depthMm": 1100
+      }
+    },
+    {
+      "id": "cabinet-accessories-sra-138921",
+      "sku": "SRA|138921",
+      "brand": "SRA Solutions",
+      "brandCode": "SRA",
+      "partNumber": "138921",
+      "name": "Cabinet",
+      "description": "Cabinet | 48x800x1200",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "APAC"
+      ],
+      "countries": [
+        "australia"
+      ],
+      "pricing": {
+        "australia": {
+          "customerPrice": 5663,
+          "equinixPrice": 3905
+        }
+      },
+      "price": 5663
+    },
+    {
+      "id": "cabinet-accessories-sra-138922",
+      "sku": "SRA|138922",
+      "brand": "SRA Solutions",
+      "brandCode": "SRA",
+      "partNumber": "138922",
+      "name": "Cabinet",
+      "description": "Cabinet | 52Ux600x1200",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "APAC"
+      ],
+      "countries": [
+        "australia"
+      ],
+      "pricing": {
+        "australia": {
+          "customerPrice": 5873,
+          "equinixPrice": 4050
+        }
+      },
+      "price": 5873,
+      "dimensions": {
+        "rackUnits": 52,
+        "widthMm": 600,
+        "depthMm": 1200
+      }
+    },
+    {
+      "id": "cabinet-accessories-sra-138923",
+      "sku": "SRA|138923",
+      "brand": "SRA Solutions",
+      "brandCode": "SRA",
+      "partNumber": "138923",
+      "name": "Cabinet",
+      "description": "Cabinet | 52Ux800x1200",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "APAC"
+      ],
+      "countries": [
+        "australia"
+      ],
+      "pricing": {
+        "australia": {
+          "customerPrice": 5911,
+          "equinixPrice": 4076
+        }
+      },
+      "price": 5911,
+      "dimensions": {
+        "rackUnits": 52,
+        "widthMm": 800,
+        "depthMm": 1200
+      }
+    },
+    {
       "id": "cabinet-accessories-sra-138924",
       "sku": "SRA|138924",
       "brand": "SRA Solutions",
@@ -683,423 +968,6 @@
       }
     },
     {
-      "id": "cabinet-accessories-sra-138916",
-      "sku": "SRA|138916",
-      "brand": "SRA Solutions",
-      "brandCode": "SRA",
-      "partNumber": "138916",
-      "name": "Cabinet",
-      "description": "Cabinet | 45Ux800x1100",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "australia"
-      ],
-      "pricing": {
-        "australia": {
-          "customerPrice": 5609,
-          "equinixPrice": 3868
-        }
-      },
-      "price": 5609,
-      "dimensions": {
-        "rackUnits": 45,
-        "widthMm": 800,
-        "depthMm": 1100
-      }
-    },
-    {
-      "id": "cabinet-accessories-sra-138917",
-      "sku": "SRA|138917",
-      "brand": "SRA Solutions",
-      "brandCode": "SRA",
-      "partNumber": "138917",
-      "name": "Cabinet",
-      "description": "Cabinet | 45Ux800x1200",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "australia"
-      ],
-      "pricing": {
-        "australia": {
-          "customerPrice": 5653,
-          "equinixPrice": 3899
-        }
-      },
-      "price": 5653,
-      "dimensions": {
-        "rackUnits": 45,
-        "widthMm": 800,
-        "depthMm": 1200
-      }
-    },
-    {
-      "id": "cabinet-accessories-sra-138914",
-      "sku": "SRA|138914",
-      "brand": "SRA Solutions",
-      "brandCode": "SRA",
-      "partNumber": "138914",
-      "name": "Cabinet",
-      "description": "Cabinet | 45Ux600x1100",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "australia"
-      ],
-      "pricing": {
-        "australia": {
-          "customerPrice": 4205,
-          "equinixPrice": 2900
-        }
-      },
-      "price": 4205,
-      "dimensions": {
-        "rackUnits": 45,
-        "widthMm": 600,
-        "depthMm": 1100
-      }
-    },
-    {
-      "id": "cabinet-accessories-sra-138915",
-      "sku": "SRA|138915",
-      "brand": "SRA Solutions",
-      "brandCode": "SRA",
-      "partNumber": "138915",
-      "name": "Cabinet",
-      "description": "Cabinet | 45Ux600x1200",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "australia"
-      ],
-      "pricing": {
-        "australia": {
-          "customerPrice": 4234,
-          "equinixPrice": 2920
-        }
-      },
-      "price": 4234,
-      "dimensions": {
-        "rackUnits": 45,
-        "widthMm": 600,
-        "depthMm": 1200
-      }
-    },
-    {
-      "id": "cabinet-accessories-sra-138920",
-      "sku": "SRA|138920",
-      "brand": "SRA Solutions",
-      "brandCode": "SRA",
-      "partNumber": "138920",
-      "name": "Cabinet",
-      "description": "Cabinet | 48Ux800x1100",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "australia"
-      ],
-      "pricing": {
-        "australia": {
-          "customerPrice": 5619,
-          "equinixPrice": 3875
-        }
-      },
-      "price": 5619,
-      "dimensions": {
-        "rackUnits": 48,
-        "widthMm": 800,
-        "depthMm": 1100
-      }
-    },
-    {
-      "id": "cabinet-accessories-sra-138921",
-      "sku": "SRA|138921",
-      "brand": "SRA Solutions",
-      "brandCode": "SRA",
-      "partNumber": "138921",
-      "name": "Cabinet",
-      "description": "Cabinet | 48x800x1200",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "australia"
-      ],
-      "pricing": {
-        "australia": {
-          "customerPrice": 5663,
-          "equinixPrice": 3905
-        }
-      },
-      "price": 5663
-    },
-    {
-      "id": "cabinet-accessories-sra-138918",
-      "sku": "SRA|138918",
-      "brand": "SRA Solutions",
-      "brandCode": "SRA",
-      "partNumber": "138918",
-      "name": "Cabinet",
-      "description": "Cabinet | 48Ux600x1100",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "australia"
-      ],
-      "pricing": {
-        "australia": {
-          "customerPrice": 4298,
-          "equinixPrice": 2964
-        }
-      },
-      "price": 4298,
-      "dimensions": {
-        "rackUnits": 48,
-        "widthMm": 600,
-        "depthMm": 1100
-      }
-    },
-    {
-      "id": "cabinet-accessories-sra-138919",
-      "sku": "SRA|138919",
-      "brand": "SRA Solutions",
-      "brandCode": "SRA",
-      "partNumber": "138919",
-      "name": "Cabinet",
-      "description": "Cabinet | 48Ux600x1200",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "australia"
-      ],
-      "pricing": {
-        "australia": {
-          "customerPrice": 4371,
-          "equinixPrice": 3014
-        }
-      },
-      "price": 4371,
-      "dimensions": {
-        "rackUnits": 48,
-        "widthMm": 600,
-        "depthMm": 1200
-      }
-    },
-    {
-      "id": "cabinet-accessories-sra-138923",
-      "sku": "SRA|138923",
-      "brand": "SRA Solutions",
-      "brandCode": "SRA",
-      "partNumber": "138923",
-      "name": "Cabinet",
-      "description": "Cabinet | 52Ux800x1200",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "australia"
-      ],
-      "pricing": {
-        "australia": {
-          "customerPrice": 5911,
-          "equinixPrice": 4076
-        }
-      },
-      "price": 5911,
-      "dimensions": {
-        "rackUnits": 52,
-        "widthMm": 800,
-        "depthMm": 1200
-      }
-    },
-    {
-      "id": "cabinet-accessories-sra-138922",
-      "sku": "SRA|138922",
-      "brand": "SRA Solutions",
-      "brandCode": "SRA",
-      "partNumber": "138922",
-      "name": "Cabinet",
-      "description": "Cabinet | 52Ux600x1200",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "australia"
-      ],
-      "pricing": {
-        "australia": {
-          "customerPrice": 5873,
-          "equinixPrice": 4050
-        }
-      },
-      "price": 5873,
-      "dimensions": {
-        "rackUnits": 52,
-        "widthMm": 600,
-        "depthMm": 1200
-      }
-    },
-    {
-      "id": "cabinet-accessories-mway-pdmw110010",
-      "sku": "MWAY|PDMW110010",
-      "brand": "Multiway Infra",
-      "brandCode": "MWAY",
-      "partNumber": "PDMW110010",
-      "name": "Cabinet",
-      "description": "Cabinet | Depth Extender | 45U-52Ux600x300EXT",
-      "purpose": "A cabinet depth extender increases usable mounting depth inside a server cabinet, allowing deeper equipment or additional cable management space behind racks. It is used when standard cabinet depth is insufficient for modern servers, PDUs, or dense cable routing requirements.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "AMER"
-      ],
-      "countries": [
-        "brazil",
-        "colombia",
-        "mexico",
-        "peru"
-      ],
-      "pricing": {
-        "brazil": {
-          "customerPrice": 3291
-        },
-        "colombia": {
-          "customerPrice": 3577840.2
-        },
-        "mexico": {
-          "customerPrice": 1676
-        },
-        "peru": {
-          "customerPrice": 1517
-        }
-      },
-      "price": 1517,
-      "dimensions": {
-        "rackUnits": 52,
-        "widthMm": 600,
-        "depthMm": 300
-      }
-    },
-    {
-      "id": "cabinet-accessories-mway-pdmw110011",
-      "sku": "MWAY|PDMW110011",
-      "brand": "Multiway Infra",
-      "brandCode": "MWAY",
-      "partNumber": "PDMW110011",
-      "name": "Cabinet",
-      "description": "Cabinet | Depth Extender | 45U-52Ux800x300EXT",
-      "purpose": "A cabinet depth extender increases usable mounting depth inside a server cabinet, allowing deeper equipment or additional cable management space behind racks. It is used when standard cabinet depth is insufficient for modern servers, PDUs, or dense cable routing requirements.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "AMER"
-      ],
-      "countries": [
-        "brazil",
-        "chile",
-        "colombia",
-        "mexico",
-        "peru"
-      ],
-      "pricing": {
-        "brazil": {
-          "customerPrice": 3357
-        },
-        "chile": {
-          "customerPrice": 35
-        },
-        "colombia": {
-          "customerPrice": 3636135.058
-        },
-        "mexico": {
-          "customerPrice": 1686
-        },
-        "peru": {
-          "customerPrice": 1547
-        }
-      },
-      "price": 35,
-      "dimensions": {
-        "rackUnits": 52,
-        "widthMm": 800,
-        "depthMm": 300
-      }
-    },
-    {
-      "id": "cabinet-accessories-mway-pdmw110015",
-      "sku": "MWAY|PDMW110015",
-      "brand": "Multiway Infra",
-      "brandCode": "MWAY",
-      "partNumber": "PDMW110015",
-      "name": "Cabinet",
-      "description": "Cabinet | 45Ux800x1200",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "AMER"
-      ],
-      "countries": [
-        "brazil",
-        "chile",
-        "colombia",
-        "mexico",
-        "peru"
-      ],
-      "pricing": {
-        "brazil": {
-          "customerPrice": 16068,
-          "equinixPrice": 11082
-        },
-        "chile": {
-          "customerPrice": 80,
-          "equinixPrice": 55
-        },
-        "colombia": {
-          "customerPrice": 17373470.51
-        },
-        "mexico": {
-          "customerPrice": 4143,
-          "equinixPrice": 2857
-        },
-        "peru": {
-          "customerPrice": 4945,
-          "equinixPrice": 3410
-        }
-      },
-      "price": 80,
-      "dimensions": {
-        "rackUnits": 45,
-        "widthMm": 800,
-        "depthMm": 1200
-      }
-    },
-    {
       "id": "cabinet-accessories-mway-pdmw110012",
       "sku": "MWAY|PDMW110012",
       "brand": "Multiway Infra",
@@ -1129,7 +997,7 @@
           "equinixPrice": 49
         },
         "colombia": {
-          "customerPrice": 14964519.68
+          "customerPrice": 14964520
         },
         "mexico": {
           "customerPrice": 4398,
@@ -1177,7 +1045,7 @@
           "equinixPrice": 52
         },
         "colombia": {
-          "customerPrice": 16259937.21
+          "customerPrice": 16259937
         },
         "mexico": {
           "customerPrice": 4417,
@@ -1225,7 +1093,7 @@
           "equinixPrice": 55
         },
         "colombia": {
-          "customerPrice": 17070989.13
+          "customerPrice": 17070989
         },
         "mexico": {
           "customerPrice": 3964,
@@ -1241,6 +1109,54 @@
         "rackUnits": 45,
         "widthMm": 800,
         "depthMm": 1000
+      }
+    },
+    {
+      "id": "cabinet-accessories-mway-pdmw110015",
+      "sku": "MWAY|PDMW110015",
+      "brand": "Multiway Infra",
+      "brandCode": "MWAY",
+      "partNumber": "PDMW110015",
+      "name": "Cabinet",
+      "description": "Cabinet | 45Ux800x1200",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "AMER"
+      ],
+      "countries": [
+        "brazil",
+        "chile",
+        "colombia",
+        "mexico",
+        "peru"
+      ],
+      "pricing": {
+        "brazil": {
+          "customerPrice": 16068,
+          "equinixPrice": 11082
+        },
+        "chile": {
+          "customerPrice": 80,
+          "equinixPrice": 55
+        },
+        "colombia": {
+          "customerPrice": 17373471
+        },
+        "mexico": {
+          "customerPrice": 4143,
+          "equinixPrice": 2857
+        },
+        "peru": {
+          "customerPrice": 4945,
+          "equinixPrice": 3410
+        }
+      },
+      "price": 80,
+      "dimensions": {
+        "rackUnits": 45,
+        "widthMm": 800,
+        "depthMm": 1200
       }
     },
     {
@@ -1273,7 +1189,7 @@
           "equinixPrice": 51
         },
         "colombia": {
-          "customerPrice": 15351264.12
+          "customerPrice": 15351264
         },
         "mexico": {
           "customerPrice": 4485,
@@ -1321,7 +1237,7 @@
           "equinixPrice": 53
         },
         "colombia": {
-          "customerPrice": 16743715.07
+          "customerPrice": 16743715
         },
         "mexico": {
           "customerPrice": 4730,
@@ -1369,7 +1285,7 @@
           "equinixPrice": 56
         },
         "colombia": {
-          "customerPrice": 17085896.8
+          "customerPrice": 17085897
         },
         "mexico": {
           "customerPrice": 4060,
@@ -1417,7 +1333,7 @@
           "equinixPrice": 59
         },
         "colombia": {
-          "customerPrice": 18330606.88
+          "customerPrice": 18330607
         },
         "mexico": {
           "customerPrice": 4247,
@@ -1431,54 +1347,6 @@
       "price": 86,
       "dimensions": {
         "rackUnits": 48,
-        "widthMm": 800,
-        "depthMm": 1200
-      }
-    },
-    {
-      "id": "cabinet-accessories-mway-pdmw110021",
-      "sku": "MWAY|PDMW110021",
-      "brand": "Multiway Infra",
-      "brandCode": "MWAY",
-      "partNumber": "PDMW110021",
-      "name": "Cabinet",
-      "description": "Cabinet | 52Ux800x1200",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "AMER"
-      ],
-      "countries": [
-        "brazil",
-        "chile",
-        "colombia",
-        "mexico",
-        "peru"
-      ],
-      "pricing": {
-        "brazil": {
-          "customerPrice": 16719,
-          "equinixPrice": 11531
-        },
-        "chile": {
-          "customerPrice": 94,
-          "equinixPrice": 65
-        },
-        "colombia": {
-          "customerPrice": 18691970.88
-        },
-        "mexico": {
-          "customerPrice": 4443,
-          "equinixPrice": 3064
-        },
-        "peru": {
-          "customerPrice": 5216,
-          "equinixPrice": 3597
-        }
-      },
-      "price": 94,
-      "dimensions": {
-        "rackUnits": 52,
         "widthMm": 800,
         "depthMm": 1200
       }
@@ -1513,7 +1381,7 @@
           "equinixPrice": 60
         },
         "colombia": {
-          "customerPrice": 17500693.29
+          "customerPrice": 17500693
         },
         "mexico": {
           "customerPrice": 4850,
@@ -1532,345 +1400,135 @@
       }
     },
     {
-      "id": "cabinet-accessories-minkels-a00nq-060047-900-1",
-      "sku": "Minkels|A00NQ-060047-900-1",
-      "brand": "Minkels",
-      "brandCode": "Minkels",
-      "partNumber": "A00NQ-060047-900-1",
+      "id": "cabinet-accessories-mway-pdmw110021",
+      "sku": "MWAY|PDMW110021",
+      "brand": "Multiway Infra",
+      "brandCode": "MWAY",
+      "partNumber": "PDMW110021",
       "name": "Cabinet",
-      "description": "Cabinet | Depth Extender | 47Ux600",
-      "purpose": "A cabinet depth extender increases usable mounting depth inside a server cabinet, allowing deeper equipment or additional cable management space behind racks. It is used when standard cabinet depth is insufficient for modern servers, PDUs, or dense cable routing requirements.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "EMEA"
-      ],
-      "countries": [
-        "bulgaria",
-        "finland",
-        "france",
-        "ireland",
-        "italy",
-        "oman",
-        "poland",
-        "portugal",
-        "spain",
-        "sweden",
-        "switzerland",
-        "turkey",
-        "united-arab-emirates",
-        "united-kingdom"
-      ],
-      "pricing": {
-        "bulgaria": {
-          "customerPrice": 676
-        },
-        "finland": {
-          "customerPrice": 676
-        },
-        "france": {
-          "customerPrice": 676
-        },
-        "ireland": {
-          "customerPrice": 676
-        },
-        "italy": {
-          "customerPrice": 676
-        },
-        "oman": {
-          "customerPrice": 566
-        },
-        "poland": {
-          "customerPrice": 2344
-        },
-        "portugal": {
-          "customerPrice": 676
-        },
-        "spain": {
-          "customerPrice": 676
-        },
-        "sweden": {
-          "customerPrice": 6126
-        },
-        "switzerland": {
-          "customerPrice": 508
-        },
-        "turkey": {
-          "customerPrice": 566
-        },
-        "united-arab-emirates": {
-          "customerPrice": 2219
-        },
-        "united-kingdom": {
-          "customerPrice": 456
-        }
-      },
-      "price": 456,
-      "dimensions": {
-        "rackUnits": 47,
-        "widthMm": 600
-      }
-    },
-    {
-      "id": "cabinet-accessories-minkels-a00nq-080047-900-1",
-      "sku": "Minkels|A00NQ-080047-900-1",
-      "brand": "Minkels",
-      "brandCode": "Minkels",
-      "partNumber": "A00NQ-080047-900-1",
-      "name": "Cabinet",
-      "description": "Cabinet | Depth Extender | 47Ux800",
-      "purpose": "A cabinet depth extender increases usable mounting depth inside a server cabinet, allowing deeper equipment or additional cable management space behind racks. It is used when standard cabinet depth is insufficient for modern servers, PDUs, or dense cable routing requirements.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "EMEA"
-      ],
-      "countries": [
-        "bulgaria",
-        "finland",
-        "france",
-        "ireland",
-        "italy",
-        "oman",
-        "poland",
-        "portugal",
-        "spain",
-        "sweden",
-        "switzerland",
-        "turkey",
-        "united-arab-emirates",
-        "united-kingdom"
-      ],
-      "pricing": {
-        "bulgaria": {
-          "customerPrice": 682
-        },
-        "finland": {
-          "customerPrice": 682
-        },
-        "france": {
-          "customerPrice": 682
-        },
-        "ireland": {
-          "customerPrice": 682
-        },
-        "italy": {
-          "customerPrice": 682
-        },
-        "oman": {
-          "customerPrice": 573
-        },
-        "poland": {
-          "customerPrice": 2374
-        },
-        "portugal": {
-          "customerPrice": 682
-        },
-        "spain": {
-          "customerPrice": 682
-        },
-        "sweden": {
-          "customerPrice": 6206
-        },
-        "switzerland": {
-          "customerPrice": 515
-        },
-        "turkey": {
-          "customerPrice": 573
-        },
-        "united-arab-emirates": {
-          "customerPrice": 2248
-        },
-        "united-kingdom": {
-          "customerPrice": 462
-        }
-      },
-      "price": 462,
-      "dimensions": {
-        "rackUnits": 47,
-        "widthMm": 800
-      }
-    },
-    {
-      "id": "cabinet-accessories-minkels-b1109-081045-173297",
-      "sku": "Minkels|B1109-081045-173297",
-      "brand": "Minkels",
-      "brandCode": "Minkels",
-      "partNumber": "B1109-081045-173297",
-      "name": "Cabinet",
-      "description": "Cabinet | 45Ux800x1000",
+      "description": "Cabinet | 52Ux800x1200",
       "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
       "categoryId": "cabinet-accessories",
       "regions": [
-        "EMEA"
+        "AMER"
       ],
       "countries": [
-        "bulgaria",
-        "finland",
-        "france",
-        "ireland",
-        "italy",
-        "oman",
-        "poland",
-        "portugal",
-        "spain",
-        "sweden",
-        "switzerland",
-        "turkey",
-        "united-arab-emirates",
-        "united-kingdom"
+        "brazil",
+        "chile",
+        "colombia",
+        "mexico",
+        "peru"
       ],
       "pricing": {
-        "bulgaria": {
-          "customerPrice": 2431,
-          "equinixPrice": 1978
+        "brazil": {
+          "customerPrice": 16719,
+          "equinixPrice": 11531
         },
-        "finland": {
-          "customerPrice": 2431,
-          "equinixPrice": 1978
+        "chile": {
+          "customerPrice": 94,
+          "equinixPrice": 65
         },
-        "france": {
-          "customerPrice": 2431,
-          "equinixPrice": 1978
+        "colombia": {
+          "customerPrice": 18691971
         },
-        "ireland": {
-          "customerPrice": 2431,
-          "equinixPrice": 1978
+        "mexico": {
+          "customerPrice": 4443,
+          "equinixPrice": 3064
         },
-        "italy": {
-          "customerPrice": 2431,
-          "equinixPrice": 1978
-        },
-        "oman": {
-          "customerPrice": 3097
-        },
-        "poland": {
-          "customerPrice": 11549,
-          "equinixPrice": 8600
-        },
-        "portugal": {
-          "customerPrice": 2431,
-          "equinixPrice": 1978
-        },
-        "spain": {
-          "customerPrice": 2431,
-          "equinixPrice": 1978
-        },
-        "sweden": {
-          "customerPrice": 26329,
-          "equinixPrice": 21977
-        },
-        "switzerland": {
-          "customerPrice": 2490,
-          "equinixPrice": 1866
-        },
-        "turkey": {
-          "customerPrice": 2812,
-          "equinixPrice": 2082
-        },
-        "united-arab-emirates": {
-          "customerPrice": 4184
-        },
-        "united-kingdom": {
-          "customerPrice": 2119,
-          "equinixPrice": 1514
+        "peru": {
+          "customerPrice": 5216,
+          "equinixPrice": 3597
         }
       },
-      "price": 2119,
+      "price": 94,
       "dimensions": {
-        "rackUnits": 45,
-        "widthMm": 800,
-        "depthMm": 1000
-      }
-    },
-    {
-      "id": "cabinet-accessories-minkels-b1109-081245-173297",
-      "sku": "Minkels|B1109-081245-173297",
-      "brand": "Minkels",
-      "brandCode": "Minkels",
-      "partNumber": "B1109-081245-173297",
-      "name": "Cabinet",
-      "description": "Cabinet | 45Ux800x1200",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "EMEA"
-      ],
-      "countries": [
-        "bulgaria",
-        "finland",
-        "france",
-        "ireland",
-        "italy",
-        "oman",
-        "poland",
-        "portugal",
-        "spain",
-        "sweden",
-        "switzerland",
-        "turkey",
-        "united-arab-emirates",
-        "united-kingdom"
-      ],
-      "pricing": {
-        "bulgaria": {
-          "customerPrice": 2526,
-          "equinixPrice": 1995
-        },
-        "finland": {
-          "customerPrice": 2526,
-          "equinixPrice": 1995
-        },
-        "france": {
-          "customerPrice": 2526,
-          "equinixPrice": 1995
-        },
-        "ireland": {
-          "customerPrice": 2526,
-          "equinixPrice": 1995
-        },
-        "italy": {
-          "customerPrice": 2526,
-          "equinixPrice": 1995
-        },
-        "oman": {
-          "customerPrice": 3192
-        },
-        "poland": {
-          "customerPrice": 12011,
-          "equinixPrice": 8676
-        },
-        "portugal": {
-          "customerPrice": 2526,
-          "equinixPrice": 1995
-        },
-        "spain": {
-          "customerPrice": 2526,
-          "equinixPrice": 1995
-        },
-        "sweden": {
-          "customerPrice": 27361,
-          "equinixPrice": 22172
-        },
-        "switzerland": {
-          "customerPrice": 2588,
-          "equinixPrice": 1883
-        },
-        "turkey": {
-          "customerPrice": 2837,
-          "equinixPrice": 2100
-        },
-        "united-arab-emirates": {
-          "customerPrice": 4279
-        },
-        "united-kingdom": {
-          "customerPrice": 2203,
-          "equinixPrice": 1620
-        }
-      },
-      "price": 2203,
-      "dimensions": {
-        "rackUnits": 45,
+        "rackUnits": 52,
         "widthMm": 800,
         "depthMm": 1200
+      }
+    },
+    {
+      "id": "cabinet-accessories-mway-pdmw110010",
+      "sku": "MWAY|PDMW110010",
+      "brand": "Multiway Infra",
+      "brandCode": "MWAY",
+      "partNumber": "PDMW110010",
+      "name": "Cabinet",
+      "description": "Cabinet | Depth Extender | 45U-52Ux600x300EXT",
+      "purpose": "A cabinet depth extender increases usable mounting depth inside a server cabinet, allowing deeper equipment or additional cable management space behind racks. It is used when standard cabinet depth is insufficient for modern servers, PDUs, or dense cable routing requirements.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "AMER"
+      ],
+      "countries": [
+        "brazil",
+        "colombia",
+        "mexico",
+        "peru"
+      ],
+      "pricing": {
+        "brazil": {
+          "customerPrice": 3291
+        },
+        "colombia": {
+          "customerPrice": 3577840
+        },
+        "mexico": {
+          "customerPrice": 1676
+        },
+        "peru": {
+          "customerPrice": 1517
+        }
+      },
+      "price": 1517,
+      "dimensions": {
+        "rackUnits": 52,
+        "widthMm": 600,
+        "depthMm": 300
+      }
+    },
+    {
+      "id": "cabinet-accessories-mway-pdmw110011",
+      "sku": "MWAY|PDMW110011",
+      "brand": "Multiway Infra",
+      "brandCode": "MWAY",
+      "partNumber": "PDMW110011",
+      "name": "Cabinet",
+      "description": "Cabinet | Depth Extender | 45U-52Ux800x300EXT",
+      "purpose": "A cabinet depth extender increases usable mounting depth inside a server cabinet, allowing deeper equipment or additional cable management space behind racks. It is used when standard cabinet depth is insufficient for modern servers, PDUs, or dense cable routing requirements.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "AMER"
+      ],
+      "countries": [
+        "brazil",
+        "chile",
+        "colombia",
+        "mexico",
+        "peru"
+      ],
+      "pricing": {
+        "brazil": {
+          "customerPrice": 3357
+        },
+        "chile": {
+          "customerPrice": 35
+        },
+        "colombia": {
+          "customerPrice": 3636135
+        },
+        "mexico": {
+          "customerPrice": 1686
+        },
+        "peru": {
+          "customerPrice": 1547
+        }
+      },
+      "price": 35,
+      "dimensions": {
+        "rackUnits": 52,
+        "widthMm": 800,
+        "depthMm": 300
       }
     },
     {
@@ -2058,13 +1716,13 @@
       }
     },
     {
-      "id": "cabinet-accessories-minkels-b1109-081047-173297",
-      "sku": "Minkels|B1109-081047-173297",
+      "id": "cabinet-accessories-minkels-b1109-081045-173297",
+      "sku": "Minkels|B1109-081045-173297",
       "brand": "Minkels",
       "brandCode": "Minkels",
-      "partNumber": "B1109-081047-173297",
+      "partNumber": "B1109-081045-173297",
       "name": "Cabinet",
-      "description": "Cabinet | 47Ux800x1000",
+      "description": "Cabinet | 45Ux800x1000",
       "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
       "categoryId": "cabinet-accessories",
       "regions": [
@@ -2088,75 +1746,75 @@
       ],
       "pricing": {
         "bulgaria": {
-          "customerPrice": 2376,
+          "customerPrice": 2431,
           "equinixPrice": 1978
         },
         "finland": {
-          "customerPrice": 2376,
+          "customerPrice": 2431,
           "equinixPrice": 1978
         },
         "france": {
-          "customerPrice": 2376,
+          "customerPrice": 2431,
           "equinixPrice": 1978
         },
         "ireland": {
-          "customerPrice": 2376,
+          "customerPrice": 2431,
           "equinixPrice": 1978
         },
         "italy": {
-          "customerPrice": 2376,
+          "customerPrice": 2431,
           "equinixPrice": 1978
         },
         "oman": {
-          "customerPrice": 3042
+          "customerPrice": 3097
         },
         "poland": {
-          "customerPrice": 11286,
-          "equinixPrice": 8625
+          "customerPrice": 11549,
+          "equinixPrice": 8600
         },
         "portugal": {
-          "customerPrice": 2376,
+          "customerPrice": 2431,
           "equinixPrice": 1978
         },
         "spain": {
-          "customerPrice": 2376,
+          "customerPrice": 2431,
           "equinixPrice": 1978
         },
         "sweden": {
-          "customerPrice": 25742,
-          "equinixPrice": 22544
+          "customerPrice": 26329,
+          "equinixPrice": 21977
         },
         "switzerland": {
-          "customerPrice": 2433,
-          "equinixPrice": 1871
+          "customerPrice": 2490,
+          "equinixPrice": 1866
         },
         "turkey": {
-          "customerPrice": 2905,
+          "customerPrice": 2812,
           "equinixPrice": 2082
         },
         "united-arab-emirates": {
-          "customerPrice": 4129
+          "customerPrice": 4184
         },
         "united-kingdom": {
-          "customerPrice": 2072,
-          "equinixPrice": 1556
+          "customerPrice": 2119,
+          "equinixPrice": 1514
         }
       },
-      "price": 2072,
+      "price": 2119,
       "dimensions": {
-        "rackUnits": 47,
+        "rackUnits": 45,
         "widthMm": 800,
         "depthMm": 1000
       }
     },
     {
-      "id": "cabinet-accessories-minkels-b1109-081247-173297",
-      "sku": "Minkels|B1109-081247-173297",
+      "id": "cabinet-accessories-minkels-b1109-081245-173297",
+      "sku": "Minkels|B1109-081245-173297",
       "brand": "Minkels",
       "brandCode": "Minkels",
-      "partNumber": "B1109-081247-173297",
+      "partNumber": "B1109-081245-173297",
       "name": "Cabinet",
-      "description": "Cabinet | 47Ux800x1200",
+      "description": "Cabinet | 45Ux800x1200",
       "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
       "categoryId": "cabinet-accessories",
       "regions": [
@@ -2180,63 +1838,63 @@
       ],
       "pricing": {
         "bulgaria": {
-          "customerPrice": 2464,
+          "customerPrice": 2526,
           "equinixPrice": 1995
         },
         "finland": {
-          "customerPrice": 2464,
+          "customerPrice": 2526,
           "equinixPrice": 1995
         },
         "france": {
-          "customerPrice": 2464,
+          "customerPrice": 2526,
           "equinixPrice": 1995
         },
         "ireland": {
-          "customerPrice": 2464,
+          "customerPrice": 2526,
           "equinixPrice": 1995
         },
         "italy": {
-          "customerPrice": 2464,
+          "customerPrice": 2526,
           "equinixPrice": 1995
         },
         "oman": {
-          "customerPrice": 3121
+          "customerPrice": 3192
         },
         "poland": {
-          "customerPrice": 11753,
-          "equinixPrice": 8701
+          "customerPrice": 12011,
+          "equinixPrice": 8676
         },
         "portugal": {
-          "customerPrice": 2464,
+          "customerPrice": 2526,
           "equinixPrice": 1995
         },
         "spain": {
-          "customerPrice": 2464,
+          "customerPrice": 2526,
           "equinixPrice": 1995
         },
         "sweden": {
-          "customerPrice": 26785,
-          "equinixPrice": 22744
+          "customerPrice": 27361,
+          "equinixPrice": 22172
         },
         "switzerland": {
-          "customerPrice": 2514,
-          "equinixPrice": 1887
+          "customerPrice": 2588,
+          "equinixPrice": 1883
         },
         "turkey": {
-          "customerPrice": 2932,
+          "customerPrice": 2837,
           "equinixPrice": 2100
         },
         "united-arab-emirates": {
-          "customerPrice": 4208
+          "customerPrice": 4279
         },
         "united-kingdom": {
-          "customerPrice": 2140,
-          "equinixPrice": 1647
+          "customerPrice": 2203,
+          "equinixPrice": 1620
         }
       },
-      "price": 2140,
+      "price": 2203,
       "dimensions": {
-        "rackUnits": 47,
+        "rackUnits": 45,
         "widthMm": 800,
         "depthMm": 1200
       }
@@ -2426,13 +2084,13 @@
       }
     },
     {
-      "id": "cabinet-accessories-minkels-b1109-081252-173297",
-      "sku": "Minkels|B1109-081252-173297",
+      "id": "cabinet-accessories-minkels-b1109-081047-173297",
+      "sku": "Minkels|B1109-081047-173297",
       "brand": "Minkels",
       "brandCode": "Minkels",
-      "partNumber": "B1109-081252-173297",
+      "partNumber": "B1109-081047-173297",
       "name": "Cabinet",
-      "description": "Cabinet | 52Ux800x1200",
+      "description": "Cabinet | 47Ux800x1000",
       "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
       "categoryId": "cabinet-accessories",
       "regions": [
@@ -2456,63 +2114,155 @@
       ],
       "pricing": {
         "bulgaria": {
-          "customerPrice": 2584,
-          "equinixPrice": 2050
+          "customerPrice": 2376,
+          "equinixPrice": 1978
         },
         "finland": {
-          "customerPrice": 2584,
-          "equinixPrice": 2050
+          "customerPrice": 2376,
+          "equinixPrice": 1978
         },
         "france": {
-          "customerPrice": 2584,
-          "equinixPrice": 2050
+          "customerPrice": 2376,
+          "equinixPrice": 1978
         },
         "ireland": {
-          "customerPrice": 2584,
-          "equinixPrice": 2050
+          "customerPrice": 2376,
+          "equinixPrice": 1978
         },
         "italy": {
-          "customerPrice": 2584,
-          "equinixPrice": 2050
+          "customerPrice": 2376,
+          "equinixPrice": 1978
         },
         "oman": {
-          "customerPrice": 3250
+          "customerPrice": 3042
         },
         "poland": {
-          "customerPrice": 12293,
-          "equinixPrice": 8939
+          "customerPrice": 11286,
+          "equinixPrice": 8625
         },
         "portugal": {
-          "customerPrice": 2584,
-          "equinixPrice": 2050
+          "customerPrice": 2376,
+          "equinixPrice": 1978
         },
         "spain": {
-          "customerPrice": 2584,
-          "equinixPrice": 2050
+          "customerPrice": 2376,
+          "equinixPrice": 1978
         },
         "sweden": {
-          "customerPrice": 27992,
-          "equinixPrice": 23367
+          "customerPrice": 25742,
+          "equinixPrice": 22544
         },
         "switzerland": {
-          "customerPrice": 2648,
-          "equinixPrice": 1939
+          "customerPrice": 2433,
+          "equinixPrice": 1871
         },
         "turkey": {
-          "customerPrice": 3011,
-          "equinixPrice": 2158
+          "customerPrice": 2905,
+          "equinixPrice": 2082
         },
         "united-arab-emirates": {
-          "customerPrice": 4337
+          "customerPrice": 4129
         },
         "united-kingdom": {
-          "customerPrice": 2253,
-          "equinixPrice": 1708
+          "customerPrice": 2072,
+          "equinixPrice": 1556
         }
       },
-      "price": 2253,
+      "price": 2072,
       "dimensions": {
-        "rackUnits": 52,
+        "rackUnits": 47,
+        "widthMm": 800,
+        "depthMm": 1000
+      }
+    },
+    {
+      "id": "cabinet-accessories-minkels-b1109-081247-173297",
+      "sku": "Minkels|B1109-081247-173297",
+      "brand": "Minkels",
+      "brandCode": "Minkels",
+      "partNumber": "B1109-081247-173297",
+      "name": "Cabinet",
+      "description": "Cabinet | 47Ux800x1200",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "EMEA"
+      ],
+      "countries": [
+        "bulgaria",
+        "finland",
+        "france",
+        "ireland",
+        "italy",
+        "oman",
+        "poland",
+        "portugal",
+        "spain",
+        "sweden",
+        "switzerland",
+        "turkey",
+        "united-arab-emirates",
+        "united-kingdom"
+      ],
+      "pricing": {
+        "bulgaria": {
+          "customerPrice": 2464,
+          "equinixPrice": 1995
+        },
+        "finland": {
+          "customerPrice": 2464,
+          "equinixPrice": 1995
+        },
+        "france": {
+          "customerPrice": 2464,
+          "equinixPrice": 1995
+        },
+        "ireland": {
+          "customerPrice": 2464,
+          "equinixPrice": 1995
+        },
+        "italy": {
+          "customerPrice": 2464,
+          "equinixPrice": 1995
+        },
+        "oman": {
+          "customerPrice": 3121
+        },
+        "poland": {
+          "customerPrice": 11753,
+          "equinixPrice": 8701
+        },
+        "portugal": {
+          "customerPrice": 2464,
+          "equinixPrice": 1995
+        },
+        "spain": {
+          "customerPrice": 2464,
+          "equinixPrice": 1995
+        },
+        "sweden": {
+          "customerPrice": 26785,
+          "equinixPrice": 22744
+        },
+        "switzerland": {
+          "customerPrice": 2514,
+          "equinixPrice": 1887
+        },
+        "turkey": {
+          "customerPrice": 2932,
+          "equinixPrice": 2100
+        },
+        "united-arab-emirates": {
+          "customerPrice": 4208
+        },
+        "united-kingdom": {
+          "customerPrice": 2140,
+          "equinixPrice": 1647
+        }
+      },
+      "price": 2140,
+      "dimensions": {
+        "rackUnits": 47,
         "widthMm": 800,
         "depthMm": 1200
       }
@@ -2610,71 +2360,253 @@
       }
     },
     {
-      "id": "cabinet-accessories-eaton-enxtl45811g2",
-      "sku": "Eaton|ENXTL45811G2",
-      "brand": "Eaton",
-      "brandCode": "Eaton",
-      "partNumber": "ENXTL45811G2",
+      "id": "cabinet-accessories-minkels-b1109-081252-173297",
+      "sku": "Minkels|B1109-081252-173297",
+      "brand": "Minkels",
+      "brandCode": "Minkels",
+      "partNumber": "B1109-081252-173297",
       "name": "Cabinet",
-      "description": "Cabinet | 45Ux800x1100",
+      "description": "Cabinet | 52Ux800x1200",
       "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
       "categoryId": "cabinet-accessories",
       "regions": [
-        "AMER"
+        "EMEA"
       ],
       "countries": [
-        "canada",
-        "united-states"
+        "bulgaria",
+        "finland",
+        "france",
+        "ireland",
+        "italy",
+        "oman",
+        "poland",
+        "portugal",
+        "spain",
+        "sweden",
+        "switzerland",
+        "turkey",
+        "united-arab-emirates",
+        "united-kingdom"
       ],
       "pricing": {
-        "canada": {
-          "customerPrice": 3913,
-          "equinixPrice": 2898
+        "bulgaria": {
+          "customerPrice": 2584,
+          "equinixPrice": 2050
         },
-        "united-states": {
-          "customerPrice": 2950,
-          "equinixPrice": 2402
+        "finland": {
+          "customerPrice": 2584,
+          "equinixPrice": 2050
+        },
+        "france": {
+          "customerPrice": 2584,
+          "equinixPrice": 2050
+        },
+        "ireland": {
+          "customerPrice": 2584,
+          "equinixPrice": 2050
+        },
+        "italy": {
+          "customerPrice": 2584,
+          "equinixPrice": 2050
+        },
+        "oman": {
+          "customerPrice": 3250
+        },
+        "poland": {
+          "customerPrice": 12293,
+          "equinixPrice": 8939
+        },
+        "portugal": {
+          "customerPrice": 2584,
+          "equinixPrice": 2050
+        },
+        "spain": {
+          "customerPrice": 2584,
+          "equinixPrice": 2050
+        },
+        "sweden": {
+          "customerPrice": 27992,
+          "equinixPrice": 23367
+        },
+        "switzerland": {
+          "customerPrice": 2648,
+          "equinixPrice": 1939
+        },
+        "turkey": {
+          "customerPrice": 3011,
+          "equinixPrice": 2158
+        },
+        "united-arab-emirates": {
+          "customerPrice": 4337
+        },
+        "united-kingdom": {
+          "customerPrice": 2253,
+          "equinixPrice": 1708
         }
       },
-      "price": 2950,
+      "price": 2253,
       "dimensions": {
-        "rackUnits": 45,
+        "rackUnits": 52,
         "widthMm": 800,
-        "depthMm": 1100
+        "depthMm": 1200
       }
     },
     {
-      "id": "cabinet-accessories-eaton-enxtl45812g2",
-      "sku": "Eaton|ENXTL45812G2",
-      "brand": "Eaton",
-      "brandCode": "Eaton",
-      "partNumber": "ENXTL45812G2",
+      "id": "cabinet-accessories-minkels-a00nq-060047-900-1",
+      "sku": "Minkels|A00NQ-060047-900-1",
+      "brand": "Minkels",
+      "brandCode": "Minkels",
+      "partNumber": "A00NQ-060047-900-1",
       "name": "Cabinet",
-      "description": "Cabinet | 45Ux800x1200",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "description": "Cabinet | Depth Extender | 47Ux600",
+      "purpose": "A cabinet depth extender increases usable mounting depth inside a server cabinet, allowing deeper equipment or additional cable management space behind racks. It is used when standard cabinet depth is insufficient for modern servers, PDUs, or dense cable routing requirements.",
       "categoryId": "cabinet-accessories",
       "regions": [
-        "AMER"
+        "EMEA"
       ],
       "countries": [
-        "canada",
-        "united-states"
+        "bulgaria",
+        "finland",
+        "france",
+        "ireland",
+        "italy",
+        "oman",
+        "poland",
+        "portugal",
+        "spain",
+        "sweden",
+        "switzerland",
+        "turkey",
+        "united-arab-emirates",
+        "united-kingdom"
       ],
       "pricing": {
-        "canada": {
-          "customerPrice": 4193,
-          "equinixPrice": 3106
+        "bulgaria": {
+          "customerPrice": 676
         },
-        "united-states": {
-          "customerPrice": 3170,
-          "equinixPrice": 2073
+        "finland": {
+          "customerPrice": 676
+        },
+        "france": {
+          "customerPrice": 676
+        },
+        "ireland": {
+          "customerPrice": 676
+        },
+        "italy": {
+          "customerPrice": 676
+        },
+        "oman": {
+          "customerPrice": 566
+        },
+        "poland": {
+          "customerPrice": 2344
+        },
+        "portugal": {
+          "customerPrice": 676
+        },
+        "spain": {
+          "customerPrice": 676
+        },
+        "sweden": {
+          "customerPrice": 6126
+        },
+        "switzerland": {
+          "customerPrice": 508
+        },
+        "turkey": {
+          "customerPrice": 566
+        },
+        "united-arab-emirates": {
+          "customerPrice": 2219
+        },
+        "united-kingdom": {
+          "customerPrice": 456
         }
       },
-      "price": 3170,
+      "price": 456,
       "dimensions": {
-        "rackUnits": 45,
-        "widthMm": 800,
-        "depthMm": 1200
+        "rackUnits": 47,
+        "widthMm": 600
+      }
+    },
+    {
+      "id": "cabinet-accessories-minkels-a00nq-080047-900-1",
+      "sku": "Minkels|A00NQ-080047-900-1",
+      "brand": "Minkels",
+      "brandCode": "Minkels",
+      "partNumber": "A00NQ-080047-900-1",
+      "name": "Cabinet",
+      "description": "Cabinet | Depth Extender | 47Ux800",
+      "purpose": "A cabinet depth extender increases usable mounting depth inside a server cabinet, allowing deeper equipment or additional cable management space behind racks. It is used when standard cabinet depth is insufficient for modern servers, PDUs, or dense cable routing requirements.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "EMEA"
+      ],
+      "countries": [
+        "bulgaria",
+        "finland",
+        "france",
+        "ireland",
+        "italy",
+        "oman",
+        "poland",
+        "portugal",
+        "spain",
+        "sweden",
+        "switzerland",
+        "turkey",
+        "united-arab-emirates",
+        "united-kingdom"
+      ],
+      "pricing": {
+        "bulgaria": {
+          "customerPrice": 682
+        },
+        "finland": {
+          "customerPrice": 682
+        },
+        "france": {
+          "customerPrice": 682
+        },
+        "ireland": {
+          "customerPrice": 682
+        },
+        "italy": {
+          "customerPrice": 682
+        },
+        "oman": {
+          "customerPrice": 573
+        },
+        "poland": {
+          "customerPrice": 2374
+        },
+        "portugal": {
+          "customerPrice": 682
+        },
+        "spain": {
+          "customerPrice": 682
+        },
+        "sweden": {
+          "customerPrice": 6206
+        },
+        "switzerland": {
+          "customerPrice": 515
+        },
+        "turkey": {
+          "customerPrice": 573
+        },
+        "united-arab-emirates": {
+          "customerPrice": 2248
+        },
+        "united-kingdom": {
+          "customerPrice": 462
+        }
+      },
+      "price": 462,
+      "dimensions": {
+        "rackUnits": 47,
+        "widthMm": 800
       }
     },
     {
@@ -2701,7 +2633,7 @@
         },
         "united-states": {
           "customerPrice": 2420,
-          "equinixPrice": 1829
+          "equinixPrice": 1671
         }
       },
       "price": 2420,
@@ -2735,7 +2667,7 @@
         },
         "united-states": {
           "customerPrice": 2650,
-          "equinixPrice": 2186
+          "equinixPrice": 1829
         }
       },
       "price": 2650,
@@ -2746,13 +2678,13 @@
       }
     },
     {
-      "id": "cabinet-accessories-eaton-enxtl48811g2",
-      "sku": "Eaton|ENXTL48811G2",
+      "id": "cabinet-accessories-eaton-enxtl45811g2",
+      "sku": "Eaton|ENXTL45811G2",
       "brand": "Eaton",
       "brandCode": "Eaton",
-      "partNumber": "ENXTL48811G2",
+      "partNumber": "ENXTL45811G2",
       "name": "Cabinet",
-      "description": "Cabinet | 48Ux800x1100",
+      "description": "Cabinet | 45Ux800x1100",
       "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
       "categoryId": "cabinet-accessories",
       "regions": [
@@ -2764,29 +2696,29 @@
       ],
       "pricing": {
         "canada": {
-          "customerPrice": 4500,
-          "equinixPrice": 3195
+          "customerPrice": 3913,
+          "equinixPrice": 2898
         },
         "united-states": {
-          "customerPrice": 3260,
-          "equinixPrice": 1671
+          "customerPrice": 2950,
+          "equinixPrice": 2040
         }
       },
-      "price": 3260,
+      "price": 2950,
       "dimensions": {
-        "rackUnits": 48,
+        "rackUnits": 45,
         "widthMm": 800,
         "depthMm": 1100
       }
     },
     {
-      "id": "cabinet-accessories-eaton-enxtl48812g2",
-      "sku": "Eaton|ENXTL48812G2",
+      "id": "cabinet-accessories-eaton-enxtl45812g2",
+      "sku": "Eaton|ENXTL45812G2",
       "brand": "Eaton",
       "brandCode": "Eaton",
-      "partNumber": "ENXTL48812G2",
+      "partNumber": "ENXTL45812G2",
       "name": "Cabinet",
-      "description": "Cabinet | 48Ux800x1200",
+      "description": "Cabinet | 45Ux800x1200",
       "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
       "categoryId": "cabinet-accessories",
       "regions": [
@@ -2798,17 +2730,17 @@
       ],
       "pricing": {
         "canada": {
-          "customerPrice": 4700,
-          "equinixPrice": 3414
+          "customerPrice": 4193,
+          "equinixPrice": 3106
         },
         "united-states": {
-          "customerPrice": 3480,
-          "equinixPrice": 2040
+          "customerPrice": 3170,
+          "equinixPrice": 2186
         }
       },
-      "price": 3480,
+      "price": 3170,
       "dimensions": {
-        "rackUnits": 48,
+        "rackUnits": 45,
         "widthMm": 800,
         "depthMm": 1200
       }
@@ -2837,7 +2769,7 @@
         },
         "united-states": {
           "customerPrice": 2720,
-          "equinixPrice": 2661
+          "equinixPrice": 1881
         }
       },
       "price": 2720,
@@ -2871,7 +2803,7 @@
         },
         "united-states": {
           "customerPrice": 3000,
-          "equinixPrice": 2305
+          "equinixPrice": 2073
         }
       },
       "price": 3000,
@@ -2882,13 +2814,81 @@
       }
     },
     {
+      "id": "cabinet-accessories-eaton-enxtl48811g2",
+      "sku": "Eaton|ENXTL48811G2",
+      "brand": "Eaton",
+      "brandCode": "Eaton",
+      "partNumber": "ENXTL48811G2",
+      "name": "Cabinet",
+      "description": "Cabinet | 48Ux800x1100",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "AMER"
+      ],
+      "countries": [
+        "canada",
+        "united-states"
+      ],
+      "pricing": {
+        "canada": {
+          "customerPrice": 4500,
+          "equinixPrice": 3195
+        },
+        "united-states": {
+          "customerPrice": 3260,
+          "equinixPrice": 2248
+        }
+      },
+      "price": 3260,
+      "dimensions": {
+        "rackUnits": 48,
+        "widthMm": 800,
+        "depthMm": 1100
+      }
+    },
+    {
+      "id": "cabinet-accessories-eaton-enxtl48812g2",
+      "sku": "Eaton|ENXTL48812G2",
+      "brand": "Eaton",
+      "brandCode": "Eaton",
+      "partNumber": "ENXTL48812G2",
+      "name": "Cabinet",
+      "description": "Cabinet | 48Ux800x1200",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "AMER"
+      ],
+      "countries": [
+        "canada",
+        "united-states"
+      ],
+      "pricing": {
+        "canada": {
+          "customerPrice": 4700,
+          "equinixPrice": 3414
+        },
+        "united-states": {
+          "customerPrice": 3480,
+          "equinixPrice": 2402
+        }
+      },
+      "price": 3480,
+      "dimensions": {
+        "rackUnits": 48,
+        "widthMm": 800,
+        "depthMm": 1200
+      }
+    },
+    {
       "id": "cabinet-accessories-eaton-enxtl52612g2",
       "sku": "Eaton|ENXTL52612G2",
       "brand": "Eaton",
       "brandCode": "Eaton",
       "partNumber": "ENXTL52612G2",
       "name": "Cabinet",
-      "description": "Cabinet | 52Ux 600x1200",
+      "description": "Cabinet | 52Ux600x1200",
       "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
       "categoryId": "cabinet-accessories",
       "regions": [
@@ -2905,7 +2905,7 @@
         },
         "united-states": {
           "customerPrice": 3340,
-          "equinixPrice": 1881
+          "equinixPrice": 2305
         }
       },
       "price": 3340,
@@ -2913,72 +2913,6 @@
         "rackUnits": 52,
         "widthMm": 600,
         "depthMm": 1200
-      }
-    },
-    {
-      "id": "cabinet-accessories-eaton-enxtlextend83",
-      "sku": "Eaton|ENXTLEXTEND83",
-      "brand": "Eaton",
-      "brandCode": "Eaton",
-      "partNumber": "ENXTLEXTEND83",
-      "name": "Cabinet",
-      "description": "Cabinet | Depth Extender | 45U-52Ux800x300EXT",
-      "purpose": "A cabinet depth extender increases usable mounting depth inside a server cabinet, allowing deeper equipment or additional cable management space behind racks. It is used when standard cabinet depth is insufficient for modern servers, PDUs, or dense cable routing requirements.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "AMER"
-      ],
-      "countries": [
-        "canada",
-        "united-states"
-      ],
-      "pricing": {
-        "canada": {
-          "customerPrice": 565
-        },
-        "united-states": {
-          "customerPrice": 420,
-          "equinixPrice": 292
-        }
-      },
-      "price": 420,
-      "dimensions": {
-        "rackUnits": 52,
-        "widthMm": 800,
-        "depthMm": 300
-      }
-    },
-    {
-      "id": "cabinet-accessories-eaton-enxtlextend63",
-      "sku": "Eaton|ENXTLEXTEND63",
-      "brand": "Eaton",
-      "brandCode": "Eaton",
-      "partNumber": "ENXTLEXTEND63",
-      "name": "Cabinet",
-      "description": "Cabinet | Depth Extender | 45U-52Ux600x300EXT",
-      "purpose": "A cabinet depth extender increases usable mounting depth inside a server cabinet, allowing deeper equipment or additional cable management space behind racks. It is used when standard cabinet depth is insufficient for modern servers, PDUs, or dense cable routing requirements.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "AMER"
-      ],
-      "countries": [
-        "canada",
-        "united-states"
-      ],
-      "pricing": {
-        "canada": {
-          "customerPrice": 606
-        },
-        "united-states": {
-          "customerPrice": 400,
-          "equinixPrice": 274
-        }
-      },
-      "price": 400,
-      "dimensions": {
-        "rackUnits": 52,
-        "widthMm": 600,
-        "depthMm": 300
       }
     },
     {
@@ -3005,7 +2939,7 @@
         },
         "united-states": {
           "customerPrice": 3850,
-          "equinixPrice": 2248
+          "equinixPrice": 2661
         }
       },
       "price": 3850,
@@ -3016,32 +2950,69 @@
       }
     },
     {
-      "id": "cabinet-accessories-mway-eqmw110006",
-      "sku": "MWAY|EQMW110006",
-      "brand": "Multiway Infra",
-      "brandCode": "MWAY",
-      "partNumber": "EQMW110006",
+      "id": "cabinet-accessories-eaton-enxtlextend63",
+      "sku": "Eaton|ENXTLEXTEND63",
+      "brand": "Eaton",
+      "brandCode": "Eaton",
+      "partNumber": "ENXTLEXTEND63",
       "name": "Cabinet",
-      "description": "Cabinet | 42Ux800x1200",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "description": "Cabinet | Depth Extender | 45U-52Ux600x300EXT",
+      "purpose": "A cabinet depth extender increases usable mounting depth inside a server cabinet, allowing deeper equipment or additional cable management space behind racks. It is used when standard cabinet depth is insufficient for modern servers, PDUs, or dense cable routing requirements.",
       "categoryId": "cabinet-accessories",
       "regions": [
         "AMER"
       ],
       "countries": [
-        "chile"
+        "canada",
+        "united-states"
       ],
       "pricing": {
-        "chile": {
-          "customerPrice": 78,
-          "equinixPrice": 54
+        "canada": {
+          "customerPrice": 565
+        },
+        "united-states": {
+          "customerPrice": 400,
+          "equinixPrice": 274
         }
       },
-      "price": 78,
+      "price": 400,
       "dimensions": {
-        "rackUnits": 42,
+        "rackUnits": 52,
+        "widthMm": 600,
+        "depthMm": 300
+      }
+    },
+    {
+      "id": "cabinet-accessories-eaton-enxtlextend83",
+      "sku": "Eaton|ENXTLEXTEND83",
+      "brand": "Eaton",
+      "brandCode": "Eaton",
+      "partNumber": "ENXTLEXTEND83",
+      "name": "Cabinet",
+      "description": "Cabinet | Depth Extender | 45U-52Ux800x300EXT",
+      "purpose": "A cabinet depth extender increases usable mounting depth inside a server cabinet, allowing deeper equipment or additional cable management space behind racks. It is used when standard cabinet depth is insufficient for modern servers, PDUs, or dense cable routing requirements.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "AMER"
+      ],
+      "countries": [
+        "canada",
+        "united-states"
+      ],
+      "pricing": {
+        "canada": {
+          "customerPrice": 606
+        },
+        "united-states": {
+          "customerPrice": 420,
+          "equinixPrice": 292
+        }
+      },
+      "price": 420,
+      "dimensions": {
+        "rackUnits": 52,
         "widthMm": 800,
-        "depthMm": 1200
+        "depthMm": 300
       }
     },
     {
@@ -3132,30 +3103,30 @@
       }
     },
     {
-      "id": "cabinet-accessories-legrand-lksn8247expl-dsp",
-      "sku": "Legrand|LKSN8247EXPL-DSP",
-      "brand": "Legrand",
-      "brandCode": "Legrand",
-      "partNumber": "LKSN8247EXPL-DSP",
+      "id": "cabinet-accessories-mway-eqmw110006",
+      "sku": "MWAY|EQMW110006",
+      "brand": "Multiway Infra",
+      "brandCode": "MWAY",
+      "partNumber": "EQMW110006",
       "name": "Cabinet",
-      "description": "Cabinet | 47Ux800x1200",
+      "description": "Cabinet | 42Ux800x1200",
       "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
       "categoryId": "cabinet-accessories",
       "regions": [
-        "APAC"
+        "AMER"
       ],
       "countries": [
-        "china"
+        "chile"
       ],
       "pricing": {
-        "china": {
-          "customerPrice": 13485,
-          "equinixPrice": 9300
+        "chile": {
+          "customerPrice": 78,
+          "equinixPrice": 54
         }
       },
-      "price": 13485,
+      "price": 78,
       "dimensions": {
-        "rackUnits": 47,
+        "rackUnits": 42,
         "widthMm": 800,
         "depthMm": 1200
       }
@@ -3190,199 +3161,28 @@
       }
     },
     {
-      "id": "cabinet-accessories-stengel-ext-42-52ux600x300mm",
-      "sku": "Stengel|Ext. 42-52Ux600x300mm",
-      "brand": "Stengel",
-      "brandCode": "Stengel",
-      "partNumber": "Ext. 42-52Ux600x300mm",
-      "name": "Cabinet",
-      "description": "Cabinet | Depth Extender | 45U-52Ux600x300EXT",
-      "purpose": "A cabinet depth extender increases usable mounting depth inside a server cabinet, allowing deeper equipment or additional cable management space behind racks. It is used when standard cabinet depth is insufficient for modern servers, PDUs, or dense cable routing requirements.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "EMEA"
-      ],
-      "countries": [
-        "germany",
-        "netherlands"
-      ],
-      "pricing": {
-        "germany": {
-          "customerPrice": 676
-        },
-        "netherlands": {
-          "customerPrice": 676
-        }
-      },
-      "price": 676,
-      "dimensions": {
-        "rackUnits": 52,
-        "widthMm": 600,
-        "depthMm": 300
-      }
-    },
-    {
-      "id": "cabinet-accessories-stengel-ext-42-52ux800x300mm",
-      "sku": "Stengel|Ext. 42-52Ux800x300mm",
-      "brand": "Stengel",
-      "brandCode": "Stengel",
-      "partNumber": "Ext. 42-52Ux800x300mm",
-      "name": "Cabinet",
-      "description": "Cabinet | Depth Extender | 45U-52Ux800x300EXT",
-      "purpose": "A cabinet depth extender increases usable mounting depth inside a server cabinet, allowing deeper equipment or additional cable management space behind racks. It is used when standard cabinet depth is insufficient for modern servers, PDUs, or dense cable routing requirements.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "EMEA"
-      ],
-      "countries": [
-        "germany",
-        "netherlands"
-      ],
-      "pricing": {
-        "germany": {
-          "customerPrice": 682
-        },
-        "netherlands": {
-          "customerPrice": 682
-        }
-      },
-      "price": 682,
-      "dimensions": {
-        "rackUnits": 52,
-        "widthMm": 800,
-        "depthMm": 300
-      }
-    },
-    {
-      "id": "cabinet-accessories-stengel-str45810-v2-eqx",
-      "sku": "Stengel|STR45810 V2 EQX",
-      "brand": "Stengel",
-      "brandCode": "Stengel",
-      "partNumber": "STR45810 V2 EQX",
-      "name": "Cabinet",
-      "description": "Cabinet | 45Ux800x1000",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "EMEA"
-      ],
-      "countries": [
-        "germany",
-        "netherlands"
-      ],
-      "pricing": {
-        "germany": {
-          "customerPrice": 2431,
-          "equinixPrice": 1728
-        },
-        "netherlands": {
-          "customerPrice": 2431,
-          "equinixPrice": 1728
-        }
-      },
-      "price": 2431,
-      "dimensions": {
-        "rackUnits": 45,
-        "widthMm": 800,
-        "depthMm": 1000
-      }
-    },
-    {
-      "id": "cabinet-accessories-stengel-str45812-v2-eqx",
-      "sku": "Stengel|STR45812 V2 EQX",
-      "brand": "Stengel",
-      "brandCode": "Stengel",
-      "partNumber": "STR45812 V2 EQX",
-      "name": "Cabinet",
-      "description": "Cabinet | 45Ux800x1200",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "EMEA"
-      ],
-      "countries": [
-        "germany",
-        "netherlands"
-      ],
-      "pricing": {
-        "germany": {
-          "customerPrice": 2526,
-          "equinixPrice": 1855
-        },
-        "netherlands": {
-          "customerPrice": 2526,
-          "equinixPrice": 1855
-        }
-      },
-      "price": 2526,
-      "dimensions": {
-        "rackUnits": 45,
-        "widthMm": 800,
-        "depthMm": 1200
-      }
-    },
-    {
-      "id": "cabinet-accessories-stengel-str47810-v2-eqx",
-      "sku": "Stengel|STR47810 V2 EQX",
-      "brand": "Stengel",
-      "brandCode": "Stengel",
-      "partNumber": "STR47810 V2 EQX",
-      "name": "Cabinet",
-      "description": "Cabinet | 47Ux800x1000",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "EMEA"
-      ],
-      "countries": [
-        "germany",
-        "netherlands"
-      ],
-      "pricing": {
-        "germany": {
-          "customerPrice": 2376,
-          "equinixPrice": 1778
-        },
-        "netherlands": {
-          "customerPrice": 2376,
-          "equinixPrice": 1778
-        }
-      },
-      "price": 2376,
-      "dimensions": {
-        "rackUnits": 47,
-        "widthMm": 800,
-        "depthMm": 1000
-      }
-    },
-    {
-      "id": "cabinet-accessories-stengel-str47812-v2-eqx",
-      "sku": "Stengel|STR47812 V2 EQX",
-      "brand": "Stengel",
-      "brandCode": "Stengel",
-      "partNumber": "STR47812 V2 EQX",
+      "id": "cabinet-accessories-legrand-lksn8247expl-dsp",
+      "sku": "Legrand|LKSN8247EXPL-DSP",
+      "brand": "Legrand",
+      "brandCode": "Legrand",
+      "partNumber": "LKSN8247EXPL-DSP",
       "name": "Cabinet",
       "description": "Cabinet | 47Ux800x1200",
       "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
       "categoryId": "cabinet-accessories",
       "regions": [
-        "EMEA"
+        "APAC"
       ],
       "countries": [
-        "germany",
-        "netherlands"
+        "china"
       ],
       "pricing": {
-        "germany": {
-          "customerPrice": 2464,
-          "equinixPrice": 1887
-        },
-        "netherlands": {
-          "customerPrice": 2464,
-          "equinixPrice": 1887
+        "china": {
+          "customerPrice": 13485,
+          "equinixPrice": 9300
         }
       },
-      "price": 2464,
+      "price": 13485,
       "dimensions": {
         "rackUnits": 47,
         "widthMm": 800,
@@ -3458,6 +3258,74 @@
       }
     },
     {
+      "id": "cabinet-accessories-stengel-str45810-v2-eqx",
+      "sku": "Stengel|STR45810 V2 EQX",
+      "brand": "Stengel",
+      "brandCode": "Stengel",
+      "partNumber": "STR45810 V2 EQX",
+      "name": "Cabinet",
+      "description": "Cabinet | 45Ux800x1000",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "EMEA"
+      ],
+      "countries": [
+        "germany",
+        "netherlands"
+      ],
+      "pricing": {
+        "germany": {
+          "customerPrice": 2431,
+          "equinixPrice": 1728
+        },
+        "netherlands": {
+          "customerPrice": 2431,
+          "equinixPrice": 1728
+        }
+      },
+      "price": 2431,
+      "dimensions": {
+        "rackUnits": 45,
+        "widthMm": 800,
+        "depthMm": 1000
+      }
+    },
+    {
+      "id": "cabinet-accessories-stengel-str45812-v2-eqx",
+      "sku": "Stengel|STR45812 V2 EQX",
+      "brand": "Stengel",
+      "brandCode": "Stengel",
+      "partNumber": "STR45812 V2 EQX",
+      "name": "Cabinet",
+      "description": "Cabinet | 45Ux800x1200",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "EMEA"
+      ],
+      "countries": [
+        "germany",
+        "netherlands"
+      ],
+      "pricing": {
+        "germany": {
+          "customerPrice": 2526,
+          "equinixPrice": 1855
+        },
+        "netherlands": {
+          "customerPrice": 2526,
+          "equinixPrice": 1855
+        }
+      },
+      "price": 2526,
+      "dimensions": {
+        "rackUnits": 45,
+        "widthMm": 800,
+        "depthMm": 1200
+      }
+    },
+    {
       "id": "cabinet-accessories-stengel-str47610-v2-eqx",
       "sku": "Stengel|STR47610 V2 EQX",
       "brand": "Stengel",
@@ -3526,13 +3394,13 @@
       }
     },
     {
-      "id": "cabinet-accessories-stengel-str52812-v2-eqx",
-      "sku": "Stengel|STR52812 V2 EQX",
+      "id": "cabinet-accessories-stengel-str47810-v2-eqx",
+      "sku": "Stengel|STR47810 V2 EQX",
       "brand": "Stengel",
       "brandCode": "Stengel",
-      "partNumber": "STR52812 V2 EQX",
+      "partNumber": "STR47810 V2 EQX",
       "name": "Cabinet",
-      "description": "Cabinet | 52Ux800x1200",
+      "description": "Cabinet | 47Ux800x1000",
       "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
       "categoryId": "cabinet-accessories",
       "regions": [
@@ -3544,17 +3412,51 @@
       ],
       "pricing": {
         "germany": {
-          "customerPrice": 2584,
-          "equinixPrice": 1959
+          "customerPrice": 2376,
+          "equinixPrice": 1778
         },
         "netherlands": {
-          "customerPrice": 2584,
-          "equinixPrice": 1959
+          "customerPrice": 2376,
+          "equinixPrice": 1778
         }
       },
-      "price": 2584,
+      "price": 2376,
       "dimensions": {
-        "rackUnits": 52,
+        "rackUnits": 47,
+        "widthMm": 800,
+        "depthMm": 1000
+      }
+    },
+    {
+      "id": "cabinet-accessories-stengel-str47812-v2-eqx",
+      "sku": "Stengel|STR47812 V2 EQX",
+      "brand": "Stengel",
+      "brandCode": "Stengel",
+      "partNumber": "STR47812 V2 EQX",
+      "name": "Cabinet",
+      "description": "Cabinet | 47Ux800x1200",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "EMEA"
+      ],
+      "countries": [
+        "germany",
+        "netherlands"
+      ],
+      "pricing": {
+        "germany": {
+          "customerPrice": 2464,
+          "equinixPrice": 1887
+        },
+        "netherlands": {
+          "customerPrice": 2464,
+          "equinixPrice": 1887
+        }
+      },
+      "price": 2464,
+      "dimensions": {
+        "rackUnits": 47,
         "widthMm": 800,
         "depthMm": 1200
       }
@@ -3591,6 +3493,439 @@
         "rackUnits": 52,
         "widthMm": 600,
         "depthMm": 1200
+      }
+    },
+    {
+      "id": "cabinet-accessories-stengel-str52812-v2-eqx",
+      "sku": "Stengel|STR52812 V2 EQX",
+      "brand": "Stengel",
+      "brandCode": "Stengel",
+      "partNumber": "STR52812 V2 EQX",
+      "name": "Cabinet",
+      "description": "Cabinet | 52Ux800x1200",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "EMEA"
+      ],
+      "countries": [
+        "germany",
+        "netherlands"
+      ],
+      "pricing": {
+        "germany": {
+          "customerPrice": 2584,
+          "equinixPrice": 1959
+        },
+        "netherlands": {
+          "customerPrice": 2584,
+          "equinixPrice": 1959
+        }
+      },
+      "price": 2584,
+      "dimensions": {
+        "rackUnits": 52,
+        "widthMm": 800,
+        "depthMm": 1200
+      }
+    },
+    {
+      "id": "cabinet-accessories-stengel-ext-42-52ux600x300mm",
+      "sku": "Stengel|Ext. 42-52Ux600x300mm",
+      "brand": "Stengel",
+      "brandCode": "Stengel",
+      "partNumber": "Ext. 42-52Ux600x300mm",
+      "name": "Cabinet",
+      "description": "Cabinet | Depth Extender | 45U-52Ux600x300EXT",
+      "purpose": "A cabinet depth extender increases usable mounting depth inside a server cabinet, allowing deeper equipment or additional cable management space behind racks. It is used when standard cabinet depth is insufficient for modern servers, PDUs, or dense cable routing requirements.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "EMEA"
+      ],
+      "countries": [
+        "germany",
+        "netherlands"
+      ],
+      "pricing": {
+        "germany": {
+          "customerPrice": 676
+        },
+        "netherlands": {
+          "customerPrice": 676
+        }
+      },
+      "price": 676,
+      "dimensions": {
+        "rackUnits": 52,
+        "widthMm": 600,
+        "depthMm": 300
+      }
+    },
+    {
+      "id": "cabinet-accessories-stengel-ext-42-52ux800x300mm",
+      "sku": "Stengel|Ext. 42-52Ux800x300mm",
+      "brand": "Stengel",
+      "brandCode": "Stengel",
+      "partNumber": "Ext. 42-52Ux800x300mm",
+      "name": "Cabinet",
+      "description": "Cabinet | Depth Extender | 45U-52Ux800x300EXT",
+      "purpose": "A cabinet depth extender increases usable mounting depth inside a server cabinet, allowing deeper equipment or additional cable management space behind racks. It is used when standard cabinet depth is insufficient for modern servers, PDUs, or dense cable routing requirements.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "EMEA"
+      ],
+      "countries": [
+        "germany",
+        "netherlands"
+      ],
+      "pricing": {
+        "germany": {
+          "customerPrice": 682
+        },
+        "netherlands": {
+          "customerPrice": 682
+        }
+      },
+      "price": 682,
+      "dimensions": {
+        "rackUnits": 52,
+        "widthMm": 800,
+        "depthMm": 300
+      }
+    },
+    {
+      "id": "cabinet-accessories-netrack-cp-eqx-nrs-45-rf-6001000-wld-z0",
+      "sku": "Netrack|CP-EQX-NRS-45-RF-6001000-WLD-Z0",
+      "brand": "Netrack",
+      "brandCode": "Netrack",
+      "partNumber": "CP-EQX-NRS-45-RF-6001000-WLD-Z0",
+      "name": "Cabinet",
+      "description": "Cabinet | 45Ux600x1000",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "APAC"
+      ],
+      "countries": [
+        "hong-kong",
+        "india"
+      ],
+      "pricing": {
+        "hong-kong": {
+          "customerPrice": 28564,
+          "equinixPrice": 19699
+        },
+        "india": {
+          "customerPrice": 154161,
+          "equinixPrice": 106318
+        }
+      },
+      "price": 28564,
+      "dimensions": {
+        "rackUnits": 45,
+        "widthMm": 600,
+        "depthMm": 1000
+      }
+    },
+    {
+      "id": "cabinet-accessories-netrack-cp-eqx-nrs-45-rf-6001200-wld-z0",
+      "sku": "Netrack|CP-EQX-NRS-45-RF-6001200-WLD-Z0",
+      "brand": "Netrack",
+      "brandCode": "Netrack",
+      "partNumber": "CP-EQX-NRS-45-RF-6001200-WLD-Z0",
+      "name": "Cabinet",
+      "description": "Cabinet | 45Ux600x1200",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "APAC"
+      ],
+      "countries": [
+        "hong-kong",
+        "india"
+      ],
+      "pricing": {
+        "hong-kong": {
+          "customerPrice": 28720,
+          "equinixPrice": 19807
+        },
+        "india": {
+          "customerPrice": 173574,
+          "equinixPrice": 119706
+        }
+      },
+      "price": 28720,
+      "dimensions": {
+        "rackUnits": 45,
+        "widthMm": 600,
+        "depthMm": 1200
+      }
+    },
+    {
+      "id": "cabinet-accessories-netrack-cp-eqx-nrs-45-rf-8001000-wld-z0",
+      "sku": "Netrack|CP-EQX-NRS-45-RF-8001000-WLD-Z0",
+      "brand": "Netrack",
+      "brandCode": "Netrack",
+      "partNumber": "CP-EQX-NRS-45-RF-8001000-WLD-Z0",
+      "name": "Cabinet",
+      "description": "Cabinet | 45Ux800x1000",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "APAC"
+      ],
+      "countries": [
+        "hong-kong",
+        "india"
+      ],
+      "pricing": {
+        "hong-kong": {
+          "customerPrice": 30885,
+          "equinixPrice": 21300
+        },
+        "india": {
+          "customerPrice": 131499,
+          "equinixPrice": 90689
+        }
+      },
+      "price": 30885,
+      "dimensions": {
+        "rackUnits": 45,
+        "widthMm": 800,
+        "depthMm": 1000
+      }
+    },
+    {
+      "id": "cabinet-accessories-netrack-cp-eqx-nrs-45-rf-8001200-wld-z0",
+      "sku": "Netrack|CP-EQX-NRS-45-RF-8001200-WLD-Z0",
+      "brand": "Netrack",
+      "brandCode": "Netrack",
+      "partNumber": "CP-EQX-NRS-45-RF-8001200-WLD-Z0",
+      "name": "Cabinet",
+      "description": "Cabinet | 45Ux800x1200",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "APAC"
+      ],
+      "countries": [
+        "hong-kong",
+        "india"
+      ],
+      "pricing": {
+        "hong-kong": {
+          "customerPrice": 31529,
+          "equinixPrice": 21744
+        },
+        "india": {
+          "customerPrice": 149266,
+          "equinixPrice": 102942
+        }
+      },
+      "price": 31529,
+      "dimensions": {
+        "rackUnits": 45,
+        "widthMm": 800,
+        "depthMm": 1200
+      }
+    },
+    {
+      "id": "cabinet-accessories-netrack-cp-eqx-nrs-48-rf-6001000-wld-z0",
+      "sku": "Netrack|CP-EQX-NRS-48-RF-6001000-WLD-Z0",
+      "brand": "Netrack",
+      "brandCode": "Netrack",
+      "partNumber": "CP-EQX-NRS-48-RF-6001000-WLD-Z0",
+      "name": "Cabinet",
+      "description": "Cabinet | 48Ux600x1000",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "APAC"
+      ],
+      "countries": [
+        "hong-kong",
+        "india"
+      ],
+      "pricing": {
+        "hong-kong": {
+          "customerPrice": 29091,
+          "equinixPrice": 20063
+        },
+        "india": {
+          "customerPrice": 158630,
+          "equinixPrice": 109400
+        }
+      },
+      "price": 29091,
+      "dimensions": {
+        "rackUnits": 48,
+        "widthMm": 600,
+        "depthMm": 1000
+      }
+    },
+    {
+      "id": "cabinet-accessories-netrack-cp-eqx-nrs-48-rf-6001200-wld-z0",
+      "sku": "Netrack|CP-EQX-NRS-48-RF-6001200-WLD-Z0",
+      "brand": "Netrack",
+      "brandCode": "Netrack",
+      "partNumber": "CP-EQX-NRS-48-RF-6001200-WLD-Z0",
+      "name": "Cabinet",
+      "description": "Cabinet | 48Ux600x1200",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "APAC"
+      ],
+      "countries": [
+        "hong-kong",
+        "india"
+      ],
+      "pricing": {
+        "hong-kong": {
+          "customerPrice": 29506,
+          "equinixPrice": 20349
+        },
+        "india": {
+          "customerPrice": 175050,
+          "equinixPrice": 120724
+        }
+      },
+      "price": 29506,
+      "dimensions": {
+        "rackUnits": 48,
+        "widthMm": 600,
+        "depthMm": 1200
+      }
+    },
+    {
+      "id": "cabinet-accessories-netrack-cp-eqx-nrs-48-rf-8001000-wld-z0",
+      "sku": "Netrack|CP-EQX-NRS-48-RF-8001000-WLD-Z0",
+      "brand": "Netrack",
+      "brandCode": "Netrack",
+      "partNumber": "CP-EQX-NRS-48-RF-8001000-WLD-Z0",
+      "name": "Cabinet",
+      "description": "Cabinet | 48Ux800x1000",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "APAC"
+      ],
+      "countries": [
+        "hong-kong",
+        "india"
+      ],
+      "pricing": {
+        "hong-kong": {
+          "customerPrice": 31616,
+          "equinixPrice": 21804
+        },
+        "india": {
+          "customerPrice": 134567,
+          "equinixPrice": 92805
+        }
+      },
+      "price": 31616,
+      "dimensions": {
+        "rackUnits": 48,
+        "widthMm": 800,
+        "depthMm": 1000
+      }
+    },
+    {
+      "id": "cabinet-accessories-netrack-cp-eqx-nrs-48-rf-8001200-wld-z0",
+      "sku": "Netrack|CP-EQX-NRS-48-RF-8001200-WLD-Z0",
+      "brand": "Netrack",
+      "brandCode": "Netrack",
+      "partNumber": "CP-EQX-NRS-48-RF-8001200-WLD-Z0",
+      "name": "Cabinet",
+      "description": "Cabinet | 48x800x1200",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "APAC"
+      ],
+      "countries": [
+        "hong-kong",
+        "india"
+      ],
+      "pricing": {
+        "hong-kong": {
+          "customerPrice": 32418,
+          "equinixPrice": 22357
+        },
+        "india": {
+          "customerPrice": 162125,
+          "equinixPrice": 111810
+        }
+      },
+      "price": 32418
+    },
+    {
+      "id": "cabinet-accessories-netrack-cp-eqx-nrs-52-rf-6001200-wld-z0",
+      "sku": "Netrack|CP-EQX-NRS-52-RF-6001200-WLD-Z0",
+      "brand": "Netrack",
+      "brandCode": "Netrack",
+      "partNumber": "CP-EQX-NRS-52-RF-6001200-WLD-Z0",
+      "name": "Cabinet",
+      "description": "Cabinet | 52Ux600x1200",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "APAC"
+      ],
+      "countries": [
+        "hong-kong",
+        "india"
+      ],
+      "pricing": {
+        "hong-kong": {
+          "customerPrice": 29969,
+          "equinixPrice": 20668
+        },
+        "india": {
+          "customerPrice": 159193,
+          "equinixPrice": 109788
+        }
+      },
+      "price": 29969,
+      "dimensions": {
+        "rackUnits": 52,
+        "widthMm": 600,
+        "depthMm": 1200
+      }
+    },
+    {
+      "id": "cabinet-accessories-netrack-cp-eqx-nrs-52-rf-8001200-wld-z0",
+      "sku": "Netrack|CP-EQX-NRS-52-RF-8001200-WLD-Z0",
+      "brand": "Netrack",
+      "brandCode": "Netrack",
+      "partNumber": "CP-EQX-NRS-52-RF-8001200-WLD-Z0",
+      "name": "Cabinet",
+      "description": "Cabinet | 52Ux800x1000",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "APAC"
+      ],
+      "countries": [
+        "hong-kong",
+        "india"
+      ],
+      "pricing": {
+        "hong-kong": {
+          "customerPrice": 33298,
+          "equinixPrice": 22964
+        },
+        "india": {
+          "customerPrice": 186583,
+          "equinixPrice": 128678
+        }
+      },
+      "price": 33298,
+      "dimensions": {
+        "rackUnits": 52,
+        "widthMm": 800,
+        "depthMm": 1000
       }
     },
     {
@@ -3786,79 +4121,11 @@
       }
     },
     {
-      "id": "cabinet-accessories-netrack-cp-eqx-nrs-45-rf-8001000-wld-z0",
-      "sku": "Netrack|CP-EQX-NRS-45-RF-8001000-WLD-Z0",
-      "brand": "Netrack",
-      "brandCode": "Netrack",
-      "partNumber": "CP-EQX-NRS-45-RF-8001000-WLD-Z0",
-      "name": "Cabinet",
-      "description": "Cabinet | 45Ux800x1000",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "hong-kong",
-        "india"
-      ],
-      "pricing": {
-        "hong-kong": {
-          "customerPrice": 30885,
-          "equinixPrice": 21300
-        },
-        "india": {
-          "customerPrice": 131499,
-          "equinixPrice": 90689
-        }
-      },
-      "price": 30885,
-      "dimensions": {
-        "rackUnits": 45,
-        "widthMm": 800,
-        "depthMm": 1000
-      }
-    },
-    {
-      "id": "cabinet-accessories-netrack-cp-eqx-nrs-45-rf-8001200-wld-z0",
-      "sku": "Netrack|CP-EQX-NRS-45-RF-8001200-WLD-Z0",
-      "brand": "Netrack",
-      "brandCode": "Netrack",
-      "partNumber": "CP-EQX-NRS-45-RF-8001200-WLD-Z0",
-      "name": "Cabinet",
-      "description": "Cabinet | 45Ux800x1200",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "hong-kong",
-        "india"
-      ],
-      "pricing": {
-        "hong-kong": {
-          "customerPrice": 31529,
-          "equinixPrice": 21744
-        },
-        "india": {
-          "customerPrice": 149266,
-          "equinixPrice": 102942
-        }
-      },
-      "price": 31529,
-      "dimensions": {
-        "rackUnits": 45,
-        "widthMm": 800,
-        "depthMm": 1200
-      }
-    },
-    {
-      "id": "cabinet-accessories-netrack-cp-eqx-nrs-45-rf-6001000-wld-z0",
-      "sku": "Netrack|CP-EQX-NRS-45-RF-6001000-WLD-Z0",
-      "brand": "Netrack",
-      "brandCode": "Netrack",
-      "partNumber": "CP-EQX-NRS-45-RF-6001000-WLD-Z0",
+      "id": "cabinet-accessories-legrand-lgeqx-45610-ca",
+      "sku": "Legrand|LGEQX-45610-CA",
+      "brand": "Legrand",
+      "brandCode": "Legrand",
+      "partNumber": "LGEQX-45610-CA",
       "name": "Cabinet",
       "description": "Cabinet | 45Ux600x1000",
       "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
@@ -3867,20 +4134,30 @@
         "APAC"
       ],
       "countries": [
-        "hong-kong",
-        "india"
+        "indonesia",
+        "malaysia",
+        "philippines",
+        "singapore"
       ],
       "pricing": {
-        "hong-kong": {
-          "customerPrice": 28564,
-          "equinixPrice": 19699
+        "indonesia": {
+          "customerPrice": 33190213,
+          "equinixPrice": 22889802
         },
-        "india": {
-          "customerPrice": 154161,
-          "equinixPrice": 106318
+        "malaysia": {
+          "customerPrice": 8899,
+          "equinixPrice": 6137
+        },
+        "philippines": {
+          "customerPrice": 149565,
+          "equinixPrice": 103148
+        },
+        "singapore": {
+          "customerPrice": 2603,
+          "equinixPrice": 1795
         }
       },
-      "price": 28564,
+      "price": 2603,
       "dimensions": {
         "rackUnits": 45,
         "widthMm": 600,
@@ -3888,11 +4165,11 @@
       }
     },
     {
-      "id": "cabinet-accessories-netrack-cp-eqx-nrs-45-rf-6001200-wld-z0",
-      "sku": "Netrack|CP-EQX-NRS-45-RF-6001200-WLD-Z0",
-      "brand": "Netrack",
-      "brandCode": "Netrack",
-      "partNumber": "CP-EQX-NRS-45-RF-6001200-WLD-Z0",
+      "id": "cabinet-accessories-legrand-lgeqx-45612-ca",
+      "sku": "Legrand|LGEQX-45612-CA",
+      "brand": "Legrand",
+      "brandCode": "Legrand",
+      "partNumber": "LGEQX-45612-CA",
       "name": "Cabinet",
       "description": "Cabinet | 45Ux600x1200",
       "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
@@ -3901,20 +4178,30 @@
         "APAC"
       ],
       "countries": [
-        "hong-kong",
-        "india"
+        "indonesia",
+        "malaysia",
+        "philippines",
+        "singapore"
       ],
       "pricing": {
-        "hong-kong": {
-          "customerPrice": 28720,
-          "equinixPrice": 19807
+        "indonesia": {
+          "customerPrice": 34418857,
+          "equinixPrice": 23737143
         },
-        "india": {
-          "customerPrice": 173574,
-          "equinixPrice": 119706
+        "malaysia": {
+          "customerPrice": 9228,
+          "equinixPrice": 6364
+        },
+        "philippines": {
+          "customerPrice": 155102,
+          "equinixPrice": 106967
+        },
+        "singapore": {
+          "customerPrice": 2698,
+          "equinixPrice": 1861
         }
       },
-      "price": 28720,
+      "price": 2698,
       "dimensions": {
         "rackUnits": 45,
         "widthMm": 600,
@@ -3922,74 +4209,99 @@
       }
     },
     {
-      "id": "cabinet-accessories-netrack-cp-eqx-nrs-48-rf-8001000-wld-z0",
-      "sku": "Netrack|CP-EQX-NRS-48-RF-8001000-WLD-Z0",
-      "brand": "Netrack",
-      "brandCode": "Netrack",
-      "partNumber": "CP-EQX-NRS-48-RF-8001000-WLD-Z0",
+      "id": "cabinet-accessories-legrand-lgeqx-45810-ca",
+      "sku": "Legrand|LGEQX-45810-CA",
+      "brand": "Legrand",
+      "brandCode": "Legrand",
+      "partNumber": "LGEQX-45810-CA",
       "name": "Cabinet",
-      "description": "Cabinet | 48Ux800x1000",
+      "description": "Cabinet | 45Ux800x1000",
       "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
       "categoryId": "cabinet-accessories",
       "regions": [
         "APAC"
       ],
       "countries": [
-        "hong-kong",
-        "india"
+        "indonesia",
+        "malaysia",
+        "philippines",
+        "singapore"
       ],
       "pricing": {
-        "hong-kong": {
-          "customerPrice": 31616,
-          "equinixPrice": 21804
+        "indonesia": {
+          "customerPrice": 36825653,
+          "equinixPrice": 25397002
         },
-        "india": {
-          "customerPrice": 134567,
-          "equinixPrice": 92805
+        "malaysia": {
+          "customerPrice": 9873,
+          "equinixPrice": 6809
+        },
+        "philippines": {
+          "customerPrice": 165947,
+          "equinixPrice": 114446
+        },
+        "singapore": {
+          "customerPrice": 2887,
+          "equinixPrice": 1991
         }
       },
-      "price": 31616,
+      "price": 2887,
       "dimensions": {
-        "rackUnits": 48,
+        "rackUnits": 45,
         "widthMm": 800,
         "depthMm": 1000
       }
     },
     {
-      "id": "cabinet-accessories-netrack-cp-eqx-nrs-48-rf-8001200-wld-z0",
-      "sku": "Netrack|CP-EQX-NRS-48-RF-8001200-WLD-Z0",
-      "brand": "Netrack",
-      "brandCode": "Netrack",
-      "partNumber": "CP-EQX-NRS-48-RF-8001200-WLD-Z0",
+      "id": "cabinet-accessories-legrand-lgeqx-45812-ca",
+      "sku": "Legrand|LGEQX-45812-CA",
+      "brand": "Legrand",
+      "brandCode": "Legrand",
+      "partNumber": "LGEQX-45812-CA",
       "name": "Cabinet",
-      "description": "Cabinet | 48x800x1200",
+      "description": "Cabinet | 45Ux800x1200",
       "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
       "categoryId": "cabinet-accessories",
       "regions": [
         "APAC"
       ],
       "countries": [
-        "hong-kong",
-        "india"
+        "indonesia",
+        "malaysia",
+        "philippines",
+        "singapore"
       ],
       "pricing": {
-        "hong-kong": {
-          "customerPrice": 32418,
-          "equinixPrice": 22357
+        "indonesia": {
+          "customerPrice": 38811680,
+          "equinixPrice": 26766676
         },
-        "india": {
-          "customerPrice": 162125,
-          "equinixPrice": 111810
+        "malaysia": {
+          "customerPrice": 10407,
+          "equinixPrice": 7177
+        },
+        "philippines": {
+          "customerPrice": 174897,
+          "equinixPrice": 120619
+        },
+        "singapore": {
+          "customerPrice": 3042,
+          "equinixPrice": 2098
         }
       },
-      "price": 32418
+      "price": 3042,
+      "dimensions": {
+        "rackUnits": 45,
+        "widthMm": 800,
+        "depthMm": 1200
+      }
     },
     {
-      "id": "cabinet-accessories-netrack-cp-eqx-nrs-48-rf-6001000-wld-z0",
-      "sku": "Netrack|CP-EQX-NRS-48-RF-6001000-WLD-Z0",
-      "brand": "Netrack",
-      "brandCode": "Netrack",
-      "partNumber": "CP-EQX-NRS-48-RF-6001000-WLD-Z0",
+      "id": "cabinet-accessories-legrand-lgeqx-48610-ca",
+      "sku": "Legrand|LGEQX-48610-CA",
+      "brand": "Legrand",
+      "brandCode": "Legrand",
+      "partNumber": "LGEQX-48610-CA",
       "name": "Cabinet",
       "description": "Cabinet | 48Ux600x1000",
       "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
@@ -3998,20 +4310,30 @@
         "APAC"
       ],
       "countries": [
-        "hong-kong",
-        "india"
+        "indonesia",
+        "malaysia",
+        "philippines",
+        "singapore"
       ],
       "pricing": {
-        "hong-kong": {
-          "customerPrice": 29091,
-          "equinixPrice": 20063
+        "indonesia": {
+          "customerPrice": 34115905,
+          "equinixPrice": 23528210
         },
-        "india": {
-          "customerPrice": 158630,
-          "equinixPrice": 109400
+        "malaysia": {
+          "customerPrice": 9147,
+          "equinixPrice": 6308
+        },
+        "philippines": {
+          "customerPrice": 153736,
+          "equinixPrice": 106025
+        },
+        "singapore": {
+          "customerPrice": 2675,
+          "equinixPrice": 1845
         }
       },
-      "price": 29091,
+      "price": 2675,
       "dimensions": {
         "rackUnits": 48,
         "widthMm": 600,
@@ -4019,11 +4341,11 @@
       }
     },
     {
-      "id": "cabinet-accessories-netrack-cp-eqx-nrs-48-rf-6001200-wld-z0",
-      "sku": "Netrack|CP-EQX-NRS-48-RF-6001200-WLD-Z0",
-      "brand": "Netrack",
-      "brandCode": "Netrack",
-      "partNumber": "CP-EQX-NRS-48-RF-6001200-WLD-Z0",
+      "id": "cabinet-accessories-legrand-lgeqx-48612-ca",
+      "sku": "Legrand|LGEQX-48612-CA",
+      "brand": "Legrand",
+      "brandCode": "Legrand",
+      "partNumber": "LGEQX-48612-CA",
       "name": "Cabinet",
       "description": "Cabinet | 48Ux600x1200",
       "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
@@ -4032,20 +4354,30 @@
         "APAC"
       ],
       "countries": [
-        "hong-kong",
-        "india"
+        "indonesia",
+        "malaysia",
+        "philippines",
+        "singapore"
       ],
       "pricing": {
-        "hong-kong": {
-          "customerPrice": 29506,
-          "equinixPrice": 20349
+        "indonesia": {
+          "customerPrice": 37936482,
+          "equinixPrice": 26163091
         },
-        "india": {
-          "customerPrice": 175050,
-          "equinixPrice": 120724
+        "malaysia": {
+          "customerPrice": 10172,
+          "equinixPrice": 7015
+        },
+        "philippines": {
+          "customerPrice": 170953,
+          "equinixPrice": 117899
+        },
+        "singapore": {
+          "customerPrice": 2974,
+          "equinixPrice": 2051
         }
       },
-      "price": 29506,
+      "price": 2974,
       "dimensions": {
         "rackUnits": 48,
         "widthMm": 600,
@@ -4053,45 +4385,99 @@
       }
     },
     {
-      "id": "cabinet-accessories-netrack-cp-eqx-nrs-52-rf-8001200-wld-z0",
-      "sku": "Netrack|CP-EQX-NRS-52-RF-8001200-WLD-Z0",
-      "brand": "Netrack",
-      "brandCode": "Netrack",
-      "partNumber": "CP-EQX-NRS-52-RF-8001200-WLD-Z0",
+      "id": "cabinet-accessories-legrand-lgeqx-48810-ca",
+      "sku": "Legrand|LGEQX-48810-CA",
+      "brand": "Legrand",
+      "brandCode": "Legrand",
+      "partNumber": "LGEQX-48810-CA",
       "name": "Cabinet",
-      "description": "Cabinet | 52Ux800x1000",
+      "description": "Cabinet | 48Ux800x1000",
       "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
       "categoryId": "cabinet-accessories",
       "regions": [
         "APAC"
       ],
       "countries": [
-        "hong-kong",
-        "india"
+        "indonesia",
+        "malaysia",
+        "philippines",
+        "singapore"
       ],
       "pricing": {
-        "hong-kong": {
-          "customerPrice": 33298,
-          "equinixPrice": 22964
+        "indonesia": {
+          "customerPrice": 37936482,
+          "equinixPrice": 26163091
         },
-        "india": {
-          "customerPrice": 186583,
-          "equinixPrice": 128678
+        "malaysia": {
+          "customerPrice": 10172,
+          "equinixPrice": 7015
+        },
+        "philippines": {
+          "customerPrice": 170953,
+          "equinixPrice": 117899
+        },
+        "singapore": {
+          "customerPrice": 2974,
+          "equinixPrice": 2051
         }
       },
-      "price": 33298,
+      "price": 2974,
       "dimensions": {
-        "rackUnits": 52,
+        "rackUnits": 48,
         "widthMm": 800,
         "depthMm": 1000
       }
     },
     {
-      "id": "cabinet-accessories-netrack-cp-eqx-nrs-52-rf-6001200-wld-z0",
-      "sku": "Netrack|CP-EQX-NRS-52-RF-6001200-WLD-Z0",
-      "brand": "Netrack",
-      "brandCode": "Netrack",
-      "partNumber": "CP-EQX-NRS-52-RF-6001200-WLD-Z0",
+      "id": "cabinet-accessories-legrand-lgeqx-48812-ca",
+      "sku": "Legrand|LGEQX-48812-CA",
+      "brand": "Legrand",
+      "brandCode": "Legrand",
+      "partNumber": "LGEQX-48812-CA",
+      "name": "Cabinet",
+      "description": "Cabinet | 48Ux800x1200",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "APAC"
+      ],
+      "countries": [
+        "indonesia",
+        "malaysia",
+        "philippines",
+        "singapore"
+      ],
+      "pricing": {
+        "indonesia": {
+          "customerPrice": 39232448,
+          "equinixPrice": 27056861
+        },
+        "malaysia": {
+          "customerPrice": 10520,
+          "equinixPrice": 7255
+        },
+        "philippines": {
+          "customerPrice": 176793,
+          "equinixPrice": 121926
+        },
+        "singapore": {
+          "customerPrice": 3075,
+          "equinixPrice": 2121
+        }
+      },
+      "price": 3075,
+      "dimensions": {
+        "rackUnits": 48,
+        "widthMm": 800,
+        "depthMm": 1200
+      }
+    },
+    {
+      "id": "cabinet-accessories-legrand-lgeqx-52612-ca",
+      "sku": "Legrand|LGEQX-52612-CA",
+      "brand": "Legrand",
+      "brandCode": "Legrand",
+      "partNumber": "LGEQX-52612-CA",
       "name": "Cabinet",
       "description": "Cabinet | 52Ux600x1200",
       "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
@@ -4100,23 +4486,77 @@
         "APAC"
       ],
       "countries": [
-        "hong-kong",
-        "india"
+        "indonesia",
+        "malaysia",
+        "philippines",
+        "singapore"
       ],
       "pricing": {
-        "hong-kong": {
-          "customerPrice": 29969,
-          "equinixPrice": 20668
+        "indonesia": {
+          "customerPrice": 37431559,
+          "equinixPrice": 25814868
         },
-        "india": {
-          "customerPrice": 159193,
-          "equinixPrice": 109788
+        "malaysia": {
+          "customerPrice": 10037,
+          "equinixPrice": 6922
+        },
+        "philippines": {
+          "customerPrice": 171578,
+          "equinixPrice": 118330
+        },
+        "singapore": {
+          "customerPrice": 2935,
+          "equinixPrice": 2024
         }
       },
-      "price": 29969,
+      "price": 2935,
       "dimensions": {
         "rackUnits": 52,
         "widthMm": 600,
+        "depthMm": 1200
+      }
+    },
+    {
+      "id": "cabinet-accessories-legrand-lgeqx-52812-ca",
+      "sku": "Legrand|LGEQX-52812-CA",
+      "brand": "Legrand",
+      "brandCode": "Legrand",
+      "partNumber": "LGEQX-52812-CA",
+      "name": "Cabinet",
+      "description": "Cabinet | 52Ux800x1200",
+      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "APAC"
+      ],
+      "countries": [
+        "indonesia",
+        "malaysia",
+        "philippines",
+        "singapore"
+      ],
+      "pricing": {
+        "indonesia": {
+          "customerPrice": 41504597,
+          "equinixPrice": 28623860
+        },
+        "malaysia": {
+          "customerPrice": 11129,
+          "equinixPrice": 7675
+        },
+        "philippines": {
+          "customerPrice": 187032,
+          "equinixPrice": 128988
+        },
+        "singapore": {
+          "customerPrice": 3254,
+          "equinixPrice": 2244
+        }
+      },
+      "price": 3254,
+      "dimensions": {
+        "rackUnits": 52,
+        "widthMm": 800,
         "depthMm": 1200
       }
     },
@@ -4361,446 +4801,6 @@
       }
     },
     {
-      "id": "cabinet-accessories-legrand-lgeqx-45810-ca",
-      "sku": "Legrand|LGEQX-45810-CA",
-      "brand": "Legrand",
-      "brandCode": "Legrand",
-      "partNumber": "LGEQX-45810-CA",
-      "name": "Cabinet",
-      "description": "Cabinet | 45Ux800x1000",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "indonesia",
-        "malaysia",
-        "philippines",
-        "singapore"
-      ],
-      "pricing": {
-        "indonesia": {
-          "customerPrice": 36825653,
-          "equinixPrice": 25397002
-        },
-        "malaysia": {
-          "customerPrice": 9873,
-          "equinixPrice": 6809
-        },
-        "philippines": {
-          "customerPrice": 165947,
-          "equinixPrice": 114446
-        },
-        "singapore": {
-          "customerPrice": 2887,
-          "equinixPrice": 1991
-        }
-      },
-      "price": 2887,
-      "dimensions": {
-        "rackUnits": 45,
-        "widthMm": 800,
-        "depthMm": 1000
-      }
-    },
-    {
-      "id": "cabinet-accessories-legrand-lgeqx-45812-ca",
-      "sku": "Legrand|LGEQX-45812-CA",
-      "brand": "Legrand",
-      "brandCode": "Legrand",
-      "partNumber": "LGEQX-45812-CA",
-      "name": "Cabinet",
-      "description": "Cabinet | 45Ux800x1200",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "indonesia",
-        "malaysia",
-        "philippines",
-        "singapore"
-      ],
-      "pricing": {
-        "indonesia": {
-          "customerPrice": 38811680,
-          "equinixPrice": 26766676
-        },
-        "malaysia": {
-          "customerPrice": 10407,
-          "equinixPrice": 7177
-        },
-        "philippines": {
-          "customerPrice": 174897,
-          "equinixPrice": 120619
-        },
-        "singapore": {
-          "customerPrice": 3042,
-          "equinixPrice": 2098
-        }
-      },
-      "price": 3042,
-      "dimensions": {
-        "rackUnits": 45,
-        "widthMm": 800,
-        "depthMm": 1200
-      }
-    },
-    {
-      "id": "cabinet-accessories-legrand-lgeqx-45610-ca",
-      "sku": "Legrand|LGEQX-45610-CA",
-      "brand": "Legrand",
-      "brandCode": "Legrand",
-      "partNumber": "LGEQX-45610-CA",
-      "name": "Cabinet",
-      "description": "Cabinet | 45Ux600x1000",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "indonesia",
-        "malaysia",
-        "philippines",
-        "singapore"
-      ],
-      "pricing": {
-        "indonesia": {
-          "customerPrice": 33190213,
-          "equinixPrice": 22889802
-        },
-        "malaysia": {
-          "customerPrice": 8899,
-          "equinixPrice": 6137
-        },
-        "philippines": {
-          "customerPrice": 149565,
-          "equinixPrice": 103148
-        },
-        "singapore": {
-          "customerPrice": 2603,
-          "equinixPrice": 1795
-        }
-      },
-      "price": 2603,
-      "dimensions": {
-        "rackUnits": 45,
-        "widthMm": 600,
-        "depthMm": 1000
-      }
-    },
-    {
-      "id": "cabinet-accessories-legrand-lgeqx-45612-ca",
-      "sku": "Legrand|LGEQX-45612-CA",
-      "brand": "Legrand",
-      "brandCode": "Legrand",
-      "partNumber": "LGEQX-45612-CA",
-      "name": "Cabinet",
-      "description": "Cabinet | 45Ux600x1200",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "indonesia",
-        "malaysia",
-        "philippines",
-        "singapore"
-      ],
-      "pricing": {
-        "indonesia": {
-          "customerPrice": 34418857,
-          "equinixPrice": 23737143
-        },
-        "malaysia": {
-          "customerPrice": 9228,
-          "equinixPrice": 6364
-        },
-        "philippines": {
-          "customerPrice": 155102,
-          "equinixPrice": 106967
-        },
-        "singapore": {
-          "customerPrice": 2698,
-          "equinixPrice": 1861
-        }
-      },
-      "price": 2698,
-      "dimensions": {
-        "rackUnits": 45,
-        "widthMm": 600,
-        "depthMm": 1200
-      }
-    },
-    {
-      "id": "cabinet-accessories-legrand-lgeqx-48810-ca",
-      "sku": "Legrand|LGEQX-48810-CA",
-      "brand": "Legrand",
-      "brandCode": "Legrand",
-      "partNumber": "LGEQX-48810-CA",
-      "name": "Cabinet",
-      "description": "Cabinet | 48Ux800x1000",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "indonesia",
-        "malaysia",
-        "philippines",
-        "singapore"
-      ],
-      "pricing": {
-        "indonesia": {
-          "customerPrice": 37936482,
-          "equinixPrice": 26163091
-        },
-        "malaysia": {
-          "customerPrice": 10172,
-          "equinixPrice": 7015
-        },
-        "philippines": {
-          "customerPrice": 170953,
-          "equinixPrice": 117899
-        },
-        "singapore": {
-          "customerPrice": 2974,
-          "equinixPrice": 2051
-        }
-      },
-      "price": 2974,
-      "dimensions": {
-        "rackUnits": 48,
-        "widthMm": 800,
-        "depthMm": 1000
-      }
-    },
-    {
-      "id": "cabinet-accessories-legrand-lgeqx-48812-ca",
-      "sku": "Legrand|LGEQX-48812-CA",
-      "brand": "Legrand",
-      "brandCode": "Legrand",
-      "partNumber": "LGEQX-48812-CA",
-      "name": "Cabinet",
-      "description": "Cabinet | 48x800x1200",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "indonesia",
-        "malaysia",
-        "philippines",
-        "singapore"
-      ],
-      "pricing": {
-        "indonesia": {
-          "customerPrice": 39232448,
-          "equinixPrice": 27056861
-        },
-        "malaysia": {
-          "customerPrice": 10520,
-          "equinixPrice": 7255
-        },
-        "philippines": {
-          "customerPrice": 176793,
-          "equinixPrice": 121926
-        },
-        "singapore": {
-          "customerPrice": 3075,
-          "equinixPrice": 2121
-        }
-      },
-      "price": 3075,
-      "dimensions": {
-        "rackUnits": 48,
-        "widthMm": 800,
-        "depthMm": 1200
-      }
-    },
-    {
-      "id": "cabinet-accessories-legrand-lgeqx-48610-ca",
-      "sku": "Legrand|LGEQX-48610-CA",
-      "brand": "Legrand",
-      "brandCode": "Legrand",
-      "partNumber": "LGEQX-48610-CA",
-      "name": "Cabinet",
-      "description": "Cabinet | 48Ux600x1000",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "indonesia",
-        "malaysia",
-        "philippines",
-        "singapore"
-      ],
-      "pricing": {
-        "indonesia": {
-          "customerPrice": 34115905,
-          "equinixPrice": 23528210
-        },
-        "malaysia": {
-          "customerPrice": 9147,
-          "equinixPrice": 6308
-        },
-        "philippines": {
-          "customerPrice": 153736,
-          "equinixPrice": 106025
-        },
-        "singapore": {
-          "customerPrice": 2675,
-          "equinixPrice": 1845
-        }
-      },
-      "price": 2675,
-      "dimensions": {
-        "rackUnits": 48,
-        "widthMm": 600,
-        "depthMm": 1000
-      }
-    },
-    {
-      "id": "cabinet-accessories-legrand-lgeqx-48612-ca",
-      "sku": "Legrand|LGEQX-48612-CA",
-      "brand": "Legrand",
-      "brandCode": "Legrand",
-      "partNumber": "LGEQX-48612-CA",
-      "name": "Cabinet",
-      "description": "Cabinet | 48Ux600x1200",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "indonesia",
-        "malaysia",
-        "philippines",
-        "singapore"
-      ],
-      "pricing": {
-        "indonesia": {
-          "customerPrice": 37936482,
-          "equinixPrice": 26163091
-        },
-        "malaysia": {
-          "customerPrice": 10172,
-          "equinixPrice": 7015
-        },
-        "philippines": {
-          "customerPrice": 170953,
-          "equinixPrice": 117899
-        },
-        "singapore": {
-          "customerPrice": 2974,
-          "equinixPrice": 2051
-        }
-      },
-      "price": 2974,
-      "dimensions": {
-        "rackUnits": 48,
-        "widthMm": 600,
-        "depthMm": 1200
-      }
-    },
-    {
-      "id": "cabinet-accessories-legrand-lgeqx-52812-ca",
-      "sku": "Legrand|LGEQX-52812-CA",
-      "brand": "Legrand",
-      "brandCode": "Legrand",
-      "partNumber": "LGEQX-52812-CA",
-      "name": "Cabinet",
-      "description": "Cabinet | 52Ux800x1200",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "indonesia",
-        "malaysia",
-        "philippines",
-        "singapore"
-      ],
-      "pricing": {
-        "indonesia": {
-          "customerPrice": 41504597,
-          "equinixPrice": 28623860
-        },
-        "malaysia": {
-          "customerPrice": 11129,
-          "equinixPrice": 7675
-        },
-        "philippines": {
-          "customerPrice": 187032,
-          "equinixPrice": 128988
-        },
-        "singapore": {
-          "customerPrice": 3254,
-          "equinixPrice": 2244
-        }
-      },
-      "price": 3254,
-      "dimensions": {
-        "rackUnits": 52,
-        "widthMm": 800,
-        "depthMm": 1200
-      }
-    },
-    {
-      "id": "cabinet-accessories-legrand-lgeqx-52612-ca",
-      "sku": "Legrand|LGEQX-52612-CA",
-      "brand": "Legrand",
-      "brandCode": "Legrand",
-      "partNumber": "LGEQX-52612-CA",
-      "name": "Cabinet",
-      "description": "Cabinet | 52Ux600x1200",
-      "purpose": "A data center cabinet (server rack) houses, secures, and organizes IT equipment in a standard rack-mount form factor. It provides structured mounting for servers, switches, and accessories while supporting airflow, cable entry, and physical security within a colocation environment.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "indonesia",
-        "malaysia",
-        "philippines",
-        "singapore"
-      ],
-      "pricing": {
-        "indonesia": {
-          "customerPrice": 37431559,
-          "equinixPrice": 25814868
-        },
-        "malaysia": {
-          "customerPrice": 10037,
-          "equinixPrice": 6922
-        },
-        "philippines": {
-          "customerPrice": 171578,
-          "equinixPrice": 118330
-        },
-        "singapore": {
-          "customerPrice": 2935,
-          "equinixPrice": 2024
-        }
-      },
-      "price": 2935,
-      "dimensions": {
-        "rackUnits": 52,
-        "widthMm": 600,
-        "depthMm": 1200
-      }
-    },
-    {
       "id": "cabinet-accessories-stengel-436510-00",
       "sku": "Stengel|436510-00",
       "brand": "Stengel",
@@ -4894,81 +4894,6 @@
       }
     },
     {
-      "id": "cabinet-accessories-minkels-a001e-000052-000-1",
-      "sku": "Minkels|A001E-000052-000-1",
-      "brand": "Minkels",
-      "brandCode": "Minkels",
-      "partNumber": "A001E-000052-000-1",
-      "name": "Cable guides",
-      "description": "Cable Guides | 52U",
-      "purpose": "Cable guides direct patch and trunk cables along defined paths within or beside a cabinet. They reduce cable crossover, protect connectors from stress, and make it easier to maintain consistent routing as equipment is added or replaced.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "EMEA"
-      ],
-      "countries": [
-        "bulgaria",
-        "finland",
-        "france",
-        "ireland",
-        "italy",
-        "oman",
-        "poland",
-        "portugal",
-        "spain",
-        "sweden",
-        "switzerland",
-        "turkey",
-        "united-arab-emirates",
-        "united-kingdom"
-      ],
-      "pricing": {
-        "bulgaria": {
-          "customerPrice": 69
-        },
-        "finland": {
-          "customerPrice": 69
-        },
-        "france": {
-          "customerPrice": 69
-        },
-        "ireland": {
-          "customerPrice": 69
-        },
-        "italy": {
-          "customerPrice": 69
-        },
-        "oman": {
-          "customerPrice": 76
-        },
-        "poland": {
-          "customerPrice": 292
-        },
-        "portugal": {
-          "customerPrice": 69
-        },
-        "spain": {
-          "customerPrice": 69
-        },
-        "sweden": {
-          "customerPrice": 765
-        },
-        "switzerland": {
-          "customerPrice": 65
-        },
-        "turkey": {
-          "customerPrice": 76
-        },
-        "united-arab-emirates": {
-          "customerPrice": 366
-        },
-        "united-kingdom": {
-          "customerPrice": 69
-        }
-      },
-      "price": 65
-    },
-    {
       "id": "cabinet-accessories-minkels-a001e-000047-000-1",
       "sku": "Minkels|A001E-000047-000-1",
       "brand": "Minkels",
@@ -5042,6 +4967,81 @@
         }
       },
       "price": 55
+    },
+    {
+      "id": "cabinet-accessories-minkels-a001e-000052-000-1",
+      "sku": "Minkels|A001E-000052-000-1",
+      "brand": "Minkels",
+      "brandCode": "Minkels",
+      "partNumber": "A001E-000052-000-1",
+      "name": "Cable guides",
+      "description": "Cable Guides | 52U",
+      "purpose": "Cable guides direct patch and trunk cables along defined paths within or beside a cabinet. They reduce cable crossover, protect connectors from stress, and make it easier to maintain consistent routing as equipment is added or replaced.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "EMEA"
+      ],
+      "countries": [
+        "bulgaria",
+        "finland",
+        "france",
+        "ireland",
+        "italy",
+        "oman",
+        "poland",
+        "portugal",
+        "spain",
+        "sweden",
+        "switzerland",
+        "turkey",
+        "united-arab-emirates",
+        "united-kingdom"
+      ],
+      "pricing": {
+        "bulgaria": {
+          "customerPrice": 69
+        },
+        "finland": {
+          "customerPrice": 69
+        },
+        "france": {
+          "customerPrice": 69
+        },
+        "ireland": {
+          "customerPrice": 69
+        },
+        "italy": {
+          "customerPrice": 69
+        },
+        "oman": {
+          "customerPrice": 76
+        },
+        "poland": {
+          "customerPrice": 292
+        },
+        "portugal": {
+          "customerPrice": 69
+        },
+        "spain": {
+          "customerPrice": 69
+        },
+        "sweden": {
+          "customerPrice": 765
+        },
+        "switzerland": {
+          "customerPrice": 65
+        },
+        "turkey": {
+          "customerPrice": 76
+        },
+        "united-arab-emirates": {
+          "customerPrice": 366
+        },
+        "united-kingdom": {
+          "customerPrice": 58
+        }
+      },
+      "price": 58
     },
     {
       "id": "cabinet-accessories-minkels-a001e-000042-000-1",
@@ -5612,7 +5612,7 @@
           "customerPrice": 303
         },
         "united-kingdom": {
-          "customerPrice": 346
+          "customerPrice": 283
         },
         "united-states": {
           "customerPrice": 597
@@ -6996,7 +6996,7 @@
           "customerPrice": 331
         },
         "mexico": {
-          "customerPrice": 427
+          "customerPrice": 430
         },
         "netherlands": {
           "customerPrice": 331
@@ -7005,7 +7005,7 @@
           "customerPrice": 680
         },
         "peru": {
-          "customerPrice": 467
+          "customerPrice": 480
         },
         "poland": {
           "customerPrice": 1292
@@ -7233,7 +7233,7 @@
           "customerPrice": 351
         },
         "peru": {
-          "customerPrice": 417
+          "customerPrice": 430
         },
         "poland": {
           "customerPrice": 1372
@@ -7489,10 +7489,12 @@
       "purpose": "A rack PDU (rPDU) distributes conditioned power from a facility feed to multiple outlets within a cabinet. Monitored, metered, and switched models add visibility and control over power consumption and individual outlet states for capacity planning and remote operations.",
       "categoryId": "power-accessories",
       "regions": [
+        "AMER",
         "EMEA"
       ],
       "countries": [
         "bulgaria",
+        "colombia",
         "finland",
         "france",
         "germany",
@@ -7509,6 +7511,9 @@
       "pricing": {
         "bulgaria": {
           "customerPrice": 2086
+        },
+        "colombia": {
+          "customerPrice": 7706870
         },
         "finland": {
           "customerPrice": 2086
@@ -7697,40 +7702,13 @@
           "customerPrice": 752
         },
         "mexico": {
-          "customerPrice": 502
+          "customerPrice": 520
         },
         "united-states": {
           "customerPrice": 620
         }
       },
-      "price": 502
-    },
-    {
-      "id": "power-accessories-panduit-p16e19m",
-      "sku": "Panduit|P16E19M",
-      "brand": "Panduit",
-      "brandCode": "Panduit",
-      "partNumber": "P16E19M",
-      "name": "rPDU",
-      "description": "Rpdu | 208V | 30A | 1P | 12xC13 - 4xC19 | Monitored Switched | Horizontal",
-      "purpose": "A rack PDU (rPDU) distributes conditioned power from a facility feed to multiple outlets within a cabinet. Monitored, metered, and switched models add visibility and control over power consumption and individual outlet states for capacity planning and remote operations.",
-      "categoryId": "power-accessories",
-      "regions": [
-        "AMER"
-      ],
-      "countries": [
-        "canada",
-        "united-states"
-      ],
-      "pricing": {
-        "canada": {
-          "customerPrice": 1822
-        },
-        "united-states": {
-          "customerPrice": 1379
-        }
-      },
-      "price": 1379
+      "price": 520
     },
     {
       "id": "power-accessories-panduit-p36e12g",
@@ -7828,11 +7806,15 @@
       ],
       "countries": [
         "canada",
+        "colombia",
         "united-states"
       ],
       "pricing": {
         "canada": {
           "customerPrice": 2041
+        },
+        "colombia": {
+          "customerPrice": 6385020
         },
         "united-states": {
           "customerPrice": 1587
@@ -7855,17 +7837,48 @@
       ],
       "countries": [
         "canada",
+        "colombia",
         "united-states"
       ],
       "pricing": {
         "canada": {
           "customerPrice": 1518
         },
+        "colombia": {
+          "customerPrice": 4629730
+        },
         "united-states": {
           "customerPrice": 1184
         }
       },
       "price": 1184
+    },
+    {
+      "id": "power-accessories-panduit-p16e19m",
+      "sku": "Panduit|P16E19M",
+      "brand": "Panduit",
+      "brandCode": "Panduit",
+      "partNumber": "P16E19M",
+      "name": "rPDU",
+      "description": "Rpdu | 208V | 30A | 1P | 12xC13 - 4xC19 | Monitored Switched | Horizontal",
+      "purpose": "A rack PDU (rPDU) distributes conditioned power from a facility feed to multiple outlets within a cabinet. Monitored, metered, and switched models add visibility and control over power consumption and individual outlet states for capacity planning and remote operations.",
+      "categoryId": "power-accessories",
+      "regions": [
+        "AMER"
+      ],
+      "countries": [
+        "canada",
+        "united-states"
+      ],
+      "pricing": {
+        "canada": {
+          "customerPrice": 1822
+        },
+        "united-states": {
+          "customerPrice": 1379
+        }
+      },
+      "price": 1379
     },
     {
       "id": "power-accessories-panduit-p42d06m",
@@ -7887,16 +7900,16 @@
       ],
       "pricing": {
         "chile": {
-          "customerPrice": 49.25
+          "customerPrice": 33
         },
         "colombia": {
-          "customerPrice": 5211775
+          "customerPrice": 5335140
         },
         "peru": {
-          "customerPrice": 1502
+          "customerPrice": 1500
         }
       },
-      "price": 49.25
+      "price": 33
     },
     {
       "id": "power-accessories-legrand-aue2211h1-20evflob",
@@ -7943,75 +7956,6 @@
         }
       },
       "price": 1566
-    },
-    {
-      "id": "power-accessories-panduit-p38d25m",
-      "sku": "Panduit|P38D25M",
-      "brand": "Panduit",
-      "brandCode": "Panduit",
-      "partNumber": "P38D25M",
-      "name": "rPDU",
-      "description": "Rpdu | 208V | 30A | 1P | 32xC13 - 6xC19 | Monitored Input",
-      "purpose": "A rack PDU (rPDU) distributes conditioned power from a facility feed to multiple outlets within a cabinet. Monitored, metered, and switched models add visibility and control over power consumption and individual outlet states for capacity planning and remote operations.",
-      "categoryId": "power-accessories",
-      "regions": [
-        "AMER"
-      ],
-      "countries": [
-        "colombia"
-      ],
-      "pricing": {
-        "colombia": {
-          "customerPrice": 4353636
-        }
-      },
-      "price": 4353636
-    },
-    {
-      "id": "power-accessories-panduit-p38d28m",
-      "sku": "Panduit|P38D28M",
-      "brand": "Panduit",
-      "brandCode": "Panduit",
-      "partNumber": "P38D28M",
-      "name": "rPDU",
-      "description": "Rpdu | 208V | 30A | 3P | 30xC13 - 6xC19 - 2x5-20R | Monitored Input",
-      "purpose": "A rack PDU (rPDU) distributes conditioned power from a facility feed to multiple outlets within a cabinet. Monitored, metered, and switched models add visibility and control over power consumption and individual outlet states for capacity planning and remote operations.",
-      "categoryId": "power-accessories",
-      "regions": [
-        "AMER"
-      ],
-      "countries": [
-        "colombia"
-      ],
-      "pricing": {
-        "colombia": {
-          "customerPrice": 6004229
-        }
-      },
-      "price": 6004229
-    },
-    {
-      "id": "power-accessories-panduit-p42d04m",
-      "sku": "Panduit|P42D04M",
-      "brand": "Panduit",
-      "brandCode": "Panduit",
-      "partNumber": "P42D04M",
-      "name": "rPDU",
-      "description": "Rpdu | 400V | 32A | 3P | 30xC13 - 12xC19 | Monitored Input",
-      "purpose": "A rack PDU (rPDU) distributes conditioned power from a facility feed to multiple outlets within a cabinet. Monitored, metered, and switched models add visibility and control over power consumption and individual outlet states for capacity planning and remote operations.",
-      "categoryId": "power-accessories",
-      "regions": [
-        "AMER"
-      ],
-      "countries": [
-        "colombia"
-      ],
-      "pricing": {
-        "colombia": {
-          "customerPrice": 7247277
-        }
-      },
-      "price": 7247277
     },
     {
       "id": "power-accessories-panduit-p22b39m",
@@ -8217,98 +8161,6 @@
         }
       },
       "price": 2465
-    },
-    {
-      "id": "power-accessories-elcom-eam-s642a-de3whvx",
-      "sku": "ELCOM|EAM-S642A-DE3WHVX",
-      "brand": "ELCOM",
-      "brandCode": "ELCOM",
-      "partNumber": "EAM-S642A-DE3WHVX",
-      "name": "rPDU",
-      "description": "Rpdu | Metered | 32A | 230V | 1P | 36xC13-6xC19 | IEC 60309 Input",
-      "purpose": "A rack PDU (rPDU) distributes conditioned power from a facility feed to multiple outlets within a cabinet. Monitored, metered, and switched models add visibility and control over power consumption and individual outlet states for capacity planning and remote operations.",
-      "categoryId": "power-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "india"
-      ],
-      "pricing": {
-        "india": {
-          "customerPrice": 36025
-        }
-      },
-      "price": 36025
-    },
-    {
-      "id": "power-accessories-elcom-eam-t642b-ee3whvx",
-      "sku": "ELCOM|EAM-T642B-EE3WHVX",
-      "brand": "ELCOM",
-      "brandCode": "ELCOM",
-      "partNumber": "EAM-T642B-EE3WHVX",
-      "name": "rPDU",
-      "description": "Rpdu | Metered | 32A | 400V | 3P | 30xC13-12xC19 | IEC 60309 Input",
-      "purpose": "A rack PDU (rPDU) distributes conditioned power from a facility feed to multiple outlets within a cabinet. Monitored, metered, and switched models add visibility and control over power consumption and individual outlet states for capacity planning and remote operations.",
-      "categoryId": "power-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "india"
-      ],
-      "pricing": {
-        "india": {
-          "customerPrice": 42724
-        }
-      },
-      "price": 42724
-    },
-    {
-      "id": "power-accessories-elcom-e03-c36nb",
-      "sku": "ELCOM|E03-C36NB",
-      "brand": "ELCOM",
-      "brandCode": "ELCOM",
-      "partNumber": "E03-C36NB",
-      "name": "rPDU",
-      "description": "Rpdu | Basic | 32A | 400V | 3P | 24xC13-12xC19 | IEC 60309 Input",
-      "purpose": "A rack PDU (rPDU) distributes electrical power to multiple devices mounted in a single cabinet. It converts a facility power feed into rack-level outlets for servers, switches, and other equipment while supporting standardized connectors for the target region.",
-      "categoryId": "power-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "india"
-      ],
-      "pricing": {
-        "india": {
-          "customerPrice": 15733
-        }
-      },
-      "price": 15733
-    },
-    {
-      "id": "power-accessories-elcom-e-2ic-24ab-5vx3x",
-      "sku": "ELCOM|E-2IC-24AB-5VX3X",
-      "brand": "ELCOM",
-      "brandCode": "ELCOM",
-      "partNumber": "E-2IC-24AB-5VX3X",
-      "name": "rPDU",
-      "description": "Rpdu | Basic | 32A | 230V | 1P | 20xC13-4xC19 | IEC 60309 Input",
-      "purpose": "A rack PDU (rPDU) distributes electrical power to multiple devices mounted in a single cabinet. It converts a facility power feed into rack-level outlets for servers, switches, and other equipment while supporting standardized connectors for the target region.",
-      "categoryId": "power-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "india"
-      ],
-      "pricing": {
-        "india": {
-          "customerPrice": 6576
-        }
-      },
-      "price": 6576
     },
     {
       "id": "power-accessories-eaton-eflxb0d20a4b",
@@ -8672,10 +8524,10 @@
       ],
       "pricing": {
         "mexico": {
-          "customerPrice": 3409
+          "customerPrice": 610
         }
       },
-      "price": 3409
+      "price": 610
     },
     {
       "id": "power-accessories-panduit-p24b15m",
@@ -8695,10 +8547,10 @@
       ],
       "pricing": {
         "mexico": {
-          "customerPrice": 648
+          "customerPrice": 3410
         }
       },
-      "price": 648
+      "price": 3410
     },
     {
       "id": "power-accessories-eaton-eflxb0d20a4bc",
@@ -9005,33 +8857,6 @@
       "price": 53
     },
     {
-      "id": "cabinet-accessories-stengel-319063-00",
-      "sku": "Stengel|319063-00",
-      "brand": "Stengel",
-      "brandCode": "Stengel",
-      "partNumber": "319063-00",
-      "name": "Shelf",
-      "description": "Shelf | 483x250x44mm",
-      "purpose": "A rack shelf provides a fixed horizontal mounting surface inside a cabinet for equipment that is not rack-ear mountable. It supports items such as small appliances, media converters, or tools while keeping them stable, accessible, and off the data hall floor.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "EMEA"
-      ],
-      "countries": [
-        "germany",
-        "netherlands"
-      ],
-      "pricing": {
-        "germany": {
-          "customerPrice": 124
-        },
-        "netherlands": {
-          "customerPrice": 124
-        }
-      },
-      "price": 124
-    },
-    {
       "id": "cabinet-accessories-stengel-296270-02",
       "sku": "Stengel|296270-02",
       "brand": "Stengel",
@@ -9059,6 +8884,33 @@
       "price": 133
     },
     {
+      "id": "cabinet-accessories-stengel-319063-00",
+      "sku": "Stengel|319063-00",
+      "brand": "Stengel",
+      "brandCode": "Stengel",
+      "partNumber": "319063-00",
+      "name": "Shelf",
+      "description": "Shelf | 483x250x44mm",
+      "purpose": "A rack shelf provides a fixed horizontal mounting surface inside a cabinet for equipment that is not rack-ear mountable. It supports items such as small appliances, media converters, or tools while keeping them stable, accessible, and off the data hall floor.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "EMEA"
+      ],
+      "countries": [
+        "germany",
+        "netherlands"
+      ],
+      "pricing": {
+        "germany": {
+          "customerPrice": 124
+        },
+        "netherlands": {
+          "customerPrice": 124
+        }
+      },
+      "price": 124
+    },
+    {
       "id": "cross-connect-accessories-omnitron-8523n-1-e-keq-australia",
       "sku": "Omnitron|8523N-1-E-KEQ",
       "brand": "Omnitron",
@@ -9076,10 +8928,10 @@
       ],
       "pricing": {
         "australia": {
-          "customerPrice": 1567
+          "customerPrice": 1915
         }
       },
-      "price": 1567
+      "price": 1915
     },
     {
       "id": "cross-connect-accessories-omnitron-8743-1-e-keq-australia",
@@ -9099,10 +8951,10 @@
       ],
       "pricing": {
         "australia": {
-          "customerPrice": 1813
+          "customerPrice": 2168
         }
       },
-      "price": 1813
+      "price": 2168
     },
     {
       "id": "cross-connect-accessories-omnitron-8703-1-e-keq-australia",
@@ -9122,10 +8974,10 @@
       ],
       "pricing": {
         "australia": {
-          "customerPrice": 1748
+          "customerPrice": 2108
         }
       },
-      "price": 1748
+      "price": 2108
     },
     {
       "id": "cross-connect-accessories-planet-gst-802-brazil",
@@ -9260,10 +9112,10 @@
       ],
       "pricing": {
         "brazil": {
-          "customerPrice": 13179
+          "customerPrice": 14383
         }
       },
-      "price": 13179
+      "price": 14383
     },
     {
       "id": "cross-connect-accessories-omnitron-8703-1-e-keq-brazil",
@@ -9283,10 +9135,10 @@
       ],
       "pricing": {
         "brazil": {
-          "customerPrice": 11693
+          "customerPrice": 13870
         }
       },
-      "price": 11693
+      "price": 13870
     },
     {
       "id": "cross-connect-accessories-omnitron-8523n-1-e-keq-canada",
@@ -9358,144 +9210,6 @@
       "price": 1449
     },
     {
-      "id": "cross-connect-accessories-omnitron-8523n-1-e-keq-chile",
-      "sku": "Omnitron|8523N-1-E-KEQ",
-      "brand": "Omnitron",
-      "brandCode": "Omnitron",
-      "partNumber": "8523N-1-E-KEQ",
-      "name": "Standalone Media Converter",
-      "description": "Standalone Media Converter | Ethernet | 10/100/1000Base-T(RJ45) To 1000Base LX 1310 SC Singlemode",
-      "purpose": "A standalone media converter converts signals between copper Ethernet and fiber optic interfaces. It extends network reach beyond copper distance limits, connects equipment with mismatched port types, and enables flexible handoffs in cross-connect and meet-me-room environments.",
-      "categoryId": "cross-connect-accessories",
-      "regions": [
-        "AMER"
-      ],
-      "countries": [
-        "chile"
-      ],
-      "pricing": {
-        "chile": {
-          "customerPrice": 1059496
-        }
-      },
-      "price": 1059496
-    },
-    {
-      "id": "cross-connect-accessories-omnitron-8743-1-e-keq-chile",
-      "sku": "Omnitron|8743-1-E-KEQ",
-      "brand": "Omnitron",
-      "brandCode": "Omnitron",
-      "partNumber": "8743-1-E-KEQ",
-      "name": "Standalone Media Converter",
-      "description": "Standalone Media Converter | Ds3/e3 | DS3 COAX BNC To SC Singlemode",
-      "purpose": "A standalone media converter transitions between legacy telecom interfaces (such as T1/E1 or DS3/E3) and fiber optic transport. It extends circuit reach across longer distances and integrates older access technologies into modern fiber-based data center networks.",
-      "categoryId": "cross-connect-accessories",
-      "regions": [
-        "AMER"
-      ],
-      "countries": [
-        "chile"
-      ],
-      "pricing": {
-        "chile": {
-          "customerPrice": 1233699
-        }
-      },
-      "price": 1233699
-    },
-    {
-      "id": "cross-connect-accessories-omnitron-8703-1-e-keq-chile",
-      "sku": "Omnitron|8703-1-E-KEQ",
-      "brand": "Omnitron",
-      "brandCode": "Omnitron",
-      "partNumber": "8703-1-E-KEQ",
-      "name": "Standalone Media Converter",
-      "description": "Standalone Media Converter | T1/e1 | T1/e1 RJ48 To SC Singlemode",
-      "purpose": "A standalone media converter transitions between legacy telecom interfaces (such as T1/E1 or DS3/E3) and fiber optic transport. It extends circuit reach across longer distances and integrates older access technologies into modern fiber-based data center networks.",
-      "categoryId": "cross-connect-accessories",
-      "regions": [
-        "AMER"
-      ],
-      "countries": [
-        "chile"
-      ],
-      "pricing": {
-        "chile": {
-          "customerPrice": 1190687
-        }
-      },
-      "price": 1190687
-    },
-    {
-      "id": "cross-connect-accessories-omnitron-8523n-1-e-keq-colombia",
-      "sku": "Omnitron|8523N-1-E-KEQ",
-      "brand": "Omnitron",
-      "brandCode": "Omnitron",
-      "partNumber": "8523N-1-E-KEQ",
-      "name": "Standalone Media Converter",
-      "description": "Standalone Media Converter | Ethernet | 10/100/1000Base-T(RJ45) To 1000Base LX 1310 SC Singlemode",
-      "purpose": "A standalone media converter converts signals between copper Ethernet and fiber optic interfaces. It extends network reach beyond copper distance limits, connects equipment with mismatched port types, and enables flexible handoffs in cross-connect and meet-me-room environments.",
-      "categoryId": "cross-connect-accessories",
-      "regions": [
-        "AMER"
-      ],
-      "countries": [
-        "colombia"
-      ],
-      "pricing": {
-        "colombia": {
-          "customerPrice": 4513099
-        }
-      },
-      "price": 4513099
-    },
-    {
-      "id": "cross-connect-accessories-omnitron-8743-1-e-keq-colombia",
-      "sku": "Omnitron|8743-1-E-KEQ",
-      "brand": "Omnitron",
-      "brandCode": "Omnitron",
-      "partNumber": "8743-1-E-KEQ",
-      "name": "Standalone Media Converter",
-      "description": "Standalone Media Converter | Ds3/e3 | DS3 COAX BNC To SC Singlemode",
-      "purpose": "A standalone media converter transitions between legacy telecom interfaces (such as T1/E1 or DS3/E3) and fiber optic transport. It extends circuit reach across longer distances and integrates older access technologies into modern fiber-based data center networks.",
-      "categoryId": "cross-connect-accessories",
-      "regions": [
-        "AMER"
-      ],
-      "countries": [
-        "colombia"
-      ],
-      "pricing": {
-        "colombia": {
-          "customerPrice": 5274587
-        }
-      },
-      "price": 5274587
-    },
-    {
-      "id": "cross-connect-accessories-omnitron-8703-1-e-keq-colombia",
-      "sku": "Omnitron|8703-1-E-KEQ",
-      "brand": "Omnitron",
-      "brandCode": "Omnitron",
-      "partNumber": "8703-1-E-KEQ",
-      "name": "Standalone Media Converter",
-      "description": "Standalone Media Converter | T1/e1 | T1/e1 RJ48 To SC Singlemode",
-      "purpose": "A standalone media converter transitions between legacy telecom interfaces (such as T1/E1 or DS3/E3) and fiber optic transport. It extends circuit reach across longer distances and integrates older access technologies into modern fiber-based data center networks.",
-      "categoryId": "cross-connect-accessories",
-      "regions": [
-        "AMER"
-      ],
-      "countries": [
-        "colombia"
-      ],
-      "pricing": {
-        "colombia": {
-          "customerPrice": 5086585
-        }
-      },
-      "price": 5086585
-    },
-    {
       "id": "cross-connect-accessories-omnitron-8523n-1-e-keq-france",
       "sku": "Omnitron|8523N-1-E-KEQ",
       "brand": "Omnitron",
@@ -9513,10 +9227,10 @@
       ],
       "pricing": {
         "france": {
-          "customerPrice": 851
+          "customerPrice": 982
         }
       },
-      "price": 851
+      "price": 982
     },
     {
       "id": "cross-connect-accessories-omnitron-8743-1-e-keq-france",
@@ -9536,10 +9250,10 @@
       ],
       "pricing": {
         "france": {
-          "customerPrice": 985
+          "customerPrice": 1130
         }
       },
-      "price": 985
+      "price": 1130
     },
     {
       "id": "cross-connect-accessories-omnitron-8703-1-e-keq-france",
@@ -9559,10 +9273,10 @@
       ],
       "pricing": {
         "france": {
-          "customerPrice": 952
+          "customerPrice": 1093
         }
       },
-      "price": 952
+      "price": 1093
     },
     {
       "id": "cross-connect-accessories-omnitron-8523n-1-e-keq-germany",
@@ -9582,10 +9296,10 @@
       ],
       "pricing": {
         "germany": {
-          "customerPrice": 851
+          "customerPrice": 982
         }
       },
-      "price": 851
+      "price": 982
     },
     {
       "id": "cross-connect-accessories-omnitron-8743-1-e-keq-germany",
@@ -9605,10 +9319,10 @@
       ],
       "pricing": {
         "germany": {
-          "customerPrice": 985
+          "customerPrice": 1130
         }
       },
-      "price": 985
+      "price": 1130
     },
     {
       "id": "cross-connect-accessories-omnitron-8703-1-e-keq-germany",
@@ -9628,10 +9342,10 @@
       ],
       "pricing": {
         "germany": {
-          "customerPrice": 952
+          "customerPrice": 1093
         }
       },
-      "price": 952
+      "price": 1093
     },
     {
       "id": "cross-connect-accessories-omnitron-8523n-1-e-keq-hong-kong",
@@ -9651,10 +9365,10 @@
       ],
       "pricing": {
         "hong-kong": {
-          "customerPrice": 7568
+          "customerPrice": 1620
         }
       },
-      "price": 7568
+      "price": 1620
     },
     {
       "id": "cross-connect-accessories-omnitron-8743-1-e-keq-hong-kong",
@@ -9674,10 +9388,10 @@
       ],
       "pricing": {
         "hong-kong": {
-          "customerPrice": 8821
+          "customerPrice": 1846
         }
       },
-      "price": 8821
+      "price": 1846
     },
     {
       "id": "cross-connect-accessories-omnitron-8703-1-e-keq-hong-kong",
@@ -9697,10 +9411,10 @@
       ],
       "pricing": {
         "hong-kong": {
-          "customerPrice": 8512
+          "customerPrice": 1788
         }
       },
-      "price": 8512
+      "price": 1788
     },
     {
       "id": "cross-connect-accessories-omnitron-8523n-1-e-keq-india",
@@ -9789,10 +9503,10 @@
       ],
       "pricing": {
         "ireland": {
-          "customerPrice": 851
+          "customerPrice": 982
         }
       },
-      "price": 851
+      "price": 982
     },
     {
       "id": "cross-connect-accessories-omnitron-8743-1-e-keq-ireland",
@@ -9812,10 +9526,10 @@
       ],
       "pricing": {
         "ireland": {
-          "customerPrice": 985
+          "customerPrice": 1130
         }
       },
-      "price": 985
+      "price": 1130
     },
     {
       "id": "cross-connect-accessories-omnitron-8703-1-e-keq-ireland",
@@ -9835,10 +9549,10 @@
       ],
       "pricing": {
         "ireland": {
-          "customerPrice": 952
+          "customerPrice": 1093
         }
       },
-      "price": 952
+      "price": 1093
     },
     {
       "id": "cross-connect-accessories-omnitron-8523n-1-e-keq-italy",
@@ -9858,10 +9572,10 @@
       ],
       "pricing": {
         "italy": {
-          "customerPrice": 851
+          "customerPrice": 982
         }
       },
-      "price": 851
+      "price": 982
     },
     {
       "id": "cross-connect-accessories-omnitron-8743-1-e-keq-italy",
@@ -9881,10 +9595,10 @@
       ],
       "pricing": {
         "italy": {
-          "customerPrice": 985
+          "customerPrice": 1130
         }
       },
-      "price": 985
+      "price": 1130
     },
     {
       "id": "cross-connect-accessories-omnitron-8703-1-e-keq-italy",
@@ -9904,10 +9618,10 @@
       ],
       "pricing": {
         "italy": {
-          "customerPrice": 952
+          "customerPrice": 1093
         }
       },
-      "price": 952
+      "price": 1093
     },
     {
       "id": "cross-connect-accessories-omnitron-8523n-1-e-keq-japan",
@@ -9927,10 +9641,10 @@
       ],
       "pricing": {
         "japan": {
-          "customerPrice": 154351
+          "customerPrice": 215644
         }
       },
-      "price": 154351
+      "price": 215644
     },
     {
       "id": "cross-connect-accessories-omnitron-8743-1-e-keq-japan",
@@ -9950,10 +9664,10 @@
       ],
       "pricing": {
         "japan": {
-          "customerPrice": 179997
+          "customerPrice": 244035
         }
       },
-      "price": 179997
+      "price": 244035
     },
     {
       "id": "cross-connect-accessories-omnitron-8703-1-e-keq-japan",
@@ -9973,13 +9687,13 @@
       ],
       "pricing": {
         "japan": {
-          "customerPrice": 173667
+          "customerPrice": 237264
         }
       },
-      "price": 173667
+      "price": 237264
     },
     {
-      "id": "cross-connect-accessories-omnitron-8523n-1-e-keq-mexico",
+      "id": "cross-connect-accessories-omnitron-8523n-1-e-keq-malaysia",
       "sku": "Omnitron|8523N-1-E-KEQ",
       "brand": "Omnitron",
       "brandCode": "Omnitron",
@@ -9989,20 +9703,20 @@
       "purpose": "A standalone media converter converts signals between copper Ethernet and fiber optic interfaces. It extends network reach beyond copper distance limits, connects equipment with mismatched port types, and enables flexible handoffs in cross-connect and meet-me-room environments.",
       "categoryId": "cross-connect-accessories",
       "regions": [
-        "AMER"
+        "APAC"
       ],
       "countries": [
-        "mexico"
+        "malaysia"
       ],
       "pricing": {
-        "mexico": {
-          "customerPrice": 1806
+        "malaysia": {
+          "customerPrice": 5287
         }
       },
-      "price": 1806
+      "price": 5287
     },
     {
-      "id": "cross-connect-accessories-omnitron-8743-1-e-keq-mexico",
+      "id": "cross-connect-accessories-omnitron-8743-1-e-keq-malaysia",
       "sku": "Omnitron|8743-1-E-KEQ",
       "brand": "Omnitron",
       "brandCode": "Omnitron",
@@ -10012,20 +9726,20 @@
       "purpose": "A standalone media converter transitions between legacy telecom interfaces (such as T1/E1 or DS3/E3) and fiber optic transport. It extends circuit reach across longer distances and integrates older access technologies into modern fiber-based data center networks.",
       "categoryId": "cross-connect-accessories",
       "regions": [
-        "AMER"
+        "APAC"
       ],
       "countries": [
-        "mexico"
+        "malaysia"
       ],
       "pricing": {
-        "mexico": {
-          "customerPrice": 1944
+        "malaysia": {
+          "customerPrice": 6029
         }
       },
-      "price": 1944
+      "price": 6029
     },
     {
-      "id": "cross-connect-accessories-omnitron-8703-1-e-keq-mexico",
+      "id": "cross-connect-accessories-omnitron-8703-1-e-keq-malaysia",
       "sku": "Omnitron|8703-1-E-KEQ",
       "brand": "Omnitron",
       "brandCode": "Omnitron",
@@ -10035,17 +9749,17 @@
       "purpose": "A standalone media converter transitions between legacy telecom interfaces (such as T1/E1 or DS3/E3) and fiber optic transport. It extends circuit reach across longer distances and integrates older access technologies into modern fiber-based data center networks.",
       "categoryId": "cross-connect-accessories",
       "regions": [
-        "AMER"
+        "APAC"
       ],
       "countries": [
-        "mexico"
+        "malaysia"
       ],
       "pricing": {
-        "mexico": {
-          "customerPrice": 1910
+        "malaysia": {
+          "customerPrice": 5815
         }
       },
-      "price": 1910
+      "price": 5815
     },
     {
       "id": "cross-connect-accessories-omnitron-8523n-1-e-keq-netherlands",
@@ -10065,10 +9779,10 @@
       ],
       "pricing": {
         "netherlands": {
-          "customerPrice": 851
+          "customerPrice": 982
         }
       },
-      "price": 851
+      "price": 982
     },
     {
       "id": "cross-connect-accessories-omnitron-8743-1-e-keq-netherlands",
@@ -10088,10 +9802,10 @@
       ],
       "pricing": {
         "netherlands": {
-          "customerPrice": 985
+          "customerPrice": 1130
         }
       },
-      "price": 985
+      "price": 1130
     },
     {
       "id": "cross-connect-accessories-omnitron-8703-1-e-keq-netherlands",
@@ -10111,10 +9825,10 @@
       ],
       "pricing": {
         "netherlands": {
-          "customerPrice": 952
+          "customerPrice": 1093
         }
       },
-      "price": 952
+      "price": 1093
     },
     {
       "id": "cross-connect-accessories-omnitron-8523n-1-e-keq-oman",
@@ -10186,53 +9900,7 @@
       "price": 1608
     },
     {
-      "id": "cross-connect-accessories-omnitron-8743-1-e-keq-peru",
-      "sku": "Omnitron|8743-1-E-KEQ",
-      "brand": "Omnitron",
-      "brandCode": "Omnitron",
-      "partNumber": "8743-1-E-KEQ",
-      "name": "Standalone Media Converter",
-      "description": "Standalone Media Converter | Ds3/e3 | DS3 COAX BNC To SC Singlemode",
-      "purpose": "A standalone media converter transitions between legacy telecom interfaces (such as T1/E1 or DS3/E3) and fiber optic transport. It extends circuit reach across longer distances and integrates older access technologies into modern fiber-based data center networks.",
-      "categoryId": "cross-connect-accessories",
-      "regions": [
-        "AMER"
-      ],
-      "countries": [
-        "peru"
-      ],
-      "pricing": {
-        "peru": {
-          "customerPrice": 1549
-        }
-      },
-      "price": 1549
-    },
-    {
-      "id": "cross-connect-accessories-omnitron-8703-1-e-keq-peru",
-      "sku": "Omnitron|8703-1-E-KEQ",
-      "brand": "Omnitron",
-      "brandCode": "Omnitron",
-      "partNumber": "8703-1-E-KEQ",
-      "name": "Standalone Media Converter",
-      "description": "Standalone Media Converter | T1/e1 | T1/e1 RJ48 To SC Singlemode",
-      "purpose": "A standalone media converter transitions between legacy telecom interfaces (such as T1/E1 or DS3/E3) and fiber optic transport. It extends circuit reach across longer distances and integrates older access technologies into modern fiber-based data center networks.",
-      "categoryId": "cross-connect-accessories",
-      "regions": [
-        "AMER"
-      ],
-      "countries": [
-        "peru"
-      ],
-      "pricing": {
-        "peru": {
-          "customerPrice": 1374
-        }
-      },
-      "price": 1374
-    },
-    {
-      "id": "cross-connect-accessories-omnitron-8523n-1-e-keq-peru",
+      "id": "cross-connect-accessories-omnitron-8523n-1-e-keq-philippines",
       "sku": "Omnitron|8523N-1-E-KEQ",
       "brand": "Omnitron",
       "brandCode": "Omnitron",
@@ -10242,17 +9910,63 @@
       "purpose": "A standalone media converter converts signals between copper Ethernet and fiber optic interfaces. It extends network reach beyond copper distance limits, connects equipment with mismatched port types, and enables flexible handoffs in cross-connect and meet-me-room environments.",
       "categoryId": "cross-connect-accessories",
       "regions": [
-        "AMER"
+        "APAC"
       ],
       "countries": [
-        "peru"
+        "philippines"
       ],
       "pricing": {
-        "peru": {
-          "customerPrice": 1337
+        "philippines": {
+          "customerPrice": 77321
         }
       },
-      "price": 1337
+      "price": 77321
+    },
+    {
+      "id": "cross-connect-accessories-omnitron-8743-1-e-keq-philippines",
+      "sku": "Omnitron|8743-1-E-KEQ",
+      "brand": "Omnitron",
+      "brandCode": "Omnitron",
+      "partNumber": "8743-1-E-KEQ",
+      "name": "Standalone Media Converter",
+      "description": "Standalone Media Converter | Ds3/e3 | DS3 COAX BNC To SC Singlemode",
+      "purpose": "A standalone media converter transitions between legacy telecom interfaces (such as T1/E1 or DS3/E3) and fiber optic transport. It extends circuit reach across longer distances and integrates older access technologies into modern fiber-based data center networks.",
+      "categoryId": "cross-connect-accessories",
+      "regions": [
+        "APAC"
+      ],
+      "countries": [
+        "philippines"
+      ],
+      "pricing": {
+        "philippines": {
+          "customerPrice": 88105
+        }
+      },
+      "price": 88105
+    },
+    {
+      "id": "cross-connect-accessories-omnitron-8703-1-e-keq-philippines",
+      "sku": "Omnitron|8703-1-E-KEQ",
+      "brand": "Omnitron",
+      "brandCode": "Omnitron",
+      "partNumber": "8703-1-E-KEQ",
+      "name": "Standalone Media Converter",
+      "description": "Standalone Media Converter | T1/e1 | T1/e1 RJ48 To SC Singlemode",
+      "purpose": "A standalone media converter transitions between legacy telecom interfaces (such as T1/E1 or DS3/E3) and fiber optic transport. It extends circuit reach across longer distances and integrates older access technologies into modern fiber-based data center networks.",
+      "categoryId": "cross-connect-accessories",
+      "regions": [
+        "APAC"
+      ],
+      "countries": [
+        "philippines"
+      ],
+      "pricing": {
+        "philippines": {
+          "customerPrice": 84969
+        }
+      },
+      "price": 84969
     },
     {
       "id": "cross-connect-accessories-omnitron-8523n-1-e-keq-poland",
@@ -10341,10 +10055,10 @@
       ],
       "pricing": {
         "portugal": {
-          "customerPrice": 851
+          "customerPrice": 982
         }
       },
-      "price": 851
+      "price": 982
     },
     {
       "id": "cross-connect-accessories-omnitron-8743-1-e-keq-portugal",
@@ -10364,10 +10078,10 @@
       ],
       "pricing": {
         "portugal": {
-          "customerPrice": 985
+          "customerPrice": 1130
         }
       },
-      "price": 985
+      "price": 1130
     },
     {
       "id": "cross-connect-accessories-omnitron-8703-1-e-keq-portugal",
@@ -10387,10 +10101,10 @@
       ],
       "pricing": {
         "portugal": {
-          "customerPrice": 952
+          "customerPrice": 1093
         }
       },
-      "price": 952
+      "price": 1093
     },
     {
       "id": "cross-connect-accessories-omnitron-8523n-1-e-keq-south-korea",
@@ -10410,10 +10124,10 @@
       ],
       "pricing": {
         "south-korea": {
-          "customerPrice": 1504426
+          "customerPrice": 2128890
         }
       },
-      "price": 1504426
+      "price": 2128890
     },
     {
       "id": "cross-connect-accessories-omnitron-8743-1-e-keq-south-korea",
@@ -10433,10 +10147,10 @@
       ],
       "pricing": {
         "south-korea": {
-          "customerPrice": 1743836
+          "customerPrice": 2413815
         }
       },
-      "price": 1743836
+      "price": 2413815
     },
     {
       "id": "cross-connect-accessories-omnitron-8703-1-e-keq-south-korea",
@@ -10456,10 +10170,10 @@
       ],
       "pricing": {
         "south-korea": {
-          "customerPrice": 1684642
+          "customerPrice": 2345665
         }
       },
-      "price": 1684642
+      "price": 2345665
     },
     {
       "id": "cross-connect-accessories-omnitron-8523n-1-e-keq-singapore",
@@ -10479,10 +10193,10 @@
       ],
       "pricing": {
         "singapore": {
-          "customerPrice": 1455
+          "customerPrice": 1673
         }
       },
-      "price": 1455
+      "price": 1673
     },
     {
       "id": "cross-connect-accessories-omnitron-8743-1-e-keq-singapore",
@@ -10502,10 +10216,10 @@
       ],
       "pricing": {
         "singapore": {
-          "customerPrice": 1681
+          "customerPrice": 1933
         }
       },
-      "price": 1681
+      "price": 1933
     },
     {
       "id": "cross-connect-accessories-omnitron-8703-1-e-keq-singapore",
@@ -10525,10 +10239,10 @@
       ],
       "pricing": {
         "singapore": {
-          "customerPrice": 1627
+          "customerPrice": 1871
         }
       },
-      "price": 1627
+      "price": 1871
     },
     {
       "id": "cross-connect-accessories-omnitron-8523n-1-e-keq-spain",
@@ -10548,10 +10262,10 @@
       ],
       "pricing": {
         "spain": {
-          "customerPrice": 851
+          "customerPrice": 982
         }
       },
-      "price": 851
+      "price": 982
     },
     {
       "id": "cross-connect-accessories-omnitron-8743-1-e-keq-spain",
@@ -10571,10 +10285,10 @@
       ],
       "pricing": {
         "spain": {
-          "customerPrice": 985
+          "customerPrice": 1130
         }
       },
-      "price": 985
+      "price": 1130
     },
     {
       "id": "cross-connect-accessories-omnitron-8703-1-e-keq-spain",
@@ -10594,10 +10308,10 @@
       ],
       "pricing": {
         "spain": {
-          "customerPrice": 952
+          "customerPrice": 1093
         }
       },
-      "price": 952
+      "price": 1093
     },
     {
       "id": "cross-connect-accessories-omnitron-8523n-1-e-keq-sweden",
@@ -10686,10 +10400,10 @@
       ],
       "pricing": {
         "switzerland": {
-          "customerPrice": 821
+          "customerPrice": 889
         }
       },
-      "price": 821
+      "price": 889
     },
     {
       "id": "cross-connect-accessories-omnitron-8743-1-e-keq-switzerland",
@@ -10709,10 +10423,10 @@
       ],
       "pricing": {
         "switzerland": {
-          "customerPrice": 950
+          "customerPrice": 1024
         }
       },
-      "price": 950
+      "price": 1024
     },
     {
       "id": "cross-connect-accessories-omnitron-8703-1-e-keq-switzerland",
@@ -10732,10 +10446,10 @@
       ],
       "pricing": {
         "switzerland": {
-          "customerPrice": 918
+          "customerPrice": 991
         }
       },
-      "price": 918
+      "price": 991
     },
     {
       "id": "cross-connect-accessories-omnitron-8523n-1-e-keq-turkey",
@@ -10893,10 +10607,10 @@
       ],
       "pricing": {
         "united-kingdom": {
-          "customerPrice": 738
+          "customerPrice": 848
         }
       },
-      "price": 738
+      "price": 848
     },
     {
       "id": "cross-connect-accessories-omnitron-8743-1-e-keq-united-kingdom",
@@ -10916,10 +10630,10 @@
       ],
       "pricing": {
         "united-kingdom": {
-          "customerPrice": 854
+          "customerPrice": 976
         }
       },
-      "price": 854
+      "price": 976
     },
     {
       "id": "cross-connect-accessories-omnitron-8703-1-e-keq-united-kingdom",
@@ -10939,10 +10653,10 @@
       ],
       "pricing": {
         "united-kingdom": {
-          "customerPrice": 825
+          "customerPrice": 944
         }
       },
-      "price": 825
+      "price": 944
     },
     {
       "id": "cross-connect-accessories-omnitron-8523n-1-e-keq-united-states",
@@ -10962,10 +10676,10 @@
       ],
       "pricing": {
         "united-states": {
-          "customerPrice": 908
+          "customerPrice": 1022
         }
       },
-      "price": 908
+      "price": 1022
     },
     {
       "id": "cross-connect-accessories-omnitron-8743-1-e-keq-united-states",
@@ -10985,10 +10699,10 @@
       ],
       "pricing": {
         "united-states": {
-          "customerPrice": 1046
+          "customerPrice": 1193
         }
       },
-      "price": 1046
+      "price": 1193
     },
     {
       "id": "cross-connect-accessories-omnitron-8703-1-e-keq-united-states",
@@ -11008,10 +10722,10 @@
       ],
       "pricing": {
         "united-states": {
-          "customerPrice": 1012
+          "customerPrice": 1151
         }
       },
-      "price": 1012
+      "price": 1151
     },
     {
       "id": "cage-accessories-c-connex-m-adpt-12p-cat6a-rj45-ns-blk",
@@ -11243,7 +10957,7 @@
           "customerPrice": 1174
         },
         "mexico": {
-          "customerPrice": 1507
+          "customerPrice": 1620
         },
         "netherlands": {
           "customerPrice": 1174
@@ -11344,7 +11058,7 @@
           "customerPrice": 1780
         },
         "mexico": {
-          "customerPrice": 2172
+          "customerPrice": 2310
         },
         "netherlands": {
           "customerPrice": 1780
@@ -11446,7 +11160,7 @@
           "customerPrice": 2025
         },
         "mexico": {
-          "customerPrice": 3370
+          "customerPrice": 3580
         },
         "netherlands": {
           "customerPrice": 2025
@@ -11551,7 +11265,7 @@
           "customerPrice": 334
         },
         "mexico": {
-          "customerPrice": 790
+          "customerPrice": 820
         },
         "netherlands": {
           "customerPrice": 334
@@ -11656,7 +11370,7 @@
           "customerPrice": 269
         },
         "mexico": {
-          "customerPrice": 602
+          "customerPrice": 630
         },
         "netherlands": {
           "customerPrice": 269
@@ -11727,7 +11441,7 @@
           "customerPrice": 1577800
         },
         "mexico": {
-          "customerPrice": 381
+          "customerPrice": 420
         },
         "peru": {
           "customerPrice": 270
@@ -11774,7 +11488,7 @@
           "customerPrice": 1860984
         },
         "mexico": {
-          "customerPrice": 436
+          "customerPrice": 460
         },
         "peru": {
           "customerPrice": 315
@@ -11849,7 +11563,7 @@
           "customerPrice": 261
         },
         "mexico": {
-          "customerPrice": 377
+          "customerPrice": 580
         },
         "netherlands": {
           "customerPrice": 261
@@ -11917,7 +11631,7 @@
           "customerPrice": 4787313
         },
         "mexico": {
-          "customerPrice": 1015
+          "customerPrice": 1120
         },
         "peru": {
           "customerPrice": 769
@@ -11964,7 +11678,7 @@
           "customerPrice": 4868183
         },
         "mexico": {
-          "customerPrice": 1032
+          "customerPrice": 1400
         },
         "peru": {
           "customerPrice": 807
@@ -12011,7 +11725,7 @@
           "customerPrice": 6135842
         },
         "mexico": {
-          "customerPrice": 1282
+          "customerPrice": 1310
         },
         "peru": {
           "customerPrice": 986
@@ -12058,7 +11772,7 @@
           "customerPrice": 3182557
         },
         "mexico": {
-          "customerPrice": 700
+          "customerPrice": 820
         },
         "peru": {
           "customerPrice": 522
@@ -12208,6 +11922,168 @@
       "price": 290
     },
     {
+      "id": "cabinet-accessories-sra-140857",
+      "sku": "SRA|140857",
+      "brand": "SRA Solutions",
+      "brandCode": "SRA",
+      "partNumber": "140857",
+      "name": "Vertical Cable Management Kit",
+      "description": "Vertical Cable Management Kit | 45Ux600 | Front Or Rear",
+      "purpose": "A vertical cable management kit mounts to the front or rear of a cabinet to organize patch cords and trunk cables along the rack height. Finger ducts and channels keep cabling separated, maintain bend radius, and improve airflow by preventing obstructed cabinet spaces.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "APAC"
+      ],
+      "countries": [
+        "australia"
+      ],
+      "pricing": {
+        "australia": {
+          "customerPrice": 262
+        }
+      },
+      "price": 262,
+      "dimensions": {
+        "rackUnits": 45,
+        "widthMm": 600
+      }
+    },
+    {
+      "id": "cabinet-accessories-sra-1400853",
+      "sku": "SRA|1400853",
+      "brand": "SRA Solutions",
+      "brandCode": "SRA",
+      "partNumber": "1400853",
+      "name": "Vertical Cable Management Kit",
+      "description": "Vertical Cable Management Kit | 45Ux800 | Front",
+      "purpose": "A vertical cable management kit mounts to the front or rear of a cabinet to organize patch cords and trunk cables along the rack height. Finger ducts and channels keep cabling separated, maintain bend radius, and improve airflow by preventing obstructed cabinet spaces.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "APAC"
+      ],
+      "countries": [
+        "australia"
+      ],
+      "pricing": {
+        "australia": {
+          "customerPrice": 753
+        }
+      },
+      "price": 753,
+      "dimensions": {
+        "rackUnits": 45,
+        "widthMm": 800
+      }
+    },
+    {
+      "id": "cabinet-accessories-sra-1b011207116",
+      "sku": "SRA|1B011207116",
+      "brand": "SRA Solutions",
+      "brandCode": "SRA",
+      "partNumber": "1B011207116",
+      "name": "Vertical Cable Management Kit",
+      "description": "Vertical Cable Management Kit | 45Ux800 | Rear",
+      "purpose": "A vertical cable management kit mounts to the front or rear of a cabinet to organize patch cords and trunk cables along the rack height. Finger ducts and channels keep cabling separated, maintain bend radius, and improve airflow by preventing obstructed cabinet spaces.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "APAC"
+      ],
+      "countries": [
+        "australia"
+      ],
+      "pricing": {
+        "australia": {
+          "customerPrice": 1027
+        }
+      },
+      "price": 1027,
+      "dimensions": {
+        "rackUnits": 45,
+        "widthMm": 800
+      }
+    },
+    {
+      "id": "cabinet-accessories-sra-140858",
+      "sku": "SRA|140858",
+      "brand": "SRA Solutions",
+      "brandCode": "SRA",
+      "partNumber": "140858",
+      "name": "Vertical Cable Management Kit",
+      "description": "Vertical Cable Management Kit | 48Ux600 | Front Or Rear",
+      "purpose": "A vertical cable management kit mounts to the front or rear of a cabinet to organize patch cords and trunk cables along the rack height. Finger ducts and channels keep cabling separated, maintain bend radius, and improve airflow by preventing obstructed cabinet spaces.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "APAC"
+      ],
+      "countries": [
+        "australia"
+      ],
+      "pricing": {
+        "australia": {
+          "customerPrice": 327
+        }
+      },
+      "price": 327,
+      "dimensions": {
+        "rackUnits": 48,
+        "widthMm": 600
+      }
+    },
+    {
+      "id": "cabinet-accessories-sra-140854",
+      "sku": "SRA|140854",
+      "brand": "SRA Solutions",
+      "brandCode": "SRA",
+      "partNumber": "140854",
+      "name": "Vertical Cable Management Kit",
+      "description": "Vertical Cable Management Kit | 48Ux800 | Front",
+      "purpose": "A vertical cable management kit mounts to the front or rear of a cabinet to organize patch cords and trunk cables along the rack height. Finger ducts and channels keep cabling separated, maintain bend radius, and improve airflow by preventing obstructed cabinet spaces.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "APAC"
+      ],
+      "countries": [
+        "australia"
+      ],
+      "pricing": {
+        "australia": {
+          "customerPrice": 895
+        }
+      },
+      "price": 895,
+      "dimensions": {
+        "rackUnits": 48,
+        "widthMm": 800
+      }
+    },
+    {
+      "id": "cabinet-accessories-sra-1b051207116",
+      "sku": "SRA|1B051207116",
+      "brand": "SRA Solutions",
+      "brandCode": "SRA",
+      "partNumber": "1B051207116",
+      "name": "Vertical Cable Management Kit",
+      "description": "Vertical Cable Management Kit | 48Ux800 | Rear",
+      "purpose": "A vertical cable management kit mounts to the front or rear of a cabinet to organize patch cords and trunk cables along the rack height. Finger ducts and channels keep cabling separated, maintain bend radius, and improve airflow by preventing obstructed cabinet spaces.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "APAC"
+      ],
+      "countries": [
+        "australia"
+      ],
+      "pricing": {
+        "australia": {
+          "customerPrice": 1143
+        }
+      },
+      "price": 1143,
+      "dimensions": {
+        "rackUnits": 48,
+        "widthMm": 800
+      }
+    },
+    {
       "id": "cabinet-accessories-sra-140859",
       "sku": "SRA|140859",
       "brand": "SRA Solutions",
@@ -12286,168 +12162,6 @@
       "dimensions": {
         "rackUnits": 52,
         "widthMm": 800
-      }
-    },
-    {
-      "id": "cabinet-accessories-sra-1b051207116",
-      "sku": "SRA|1B051207116",
-      "brand": "SRA Solutions",
-      "brandCode": "SRA",
-      "partNumber": "1B051207116",
-      "name": "Vertical Cable Management Kit",
-      "description": "Vertical Cable Management Kit | 48Ux800 | Rear",
-      "purpose": "A vertical cable management kit mounts to the front or rear of a cabinet to organize patch cords and trunk cables along the rack height. Finger ducts and channels keep cabling separated, maintain bend radius, and improve airflow by preventing obstructed cabinet spaces.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "australia"
-      ],
-      "pricing": {
-        "australia": {
-          "customerPrice": 1143
-        }
-      },
-      "price": 1143,
-      "dimensions": {
-        "rackUnits": 48,
-        "widthMm": 800
-      }
-    },
-    {
-      "id": "cabinet-accessories-sra-140854",
-      "sku": "SRA|140854",
-      "brand": "SRA Solutions",
-      "brandCode": "SRA",
-      "partNumber": "140854",
-      "name": "Vertical Cable Management Kit",
-      "description": "Vertical Cable Management Kit | 48Ux800 | Front",
-      "purpose": "A vertical cable management kit mounts to the front or rear of a cabinet to organize patch cords and trunk cables along the rack height. Finger ducts and channels keep cabling separated, maintain bend radius, and improve airflow by preventing obstructed cabinet spaces.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "australia"
-      ],
-      "pricing": {
-        "australia": {
-          "customerPrice": 895
-        }
-      },
-      "price": 895,
-      "dimensions": {
-        "rackUnits": 48,
-        "widthMm": 800
-      }
-    },
-    {
-      "id": "cabinet-accessories-sra-140858",
-      "sku": "SRA|140858",
-      "brand": "SRA Solutions",
-      "brandCode": "SRA",
-      "partNumber": "140858",
-      "name": "Vertical Cable Management Kit",
-      "description": "Vertical Cable Management Kit | 48Ux600 | Front Or Rear",
-      "purpose": "A vertical cable management kit mounts to the front or rear of a cabinet to organize patch cords and trunk cables along the rack height. Finger ducts and channels keep cabling separated, maintain bend radius, and improve airflow by preventing obstructed cabinet spaces.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "australia"
-      ],
-      "pricing": {
-        "australia": {
-          "customerPrice": 327
-        }
-      },
-      "price": 327,
-      "dimensions": {
-        "rackUnits": 48,
-        "widthMm": 600
-      }
-    },
-    {
-      "id": "cabinet-accessories-sra-1b011207116",
-      "sku": "SRA|1B011207116",
-      "brand": "SRA Solutions",
-      "brandCode": "SRA",
-      "partNumber": "1B011207116",
-      "name": "Vertical Cable Management Kit",
-      "description": "Vertical Cable Management Kit | 45Ux800 | Rear",
-      "purpose": "A vertical cable management kit mounts to the front or rear of a cabinet to organize patch cords and trunk cables along the rack height. Finger ducts and channels keep cabling separated, maintain bend radius, and improve airflow by preventing obstructed cabinet spaces.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "australia"
-      ],
-      "pricing": {
-        "australia": {
-          "customerPrice": 1027
-        }
-      },
-      "price": 1027,
-      "dimensions": {
-        "rackUnits": 45,
-        "widthMm": 800
-      }
-    },
-    {
-      "id": "cabinet-accessories-sra-1400853",
-      "sku": "SRA|1400853",
-      "brand": "SRA Solutions",
-      "brandCode": "SRA",
-      "partNumber": "1400853",
-      "name": "Vertical Cable Management Kit",
-      "description": "Vertical Cable Management Kit | 45Ux800 | Front",
-      "purpose": "A vertical cable management kit mounts to the front or rear of a cabinet to organize patch cords and trunk cables along the rack height. Finger ducts and channels keep cabling separated, maintain bend radius, and improve airflow by preventing obstructed cabinet spaces.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "australia"
-      ],
-      "pricing": {
-        "australia": {
-          "customerPrice": 753
-        }
-      },
-      "price": 753,
-      "dimensions": {
-        "rackUnits": 45,
-        "widthMm": 800
-      }
-    },
-    {
-      "id": "cabinet-accessories-sra-140857",
-      "sku": "SRA|140857",
-      "brand": "SRA Solutions",
-      "brandCode": "SRA",
-      "partNumber": "140857",
-      "name": "Vertical Cable Management Kit",
-      "description": "Vertical Cable Management Kit | 45Ux600 | Front Or Rear",
-      "purpose": "A vertical cable management kit mounts to the front or rear of a cabinet to organize patch cords and trunk cables along the rack height. Finger ducts and channels keep cabling separated, maintain bend radius, and improve airflow by preventing obstructed cabinet spaces.",
-      "categoryId": "cabinet-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "australia"
-      ],
-      "pricing": {
-        "australia": {
-          "customerPrice": 262
-        }
-      },
-      "price": 262,
-      "dimensions": {
-        "rackUnits": 45,
-        "widthMm": 600
       }
     }
   ]
