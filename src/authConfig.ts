@@ -32,7 +32,7 @@ export const loginRequest: PopupRequest = {
   scopes: [...graphDelegatedPermissions],
 };
 
-/** Used when creating Outlook quote drafts (To + Cc) via Microsoft Graph. */
+/** Used when creating Outlook quote drafts via Microsoft Graph. */
 export const mailRequest: PopupRequest = {
   scopes: ['User.Read', 'Mail.ReadWrite'],
 };

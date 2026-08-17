@@ -266,7 +266,6 @@ const OUTLOOK_COMPOSE_URL = 'https://outlook.office.com/mail/deeplink/compose';
 const OUTLOOK_BODY_CHAR_LIMIT = 1800;
 
 export const QUOTE_EMAIL_TO = 'COMsupport@equinix.com';
-export const QUOTE_EMAIL_CC = 'bblaski@equinix.com';
 
 export function buildQuoteEmailSubject(form: QuoteFormState): string {
   const account = form.accountName.trim();
@@ -281,11 +280,10 @@ export function buildMailtoQuoteUrl(
 ): string {
   const subject = encodeURIComponent(buildQuoteEmailSubject(form));
   const body = encodeURIComponent(formatQuotePreview(form, products, options));
-  const cc = encodeURIComponent(QUOTE_EMAIL_CC);
-  return `mailto:${QUOTE_EMAIL_TO}?cc=${cc}&subject=${subject}&body=${body}`;
+  return `mailto:${QUOTE_EMAIL_TO}?subject=${subject}&body=${body}`;
 }
 
-/** Opens Outlook on the web with the quote pre-filled (To only — Cc is not supported by this URL). */
+/** Opens Outlook on the web with the quote pre-filled (To, subject, and body). */
 export function buildOutlookComposeUrl(
   form: QuoteFormState,
   products: QuoteProductLine[],

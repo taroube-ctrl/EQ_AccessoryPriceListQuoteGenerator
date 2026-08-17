@@ -185,8 +185,7 @@ export function RequestQuotePage() {
     const previewOptions = { formatPrice: formatLinePrice };
     let graphFailedMessage: string | null = null;
 
-    // Prefer Microsoft Graph so Outlook gets a real draft with To + Cc filled.
-    // Outlook web compose URLs only support To (not Cc).
+    // Prefer Microsoft Graph so Outlook gets a saved draft with To filled.
     if (isAzureClientConfigured()) {
       try {
         let signedInAccount = microsoftAccount;
@@ -231,7 +230,7 @@ export function RequestQuotePage() {
       }
     }
 
-    // Fallback: Outlook web compose with To + quote body (Cc not supported by this URL).
+    // Fallback: Outlook web compose with To + quote body.
     const result = await copyQuoteAndOpenOutlook(form, products, previewOptions);
     setOutlookStatus(graphFailedMessage && result === 'opened' ? 'graph-failed' : result);
     if (result === 'opened') {
@@ -530,8 +529,7 @@ export function RequestQuotePage() {
               )}
             </div>
             <p className="text-xs text-text-muted m-0">
-              Outlook emails are addressed to <strong>{QUOTE_EMAIL_TO}</strong>
-              {isAzureClientConfigured() ? ' (Cc: bblaski@equinix.com when Microsoft Graph is available)' : ''}.
+              Outlook emails are addressed to <strong>{QUOTE_EMAIL_TO}</strong>.
             </p>
             {outlookStatus === 'too-long' ? (
               <p className="text-sm text-amber-950 bg-amber-50 border border-amber-200 rounded-sm px-3 py-2 m-0">
@@ -548,15 +546,15 @@ export function RequestQuotePage() {
             {outlookStatus === 'needs-sign-in' ? (
               <p className="text-sm text-amber-950 bg-amber-50 border border-amber-200 rounded-sm px-3 py-2 m-0">
                 Sign in with Microsoft from the app menu (9-dot icon), then try again so Outlook can
-                create a draft addressed to {QUOTE_EMAIL_TO} with Cc filled.
+                create a draft addressed to {QUOTE_EMAIL_TO}.
               </p>
             ) : null}
             {outlookStatus === 'graph-failed' ? (
               <p className="text-sm text-amber-950 bg-amber-50 border border-amber-200 rounded-sm px-3 py-2 m-0">
                 Opened Outlook with <strong>To:</strong> {QUOTE_EMAIL_TO} and the quote body.
-                Cc could not be set automatically
-                {outlookError ? ` (${outlookError})` : ''}. For Cc support, grant Azure delegated{' '}
-                <code>Mail.ReadWrite</code>, then try again while signed in.
+                Microsoft Graph draft creation failed
+                {outlookError ? ` (${outlookError})` : ''}. Sign in with Microsoft and grant Azure
+                delegated <code>Mail.ReadWrite</code>, then try again for a saved draft.
               </p>
             ) : null}
           </div>

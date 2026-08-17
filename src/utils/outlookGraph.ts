@@ -5,7 +5,6 @@ import type { QuoteFormState, QuoteProductLine } from '../types/requestQuote';
 import {
   buildQuoteEmailSubject,
   formatQuotePreview,
-  QUOTE_EMAIL_CC,
   QUOTE_EMAIL_TO,
   type QuotePreviewOptions,
 } from './requestQuote';
@@ -40,7 +39,7 @@ interface GraphDraftMessage {
 
 /**
  * Creates a draft in the signed-in user's Microsoft Outlook mailbox with
- * To: COMsupport@equinix.com and Cc: bblaski@equinix.com, plus subject/body.
+ * To: COMsupport@equinix.com, plus subject/body.
  * Returns an Outlook on the web link to open the draft.
  */
 export async function createOutlookQuoteDraft(
@@ -62,13 +61,6 @@ export async function createOutlookQuoteDraft(
       },
     },
   ];
-  const ccRecipients = [
-    {
-      emailAddress: {
-        address: QUOTE_EMAIL_CC,
-      },
-    },
-  ];
 
   const draft = (await client.api('/me/mailFolders/drafts/messages').post({
     subject,
@@ -77,7 +69,6 @@ export async function createOutlookQuoteDraft(
       content: body,
     },
     toRecipients,
-    ccRecipients,
   })) as GraphDraftMessage;
 
   if (!draft.id) {
@@ -87,7 +78,6 @@ export async function createOutlookQuoteDraft(
   // Re-apply recipients so To is never left blank if the create response omitted them.
   await client.api(`/me/messages/${draft.id}`).patch({
     toRecipients,
-    ccRecipients,
   });
 
   const updated = (await client
