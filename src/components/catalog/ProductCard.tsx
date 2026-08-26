@@ -21,9 +21,10 @@ export function ProductCard({ product }: ProductCardProps) {
   const activeCountryIds = getCountryIdsForRegions(filters.regions);
   const scopedCountries = filters.countries.filter((id) => activeCountryIds.includes(id));
   const displayPrice = getProductDisplayPrice(product, countryId, scopedCountries);
-  const listingCountry =
-    displayPrice &&
-    (product.countries?.length === 1 || displayPrice.countryId !== countryId)
+  const priceNote = displayPrice?.converted
+    ? 'Est. USD'
+    : displayPrice &&
+        (product.countries?.length === 1 || displayPrice.countryId !== countryId)
       ? getCountryName(displayPrice.countryId)
       : null;
   const showInputCableNotice = pduRequiresSeparateInputCable(product);
@@ -69,11 +70,11 @@ export function ProductCard({ product }: ProductCardProps) {
           </div>
 
           <h3 className="text-base font-bold mb-1 m-0 leading-snug">{displayName}</h3>
-          {manufacturerModel || listingCountry ? (
+          {manufacturerModel || priceNote ? (
             <p className="font-mono text-xs text-text-muted mb-3 m-0">
               {manufacturerModel}
-              {manufacturerModel && listingCountry ? ' · ' : null}
-              {listingCountry}
+              {manufacturerModel && priceNote ? ' · ' : null}
+              {priceNote}
             </p>
           ) : null}
 

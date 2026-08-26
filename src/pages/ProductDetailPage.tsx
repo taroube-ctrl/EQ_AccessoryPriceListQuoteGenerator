@@ -125,7 +125,12 @@ export function ProductDetailPage() {
           <p className="text-3xl font-extrabold m-0 mb-1">
             {customerPrice != null ? formatPrice(customerPrice, countryId) : 'Pricing unavailable'}
           </p>
-          {displayPrice && displayPrice.countryId !== countryId ? (
+          {displayPrice?.converted ? (
+            <p className="text-sm text-text-muted mb-1 m-0">
+              Estimated USD, converted from {getCountryName(displayPrice.sourceCountryId ?? countryId)}{' '}
+              pricing
+            </p>
+          ) : displayPrice && displayPrice.countryId !== countryId ? (
             <p className="text-sm text-text-muted mb-1 m-0">
               Priced for {getCountryName(displayPrice.countryId)}
             </p>
