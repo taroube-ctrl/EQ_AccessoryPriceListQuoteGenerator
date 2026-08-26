@@ -4,9 +4,10 @@ import { formatPrice } from '../../data/localeConfig';
 import { getCountryName, getCountryIdsForRegions } from '../../data/countries';
 import { useCatalog } from '../../context/CatalogContext';
 import { getProductDisplayPrice } from '../../utils/productPricing';
+import { getPduCharacteristics } from '../../utils/pduCharacteristics';
 import { ProductDimensionsDisplay } from './ProductDimensionsDisplay';
 import { ProductImage } from './ProductImage';
-import { PduInputCableBadge, ProductLabels } from '../ui/Badge';
+import { Badge, PduInputCableBadge, ProductLabels } from '../ui/Badge';
 import { getProductDisplayName, isCabinetProduct, resolveProductDimensions } from '../../utils/productDisplayName';
 import { pduRequiresSeparateInputCable } from '../../utils/powerPduInputCable';
 import { AddToCartControls } from '../cart/AddToCartControls';
@@ -21,12 +22,22 @@ export function ProductCard({ product }: ProductCardProps) {
   const activeCountryIds = getCountryIdsForRegions(filters.regions);
   const scopedCountries = filters.countries.filter((id) => activeCountryIds.includes(id));
   const displayPrice = getProductDisplayPrice(product, countryId, scopedCountries);
-  const listingCountry =
-    displayPrice &&
-    (product.countries?.length === 1 || displayPrice.countryId !== countryId)
+  const priceNote = displayPrice?.converted
+    ? 'Est. USD'
+    : displayPrice &&
+        (product.countries?.length === 1 || displayPrice.countryId !== countryId)
       ? getCountryName(displayPrice.countryId)
       : null;
   const showInputCableNotice = pduRequiresSeparateInputCable(product);
+  const pduCharacteristics = getPduCharacteristics(product);
+  const pduSpecChips = pduCharacteristics
+    ? [
+        pduCharacteristics.voltage,
+        pduCharacteristics.current,
+        pduCharacteristics.phase,
+        pduCharacteristics.type,
+      ].filter((value): value is string => Boolean(value))
+    : [];
   const resolvedDimensions = resolveProductDimensions(product);
   const showDimensionsBlock = resolvedDimensions != null && !isCabinetProduct(product);
   const displayName = getProductDisplayName(product, displayUnit);
@@ -69,12 +80,29 @@ export function ProductCard({ product }: ProductCardProps) {
           </div>
 
           <h3 className="text-base font-bold mb-1 m-0 leading-snug">{displayName}</h3>
-          {manufacturerModel || listingCountry ? (
+          {manufacturerModel || priceNote ? (
             <p className="font-mono text-xs text-text-muted mb-3 m-0">
               {manufacturerModel}
-              {manufacturerModel && listingCountry ? ' · ' : null}
-              {listingCountry}
+              {manufacturerModel && priceNote ? ' · ' : null}
+              {priceNote}
             </p>
+          ) : null}
+
+          {pduCharacteristics ? (
+            <div className="mb-3">
+              {pduSpecChips.length > 0 ? (
+                <div className="flex flex-wrap gap-1">
+                  {pduSpecChips.map((chip) => (
+                    <Badge key={chip}>{chip}</Badge>
+                  ))}
+                </div>
+              ) : null}
+              {pduCharacteristics.outlets ? (
+                <p className="font-mono text-xs text-text-muted mt-1.5 mb-0">
+                  {pduCharacteristics.outlets} outlets
+                </p>
+              ) : null}
+            </div>
           ) : null}
 
           {showDimensionsBlock ? (
