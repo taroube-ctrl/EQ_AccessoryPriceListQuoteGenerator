@@ -7,6 +7,7 @@ import { parseInstallationCostsSheet } from './parseInstallationCosts.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
+const aug18PriceListPath = path.join(root, 'Accessories Price List (Aug18).xlsx');
 const july24PriceListPath = path.join(root, 'Accessories Price List (July24).xlsx');
 const newPriceListPath = path.join(root, 'Accessories Price List_new.xlsx');
 const bundledPriceListPath = path.join(root, 'public/data/accessories-price-list.xlsx');
@@ -15,6 +16,7 @@ const installationOutputPath = path.join(root, 'src/data/installation-costs.json
 
 /** Prefer newest root workbooks, then the bundled public copy. */
 const SOURCE_CANDIDATES = [
+  { path: aug18PriceListPath, label: 'Accessories Price List (Aug18).xlsx' },
   { path: july24PriceListPath, label: 'Accessories Price List (July24).xlsx' },
   { path: newPriceListPath, label: 'Accessories Price List_new.xlsx' },
   { path: bundledPriceListPath, label: 'public/data/accessories-price-list.xlsx' },
@@ -263,7 +265,8 @@ function upsertProduct(productMap, row, categoryId) {
   const brandCode = parseBrandCode(mpn);
   if (isExcludedBrand(brandCode)) return;
 
-  const customerPrice = parseNumber(row['Customer Price']);
+  // Cage Accessories sheets label the customer-facing price "Unit Price per CabE".
+  const customerPrice = parseNumber(row['Customer Price']) ?? parseNumber(row['Unit Price per CabE']);
   const equinixPrice = parseNumber(row['Equinix Price']);
   if (customerPrice == null && equinixPrice == null) return;
 
