@@ -3,7 +3,7 @@ import type { Product } from '../types';
 export type ProductImageFamily =
   | 'cabinet'
   | 'rack-pdu'
-  | 'updu'
+  | 'rack-pdu-horizontal'
   | 'pdu-input-cable'
   | 'basket-tray'
   | 'fiber-tray'
@@ -21,7 +21,7 @@ export type ProductImageFamily =
 const FAMILY_FILES: Record<ProductImageFamily, string> = {
   cabinet: 'cabinet.png',
   'rack-pdu': 'rack-pdu.png',
-  updu: 'updu.png',
+  'rack-pdu-horizontal': 'rack-pdu-horizontal.png',
   'pdu-input-cable': 'pdu-input-cable.png',
   'basket-tray': 'basket-tray.png',
   'fiber-tray': 'fiber-tray.png',
@@ -51,8 +51,11 @@ export function getProductImageFamily(product: Product): ProductImageFamily {
   const core = productCoreText(product);
 
   if (/input cable|updu input/.test(core)) return 'pdu-input-cable';
-  if (/\bupdu\b|u pdu/.test(core) && /pdu/.test(core)) return 'updu';
-  if (/rpdu|r pdu|\bpdu\b|power distribution/.test(core)) return 'rack-pdu';
+  // PDU units default to the vertical image; only PDUs explicitly described as
+  // horizontal use the horizontal image.
+  if (/rpdu|r pdu|\bupdu\b|u pdu|\bpdu\b|power distribution/.test(core)) {
+    return /horizontal/.test(core) ? 'rack-pdu-horizontal' : 'rack-pdu';
+  }
 
   if (/basket tray|cable basket/.test(core)) return 'basket-tray';
   if (/fiber tray/.test(core)) return 'fiber-tray';
