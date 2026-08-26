@@ -333,6 +333,34 @@ function finalizeProducts(productMap) {
   return products.sort((a, b) => a.name.localeCompare(b.name));
 }
 
+/** Convert an Excel serial date (days since 1899-12-30) to an ISO date string. */
+function excelSerialToISODate(serial) {
+  const ms = Date.UTC(1899, 11, 30) + serial * 86400000;
+  return new Date(ms).toISOString().slice(0, 10);
+}
+
+/**
+ * Read the workbook's "Last Updated" sheet and return the price-list date as an
+ * ISO date string (YYYY-MM-DD), or null when it cannot be determined.
+ */
+function extractSourceLastUpdated(workbook) {
+  const sheet = workbook.Sheets['Last Updated'];
+  if (!sheet) return null;
+
+  const rows = XLSX.utils.sheet_to_json(sheet, { header: 1, defval: '' });
+  for (const row of rows) {
+    for (const cell of row) {
+      if (cell instanceof Date) return cell.toISOString().slice(0, 10);
+      // Excel stores dates as serial numbers; guard to a sane modern range.
+      if (typeof cell === 'number' && cell > 30000 && cell < 90000) {
+        return excelSerialToISODate(cell);
+      }
+    }
+  }
+
+  return null;
+}
+
 function resolveSourceWorkbook() {
   for (const candidate of SOURCE_CANDIDATES) {
     if (!fs.existsSync(candidate.path)) continue;
@@ -382,6 +410,7 @@ function main() {
   const payload = {
     generatedAt: new Date().toISOString(),
     source: sourceLabel,
+    sourceLastUpdated: extractSourceLastUpdated(workbook),
     sourceRowCounts,
     productCount: products.length,
     categoryCounts,

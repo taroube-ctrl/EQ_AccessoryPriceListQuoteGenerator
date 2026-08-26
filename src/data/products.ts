@@ -3,6 +3,10 @@ import type { CategoryId, Product } from '../types';
 
 export const products: Product[] = catalogData.products as Product[];
 
+/** ISO date (YYYY-MM-DD) the source price list was last updated, when known. */
+export const catalogLastUpdated: string | null =
+  (catalogData as { sourceLastUpdated?: string | null }).sourceLastUpdated ?? null;
+
 export const priceRange = products.reduce(
   (range, product) => {
     const prices = product.pricing

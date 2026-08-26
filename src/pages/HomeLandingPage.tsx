@@ -6,7 +6,17 @@ import {
   productCategories,
 } from '../data/categories';
 import { useCatalog } from '../context/CatalogContext';
+import { catalogLastUpdated } from '../data/products';
 import type { CategoryId } from '../types';
+
+const lastUpdatedLabel = catalogLastUpdated
+  ? new Date(`${catalogLastUpdated}T00:00:00Z`).toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      timeZone: 'UTC',
+    })
+  : null;
 
 interface GuideCard {
   eyebrow: string;
@@ -217,6 +227,12 @@ export function HomeLandingPage() {
             </a>
             . You must be signed in with an Equinix Microsoft account to view it.
           </p>
+          {lastUpdatedLabel ? (
+            <p className="text-sm text-white/85 leading-relaxed m-0 mt-3 max-w-3xl">
+              <span className="font-semibold">Last synced with the Accessories Price List:</span>{' '}
+              {lastUpdatedLabel}
+            </p>
+          ) : null}
           <div className="flex flex-wrap gap-3 mt-8">
             <button
               type="button"
