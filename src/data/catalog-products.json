@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-08-26T21:31:42.625Z",
-  "source": "Accessories Price List (Aug18).xlsx",
-  "sourceLastUpdated": "2026-08-18",
+  "generatedAt": "2026-09-09T17:57:43.498Z",
+  "source": "Accessories Price List (Sep4).xlsx",
+  "sourceLastUpdated": "2026-09-04",
   "sourceRowCounts": {
     "cabinet-accessories": 512,
     "power-accessories": 472,
     "cross-connect-accessories": 79,
     "cage-accessories": 244
   },
-  "productCount": 325,
+  "productCount": 322,
   "categoryCounts": {
     "cage-accessories": 27,
     "cabinet-accessories": 137,
     "power-accessories": 82,
-    "cross-connect-accessories": 79
+    "cross-connect-accessories": 76
   },
   "products": [
     {
@@ -3576,17 +3576,12 @@
         "APAC"
       ],
       "countries": [
-        "hong-kong",
-        "india"
+        "hong-kong"
       ],
       "pricing": {
         "hong-kong": {
           "customerPrice": 28564,
           "equinixPrice": 19699
-        },
-        "india": {
-          "customerPrice": 154161,
-          "equinixPrice": 106318
         }
       },
       "price": 28564,
@@ -3610,17 +3605,12 @@
         "APAC"
       ],
       "countries": [
-        "hong-kong",
-        "india"
+        "hong-kong"
       ],
       "pricing": {
         "hong-kong": {
           "customerPrice": 28720,
           "equinixPrice": 19807
-        },
-        "india": {
-          "customerPrice": 173574,
-          "equinixPrice": 119706
         }
       },
       "price": 28720,
@@ -3644,17 +3634,12 @@
         "APAC"
       ],
       "countries": [
-        "hong-kong",
-        "india"
+        "hong-kong"
       ],
       "pricing": {
         "hong-kong": {
           "customerPrice": 30885,
           "equinixPrice": 21300
-        },
-        "india": {
-          "customerPrice": 131499,
-          "equinixPrice": 90689
         }
       },
       "price": 30885,
@@ -3678,17 +3663,12 @@
         "APAC"
       ],
       "countries": [
-        "hong-kong",
-        "india"
+        "hong-kong"
       ],
       "pricing": {
         "hong-kong": {
           "customerPrice": 31529,
           "equinixPrice": 21744
-        },
-        "india": {
-          "customerPrice": 149266,
-          "equinixPrice": 102942
         }
       },
       "price": 31529,
@@ -3712,17 +3692,12 @@
         "APAC"
       ],
       "countries": [
-        "hong-kong",
-        "india"
+        "hong-kong"
       ],
       "pricing": {
         "hong-kong": {
           "customerPrice": 29091,
           "equinixPrice": 20063
-        },
-        "india": {
-          "customerPrice": 158630,
-          "equinixPrice": 109400
         }
       },
       "price": 29091,
@@ -3746,17 +3721,12 @@
         "APAC"
       ],
       "countries": [
-        "hong-kong",
-        "india"
+        "hong-kong"
       ],
       "pricing": {
         "hong-kong": {
           "customerPrice": 29506,
           "equinixPrice": 20349
-        },
-        "india": {
-          "customerPrice": 175050,
-          "equinixPrice": 120724
         }
       },
       "price": 29506,
@@ -3780,17 +3750,12 @@
         "APAC"
       ],
       "countries": [
-        "hong-kong",
-        "india"
+        "hong-kong"
       ],
       "pricing": {
         "hong-kong": {
           "customerPrice": 31616,
           "equinixPrice": 21804
-        },
-        "india": {
-          "customerPrice": 134567,
-          "equinixPrice": 92805
         }
       },
       "price": 31616,
@@ -3814,17 +3779,12 @@
         "APAC"
       ],
       "countries": [
-        "hong-kong",
-        "india"
+        "hong-kong"
       ],
       "pricing": {
         "hong-kong": {
           "customerPrice": 32418,
           "equinixPrice": 22357
-        },
-        "india": {
-          "customerPrice": 162125,
-          "equinixPrice": 111810
         }
       },
       "price": 32418
@@ -3843,17 +3803,12 @@
         "APAC"
       ],
       "countries": [
-        "hong-kong",
-        "india"
+        "hong-kong"
       ],
       "pricing": {
         "hong-kong": {
           "customerPrice": 29969,
           "equinixPrice": 20668
-        },
-        "india": {
-          "customerPrice": 159193,
-          "equinixPrice": 109788
         }
       },
       "price": 29969,
@@ -3877,17 +3832,12 @@
         "APAC"
       ],
       "countries": [
-        "hong-kong",
-        "india"
+        "hong-kong"
       ],
       "pricing": {
         "hong-kong": {
           "customerPrice": 33298,
           "equinixPrice": 22964
-        },
-        "india": {
-          "customerPrice": 186583,
-          "equinixPrice": 128678
         }
       },
       "price": 33298,
@@ -3911,15 +3861,11 @@
         "APAC"
       ],
       "countries": [
-        "hong-kong",
-        "india"
+        "hong-kong"
       ],
       "pricing": {
         "hong-kong": {
           "customerPrice": 9453
-        },
-        "india": {
-          "customerPrice": 19260
         }
       },
       "price": 9453,
@@ -3943,15 +3889,11 @@
         "APAC"
       ],
       "countries": [
-        "hong-kong",
-        "india"
+        "hong-kong"
       ],
       "pricing": {
         "hong-kong": {
           "customerPrice": 9637
-        },
-        "india": {
-          "customerPrice": 21886
         }
       },
       "price": 9637,
@@ -3975,15 +3917,11 @@
         "APAC"
       ],
       "countries": [
-        "hong-kong",
-        "india"
+        "hong-kong"
       ],
       "pricing": {
         "hong-kong": {
           "customerPrice": 9577
-        },
-        "india": {
-          "customerPrice": 26264
         }
       },
       "price": 9577,
@@ -4007,15 +3945,11 @@
         "APAC"
       ],
       "countries": [
-        "hong-kong",
-        "india"
+        "hong-kong"
       ],
       "pricing": {
         "hong-kong": {
           "customerPrice": 9774
-        },
-        "india": {
-          "customerPrice": 21886
         }
       },
       "price": 9774,
@@ -4039,15 +3973,11 @@
         "APAC"
       ],
       "countries": [
-        "hong-kong",
-        "india"
+        "hong-kong"
       ],
       "pricing": {
         "hong-kong": {
           "customerPrice": 9656
-        },
-        "india": {
-          "customerPrice": 24512
         }
       },
       "price": 9656,
@@ -4071,15 +4001,11 @@
         "APAC"
       ],
       "countries": [
-        "hong-kong",
-        "india"
+        "hong-kong"
       ],
       "pricing": {
         "hong-kong": {
           "customerPrice": 9850
-        },
-        "india": {
-          "customerPrice": 28890
         }
       },
       "price": 9850,
@@ -6618,10 +6544,10 @@
           "customerPrice": 1016
         },
         "united-kingdom": {
-          "customerPrice": 852
+          "customerPrice": 890
         }
       },
-      "price": 852
+      "price": 890
     },
     {
       "id": "power-accessories-panduit-p12b36m",
@@ -6693,10 +6619,10 @@
           "customerPrice": 361
         },
         "united-kingdom": {
-          "customerPrice": 209
+          "customerPrice": 220
         }
       },
-      "price": 209
+      "price": 220
     },
     {
       "id": "power-accessories-panduit-p36e09g",
@@ -6764,10 +6690,10 @@
           "customerPrice": 2074
         },
         "united-kingdom": {
-          "customerPrice": 1740
+          "customerPrice": 1810
         }
       },
-      "price": 1740
+      "price": 1810
     },
     {
       "id": "power-accessories-panduit-p12b34m",
@@ -6835,10 +6761,10 @@
           "customerPrice": 153
         },
         "united-kingdom": {
-          "customerPrice": 129
+          "customerPrice": 130
         }
       },
-      "price": 129
+      "price": 130
     },
     {
       "id": "power-accessories-panduit-p32e06g",
@@ -6916,13 +6842,13 @@
           "customerPrice": 2064
         },
         "united-kingdom": {
-          "customerPrice": 1276
+          "customerPrice": 1330
         },
         "united-states": {
           "customerPrice": 2071
         }
       },
-      "price": 1276
+      "price": 1330
     },
     {
       "id": "power-accessories-panduit-p30b06m",
@@ -7015,7 +6941,7 @@
           "customerPrice": 1849
         },
         "united-kingdom": {
-          "customerPrice": 277
+          "customerPrice": 290
         }
       },
       "price": 11
@@ -7086,10 +7012,10 @@
           "customerPrice": 906
         },
         "united-kingdom": {
-          "customerPrice": 760
+          "customerPrice": 790
         }
       },
-      "price": 760
+      "price": 790
     },
     {
       "id": "power-accessories-panduit-p24e02g",
@@ -7157,10 +7083,10 @@
           "customerPrice": 1059
         },
         "united-kingdom": {
-          "customerPrice": 889
+          "customerPrice": 920
         }
       },
-      "price": 889
+      "price": 920
     },
     {
       "id": "power-accessories-panduit-p30b13m",
@@ -7237,7 +7163,7 @@
           "customerPrice": 351
         },
         "united-kingdom": {
-          "customerPrice": 295
+          "customerPrice": 310
         }
       },
       "price": 10
@@ -7308,10 +7234,10 @@
           "customerPrice": 309
         },
         "united-kingdom": {
-          "customerPrice": 259
+          "customerPrice": 270
         }
       },
-      "price": 259
+      "price": 270
     },
     {
       "id": "power-accessories-panduit-p42d42g",
@@ -7379,10 +7305,10 @@
           "customerPrice": 893
         },
         "united-kingdom": {
-          "customerPrice": 749
+          "customerPrice": 780
         }
       },
-      "price": 749
+      "price": 780
     },
     {
       "id": "power-accessories-panduit-p42b11m",
@@ -7459,10 +7385,10 @@
           "customerPrice": 1091
         },
         "united-kingdom": {
-          "customerPrice": 683
+          "customerPrice": 710
         }
       },
-      "price": 683
+      "price": 710
     },
     {
       "id": "power-accessories-panduit-p42d04g",
@@ -7535,10 +7461,10 @@
           "customerPrice": 2086
         },
         "united-kingdom": {
-          "customerPrice": 1750
+          "customerPrice": 1820
         }
       },
-      "price": 1750
+      "price": 1820
     },
     {
       "id": "power-accessories-panduit-p24d40g",
@@ -8005,10 +7931,10 @@
           "customerPrice": 260
         },
         "united-kingdom": {
-          "customerPrice": 218
+          "customerPrice": 230
         }
       },
-      "price": 218
+      "price": 230
     },
     {
       "id": "power-accessories-legrand-l-aue2220b2-20avfbmb-4m",
@@ -9403,75 +9329,6 @@
       "price": 1788
     },
     {
-      "id": "cross-connect-accessories-omnitron-8523n-1-e-keq-india",
-      "sku": "Omnitron|8523N-1-E-KEQ",
-      "brand": "Omnitron",
-      "brandCode": "Omnitron",
-      "partNumber": "8523N-1-E-KEQ",
-      "name": "Standalone Media Converter",
-      "description": "Standalone Media Converter | Ethernet | 10/100/1000Base-T(RJ45) To 1000Base LX 1310 SC Singlemode",
-      "purpose": "A standalone media converter converts signals between copper Ethernet and fiber optic interfaces. It extends network reach beyond copper distance limits, connects equipment with mismatched port types, and enables flexible handoffs in cross-connect and meet-me-room environments.",
-      "categoryId": "cross-connect-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "india"
-      ],
-      "pricing": {
-        "india": {
-          "customerPrice": 104938
-        }
-      },
-      "price": 104938
-    },
-    {
-      "id": "cross-connect-accessories-omnitron-8743-1-e-keq-india",
-      "sku": "Omnitron|8743-1-E-KEQ",
-      "brand": "Omnitron",
-      "brandCode": "Omnitron",
-      "partNumber": "8743-1-E-KEQ",
-      "name": "Standalone Media Converter",
-      "description": "Standalone Media Converter | Ds3/e3 | DS3 COAX BNC To SC Singlemode",
-      "purpose": "A standalone media converter transitions between legacy telecom interfaces (such as T1/E1 or DS3/E3) and fiber optic transport. It extends circuit reach across longer distances and integrates older access technologies into modern fiber-based data center networks.",
-      "categoryId": "cross-connect-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "india"
-      ],
-      "pricing": {
-        "india": {
-          "customerPrice": 122249
-        }
-      },
-      "price": 122249
-    },
-    {
-      "id": "cross-connect-accessories-omnitron-8703-1-e-keq-india",
-      "sku": "Omnitron|8703-1-E-KEQ",
-      "brand": "Omnitron",
-      "brandCode": "Omnitron",
-      "partNumber": "8703-1-E-KEQ",
-      "name": "Standalone Media Converter",
-      "description": "Standalone Media Converter | T1/e1 | T1/e1 RJ48 To SC Singlemode",
-      "purpose": "A standalone media converter transitions between legacy telecom interfaces (such as T1/E1 or DS3/E3) and fiber optic transport. It extends circuit reach across longer distances and integrates older access technologies into modern fiber-based data center networks.",
-      "categoryId": "cross-connect-accessories",
-      "regions": [
-        "APAC"
-      ],
-      "countries": [
-        "india"
-      ],
-      "pricing": {
-        "india": {
-          "customerPrice": 117978
-        }
-      },
-      "price": 117978
-    },
-    {
       "id": "cross-connect-accessories-omnitron-8523n-1-e-keq-ireland",
       "sku": "Omnitron|8523N-1-E-KEQ",
       "brand": "Omnitron",
@@ -9696,10 +9553,10 @@
       ],
       "pricing": {
         "malaysia": {
-          "customerPrice": 5287
+          "customerPrice": 5685
         }
       },
-      "price": 5287
+      "price": 5685
     },
     {
       "id": "cross-connect-accessories-omnitron-8743-1-e-keq-malaysia",
@@ -9719,10 +9576,10 @@
       ],
       "pricing": {
         "malaysia": {
-          "customerPrice": 6029
+          "customerPrice": 6483
         }
       },
-      "price": 6029
+      "price": 6483
     },
     {
       "id": "cross-connect-accessories-omnitron-8703-1-e-keq-malaysia",
@@ -9742,10 +9599,10 @@
       ],
       "pricing": {
         "malaysia": {
-          "customerPrice": 5815
+          "customerPrice": 6252
         }
       },
-      "price": 5815
+      "price": 6252
     },
     {
       "id": "cross-connect-accessories-omnitron-8523n-1-e-keq-netherlands",
@@ -9903,10 +9760,10 @@
       ],
       "pricing": {
         "philippines": {
-          "customerPrice": 77321
+          "customerPrice": 83141
         }
       },
-      "price": 77321
+      "price": 83141
     },
     {
       "id": "cross-connect-accessories-omnitron-8743-1-e-keq-philippines",
@@ -9926,10 +9783,10 @@
       ],
       "pricing": {
         "philippines": {
-          "customerPrice": 88105
+          "customerPrice": 94736
         }
       },
-      "price": 88105
+      "price": 94736
     },
     {
       "id": "cross-connect-accessories-omnitron-8703-1-e-keq-philippines",
@@ -9949,10 +9806,10 @@
       ],
       "pricing": {
         "philippines": {
-          "customerPrice": 84969
+          "customerPrice": 91364
         }
       },
-      "price": 84969
+      "price": 91364
     },
     {
       "id": "cross-connect-accessories-omnitron-8523n-1-e-keq-poland",
@@ -10922,7 +10779,7 @@
           "customerPrice": 1370
         },
         "chile": {
-          "customerPrice": 30
+          "customerPrice": 34
         },
         "colombia": {
           "customerPrice": 6810107
@@ -10973,7 +10830,7 @@
           "customerPrice": 1030
         }
       },
-      "price": 30
+      "price": 34
     },
     {
       "id": "power-accessories-eaton-evmigu23x-e",
@@ -11023,7 +10880,7 @@
           "customerPrice": 2110
         },
         "chile": {
-          "customerPrice": 43
+          "customerPrice": 48
         },
         "colombia": {
           "customerPrice": 11341122
@@ -11074,7 +10931,7 @@
           "customerPrice": 1562
         }
       },
-      "price": 43
+      "price": 48
     },
     {
       "id": "power-accessories-eaton-evmagu23x-e",
@@ -11125,7 +10982,7 @@
           "customerPrice": 2574
         },
         "chile": {
-          "customerPrice": 67
+          "customerPrice": 73
         },
         "colombia": {
           "customerPrice": 16034017
@@ -11179,7 +11036,7 @@
           "customerPrice": 1903
         }
       },
-      "price": 67
+      "price": 73
     },
     {
       "id": "power-accessories-eaton-cbl358-10",
@@ -11335,7 +11192,7 @@
           "customerPrice": 370
         },
         "chile": {
-          "customerPrice": 10
+          "customerPrice": 12
         },
         "colombia": {
           "customerPrice": 2683580
@@ -11389,7 +11246,7 @@
           "customerPrice": 247
         }
       },
-      "price": 10
+      "price": 12
     },
     {
       "id": "power-accessories-eaton-cbl350-10",
@@ -11421,7 +11278,7 @@
           "customerPrice": 261
         },
         "chile": {
-          "customerPrice": 6
+          "customerPrice": 7
         },
         "colombia": {
           "customerPrice": 1577800
@@ -11436,7 +11293,7 @@
           "customerPrice": 163
         }
       },
-      "price": 6
+      "price": 7
     },
     {
       "id": "power-accessories-eaton-cbl351-10",
@@ -11468,7 +11325,7 @@
           "customerPrice": 305
         },
         "chile": {
-          "customerPrice": 7
+          "customerPrice": 8
         },
         "colombia": {
           "customerPrice": 1860984
@@ -11483,7 +11340,7 @@
           "customerPrice": 190
         }
       },
-      "price": 7
+      "price": 8
     },
     {
       "id": "power-accessories-eaton-cbl355-10",
@@ -11528,7 +11385,7 @@
           "customerPrice": 370
         },
         "chile": {
-          "customerPrice": 6
+          "customerPrice": 11
         },
         "colombia": {
           "customerPrice": 1564322
@@ -11579,7 +11436,7 @@
           "customerPrice": 242
         }
       },
-      "price": 6
+      "price": 11
     },
     {
       "id": "power-accessories-eaton-cbl356-10",
@@ -11611,7 +11468,7 @@
           "customerPrice": 696
         },
         "chile": {
-          "customerPrice": 18
+          "customerPrice": 21
         },
         "colombia": {
           "customerPrice": 4787313
@@ -11626,7 +11483,7 @@
           "customerPrice": 435
         }
       },
-      "price": 18
+      "price": 21
     },
     {
       "id": "power-accessories-eaton-cbl360-10",
@@ -11658,7 +11515,7 @@
           "customerPrice": 776
         },
         "chile": {
-          "customerPrice": 18
+          "customerPrice": 23
         },
         "colombia": {
           "customerPrice": 4868183
@@ -11673,7 +11530,7 @@
           "customerPrice": 487
         }
       },
-      "price": 18
+      "price": 23
     },
     {
       "id": "power-accessories-eaton-cbl362-10",
@@ -11705,7 +11562,7 @@
           "customerPrice": 892
         },
         "chile": {
-          "customerPrice": 23
+          "customerPrice": 27
         },
         "colombia": {
           "customerPrice": 6135842
@@ -11720,7 +11577,7 @@
           "customerPrice": 577
         }
       },
-      "price": 23
+      "price": 27
     },
     {
       "id": "power-accessories-eaton-cbl364-10",
@@ -11752,7 +11609,7 @@
           "customerPrice": 500
         },
         "chile": {
-          "customerPrice": 12
+          "customerPrice": 14
         },
         "colombia": {
           "customerPrice": 3182557
@@ -11767,7 +11624,7 @@
           "customerPrice": 331
         }
       },
-      "price": 12
+      "price": 14
     },
     {
       "id": "cabinet-accessories-eaton-srcablevrt45s",
