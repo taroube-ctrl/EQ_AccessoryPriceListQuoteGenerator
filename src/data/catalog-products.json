@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-09-09T17:57:43.498Z",
-  "source": "Accessories Price List (Sep4).xlsx",
-  "sourceLastUpdated": "2026-09-04",
+  "generatedAt": "2026-10-05T19:01:46.986Z",
+  "source": "Accessories Price List (Oct1).xlsx",
+  "sourceLastUpdated": "2026-10-01",
   "sourceRowCounts": {
-    "cabinet-accessories": 512,
-    "power-accessories": 472,
+    "cabinet-accessories": 514,
+    "power-accessories": 474,
     "cross-connect-accessories": 79,
     "cage-accessories": 244
   },
-  "productCount": 322,
+  "productCount": 327,
   "categoryCounts": {
     "cage-accessories": 27,
-    "cabinet-accessories": 137,
-    "power-accessories": 82,
+    "cabinet-accessories": 141,
+    "power-accessories": 83,
     "cross-connect-accessories": 76
   },
   "products": [
@@ -1557,6 +1557,7 @@
         "sweden",
         "switzerland",
         "turkey",
+        "united-arab-emirates",
         "united-kingdom"
       ],
       "pricing": {
@@ -1604,6 +1605,9 @@
           "customerPrice": 2610,
           "equinixPrice": 1891
         },
+        "united-arab-emirates": {
+          "customerPrice": 13780
+        },
         "united-kingdom": {
           "customerPrice": 1907,
           "equinixPrice": 1459
@@ -1641,6 +1645,7 @@
         "sweden",
         "switzerland",
         "turkey",
+        "united-arab-emirates",
         "united-kingdom"
       ],
       "pricing": {
@@ -1688,6 +1693,9 @@
           "customerPrice": 2650,
           "equinixPrice": 1898
         },
+        "united-arab-emirates": {
+          "customerPrice": 13830
+        },
         "united-kingdom": {
           "customerPrice": 1982,
           "equinixPrice": 1542
@@ -1725,6 +1733,7 @@
         "sweden",
         "switzerland",
         "turkey",
+        "united-arab-emirates",
         "united-kingdom"
       ],
       "pricing": {
@@ -1772,6 +1781,9 @@
           "customerPrice": 2812,
           "equinixPrice": 2082
         },
+        "united-arab-emirates": {
+          "customerPrice": 15300
+        },
         "united-kingdom": {
           "customerPrice": 2119,
           "equinixPrice": 1514
@@ -1809,6 +1821,7 @@
         "sweden",
         "switzerland",
         "turkey",
+        "united-arab-emirates",
         "united-kingdom"
       ],
       "pricing": {
@@ -1855,6 +1868,9 @@
         "turkey": {
           "customerPrice": 2837,
           "equinixPrice": 2100
+        },
+        "united-arab-emirates": {
+          "customerPrice": 15450
         },
         "united-kingdom": {
           "customerPrice": 2203,
@@ -2446,7 +2462,6 @@
         "sweden",
         "switzerland",
         "turkey",
-        "united-arab-emirates",
         "united-kingdom"
       ],
       "pricing": {
@@ -2486,9 +2501,6 @@
         "turkey": {
           "customerPrice": 566
         },
-        "united-arab-emirates": {
-          "customerPrice": 2219
-        },
         "united-kingdom": {
           "customerPrice": 456
         }
@@ -2525,7 +2537,6 @@
         "sweden",
         "switzerland",
         "turkey",
-        "united-arab-emirates",
         "united-kingdom"
       ],
       "pricing": {
@@ -2564,9 +2575,6 @@
         },
         "turkey": {
           "customerPrice": 573
-        },
-        "united-arab-emirates": {
-          "customerPrice": 2248
         },
         "united-kingdom": {
           "customerPrice": 462
@@ -4696,6 +4704,114 @@
       }
     },
     {
+      "id": "cabinet-accessories-minkels-a00bk-060047-900-1",
+      "sku": "Minkels|A00BK-060047-900-1",
+      "brand": "Minkels",
+      "brandCode": "Minkels",
+      "partNumber": "A00BK-060047-900-1",
+      "name": "Cabinet",
+      "description": "Cabinet | Depth Extender | 47Ux600",
+      "purpose": "A cabinet depth extender increases usable mounting depth inside a server cabinet, allowing deeper equipment or additional cable management space behind racks. It is used when standard cabinet depth is insufficient for modern servers, PDUs, or dense cable routing requirements.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "EMEA"
+      ],
+      "countries": [
+        "united-arab-emirates"
+      ],
+      "pricing": {
+        "united-arab-emirates": {
+          "customerPrice": 2630
+        }
+      },
+      "price": 2630,
+      "dimensions": {
+        "rackUnits": 47,
+        "widthMm": 600
+      }
+    },
+    {
+      "id": "cabinet-accessories-minkels-a00bk-060052-900-1",
+      "sku": "Minkels|A00BK-060052-900-1",
+      "brand": "Minkels",
+      "brandCode": "Minkels",
+      "partNumber": "A00BK-060052-900-1",
+      "name": "Cabinet",
+      "description": "Cabinet | Depth Extender | 52Ux600",
+      "purpose": "A cabinet depth extender increases usable mounting depth inside a server cabinet, allowing deeper equipment or additional cable management space behind racks. It is used when standard cabinet depth is insufficient for modern servers, PDUs, or dense cable routing requirements.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "EMEA"
+      ],
+      "countries": [
+        "united-arab-emirates"
+      ],
+      "pricing": {
+        "united-arab-emirates": {
+          "customerPrice": 2750
+        }
+      },
+      "price": 2750,
+      "dimensions": {
+        "rackUnits": 52,
+        "widthMm": 600
+      }
+    },
+    {
+      "id": "cabinet-accessories-minkels-a00bk-080047-900-1",
+      "sku": "Minkels|A00BK-080047-900-1",
+      "brand": "Minkels",
+      "brandCode": "Minkels",
+      "partNumber": "A00BK-080047-900-1",
+      "name": "Cabinet",
+      "description": "Cabinet | Depth Extender | 47Ux800",
+      "purpose": "A cabinet depth extender increases usable mounting depth inside a server cabinet, allowing deeper equipment or additional cable management space behind racks. It is used when standard cabinet depth is insufficient for modern servers, PDUs, or dense cable routing requirements.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "EMEA"
+      ],
+      "countries": [
+        "united-arab-emirates"
+      ],
+      "pricing": {
+        "united-arab-emirates": {
+          "customerPrice": 2750
+        }
+      },
+      "price": 2750,
+      "dimensions": {
+        "rackUnits": 47,
+        "widthMm": 800
+      }
+    },
+    {
+      "id": "cabinet-accessories-minkels-a00bk-080052-900-1",
+      "sku": "Minkels|A00BK-080052-900-1",
+      "brand": "Minkels",
+      "brandCode": "Minkels",
+      "partNumber": "A00BK-080052-900-1",
+      "name": "Cabinet",
+      "description": "Cabinet | Depth Extender | 52Ux800",
+      "purpose": "A cabinet depth extender increases usable mounting depth inside a server cabinet, allowing deeper equipment or additional cable management space behind racks. It is used when standard cabinet depth is insufficient for modern servers, PDUs, or dense cable routing requirements.",
+      "categoryId": "cabinet-accessories",
+      "regions": [
+        "EMEA"
+      ],
+      "countries": [
+        "united-arab-emirates"
+      ],
+      "pricing": {
+        "united-arab-emirates": {
+          "customerPrice": 2860
+        }
+      },
+      "price": 2860,
+      "dimensions": {
+        "rackUnits": 52,
+        "widthMm": 800
+      }
+    },
+    {
       "id": "cabinet-accessories-stengel-436510-00",
       "sku": "Stengel|436510-00",
       "brand": "Stengel",
@@ -6544,10 +6660,10 @@
           "customerPrice": 1016
         },
         "united-kingdom": {
-          "customerPrice": 890
+          "customerPrice": 850
         }
       },
-      "price": 890
+      "price": 850
     },
     {
       "id": "power-accessories-panduit-p12b36m",
@@ -6619,10 +6735,10 @@
           "customerPrice": 361
         },
         "united-kingdom": {
-          "customerPrice": 220
+          "customerPrice": 210
         }
       },
-      "price": 220
+      "price": 210
     },
     {
       "id": "power-accessories-panduit-p36e09g",
@@ -6690,10 +6806,10 @@
           "customerPrice": 2074
         },
         "united-kingdom": {
-          "customerPrice": 1810
+          "customerPrice": 1740
         }
       },
-      "price": 1810
+      "price": 1740
     },
     {
       "id": "power-accessories-panduit-p12b34m",
@@ -6842,13 +6958,13 @@
           "customerPrice": 2064
         },
         "united-kingdom": {
-          "customerPrice": 1330
+          "customerPrice": 1280
         },
         "united-states": {
           "customerPrice": 2071
         }
       },
-      "price": 1330
+      "price": 1280
     },
     {
       "id": "power-accessories-panduit-p30b06m",
@@ -6941,7 +7057,7 @@
           "customerPrice": 1849
         },
         "united-kingdom": {
-          "customerPrice": 290
+          "customerPrice": 280
         }
       },
       "price": 11
@@ -7012,10 +7128,10 @@
           "customerPrice": 906
         },
         "united-kingdom": {
-          "customerPrice": 790
+          "customerPrice": 760
         }
       },
-      "price": 790
+      "price": 760
     },
     {
       "id": "power-accessories-panduit-p24e02g",
@@ -7083,10 +7199,10 @@
           "customerPrice": 1059
         },
         "united-kingdom": {
-          "customerPrice": 920
+          "customerPrice": 890
         }
       },
-      "price": 920
+      "price": 890
     },
     {
       "id": "power-accessories-panduit-p30b13m",
@@ -7163,7 +7279,7 @@
           "customerPrice": 351
         },
         "united-kingdom": {
-          "customerPrice": 310
+          "customerPrice": 300
         }
       },
       "price": 10
@@ -7234,10 +7350,10 @@
           "customerPrice": 309
         },
         "united-kingdom": {
-          "customerPrice": 270
+          "customerPrice": 260
         }
       },
-      "price": 270
+      "price": 260
     },
     {
       "id": "power-accessories-panduit-p42d42g",
@@ -7305,10 +7421,10 @@
           "customerPrice": 893
         },
         "united-kingdom": {
-          "customerPrice": 780
+          "customerPrice": 750
         }
       },
-      "price": 780
+      "price": 750
     },
     {
       "id": "power-accessories-panduit-p42b11m",
@@ -7385,10 +7501,10 @@
           "customerPrice": 1091
         },
         "united-kingdom": {
-          "customerPrice": 710
+          "customerPrice": 680
         }
       },
-      "price": 710
+      "price": 680
     },
     {
       "id": "power-accessories-panduit-p42d04g",
@@ -7461,10 +7577,10 @@
           "customerPrice": 2086
         },
         "united-kingdom": {
-          "customerPrice": 1820
+          "customerPrice": 1750
         }
       },
-      "price": 1820
+      "price": 1750
     },
     {
       "id": "power-accessories-panduit-p24d40g",
@@ -7532,10 +7648,10 @@
           "customerPrice": 748
         },
         "united-kingdom": {
-          "customerPrice": 628
+          "customerPrice": 630
         }
       },
-      "price": 628
+      "price": 630
     },
     {
       "id": "power-accessories-panduit-p24e32g",
@@ -7687,21 +7803,26 @@
       "purpose": "A rack PDU (rPDU) distributes conditioned power from a facility feed to multiple outlets within a cabinet. Monitored, metered, and switched models add visibility and control over power consumption and individual outlet states for capacity planning and remote operations.",
       "categoryId": "power-accessories",
       "regions": [
-        "AMER"
+        "AMER",
+        "EMEA"
       ],
       "countries": [
         "canada",
+        "united-kingdom",
         "united-states"
       ],
       "pricing": {
         "canada": {
           "customerPrice": 4970
         },
+        "united-kingdom": {
+          "customerPrice": 3330
+        },
         "united-states": {
           "customerPrice": 3840
         }
       },
-      "price": 3840
+      "price": 3330
     },
     {
       "id": "power-accessories-panduit-p38d28g",
@@ -7931,10 +8052,10 @@
           "customerPrice": 260
         },
         "united-kingdom": {
-          "customerPrice": 230
+          "customerPrice": 220
         }
       },
-      "price": 230
+      "price": 220
     },
     {
       "id": "power-accessories-legrand-l-aue2220b2-20avfbmb-4m",
@@ -8555,6 +8676,29 @@
         }
       },
       "price": 464000
+    },
+    {
+      "id": "power-accessories-panduit-p36g34g",
+      "sku": "Panduit| P36G34G",
+      "brand": "Panduit",
+      "brandCode": "Panduit",
+      "partNumber": "P36G34G",
+      "name": "rPDU",
+      "description": "Rpdu | 415V | 60A | 3-Phase | 24xC13-12xC19 | Monitored Switched",
+      "purpose": "A rack PDU (rPDU) distributes conditioned power from a facility feed to multiple outlets within a cabinet. Monitored, metered, and switched models add visibility and control over power consumption and individual outlet states for capacity planning and remote operations.",
+      "categoryId": "power-accessories",
+      "regions": [
+        "EMEA"
+      ],
+      "countries": [
+        "united-kingdom"
+      ],
+      "pricing": {
+        "united-kingdom": {
+          "customerPrice": 4920
+        }
+      },
+      "price": 4920
     },
     {
       "id": "cabinet-accessories-sra-800-252054",
@@ -10773,7 +10917,7 @@
           "customerPrice": 1894
         },
         "brazil": {
-          "customerPrice": 9638
+          "customerPrice": 15730
         },
         "canada": {
           "customerPrice": 1370
@@ -10806,7 +10950,7 @@
           "customerPrice": 1174
         },
         "peru": {
-          "customerPrice": 1096
+          "customerPrice": 1270
         },
         "poland": {
           "customerPrice": 5024
@@ -10866,15 +11010,14 @@
         "spain",
         "sweden",
         "switzerland",
-        "united-kingdom",
-        "united-states"
+        "united-kingdom"
       ],
       "pricing": {
         "australia": {
           "customerPrice": 2690
         },
         "brazil": {
-          "customerPrice": 22671
+          "customerPrice": 23950
         },
         "canada": {
           "customerPrice": 2110
@@ -10907,7 +11050,7 @@
           "customerPrice": 1780
         },
         "peru": {
-          "customerPrice": 1580
+          "customerPrice": 1980
         },
         "poland": {
           "customerPrice": 7620
@@ -10926,9 +11069,6 @@
         },
         "united-kingdom": {
           "customerPrice": 1414
-        },
-        "united-states": {
-          "customerPrice": 1562
         }
       },
       "price": 48
@@ -10968,15 +11108,14 @@
         "spain",
         "sweden",
         "switzerland",
-        "united-kingdom",
-        "united-states"
+        "united-kingdom"
       ],
       "pricing": {
         "australia": {
           "customerPrice": 3122
         },
         "brazil": {
-          "customerPrice": 22671
+          "customerPrice": 29330
         },
         "canada": {
           "customerPrice": 2574
@@ -11009,7 +11148,7 @@
           "customerPrice": 2025
         },
         "peru": {
-          "customerPrice": 2451
+          "customerPrice": 3020
         },
         "poland": {
           "customerPrice": 9842
@@ -11031,9 +11170,6 @@
         },
         "united-kingdom": {
           "customerPrice": 1724
-        },
-        "united-states": {
-          "customerPrice": 1903
         }
       },
       "price": 73
@@ -11081,7 +11217,7 @@
           "customerPrice": 547
         },
         "brazil": {
-          "customerPrice": 5156
+          "customerPrice": 5020
         },
         "canada": {
           "customerPrice": 435
@@ -11114,7 +11250,7 @@
           "customerPrice": 334
         },
         "peru": {
-          "customerPrice": 578
+          "customerPrice": 670
         },
         "poland": {
           "customerPrice": 1623
@@ -11186,7 +11322,7 @@
           "customerPrice": 401
         },
         "brazil": {
-          "customerPrice": 3804
+          "customerPrice": 4140
         },
         "canada": {
           "customerPrice": 370
@@ -11219,7 +11355,7 @@
           "customerPrice": 269
         },
         "peru": {
-          "customerPrice": 392
+          "customerPrice": 560
         },
         "poland": {
           "customerPrice": 1132
@@ -11272,7 +11408,7 @@
       ],
       "pricing": {
         "brazil": {
-          "customerPrice": 2232
+          "customerPrice": 2760
         },
         "canada": {
           "customerPrice": 261
@@ -11287,7 +11423,7 @@
           "customerPrice": 420
         },
         "peru": {
-          "customerPrice": 270
+          "customerPrice": 390
         },
         "united-states": {
           "customerPrice": 163
@@ -11319,7 +11455,7 @@
       ],
       "pricing": {
         "brazil": {
-          "customerPrice": 2634
+          "customerPrice": 3030
         },
         "canada": {
           "customerPrice": 305
@@ -11334,7 +11470,7 @@
           "customerPrice": 460
         },
         "peru": {
-          "customerPrice": 315
+          "customerPrice": 420
         },
         "united-states": {
           "customerPrice": 190
@@ -11379,7 +11515,7 @@
       ],
       "pricing": {
         "brazil": {
-          "customerPrice": 2206
+          "customerPrice": 4310
         },
         "canada": {
           "customerPrice": 370
@@ -11412,7 +11548,7 @@
           "customerPrice": 261
         },
         "peru": {
-          "customerPrice": 267
+          "customerPrice": 600
         },
         "poland": {
           "customerPrice": 1117
@@ -11462,7 +11598,7 @@
       ],
       "pricing": {
         "brazil": {
-          "customerPrice": 6765
+          "customerPrice": 7360
         },
         "canada": {
           "customerPrice": 696
@@ -11477,7 +11613,7 @@
           "customerPrice": 1120
         },
         "peru": {
-          "customerPrice": 769
+          "customerPrice": 990
         },
         "united-states": {
           "customerPrice": 435
@@ -11509,7 +11645,7 @@
       ],
       "pricing": {
         "brazil": {
-          "customerPrice": 6889
+          "customerPrice": 9620
         },
         "canada": {
           "customerPrice": 776
@@ -11524,7 +11660,7 @@
           "customerPrice": 1400
         },
         "peru": {
-          "customerPrice": 807
+          "customerPrice": 1320
         },
         "united-states": {
           "customerPrice": 487
@@ -11556,7 +11692,7 @@
       ],
       "pricing": {
         "brazil": {
-          "customerPrice": 8675
+          "customerPrice": 8680
         },
         "canada": {
           "customerPrice": 892
@@ -11571,7 +11707,7 @@
           "customerPrice": 1310
         },
         "peru": {
-          "customerPrice": 986
+          "customerPrice": 990
         },
         "united-states": {
           "customerPrice": 577
@@ -11603,7 +11739,7 @@
       ],
       "pricing": {
         "brazil": {
-          "customerPrice": 4510
+          "customerPrice": 5360
         },
         "canada": {
           "customerPrice": 500
@@ -11618,7 +11754,7 @@
           "customerPrice": 820
         },
         "peru": {
-          "customerPrice": 522
+          "customerPrice": 730
         },
         "united-states": {
           "customerPrice": 331

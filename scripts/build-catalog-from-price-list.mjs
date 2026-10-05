@@ -7,6 +7,7 @@ import { parseInstallationCostsSheet } from './parseInstallationCosts.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
+const oct1PriceListPath = path.join(root, 'Accessories Price List (Oct1).xlsx');
 const sep4PriceListPath = path.join(root, 'Accessories Price List (Sep4).xlsx');
 const aug18PriceListPath = path.join(root, 'Accessories Price List (Aug18).xlsx');
 const august10PriceListPath = path.join(root, 'Accessories Price List (August10).xlsx');
@@ -18,6 +19,7 @@ const installationOutputPath = path.join(root, 'src/data/installation-costs.json
 
 /** Prefer newest root workbooks, then the bundled public copy. */
 const SOURCE_CANDIDATES = [
+  { path: oct1PriceListPath, label: 'Accessories Price List (Oct1).xlsx' },
   { path: sep4PriceListPath, label: 'Accessories Price List (Sep4).xlsx' },
   { path: aug18PriceListPath, label: 'Accessories Price List (Aug18).xlsx' },
   { path: august10PriceListPath, label: 'August10_Accessories Price List.xlsx' },
